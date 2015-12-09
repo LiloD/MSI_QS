@@ -1,0 +1,140 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Matthew Xu
+Type: Phone (Webcam)
+Date: 11/29/2011
+
+1. What you hate with Java, how to improve Java if you want?
+2. If we want to receive several million object from client, how we should design the interface between client and service?
+3. What you think about Action script and flex?
+4. Many other scenario questions
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Jonathan Zhang
+Type: Phone 
+Date: 11/11/2013
+
+1. What kind of data is stored in database in my project?
+2. When to use SOAP and when to use RESTful?
+3. API in SOAP and RESTful.
+4. What REST stands for? What is Representational State Transfer? How does the state and resource work?
+5. Tell something about Hibernate.
+6. What in Spring does handle the RESTful web service?
+7. How do you connect web services with the front end?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Timo Huang
+Type: Phone 
+Date: 06/03/2014
+
+1. Introduce yourself, how you started and how you get where you are today?
+2. Why do you look for a new opportunity?
+3. Are you a citizen of US, Canada or Mexico?
+4. Why does this job interest you?
+5. How do you learn a new technology?
+6. Explain polymorphism.
+7. Explain public, private, protected.
+8. What design patterns have you used? Explain MVC pattern.
+9. Explain Inversion of Control.
+10. Multi-threading. What's your major concern in a multi-threading environment?
+11. final, finally, finalize
+12. Explain exception in Java, what kinds of exceptions in Java?
+13. jar vs war
+14. Any .net experience?
+15. What features of Javascript have you used?
+16. Explain Ajax and JSON.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Timo Huang
+Type: Skype
+Date: 06/06/2014
+
+1. Inversion of Control. What are the benefits of it? What's wrong with "new"?
+2. What types of dependency injection does Spring have?
+3. Explain MVC pattern.
+4. Have you used OOP in Javascript? Such as prototype?
+5. Why do you use jQuery?
+6. XML vs JSON?
+7. SOAP vs Rest?
+8. How do you integrate Spring with Rest?
+9. How many js files in your last project? He asked this because they have thousands of js files.
+10. As a developer, how do you give back to the community? (I answered I answer questions on stackoverflow)
+11. How do you go about it when you don't understand the requirements from the client?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Harry Xue
+Type: F2F
+Date: 07/16/2014
+
+1. How to define Hibernate primary key, foreign key in java class, xml?
+2. hashcode, equals function
+3. when to use constructor injection, when to use setter injection?
+4. immutable class
+5. volatile
+6. struts workflow
+7. how to query database with millions records(multithreads)?
+8. how to create multhreading?
+9. StringBuilder vs StringBuffer
+10. Map
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Justin Zhang
+Type: Phone
+Date: 09/18/2014
+
+1.introduce yourself
+2.what would you like current job?
+3.which part you did not like?
+4.what your strength? good team member trouble shooting and problem solving
+5.area to describe to improve ?
+6. Agile and scrum? experience? scrum each day, sprint every 4 weeks 
+7.test driven development?
+8.multiple threading?????in your last project?one situation?
+9.spring?scope? sigleton(default) prototype, session,
+10.Rest?can use json xml 
+11. compare json and xml(json key value pair)
+12.java script and jquery? why you use jquery? lightweight do more work and write less.
+13.design pattern
+14.MVC pattern? 
+15.concept of ioc
+16.Any question? waht technology you use?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Justin Zhang
+Type: Skype
+Date: 10/02/2014
+
+1. self intro
+2. how did you use spring?
+3. give us an example of proxy pattern and adaptor pattern
+4. difference between singleton and prototype in spring bean scope
+5. senario: we have 1000 companies information, and we want to send the information to a service,
+the service can only take 100 companies information at a time, what should you do?
+6. give two tables, write queries about these two tables
+7. do you know JAXB?
+8. do you know xml?
+9. two types of xml, SAX and DOM
+10. spring with JDBC
+11. how does spring connect to different environments?
+12. where do you put spring libraries?
+13. how do you use java generics?
+14. do you think using java reflection is a good practice?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Thomson Reuters
+Candidate: Dan Gong
+Type: Skype
+Date: 10/05/2014
+
+1. Abstract class vs interface
+2. Spring IoC
+3. Jquery? And how to use it
+4. JavaScript? And how to use it? How to define class hierarchy
+5. Unit test framework
+6. Rest web service

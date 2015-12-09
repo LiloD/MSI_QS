@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Alert Enterprise, CA
+Candidate: Paul Yu
+Type: Phone
+Date: 02/03/2012
+
+1. Tell me about yourself and your role in the project (architecture or developer)
+2. OS, IDE, Server, Framework
+3. Exception handling & multithreading & deadlock in your project
+4. Spring scope
+5. What did you do using hibernate, configuration or creating table.
+6. Design pattern, how did you use it?
+7. BlazeDS, POJO
+8. modules, RSL, library, improve performance
+9. Big application, how would you design it?
+10. customized component, override which method? commitProperties … 
+11. Priority queue
+12. hql & sql which is more powerful?
+

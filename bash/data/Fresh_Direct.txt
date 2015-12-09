@@ -1,0 +1,82 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Fresh Direct
+Candidate: Alex Chen
+Type: Phone
+Date: 01/21/2014
+
+EJB& Core Java
+1. details about how to use EJB
+2. collection API
+3. hashmap----- string integer as the key
+4. customerized hashmap
+5. multithreading ---synchronized
+Front-end
+6.front end technology used
+Spring
+7. Spring pattern?-----dao mvc ioc aop 
+8. Spring dao
+9. Benefit of Spring Dao Support, why it is better than just use JDBC
+10. Details about of Spring dao integrated with JDBC
+11. spring :dependency injection
+12. the choice of dependency injection
+13. annotation in spring
+14. autowire
+15. benefits for using annotation---naming conflict
+16. difference between spring and struts
+Hibernate:
+17. hibernate: what did you do by using hibernte
+18. caching: ---& configuration
+
+-----------------------------------------------------------------------------------------------------------
+Client: Fresh Direct
+Candidate: Alex Chen
+Type: F2F
+Date: 01/24/2014
+
+1. details about how to use EJB
+2. collection API
+3. compare arraylist and vector, compare sychonized arraylist and vector
+4. compare hashmap and concurrent hashmap
+5. put object in hashmap
+6. hibernate call native sql, call stored procedure
+7. which driver used for JDBC, 4 different kinds of driver
+8. explain MVC, how spring MVC works in very detail
+9. annotation, how to config annotation
+10. spring IOC, Scope attribute
+11. autowire
+12. how to create singleton, when there is multiple instance of singleton
+   (I answered but they said always one instance….)
+13. Bean factory
+14. explain AOP
+15. spring transaction propagation, 7 types, asked details about nested, not supported
+16. restful and soap web service, details, differences
+17. how to write hibernate criteria
+18. name some JAVA API and explain their design pattern
+19. asked design pattern about factory method, adapter, facade…..
+20. asked some frontend tech such as HTML5 and jQuery
+21. asked detail about spring servlet
+Cant remember all the questions but most of the questions are asked related to projects, like 
+where,when, how to use.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Fresh Direct
+Candidate: Chris Zhang
+Type: Phone
+Date: 05/16/2014
+
+1. Talk about the last project
+2. Spring MVC, what is MVC, what is Spring MVC
+3. Spring cache
+4. Spring security how it works?
+5. How Spring MVC return JSON format data?
+6. Connection pooling? JNDI and DBCP, config in context.xml file in Tomcat server.
+7. AJAX, specify the arguments in AJAX call using jQuery: url, type, data, dataType.
+8. Two ways to create a thread, Runnable interface and Thread super class. 
+   Run method and return void. Callable interface object will run call method 
+   and it can return object.
+9. Generics and how to use?
+   Public T method(T t) {
+   	// some code
+   }
+10. ArrayList vs LinkedList
+11. Design Patterns: Command

@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: NorthPoint
+Candidate: Frank Chen
+Type: F2F
+Date: 02/10/2012
+
+1. how to use make a thread safe servlet
+2. how to keep the request order in multiple threading environment?
+3. how to do database tuning?
+4. how to increase performance of database indexing, assuming there are 100000000 records in database?
+5. how many spring moudules do you use in your project?
+6. what kind of webservice are you familiar with? and how do you deploy it in your project?

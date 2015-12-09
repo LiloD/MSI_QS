@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------------------
+Client: UST Global, Kansas city
+Candidate: Matthew Xu
+Type: Phone
+Date: 11/17/2011
+
+1. What you have done with Flex
+2. What version (They want 4.5)
+3. Difference between 4.5 and 3
+4. Singleton in Java and AS
+5. 5 methods in UIcompoment
+6. When you use customize UIcompoment and event, and how?
+7. Module in Cairgnorm MVC.
+8. Difference between Pure and Cairgnorm MVC
+9. If we have login, update, retrieve functions in front-end, how do we do unit testing on those functions
+10. When to use HttpService, WebService and RemoteObject and why.
+11. What the inner implementation of data binding, need to talk about how the whole process work internally.
+12. How transfer data from one view to another view, not data binding.
+13. how to write an abstract class in AS. (Need to talk about how to enforce the abstract method implementation and validation checking)

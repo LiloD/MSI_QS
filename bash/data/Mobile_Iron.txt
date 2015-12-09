@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Mobile Iron
+Candidate: Mike Ouyang
+Type: Phone
+Date: 04/29/2013
+
+1. Experience on last project
+2. Experience with EXT-JS
+3. Difference between EXT-JS and JQuery
+4. Difference between Procedure vs Function
+5. Spring MVC
+6. Multitthreading
+7. How to ensure the middle tier with the front end?
+

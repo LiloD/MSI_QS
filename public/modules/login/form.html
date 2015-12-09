@@ -1,0 +1,25 @@
+<form name="userForm">
+    <div class="modal-header">
+        <h3> {{usr || "Welcome"}}!</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>User Name</label>
+            <input class="form-control" name="usr" ng-model="loginUser" require>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="password" name="pwd" class="form-control" ng-model="loginPwd" required ng-minlength="4" ng-maxlength="16">
+            <div ng-messages="userForm.pwd.$error" ng-messages-multiple error>
+                <div ng-message="required">password is required</div>
+                <div ng-message="minlength">password should have length more than 4</div>
+                <div ng-message="maxlength">password can't be more than length 16</div>
+            </div>
+            <div ng-show="!!msg" error>{{msg}}</div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="login(loginUser, loginPwd)">Login</button>
+        <button class="btn btn-success" ng-click="sign(loginUser, loginPwd)">Sign Up</button>
+    </div>
+</form>

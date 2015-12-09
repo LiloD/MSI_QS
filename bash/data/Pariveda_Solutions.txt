@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Pariveda Solutions 
+Candidate: Bruce Wei
+Type: Phone
+Date: 07/11/2013
+
+1. Introduce recently project?
+2. What is engine library in backbone.js?
+3. How do you manage the connection pool?
+4. How do you use the second level cache?
+5. Do you have experience of hibernate?
+6. Any MVC experience do you have?
+
+
+ 

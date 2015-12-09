@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Rokitt Tech
+Candidate: Cassie Cheng
+Type: Skype
+Date: 04/22/2015
+First Round:
+1.Basic core java concepts
+2.ArrayList,linklist, hashset,hashmap sort these collections membery consumption.
+3.what is the arraylist's structure?
+4.What is the linklist's structure?
+5.how big of the index in linklist
+6.what is hashset,hashmap
+7.what is hash function(in Math)
+8.what is set?
+9.what is the difference between hashset and hashmap
+10.how to double size an arraylist
+11. how to increase a linklist
+12.why arraylist can resize? how to resize
+Second Round:
+1. Basic core java concepts
+2. ArrayList,linklist, hashset,hashmap sort these collections membery consumption.
+3. The structure of linklist
+4. [1,4,3,5,2] = 6 choose two numbers equal to 6 using the least time
+5. array of bytes and you have 1024 of them , write the function that will find if there is duplicates.If it return true
+6. How to build connection between front and backend.
+7. web service
+8. what library in spring
+9. hibernate cache
+10. hibernate feature
+11. NOSQL
+

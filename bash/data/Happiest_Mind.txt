@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Happiest Mind
+Candidate: Vincent Li
+Type: Skype
+Date: 07/27/2015
+
+1. click on a button of a page, how the Spring works?
+2. slash application page, havn't logged in, how use Spring to bring the user to the intercept page
+3. how implement remember-me block
+4. the flow of the authentication, the providers of authentication.
+5. the default scope
+6. how many scopes
+7. have a userDetails.class, and a xxxx.class, how you avoid conflix
+8. @qualifier, when use it, how
+9. in the jsp user entered <script>alert("Hack!!!");</script> in the name field
+by using a jscript hack. How do you handle this on the server side?
+10. hibernate, what is hibernate
+11. why should we use hibernate
+12. list of numbers, in the map, in the jsp, edit this list, how show alert for each of number using js

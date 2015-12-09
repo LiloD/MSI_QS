@@ -1,0 +1,22 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Adobe
+Candidate: William Xie
+Type: Phone
+Date: 04/06/2011
+
+1. How flex maintain session?
+2. How to integrate spring with flex?	
+3. How to use data binding in mxml and as, which is better?
+4. How do you use chart in your project?
+5. How do you use datagrid in your project?
+6. What is the different between actionScript and Mxml.
+7. How do you use blazeDS, why not use LCDS?
+8. How do you use skinning?
+9. Tell me about the workflow of carigorm?
+10. What class you need to extend in frontController and command?
+11. In pie chart, if you click on it, how to present the data belonging to that particular part?
+12. How to use synchronize in flex?
+13. Does flex have override? The rule
+14. Does flex have overload? 
+15. Tell me about the singleton in flex
+16. How to do gc in flex?

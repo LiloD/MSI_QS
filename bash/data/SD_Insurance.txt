@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------------------------------------
+Client: SD Insurance
+Candidate: Rachel Qi
+Type: Phone
+Date: 12/15/2012
+
+1. EJB
+2. STRUTS
+3. SORT AN ARRAY ONLY HAVE NUMBER 0 AND 1
+4. FIND THE SECOND LARGEST NUMBER IN AN ARRAY WITHOUT SORTING
+5. all the documents using in the project
+6. design a use has name and address and button, how to implement this
+7. UML tool?
+8. connection pool?
+

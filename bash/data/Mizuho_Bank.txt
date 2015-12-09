@@ -1,0 +1,85 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Mizuho Bank
+Candidate: Elsa Sun
+Type: F2F
+Date: 03/26/2014
+
+1. tell me about your current project
+2. tell me about your second project
+3. you have financial models who gives you these model?
+4. who is your end users?
+5. did you comunicate your users?
+6. what is JSP life cycle?
+7. What JSP implict objects?
+8. Why are they implict?
+9. Can you write stored procedure?
+10. different between delete and trancate?
+11. how do you define you knowledge with c?
+12. How long will take you to be OK with C?
+13. What's your strength?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mizuho Bank
+Candidate: Robert Shi
+Type: Phone
+Date: 04/01/2014
+
+1. Tell me abouht your project.
+2. Why should we create index in database.
+3. Can we create index on unique keys?(dupliacated column)
+4. store proc vs function
+5. which system defined functions used(max,min,sum,etc)
+6. function:coalesce vs isnull. which one is better(coalesce,performance)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mizuho Bank
+Candidate: Timo Huang
+Type: Phone
+Date: 05/09/2014
+
+1. project experience
+2. SendRedirect() vs Forward()
+3. Session in JSP. Is it a session per user or browser?
+4. What are the result sets returned from DAO?
+5. Explain MVC
+6. How to you route request to the correct controller
+7. Method for database operations throws exception, how do you identify the exception?
+8. SQL: delete vs truncate
+9. SQL to count number of duplicates in the table.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mizuho Bank
+Candidate: Jacob Fan
+Type: F2F
+Date: 01/30/2015
+
+1.talk about your experience and previous projects
+2.Are you familiar with Agile development?details
+3.Deep into experience related to any production or testing process
+4.Most recent project how the technologies are applied?
+5.write sql queries to select fields from tables by using avg functions
+6.draw E-R diagram for tow tables
+7.how to prevent SQL-injection?
+8.how to prevent SQL-injection?how to deal with ';'in JS?
+9.how to configure the Spring xml file to read initial file from test document and dev file?
+10.how to write and test Stored Procedure?
+11.where should sp placed in spring?
+12.do you have any question to ask them?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mizuho Bank
+Candidate: Jack Fan
+Type: F2F
+Date: 01/30/2015
+
+1. E-R diagram of employee(id, name, salary, dept) and depertment(id, name)
+2. find max salary 
+3. find max salary  in each department
+4. find max salary of employee with name in each department
+5. hibernate call stored procedure
+6. spring security
+7. what did u do in front-end
+8. how to prevent test your original table
+9. how you test stored procedure
+10. how you solve trouble shouting
+11. do u know production stage?

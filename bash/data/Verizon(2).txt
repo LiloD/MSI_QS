@@ -1,0 +1,484 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon, NJ
+Candidate: Frank Ren
+Type: Phone
+Date: 02/09/2011
+
+1. Mechanism of Flex application running on a browser
+2. What are the design patterns you applied in cairngorm MVC?
+3. Cairngorm workflow, for example, if we have a button and click on the button, tell me the workflow
+4. What is Event propagation, how does it work?
+5. Suppose that we have a datagrid, how to put a button in the header and click on the button and then a slider should be showed up.
+6. What is invalidProperties method? Where you need to use it?
+7. What is the life cycle of UIComponent?
+8. How to make customized component and what are those methods involved?
+9. How to customize the flex validator?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon, NJ
+Candidate: Emily Wei
+Type: Phone
+Date: 02/09/2011
+
+1. Cairngorm workflow
+2. ActionScript binding
+3. BindingUtil
+4. Event propogation
+5. HeaderRender
+6. Component life cycle
+7. Eventlisten’s parameter
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon, NJ
+Candidate: Gregory Gao
+Type: Phone
+Date: 01/31/2011
+
+1. Different between "varchar" and "char" in Oracle.
+2. What is database "normalation"? (not "normalization"). 
+3. What functionality do "synchronized", "wait()", "notify()", "notifyAll()" provide? 
+4. How to set up the environment for Weblogic? 
+5. In database, if there has hundreds of thousands of record, like 1 million of them. How to 	    retrieve them out faster? What method? 
+6. How to deploy ant / maven file into Weblogic by using Weblogic Workshop? 
+7. What api is used to write records in database into xml format? 
+8. WSDL format
+9. What does "= = =" (triple equal sign) do in Java Script? 
+10. What's the different between the data type "Date" in Javascript and Java? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Aaron Liang
+Type: Phone
+Date: 01/04/2013
+
+1. Unix commands
+2. What is the different between get and load?
+3. How to make load not lazy loading?
+4. Hibernate session scope?
+5. What is Hibernate formula annotation?
+6. Hibernate how to commit?
+7. What is another way to do Hibernate one-to-one mapping?
+8. Oracle database method tochart?
+9. How to select first 50 records from database?
+10. How to create a view or alia for a table?
+11. What are the generators in heap? New, old, permanent
+12. What is going on if use private main? Compile time error or main is private
+13. How to change heap size?
+14. Exception handling class?
+15. System.exit()?
+16. Serializable interface?
+17. Multithreading life cycle?
+18. How to create a thread?
+19. What are the three status of a object in hibernate? Detached, attached, transient
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Ethan Zhang
+Type: Phone
+Date: 09/17/2013
+
+1. There are 2 input div in a form, how do you move both element 20px left.
+2. How do you put them vertically, horizontally
+3. How do you put them on the up right corner of your page.
+4. What is the different position: fixed, relative.
+5. How do you select a element in javascript/jquery
+6. You have a div write background color inline with yellow, and also in a separate css file of green, what is the color when you load the page.
+7. What does <Doctype> do in html
+8. How html5’s <Doctype> looks like
+9. What if I took <Doctype> off you page
+10. How do you define array in javascript
+11. Explain closure in javascript
+12. Do you use box model in css before
+13. What css3 new feature do you use
+14. What html5 new feature do you use
+15. What is the different between soap and rest
+16. What object does jsp have
+17. What other extension tools do you use before
+18. How do you parse xml and json
+19. How do you do ajax in jquery
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Samuel Tian
+Type: Phone
+Date: 09/24/2013
+
+1. do you prefer front-end or back-end
+2. what is the biggest challenge in your last project's front-end design
+3. what new features do html5 have?
+4. did you do any web-application in your spare time?
+5. display: inline vs display: block
+6. how do you use data attribute in HTML5?
+7. what is CSS floating and clear?
+8. what if UI designer gives you a set of character you dont know the style?
+9. what is the js this?
+10.how to do js inheritance?
+11.how to get the property in superclass?
+12.any js design pattern did you use? how did you manage your code?
+13.explain jQuery chaining
+14.any experience with IE development? what feature do you like and dont like?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Ryan Jing
+Type: Phone
+Date: 01/09/2014
+
+CSS:
+1. New features of CSS3. 
+2. Cross domains ( configure for multi-browers).
+3. External style sheet, internal style sheet, inline style.
+HTML:
+1. HTML5 new features. Where do you use those new features.
+2. Cross domains issue.
+3. Doctype.
+JavaScript/JQuery:
+1. How do you do Ajax in JS/JQuery.
+2. How do you select element in JS/JQuery.
+3. Closure..
+Web Application:
+1. What web application do you use.
+2. Transaction. 
+Others:
+1. Json. XML.
+2. Backbone.(tool)
+3. Single page display(tool)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon, Warren NJ
+Candidate: Frank Chen
+Type: Phone
+Date: 01/17/2014
+
+1. tell me about yourself
+2. project related question
+3. html 5 new features
+4. css3 new features
+5. explain javascript closure, how to solve memory leak
+6. explain soap service
+7. how to convert json
+8. how to use json in javascript
+9. how to select element in javascript/jquery
+10. core java 
+11. how to integrate struts2 with spring?
+12. junit version
+13. talk about design pattern
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon, Orangeburg NJ
+Candidate: Charles Fu
+Type: Phone
+Date: 01/17/2014
+
+1 How to refractor a class's method into another class?
+2 How to handle exception in JDBC?
+3 Suppose we have an array of customer information which can be duplicate, how 
+  to find each duplicate information and inform the client?
+4 Explain garbage collection, how you use that in your project?
+5 Explain multi-thread?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Jill Zou
+Type: F2F
+Date: 04/09/2014
+
+1.collections:
+which collection will you use in your project
+arrylist/hashset/linkedlist/array compare erery pare
+2. multithreading:
+thread life cycle /methods
+sync levels
+3. spring configure
+4. how to configure multiple controller
+5. the jsp how to find the corresproding controller
+5. hibernate: 
+how to map class hierarchy 
+can we configure a table without primary key
+which is the configure file 
+what is in the .hbm.xml file
+6.sql: how to find the second high salary
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Steve Liu
+Type: F2F
+Date: 04/14/2014
+
+1. Do you use structs in your projects?
+2. Introduce your last project?
+3. Explain what is servlet and jsp?
+4. What’s the life cycle of servlet? How they are used?
+5. How the servlet works when multiple thread want to use it? How to make sure the resource in the servlet is safe?
+6. What is the resource in the servlet cannot be changed?
+7. How you do ajax in jQuery? Which datatype do you use?
+8. Do you do waterfall before?
+9. If you are given an assignment from the manager, what would you do to finish it?
+10. Which technology do you like most and which do you like least?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Eric Li
+Type: Phone
+Date: 04/26/2014
+
+1. Tell me about yourself
+2. What did you use of HTML 5 and CSS 3?
+3. How do you call Ajax? 
+4. How to call ajax in javascript?
+5. What is prototype used for in JS?
+6. What javascript libraries did you use except jQuery?
+7. Tell me about why should we use backbone.js
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: May Yuan
+Type: Phone
+Date: 04/21/2014
+
+1. Introduce yourself.
+2. Introduce your project.
+3. JDK version
+4. What kind server do you use in your project? Do you use WebSphere before?
+5. Have you used any JSP libs?
+6. In JSP, how to display a result from session?
+7. JSP request key word.
+8. Ext js version you used.
+9. What’s Store in Ext js? Why use it? Do we have to use it?
+10. Grid in Ext js. Pagination. When you use it?
+11. How to use singleton in Ext js?
+12. How to create instance in Ext js?
+13. Many other Ext js questions. Can’t remember clearly…
+14. JavaScript == vs. ===
+15. What is JavaScript prototype? Give an example.
+16. Is JavaScript call by value or by reference?
+17. Interface vs. abstract class
+18. Explain garbage collection in Java.
+19. Is java call by reference or by value? Given an example and asked questions 
+    like what’s the output, why… what’s in stack.
+20. Static key word vs. non- static.
+21. Constructor vs. method.
+22. What is thread used for?
+23. What is Executor?
+24. Given 2 sync methods, can they be accessed at the same time?
+25. Transit lock? Not sure what’s this question.
+26. Synchronized block questions.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: May Yuan
+Type: F2F
+Date: 04/23/2014
+
+1. Introduce yourself.
+2. Rate your skills.
+3. Do you have mobile experience? Explain.
+4. Given a webpage. Write html code to implement it.
+5. Explain JavaScript closure, inheritance and write examples. 
+6. Ajax and jQuery can handle async requests (without refreshing page), why 
+   should we use Backbone.js?
+7. What is media query? Write example.
+8. CSS3, HTML5 new features.
+9. Given some examples and asked how to do these effects in CSS3.
+10. Click a button, an event triggered, how this happen in Backbone.js?
+11. Backbone.js features, view, model and router.
+12. Why use Bootstrap?
+13. Questions about responsive design and single page application.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Dylan Fang
+Type: F2F
+Date: 04/30/2014
+
+1. Spring MVC, If controllor has occured error, how to handle in front end.
+2. JavaScript how to get unnamed class in var
+3. Ajax async, request has error, how to handle in front end.
+4. Scenario <div>something</div>
+   Delete the something in div and put the something to somewhere else
+5. How to handle exception in Controllor.
+6. String Concurrent Pool
+7. Hashcode and Equails
+8. Arraylist vs HashMap. Performance
+9. Ajax async
+10. Where did you use XML?
+11. What website you use when you have problem, like github?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Faye Cui
+Type: Phone
+Date: 05/13/2014
+
+1. Recent project
+2. Static keyword
+3. Final keyword
+4. Exception handling
+5. Multithreading
+6. What the difference between thread in c and thread in Java.
+7. What is user thread and kernel thread?
+8. == vs ===
+9. Prototype keyword
+10. Closure
+11. Event delegation.
+12. Css selector
+13. Select all of the input
+14. Padding, margining
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Sean Wang
+Type: Phone
+Date: 05/08/2014
+
+1. Self-Intro
+2. JS, JQuery Framework
+3. Responsive Web Design
+4. CSS Box Model
+5. Positioning
+6. Session Storage, Local Storage, Cookie
+7. Prototype in JS
+8. Closure
+9. How to define public, private functions
+10. Coding test
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Sean Wang
+Type: F2F
+Date: 05/12/2014
+
+1. Assume we have several stories. Each story has title, image and description. 
+   Each page will present 5 stories with title and image. Please design how will 
+   show the page and what kind of structure you will use.
+2. How to implement page flip
+3. Click to show description, how to implement.
+4. How to iterate stories
+5. Don’t remember.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Faye Cui
+Type: F2F
+Date: 05/15/2014
+
+1. Tell me about your recent project.
+2. Ajax call.
+3. Write a JSON format. 
+4. Write the code to show data from AJAX call dynamically. 
+5. JavaScript exception handling. 
+6. Qunit. Give an example of Qunit test.
+7. How to handle the error between different JavaScript.
+8. How did you use Bootstrap in your project.
+9. Implement Hashmap in Javascript to have get, put and remove function.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Edward Lin
+Type: F2F
+Date: 05/13/2014
+
+1. given a list of stories, all these stories have title, content and images, how you design a page to represent 5 stories in one page. Write for loop, if condition to implement it.
+2. how to define an array of json objects, what JSON object looks like?
+3. how to prevent out of bound if you do pagination
+4. how to design this page in phones and tablets (one style for all of them; one style for each one), draw prototypes
+5. how to flip the story
+6. how to add an event in front end, write down all the possible ways and which one is better, give your reason
+7. how to implement responsive web design
+8. how you use QUnit?
+9. div>p vs div p vs div+p
+10. what is your strength and weakness
+11. how did you face the challenge
+12. what is your nightmare in your recent project
+13. how do you debug your code
+14. which development environment were you involved in
+15. how you rate yourself
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Timo Huang
+Type: F2F
+Date: 06/02/2014
+
+1. How does your UI talk to back end in your last project?
+2. Explain Spring MVC.
+3. Factory pattern.
+4. Exception handling, two kinds of exceptions in Java.
+5. What collection class you used?
+6. Why do you use generics?
+6. Did you write SOAP client?
+7. Did you use XSD?
+8. Did you use jquery.proxy()?
+9. Did you use Javascript Promise?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Delia Wang
+Type: Phone
+Date: 07/15/2014
+
+1. Introduce yourself.
+2. What has you done in your most recent project?
+3. How long have you stay in United States?
+4. Introduce their projects to me.
+5. In summary, no technique questions.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Kyle Feng
+Type: F2F
+Date: 07/21/2014
+
+1. Statement in Java (differences between do while and while)
+2. Final keyword on class, method, and variable
+3. Collections
+4. Garbage collection
+5. Overload
+6. Spring MVC
+7. Restful 
+8. How do you use other web service?
+9. How do you design the dynamic search dropdown page like Google search (once 
+the user type a word in a search field, there will show a dropdown list related to the 
+word the user input) by using the front-end language
+10. How do you handle the cross-device issue on mobile devices 
+11. Depending you design?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Harry Xue
+Type: F2F
+Date: 08/15/2014
+
+1. Anonymous function in javaScript, how to call private methods
+2. ==vs===
+3. clear left
+4. how to test usage in front end, what tool to use for testing in frontend
+5. css3 , html5 feature
+6. Spring, how to bind class to interface
+7. how to create Rest web service consumer?
+8. Hashcode, equals
+9. REST vs SOAP
+
+-----------------------------------------------------------------------------------------------------------
+Client: Verizon
+Candidate: Charlie Yang
+Type: F2F
+Date: 08/29/2014
+
+1. Self-introduction, technologies you use.
+   Last project, technologies: front-end & back-end.
+   Spring Security -> authentication and access control.
+   Describe how spring security work? (Maybe configuration?)
+2. Currently working on? Last project. Coding or Design Work? (Maybe no design)
+3. Testing Tool? (JUnit. QUnit.)
+4. Core Java? Logic Tier? Implying artechetures.
+5. JavaScript & jQuery? Experience? What libraries you use?
+6. AJAX? Example of use case. Login/Logout.
+7. HTML5/CSS3/Bootstrap -> Responsive Design.
+8. Spring Cache
+9. Spring IoC. Bean injection. Aspect? Spring AOP.
+10. Spring IoC
+11. Hibernate? ibatis. Complex queries, a lot of joins in Hibernate?
+12. Web services. JSON format? Have you set up a RESTful web service. Jersey. Configuration?
+13. Which JDK did you use?
+14. Master? Education. Undergraduate.  

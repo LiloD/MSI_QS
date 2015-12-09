@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Kaiser Permanente
+Candidate: Emma Wei
+Type: Phone
+Date: 04/27/2015
+
+1. What is the data type in JS.
+2. Explain my codes line by line.
+3. Angular Cross domain.
+4. How to use angular to do the exercise.
+5. How to do caching in angular.
+6. Talk about my previous project.
+7. How to access private var in JS.
+8. how to include html template into html file.
+9. What is the difference between controller and service in angular.

@@ -1,0 +1,10 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Service Now
+Candidate: Kyle Wan
+Type: Phone
+Date: 07/23/2011
+
+1. Introduce yourself
+2. Can you tell how you decide when to use SOAP and when to use RESTful
+3. what is JavaScript closure
+4. coding: [3,1,4,8,0] reverse at 3 to [8,0,3,1,4]

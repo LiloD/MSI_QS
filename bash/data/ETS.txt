@@ -1,0 +1,524 @@
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Ewing, NJ
+Candidate: Timo Huang
+Type: F2F
+Date: 07/17/2012
+
+1. Questions about generics
+2. How does Java eliminate duplicates in Set
+3. hashCode
+4. Question about multithreading. A scenario question.
+5. differences between BeanFactory and ApplicationContext
+6. How does Spring instantiate a bean? Ways to configure a bean
+7. Differences between get() and load() in Hibernate
+8. Lazy loading in Hibernate; proxy
+9. Criteria in Hibernate
+10. Differences between redirect and forward in JSP
+11. A SQL question: there are duplicated records in a table; create another table with one instance of 
+    the duplicated record and count of its occurrences.
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Ewing, NJ
+Candidate: Elvin Zhu
+Type: F2F
+Date: 07/17/2012
+
+1. servlet life cycle.
+2. how does servlet handle concurrent requests.
+3. two web applications in one JVM and both of them using a singleton, how many instance of the singleton will be created.
+4. implement singleton in java.
+5. checked exception and unchecked exception.
+6. spring scope.
+7. how to do injection with Spring.
+8. differences between Spring and EJB.
+9. how to use spring ApplicationContext.
+10. Spring lazy-loading.
+11. Spring transaction management.
+12. hibernate ORmapping.
+13. hibernate lazy-loading.
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Ewing, NJ
+Candidate: Scott Yang
+Type: F2F
+Date: 07/17/2012
+
+Core Java:
+1. Multithreading, producer/consumer.
+2. Comparable and Comparator
+3. If there is memory leak in java application, how to locate it.
+4. How does set to know duplicate element? Relationship between hashcode and equals. If equals = true, 
+   what about hashcode. If hashcode = true, what about equals.
+Spring:
+1. If service is singleton, Dao is prototype. What will happen?
+2. If Dao is prototype, service is singleton. What will happen?
+3. Two ways of dependency injection, differences between them.
+Hibernate:
+1. What is session and session factory?
+2. What is Persistence(attached) and detached? What method can invoke detached to be attached?
+3. Difference between get and load.
+Database:
+Writing a sql query using group by and having based on a given table.                                        
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Patrick Dong
+Type: Phone
+Date: 11/16/2012
+
+A. Java
+1. Collections: List and Set, differences; Collections.sort().
+2. Comparable & Comparator
+B. Hibernate
+1. Lazy loading problem
+2. HQL vs SQL
+3. When do you use Criterion?
+4. openSession() method.
+C. Spring
+1. Scope in Spring; differences between singleton and prototype.
+2. What is a controller in Spring MVC?
+3. Do you know the Controller thread-safe issue? How do you avoid that?
+D. Web Service
+1. What’s SOAP? What if there is a fault?
+2. How do you secure a RESTful Web Service?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Patrick Dong
+Type: F2F
+Date: 11/26/2012
+
+1. Which Hibernate features did you use?
+2. Say I have a screen and 5-10 search parameters, and I want to do the search, what would be your approach?
+3. custome	address
+   cust_id	addr_id
+   firstname	cust_id
+		street
+		city
+		state
+   You have two tables like these, how would you build your Hibernate Object?
+4. How would you do the one-to-many mapping?
+5. Write the HQL query that returns all the customers who lives in New Jersey.
+6. How do you identify different items when inserting them to a Set?
+7. What would you use as a surrogate key?
+8. Write the SQL query that returns customer with the count of their addresses.
+9. Say you want to deal with a query that returns 1 million rows, what would you do? Would you still use Hibernate?
+10. If your application is running slow, how would you do the troubleshooting?
+11. Is there any case that Java program can mess up the database? Any case other than in Hibernate?
+12. If a query is very slow, what would you do to boost the performance?
+13. What’s your experience with exception handling?
+14. How do you pinpoint an error in CSS?
+15. If some function of the JavaScript doesn’t work, how do you debug it?
+16. How do you handle an exception generated from the backend?
+17. How do you update the HTML using AJAX?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Timo Huang
+Type: Phone
+Date: 04/17/2013
+
+1. Spring bean scope
+2. Any experience with aop?
+3. Differences between Comparable and Comparator?
+4. How do you make it thread-safe in Java?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Ryan Jing
+Type: Phone
+Date: 01/14/2014
+
+JQuery 
+1. How to call event listener
+2. How to remove an element 
+3. How to parse json
+4. Difference between bind, call, apply
+5. Selector
+6. How to use Ajax in JQuery
+Spring
+1. How to configure hibernate in Spring
+2. Struts
+3. How to pass data in Struts
+Database
+1. How to improve the efficiency of query
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Cherie Xiang
+Type: F2F
+Date: 02/19/2014
+
+1. In Javascript, what is Function.prototype?
+2. What is diff between bind(), live(),delegate(),on() in jQuery?
+3. Different ways to do Ajax call, as much as possible.
+4. What is literal in JavaScript?
+5. What is diff between onload() and document.ready()?
+6. Talk about Backbone Js.
+7. in html5, vedio ogg format, which brower does not supp?
+8. Spring MVC framework.
+9. Three ways of mapping in Spring.
+10. How to do the dependency injection, details. Give an example.
+11. How Spring connect with DB.
+12. Do you have any problem when you do the web development? How did you solve it?
+13. Some Senario questions.(at least 10, there are some css and js questions, you need to write the code)
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Cherie Xiang
+Type: F2F
+Date: 03/04/2014
+
+Front-end:
+1. CSS: float
+2. Bind(), delegate(), live(), on() in jQuery
+3. How to do ajax call?
+4. Could we do several ajax call in jQuery? How to do it ?
+5. How to detect OS in your web application?
+6. How to detect browser in web application?
+7. How to improve the performance for the front end? How to find the performance problem?
+8. Have you used the xml format in the ajax call? How to use it?
+9. Do you know what is SPA? Why this SPA is better than the multiple page app?
+10. CSS: font-size, instead of px, what is other units that you know?
+11. What is the biggest challenge in your web development?
+12. What is the log plug in that you use in the web?
+13. In JSP, what is the difference between doGet() and doPost()? In details to code.
+14. What is the difference between the forward and redirect? When do you use them?
+15. What is XSLT and xsd?
+16. Why restful webservice is better than the soap? Which one is light weight? Explain the light weight.
+17. Some JS and CSS scenario question.
+Back-end:
+1. What is different levels of the log4j?
+2. When do you use debug and when do you use info in log4j?
+3. Hibernate dialect? What is used for? Explain it in details. What other dialect that you know?
+4. Spring config file and Spring MVC work flow.
+5. Core java, write a for loop.(scenario question)
+6. Hibernate mapping config.
+7. What is annotation? When do you use it? Explain in details.
+8. HQL and SQL.
+9. One scenario question about the SQL.(use left join, groupby)
+10. What is JNDI? Where do you use it?
+11. DB connect pool, describe in details. How to config.
+12. How to config jboss server.
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Robert Shi
+Type: F2F
+Date: 04/15/2014
+
+1.Project
+2.CSS:float
+3.css:position. difference
+4.xslt related. eg.match.apply-templates/call-templates
+5.ajax,methods,abouht load
+6.Give a block of xml codes, use html/javascirpt to parse it.(details are below)
+<audio order="1">
+<pasue time="10"/>
+<src url="viedo1.mp4/>
+<pasue time="20"/>
+</audio>
+<audio order="2">
+<pasue time="10"/>
+<src url="viedo2.mp4/>
+<pasue time="20"/>
+</audio>
+....
+Make this work: before a viedo play,pause 10 seconds,then play it,after
+finished, pause for 20 seconds, then start something for the second..(write brief js codes)
+7.xPath. parent::,etc
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Timo Huang
+Type: Phone
+Date: 05/07/2014
+
+1. About RESTful web service.
+2. Have you used Promise in javascript?
+3. How do you do unit test in javascript?
+4. What's the structure of JSON?
+5. How to print out property names in a javascript object?
+6. Is it possible to do multi-threading in javascript?
+7. Have you used Closure in javascript?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Kevin Ma
+Type: Phone
+Date: 06/27/2014
+
+1. how to insert element into set.
+2. the order of multiple catch clauses.
+3. can final arraylist add element? if yes? How to add element in the final arraylist? how to implement it by using reflection? concrete codes.
+4. how to customize hashcode and equals
+5. given a Employee name and age, how to use comparator and comparable 
+6. out of memoery? how to find? how to improve memory size? -xMx -xms difference? Except momoery analyzer and increase JVM memory size, how to locate it?
+7. synchronized hierarchy 
+8. class loader and types, the procedures of class loader works? if two classes are same class, how to distinguish them?
+10. serializable UID, different beans can have same UID or not? if not using UID, throw Exception?
+11. spring transaction features? for required/ required new, why are you used in your project? tell me scenario of how to using them. mandatory propagation type?
+12. IoC DI types. In which situation, you use constructor injection instead of setter.
+13. how to DI using properties files.
+14. AOP, why do you use it? How to use it with details.
+15. Spring hanlder mappings? what is SimpleUrlHandlerMapping looks like? How to configure? 
+16. lazy loading
+17. merge vs saveOrUpdate differences.
+18. HQL SQL criteria difference? why use detached criteria? provide five Restriction methods?
+19. what is projection? How to implement projection?
+20. how to implement soap in server and client ?
+21. What is WSDL option?
+22. database store procedure? write a example.
+23. materialized view , why use it?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Jake Guan
+Type: Phone
+Date: 07/02/2014
+
+1. Explain CSS inheritance
+2. Draw a box model; does IE have the same model?
+3. How to achieve this in html and css without any additional framework
+4. Write an ajax call in Javascript
+5. Explain HTML block and inline elements.
+6. What cross browser issues you met?
+7. What is the use of z-index
+8. Write an array in javascript, is object array allowed in javascript? then write 
+   an array in java.
+9. given: var abc= function (a, b, c, d) {
+   // some logics...
+   what happens when I write function abc (a,b); then function abc (c,d); ?
+10. some intensive questions about Parsing XML.
+11. given a table, write sql
+12. What is singleton, how do you create a singleton using Javascript
+13. How do you configure Hibernate and Spring MVC
+14. How do you define a web service?
+15. How much you know about MVVM pattern?
+16. did you use JSF?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Matthew Xiao
+Type: F2F
+Date: 08/28/2014
+
+1. how to determine if an object is null or undefined 
+//I use typeof, the null will return object, the undefined will return undefined
+2. (function(){
+	var a = b = 3; //b is a global variable because "var" is uneffective
+    })()
+3. simulating a pizza sending senario.
+   sending pizza---success---show "eat"
+                |
+                ---fail---show "fail"
+   I use promise.then(success function, fail funcion), after it getting the "sending"
+4. <div>
+   <div>
+   <div>
+   <div>
+   <div>
+   how to select the first 3 divs use a single line code, answer: use class attribute
+5. how to use angular to do the front end validation
+6. how to do responsive design and cross-browser 
+7. string vs new String() 
+8. show the mechanics of StringBuffer, StringBuilder
+9. Spring AOP
+10. id   name   manager
+    1    a             
+    2    b       1
+    3    c       2
+    4    d       3
+    
+    get the result
+    name   manager
+    b       a
+    c       b 
+    d       c
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Charlie Yang
+Type: F2F
+Date: 08/28/2014
+
+1. JSP life Cycle
+2. Two way and One Way data binding, where u use it
+3. How to Synchronize three Ajax call, write
+4. If three different Ajax call return back at the same time, what will happen ,
+5. Angular service
+6. scope, how many scope could have in one module
+   scope: x = 10; var x = 10; window.x = 10;
+7. Write an Ajax call in angular, where did you use them
+8. How to customized directives in angular
+9. What kind of design pattern u use in angular
+10. Write an module in JavaScript
+11. CSS selector
+12. Immutable class
+13. SQL select second highest salary in one table(empid, salary)
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Aaron Gao
+Type: F2F
+Date: 09/10/2014
+
+1. ajax call by js/jq/angular
+2. bootstrap: how it work (row,12 columns)
+3. media query
+4. css: change color of 3rd column of a table (use nth)
+	make 3 blocks display in one line(I said inline, should be wrong)
+5. use angular to make single page app
+6. difference: rest & soap
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Ewing, NJ
+Candidate: Stephen Liu
+Type: Phone
+Date: 10/09/2014
+
+1. Spring MVC workflow
+2. Spring integrate with hibernate
+3. Difference between hashMap and hashtable
+4. WeakhashMap
+5. how to write singleton and how to change to non-singleton
+6. which web serivce you use in your project and where did you use it
+7. what difference between restful and soap
+8. how you debug frond-end code
+9. what HTML5 new feature you used in your project
+10. senario, Jquery method to run for each matched element (I said use each(), not sure)
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Ewing, NJ
+Candidate: Stephen Liu
+Type: F2F
+Date: 10/14/2014
+
+1.introduce your project
+2.senario, how to debug frond-end code
+3.difference between hashmap and hashtable
+4.weakhashmap
+5.Jquery select all element
+6.Jquery and Ajax call workflow
+7.big senario, how to design whole workflow from database -> backend -> frontend
+8.whats your daily work
+9.senario, if you cannot finish a frondend function, how should you do?
+10.how you define restful web service, write an example
+11.do you know any frontend MVC framework
+12.html5 canvas drag, drop
+13.Javascript testing tool
+14.Junit how did you use it
+15.Java IO: FileOutputStream
+16.what is your weakness
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Ray Shi
+Type: Phone
+Date: 10/18/2014
+
+1. Introduce how you use Spring, Hibernate, Database in your last project
+Core Java
+2. Generic
+3. TreeSet and LinkedHashSet
+4. Queue and Dequeue
+5. Concurrency
+Spring/Hibernate
+6. Spring singleton and prototype
+7. autowire
+8. AOP
+9. Spring Transaction
+10.Hibernate Fetch
+Database
+11.DataBase Qusetions(Don't understand what are his questions, just know is about DB, so I just introduce my experience of DB in my project)
+UI Question
+12.bind()(jQuery method, not JS method)
+13.offset?(not sure, like this one)
+Web Service
+14. How do you use WebService in project?
+    (Actually he didn't ask this questions, but I introduce how I use restful in my project in 1st question, so after asking 13th question, he just say now I know how you use rest, that's good. So I think he plan to ask me this, but I just already tell him my answer, so he give up asking)
+Behavior
+15. Which kind job you want?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Justin Zhang
+Type: F2F
+Date: 11/05/2014
+
+1. self intro
+2. introduce your project
+3. how does front end communicate with back end?
+4. can you draw a design about the whole system from front end to back end
+5. how do you call DAO from service class?
+6. what is the cascade and which one can be used to delete part of the records in database
+7. how many scopes does spring have?
+8. In Spring MVC which class can be used to handle the different URL and decide the trigger methods
+9. what annotations you used in the past work and what’s is the @Component annotation?
+10. scenario, suppose we have a returned List from the database, describe the process that the list can be shown on the frontend.
+11. serialization in Core Java 
+12. different between HashMap and Hashtable; what’s the weakHashMap?
+13. In core Java 
+14. design database tables, which is a many to many relationships
+15. the selectors in the jQuery
+16. how to use the Google Chart in the JavaScript?
+17. does data-binding happen at client side or server side?
+18. did you use angularjs? How to use it?
+19. any questions?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Frank Nan
+Type: Phone
+Date: 11/18/2014
+
+1.one to one configuration, how to config
+2.restful webservice, end point. how to confige
+3.spring transcation
+4.spring IOC if one prototype inside of the singleton, then how many objects.
+5.static final
+6.try catch finally, if veriable defined in try, can you access in catch block should be no
+7.how hibernate connect to database, what you use. I said HQL Criteria
+8.try catch finally if a veriable defined in the try, can you access in the catch block
+9.write the criteria
+10. div vs span 
+11. javascript each
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Blake Li
+Type: Phone
+Date: 04/06/2015
+
+1. Advantage of OOP
+2. Differences between HashSet and TreeSet
+3. What is Collection hierachy in Java
+4. what does hashcode method do
+5. how do you sort objects in Collection?
+6. Differences between Comparable and Comparator?
+7. Differences between Hashtable and HashMap?
+8. How does spring handle url mapping?
+9. What's the format transfered back to frontend?
+10.What is Json? How to create a Json object?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ETS, Princeton, NJ
+Candidate: Oscar Ni
+Type: F2F
+Date: 08/10/2015
+
+1. We write a function spacefy() how to implement it into String? By using like "hello".spacefy();
+2. Features in javascript.
+3. 
+   var parent = function(){ this.v1 = 0;}
+   var child;
+   child.prototype = parent;
+   child.v1 = 5;
+   delete(child.v1);
+   console.log(child.v1);
+   What's the output.
+4. error 404, error 400, error 500
+5. choose all parent of <li> in css
+6. What is LESS, how to implement it in your project. 
+7. How to add event in jQuery.
+8. What is $ in jQuery, can we use other variables?

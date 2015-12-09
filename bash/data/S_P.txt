@@ -1,0 +1,10 @@
+-----------------------------------------------------------------------------------------------------------
+Client: S&P
+Candidate: Colin Xiong
+Type: Phone
+Date: 06/12/2015
+
+1. what is DispatcherServlet?
+2. what is volatile, where do you use?
+3. have you used jquery plugin before?
+4. what is left outer join?

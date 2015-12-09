@@ -1,0 +1,47 @@
+-----------------------------------------------------------------------------------------------------------
+Client: AFS
+Candidate: Timo Huang
+Type: F2F
+Date: 06/09/2013
+
+Interviewer 1:
+Questions are heavily based on resume. Generic questions are:
+1) If you don't understand something in the specification document, how do you go about this?
+2) If deadline is approaching, or something breaks in production, give an example of these things and what steps you do to handle it?
+3) SOAP vs Rest
+4) If a SQL has bad performance, what do you do to optimize it?
+
+Interviewer 2:
+1) Describe SDLC in your project.
+2) Describe your day to day work. What development methodologies do you know?
+3) Talked about user stories. This question was resume based.
+4) Explain collection framework.
+5) Explain generics.
+6) How do you debug your web application?
+
+Interviewer 3:
+1) Collection framework. How do you iterate a list?
+2) Two ways to create a thread in Java.
+3) Benefits of generics?
+4) What is autoboxing?
+5) Explain JVM.
+6) Can you get to know when garbage collection happens?
+7) How does the server instantiate ApplicationContext?Why is the server aware of the existence of Spring?
+8) Bean scope.
+9) What does $ mean in jQuery?
+
+Interviewer 4:
+1) You log on to let's say Amazon, and the server suddenly goes down. However you still have your shopping cart available next time you log on. Why? 
+If the server is to serialize the shopping cart, when do you think serializations should happen?
+2) WebSphere is expensive. If you are to use Tomcat to cut the cost, what features offered by WebSphere are not available and what should you do about this?
+3) Talked about transaction management. How do you use Spring transaction management? How do they implement transaction management in Spring? Two ways in general, AOP and proxy.
+4) You have a table with employeeId, department, salary. Write a SQL to get the salary totals of different departments.
+5) Client is using your application. However when they load the job list from the database, it takes 1000ms to load. In the development environment, it only takes 10ms. The tables are the same (same columns). What might be missing in client's database table so that they get worse performance?
+6) Follow up question for 5). I mentioned index is missing in the table and he said that's exactly what's missing. Do you think it's a good idea to create index for every column? Why?
+7) How do you optimize a SQL, what tools can you use? What does execution plan tell you? What is it you should be looking at in the execution plan?
+8) Client is trying to run your application, however it shows a blank page and after a certain amount of time the error page is shown, and during this process the CPU usage is 100%. What might be the cause of this?
+9) Follow up question for 7) because I mentioned race condition might be the cause in a multi-threading environment, and trying to acquire lock for synchronized block might cause the CPU usage to be 100%. He then asked is the lock a spin lock?
+10) Follow up question for 8). If it's caused by an infinite loop, let's say a while loop. How do you find out where this while loop is in your code in 1 and a half minute? (Thread dump)
+11) How do you talk to a mainframe? I answered web services. He then added messaging to the answer. He then follow up to ask how messaging works and what's the package name for the messaging APIs in Java? (javax.jms)
+12) What EJB bean should be used to handle messaging? (message driven bean)
+13) Talked about JavaScript. Mention Angular.js if you know it because they are using it.

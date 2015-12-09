@@ -1,0 +1,54 @@
+-----------------------------------------------------------------------------------------------------------
+Client: FINRA (Financial Industry Regulatory Authority)
+Candidate: Tony Lang
+Type: F2F
+Date: 07/02/2013
+
+1. Two tables, emp with id, name; mgr with id.
+   Select all emp rows whose id is not in mgr table.
+   Write down as many answers as you can.
+2. There are 25 horses, you have 5 lanes to race them, you don't have a watch. By how many matches can you find the fastest horse? How many to find the fastest 5?
+3. How did you do documentation during Agile development?
+4. Can you describe override/overload/polymorphism?
+5. You have a system, you can only input 1.0 to 10.0, any input out of the range is invalid. How do you design a test case to test the system?
+
+-----------------------------------------------------------------------------------------------------------
+Client: FINRA (Financial Industry Regulatory Authority)
+Candidate: Blake Li
+Type: F2F
+Date: 07/08/2013
+
+1. One table employee with id and name, one table manager with id, list all employees who is not a manager. Then list all employees with a additional column indicating who is/isn't a manager(not adding a new column in the table).
+2. Differences between 32 bit and 64 bit operating systems. Is int value the same between these two systems in C and Java? Why?
+3. One table employee with id, name and gender, all employees' gender are messed up, how could you change all male to female, female to male?
+4. What is open source? Did you contribute to any open source project?
+5. Implement factorial in Java.
+
+-----------------------------------------------------------------------------------------------------------
+Client: FINRA (Financial Industry Regulatory Authority)
+Candidate: Penny Li
+Type: Phone
+Date: 04/14/2015
+
+1. In a bank system, we have an account object, how you use spring framework to return a json object    
+2. spring message converter 
+3. Hibernate transaction
+4. How to integrate Hibernate with Spring framework how spring manage hibernate transaction
+5. Difference between lazy and eager fetch
+ 
+-----------------------------------------------------------------------------------------------------------
+Client: FINRA (Financial Industry Regulatory Authority)
+Candidate: Veronica Tian
+Type: Phone
+Date: 05/15/2015
+
+1. Compare Set, Map, Array, List and how they implemented?
+2. Using Java to implement Fibonacci Sequence
+3. Using Java to Find out what is the second Largest number in an array
+4. Emp table
+Name | TimeStamp|Salary
+x    |20150101  | $10	
+x    |20150210	| $20
+x    |20140210  | $100
+find the employee salary at any point of time, for example 20141010 
+which might not exist in this table.

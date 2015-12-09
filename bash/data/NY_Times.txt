@@ -1,0 +1,29 @@
+-----------------------------------------------------------------------------------------------------------
+Client: New York Times
+Candidate: Frank Chen
+Type: F2F
+Date: 01/28/2014
+
+1. Build a web project.
+2. Write jsp submit page.
+3. Write servlet validation.
+4. Different types of JDBC connections.
+5. JDBC API.
+
+-----------------------------------------------------------------------------------------------------------
+Client: New York Times
+Candidate: Cassie Cheng
+Type: Phone
+Date: 06/10/2015
+
+1. emp(firstname, lastname)
+   count number of rows
+   count lastname = !0smith!1
+   100 rows with 70 different lastnames. Count number of emp in new language such as ruby and new version of spring sommething!-..group of lastname
+2. Linux:
+   how to login to remote machine
+   how check for all processes
+3. final, finally, finalize
+4. how a hashmap work
+5. Java has Garbage Collector, but why there is still a chance of memory leak. 
+6. What do you think of Spring

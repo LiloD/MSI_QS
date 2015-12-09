@@ -1,0 +1,284 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Wesley Wei
+Type: Phone
+Date: 04/28/2011
+
+1. talk about cairngorm mvc 
+2. talk about blazeDS
+3. FLEX MEMORY management,how to control 
+4. event strong reference, didnot remove the eventlistener,what will happen
+5. how to design the table with employee,invoice ,store objects
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Raphael Huang
+Type: Phone + Webcam
+Date: 09/13/2011
+
+1. How to go through Hashmap (entrySet, keySet)
+2. What’s flex component life cycle?
+3. How to do data binding in flex? Different way to do it?
+4. Explain workflow of Cairngorm MVC
+5. What’s your experience with ActionScirpt?
+6. Can you access all the fields of the MXML file in this file’s <Script> part?
+7. Brifely state your experience in SQL/PLSQL, gave some examples.
+8. How to do database tuning in your past experience? 
+9. How to do table join, and what’s the use of it?
+10. How to do data communication between front end and java side
+11. Except Remoting service, how you call a server side method? (HttpService, WebService)
+12. You have a collection of data from database, how to detect duplicate? (I think they want me to give “use Comparator”. I said put them into a HashSet and before it rewrite the hashCode() and equals())
+13. What’s the difference between == and equals?
+14. What’s the difference between preinitialize and initialize in Flex component lifecycle.
+15. Have you used Adobe LiveCycle DS before?
+16. Go through the resume and some behavior questions.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Raphael Huang
+Type: Phone + WebCam
+Date: 09/13/2011
+
+1. How to go through Hashmap (entrySet, keySet)
+2. What’s flex component life cycle?
+3. How to do data binding in flex? Different way to do it?
+4. Explain workflow of Cairngorm MVC
+5. What’s your experience with ActionScirpt?
+6. Can you access all the fields of the MXML file in this file’s <Script> part?
+7. Brifely state your experience in SQL/PLSQL, gave some examples.
+8. How to do database tuning in your past experience? 
+9. How to do table join, and what’s the use of it?
+10. How to do data communication between front end and java side
+11. Except Remoting service, how you call a server side method? (HttpService, WebService)
+12. You have a collection of data from database, how to detect duplicate? (I think they want me to give “use Comparator”. I said put them into a HashSet and before it rewrite the hashCode() and equals())
+13. What’s the difference between == and equals?
+14. What’s the difference between preinitialize and initialize in Flex component lifecycle.
+15. Have you used Adobe LiveCycle DS before?
+16. Go through the resume and some behavior questions.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Cason Wang
+Type: Phone + Webcam
+Date: 09/28/2011
+
+1. in flex 3, you have many checkbox, how to select only one checkbox
+2. question about java and database
+3. in Tomcat 6, how to use JNDI connect with database
+4. == and equals
+5. how do you implament loging framework(he ask detail configure about Log4j)
+6. for example, you have a interface with 5 methods, do you have to override all 5 methods when you implament this interface.
+7. if yes, how about i only override 3 methods, what error message? runtime error?
+8. how do you write a file system in flex?
+9. how to make async in httpservice and webservice in flex?
+10. what is resource manager in flex?
+11. what is the different between java and actionscript?
+12. what is the similarity between java and actionscript?
+13. how to call javascript in flex?
+14. how to overload functions in actionscript?
+15. some session in flex?
+16. what the different between setter and getter in flex and java
+17. can i build a flex application without use MXML?
+18. how to write in singleton in flex?
+19. how flex connect with java?
+20. event propagation
+21. can i stop it(event propagation), how about if i want to stop event in first phase or second phase
+22. flex life cycle
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Shawn Zhang
+Type: Phone + Webcam
+Date: 10/05/2011
+
+1. Talk about cairngorm MVC. 
+2. How to communicate between flex and java. 
+3. How to binding data in flex. 
+4. Event in flex, how to stop bubbling, how to stop bubbling immediately. 
+5. Difference of garbage collection  between flex and java. 
+6. Try … catch … finally in java. 
+7. Calendar API in java. 
+8. Difference between ArrayList and Vector. 
+9. Difference between == and equals. 
+10. How to use log4j and configure it. 
+11. How to write a file system in flex. 
+12. Resource management in flex. 
+13. What is the similarity between java and actionscript. 
+14. Difference between java and actionscript. 
+15. What’s difference between setter and getter in java and actionscript. 
+16. Overload in flex. 
+17. Override in flex. 
+18. Singleton in flex and java. 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Carson Wang
+Type: Phone
+Date: 10/11/2011
+
+1. What is Flex UI components?
+2. What is Flex component Lifecycle?
+3. Explain customized components?
+4. Explain customized events?  
+5. What is Flex Data Binding?
+6. What is the different between java and actionscript?
+7. What software do you use to test Flex front-end, Load test?
+8. What software do you use to test Flex brower compatable?
+9. what is blazeds?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, Springfield, IL
+Candidate: Patrick Li
+Type: Phone (Webcam)
+Date: 11/22/2011
+
+1. try catch finally + exceptions handling
+2. how to set calendar format
+3. overloading in java and flex.
+4. resouceManager
+5. synchronous httpservice
+6. singleton in Java and flex
+7. flex write a file
+8. cairngorm procedure
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, TX
+Candidate: Frank Ren
+Type: Phone 
+Date: 12/19/2011
+
+1. Can you talk about what you did in the State (meaning TX HHSC)?
+2. Do you use Hibernate? Do you know how to handle the whole process of SSP, from the front-end to the database?
+3. LifeCycle of Flex page?
+4. What is Singleton? How to write it?
+5. Java Static keyword, what does it mean? 
+6. What is override? Can you override a static menthod?
+7. Do you have experience on EJB? 
+8. What is DAO? Why you use it? 
+9. What is DTO? Why you use it?
+10. What is web service? Why we need web services?
+11. What are the protocols can be used to create web services?
+12. What is the difference between SOAP web service and REST web service?
+13. What is messaging? Why we need it?
+14. What is self join in SQL? When we use it? 
+15. Two choices: sub-sql and join to do the same thing, which one do you prefer? Why? When you write SQL, what are the top concerns for you?
+16. What is LCDS? What does LCDS do?
+17. Tell me some features about Parsley framework? How did you use it?
+18. We have Flex, why we still need JSP and JavaScript, and etc? How to call JavaScript from Flex?
+19. Tell me ways that Flex gets data from the back-end?
+20. Tell me some data binding ways?
+21. How to make a single Flex list has two dataproviders?
+22. What is the major difference between Halo components and Spark components?
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, IL
+Candidate: Gregory Gao
+Type: Webcam
+Date: 01/17/2012
+
+Java: Not sure if the questions I heard are correct:
+1. There have 2 interfaces “A” and “B”, a class “Sub” implements A, how to use the function in interface B within class Sub, but without implements interface B? 
+2. One class, has a constructor, a static block, and a main() function. What is the implementation order of these 3 parts? Like each one has a System.out.println(). Which will be displayed 1st, 2nd, and 3rd? 
+3. 2 strings, defined as following:
+     a = “abc”;
+     b = “abc”;
+   How many objects exist and why? 
+4. How to convert the datatype “date” from “java.sql” package to “java.util” package? From “java.sql.date” to” java.util.date”(answer seems should be “Calendor” class/package/api, not sure) The guy(Srinivas) who ask this question, if he say this word “Calendor”, it will be pronounced as “Gallon”. 
+5. Similar as question 1, 2 interfaces A and B, how to use the methods in interface A within interface B without implement them? 
+
+Flex: 
+1. What is the property of “creationPolicy” of ViewStack? Does other components/label/other things have this property also? 
+2. A label is in a HGroup, is there any differences between the following 2 properties statemens?
+(1) Visible = “false”
+(2) includeInLayout = “false”
+3. What are the functions we need to override / implement for customize components? 
+4. What event will be dispatched if we add or remove any element from an “arraycollection”?
+   Or, another way to ask: is there any different between “Array” and “ArrayCollection” in flex?
+   Or, 3rd way to ask: can we use an array for “dataProvider” in a “DataGrid”? Are array and arraycollection both can be used?
+5.  What are the differences between AS Singleton and Java Singleton?
+6. In AS, we define 
+      public var x:Number = 0;
+   If we use trace(x), 0 will be displayed. But if we just define a variable like: 
+      public var y:Number;
+   Then we use trace(y), what will be displayed? (Number type default value)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, PA
+Candidate: Gregory Gao
+Type: Phone + Webcam
+Date: 01/30/2012
+
+1. Different between Hashmap, ConcurrentHashMap and Hashtable
+2. Why do we copy ArrayList?
+3. Different between ArrayList and Vector?
+4. What is atomic integer?
+5. What is dead lock? 
+6. How many threads at least can cause a dead lock? 
+7. How many threads need to be stopped to solve a 2 threads dead lock? 
+8. How to use SQL to do select operation from Database? 
+9. What is MVC? 
+10. What event do you know in flex? 
+11. What other events beside mouse event and keyboard event do you know? 
+12. Ever use Oracle? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, TX
+Candidate: Paul Yu
+Type: Phone + Webcam
+Date: 02/06/2012
+
+1. flex version, rate yourself
+2. customized components, examples
+3. FlexUnit & Junit
+4. different browsers & different users
+5. method used to reload component
+6. data group vs datagrid
+7. components life cycle
+8. override vs overload, example
+9. Strength of using spring
+10. cross-cutting concerns
+11. hibernate tables configuration
+12. actionscript testing
+13. flex casting
+14. problems you met during development
+15. flex validation framework, validator
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte, TX
+Candidate: Paul Yu
+Type: Phone + Webcam
+Date: 02/06/2012
+
+1. uicomponent life cycle
+2. binding feature design patterm
+3. as / mxml file
+4. parseley cairngorm
+5. static final string A
+6. func to add child
+7. how to implements 
+8. abstract final class
+9. default access modifier
+
+-----------------------------------------------------------------------------------------------------------
+Client: Deloitte
+Candidate: Olivia Zhang
+Type: Phone + Webcam
+Date: 04/02/2013
+
+1. Flex frame work
+2. Controller
+3. Cairngorm
+4. BlazeDS
+5. Remote Object
+6. Itemrenderer
+7. customize component
+8. Flex lifecycle
+9. validation/invalidation
+10. How flex communicate with java
+11. web service
+12. Spring
+13. metadata
+14. event propagation
+15. target/current target
+16. viewStack

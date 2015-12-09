@@ -1,0 +1,46 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Cisco
+Candidate: Sean Chen
+Type: Phone
+Date: 09/25/2010
+
+1. Flex 3 vs Flex 4
+2. Given a dropdown list, and the list has item1, item2, ..., if I would like to click on one item and then popup a window or another list has sub item1, sub item 2... How to do it
+3. If each item in the drop down list has a check box, if I check multiple items, then click a submit button, all the items selected are sent to server, how to do it? Does Flex provide this component? or you have to implement it yourself?
+4. What is itemrenderer?
+5. What functionality datagrid provides?
+6. Have you used ExtJs, used ExtJs with Flex? What other front ent technology have you used? I said Javascirpt.
+7. Given a list, there are many items in the list, how to click on an item, then show it in a text box?
+8. What is remote class?
+9. How many types of auto wire in Spring?
+10. How do you use/configure Spring with property files? What class do you use?
+11. What is Spring ApplicationContextAware?
+12. What are caches in Hibernate?
+13. How do you access database in your project? How to do security sql in Oracle?
+
+-----------------------------------------------------------------------------------------------------------
+Client: ITASS/Cisco
+Candidate: Frank Chen
+Type: Phone
+Date: 02/04/2014
+
+1. core java (give a piece of code, ask you to write code to show difference between local variable, 
+   instance varible, and inner class instance varible)
+2. multiple threading (give a piece of code ask you what is the function of each part)
+
+-----------------------------------------------------------------------------------------------------------
+Client: ITASS/Cisco
+Candidate: Frank Chen
+Type: Phone
+Date: 02/06/2014
+
+1. Multiple thread
+2. HashMap internal structure
+3. Concurrent Package
+4. Count frequency of words in an array
+5. Github vs SVN
+6. Soap vs Rest
+7. Design pattern used in the project
+8. Immutable class
+9. How to resize the JVM heap size
+10. Difference between wait and sleep

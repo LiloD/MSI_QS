@@ -1,0 +1,29 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Sapient
+Candidate: Elsa Sun
+Type: Phone
+Date: 04/09/2014
+
+1. What is countdown latch? Factory barrier?
+2. Diff between callable vs. Runnable
+3. Future.get() will get what? If(callable)? if (runnable)?
+4. How to implement singleton?  Better way?
+5. How to implement immutable?
+6. Three generation in garbage collection
+7. Synchronized(Map map) vs. ConcurrentHashMap
+8. JMS queue browers?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Sapient
+Candidate: Daniel Le
+Type: Phone
+Date: 08/06/2015
+
+1. How do you use callable interface in your project?
+2. What is executor service? How do you use ExecutorService in your project?
+3. How does ConcurrentHashMap work?
+4. What is the difference between HashTable and ConcurrentHashMap?
+5. When to use Comparable and Comparator interface?
+6. Have I used JUnit? How to test dependency classes?
+7. Does EH Cache support cross nodes in a class?
+8. Give a practical example of how to use wait() method and notify() method.

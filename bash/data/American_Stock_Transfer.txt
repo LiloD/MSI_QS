@@ -1,0 +1,16 @@
+-----------------------------------------------------------------------------------------------------------
+Client: American Stock Transfer
+Candidate: Jake Zhao
+Type: F2F
+Date: 07/31/2014
+
+1. What is JVM?
+2. Heap Vs. Stack
+3. How to synchronize an ArrayList?
+4. What is JTA?
+5. What is two-phase commit?
+6. What is volatile?
+7. What is static? How to you use it? What is static
+8. What Java collections do you use?
+9. How to use List? (tip: arrayList vs. linkedList)
+10. How did you use AngularJS?

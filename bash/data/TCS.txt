@@ -1,0 +1,436 @@
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Cherie Xiang
+Type: Phone
+Date: 12/24/2012
+
+1. What is the difference between AS bean and Java Bean?
+2. How to do error handling in flex?
+3. What is the difference between dynamic class and sealed class?
+4. How do you use viewstack in your last project?
+5. What is your lastest project?
+6. What function do you use in your peoject?
+7. Flex pagination
+8. Event propagation
+9. Give an example about event bubbling
+10. Data binding
+11. How to use changewatcher in the flex
+12. Itemrenderer 
+13. UI component lifecycle
+14. Cairnogorm MVC lifecycle
+15. Some questions about parsely
+16. What is difference of constructor in java and AS?
+17. Some scenario questions
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Cherie Xiang
+Type: Phone
+Date: 01/02/2013
+
+1. How will you create an entity bean?-- EJB
+2. Tell a complete flow from UI to backend in Struts?-STRUTS 
+3. Explain the architecture about EJB? -- EJB
+4. How the data gets stored in HasMap?-Core JAVA
+5. Difference between HashMap and Map? - Core Java
+6. Which package does Map belongs to?-Core Java
+7. How will you connect to backend from Flex? 
+8. Explain the flow from the screen till the backend operation? - Flex
+9. Explain MVC architecture? - Flex
+10. What is Jboss-Seam ? - Flex
+11. What is Granite-ds and usage in Flex environment? - Flex
+12. How would you connect to datasource using action script - Flex
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Bill Gui
+Type: Phone
+Date: 04/02/2013
+
+1. tell me about urself
+2. webservice benefits
+3. hibernate lazy-loading
+4. have you used EJB or similar stuff?
+5. select 2nd highest salary from a employee table? follow up: select 3rd highest
+6. talk about string pool
+7. how to write the result handler function in REST
+8. synchronized keyword, used with static and non-static method
+9. explain serializable  and externalizable 
+10. what does xml look like 
+11. do you have experience designing db?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Anna Li
+Type: Phone
+Date: 04/02/2013
+
+1. tell me about yourself;
+2. Java collection
+3. How to remove even value from Vector, is there any concurrentModification exceptions
+4. java final keyword performance issue
+5. garbage collection
+6. hibernate lazy loading
+7. hibernate cache
+8. Java performance tuning
+9. Sping 
+10. Webservice, SOAP& Restful, which one u prefer
+11. Route scenario question: how to find all the routes from placeA to placeB, which data structure should be used.
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Eric Li
+Type: F2F
+Date: 04/26/2013
+
+1. Tell me about yourself
+2. What are the ways of declaring CSS in HTML?
+3. What are the ways of declaring JavaScript in HTML?
+4. How do you call ajax, what is the syntax like? Please write down.
+5. You said you are used to call ajax in jQuery, how do you call it from javascript?
+6. What Spring modules did you use?
+7. What is the servlet that parse data in SpringMVC? (DispatcherServlet)
+8. What Java Collections did you use? Please give some examples(as much as possible)
+9. Which way of declaring is better?
+(1)List<E> a = new ArrayList<E>
+(2)ArrayList<E> a = new ArrayList<E>
+10. What did you do with Hibernate?
+11. How to create a Model in Backbone.js?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Chelsea Chen
+Type: Phone
+Date: 05/20/2014
+
+1. most recent project
+2. pagination, in front-end and back-end
+3. hashcode and equals
+4. hashmap and hashtable
+5. design pattern, factory pattern
+6. JSON
+7. spring mvc workflow
+8. soap and restful web service
+9. spring security
+10. hibernate usage
+11. collection framework
+12. methods in Object class
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Edward Lin
+Type: Phone
+Date: 05/13/2014
+
+1. Recent experience
+2. What is Spring IoC, what does it looks like
+3. What is SpringAOP, how you use it?
+4. Different advices
+5. What is Spring Security? How to configure authorization and authentication, important features
+6. How to integrated Hibernate with Spring
+7. Hibernate mappings
+8. Cascade= delete-orphan example
+9. How to connect database
+10. Did you write query and stored procedure? How?
+11. Index, view in database
+12. List some methods in Object Class
+13. How the clone works
+14. Hashcode and equals
+15. How you use collection
+16. Thread life cycle
+17. Wait, sleep, join, yield, notify, notifyall
+18. Immutable class
+19. How to create a thread
+20. Front end pagination
+21. Responsive web design
+22. Restful web service
+23. How AJAX works
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Phil Shen
+Type: Phone
+Date: 05/23/2014
+
+1. Most recent project
+2. Pagination,in front-end and back-end
+3. Hashcode and equals
+4. Hashmap and hashtable
+5. Spring AOP
+6. Spring mvc wokflow
+7. Soap and restful web service
+8. Spring security
+9. Hibernate usage
+10. Collection framework
+11. Methods in object class
+12. Multi-threading
+13. Difference between jQuery and javascript
+14. The functions in jQuery
+15. JSP tags
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Chris Zhang
+Type: Phone
+Date: 05/23/2014
+
+1. String type in Java
+2. How many object will be created when concatenate string "Hello" and "World"?
+3. Java Collection framework
+4. 9 methods in Object
+5. hashCode and equals methods
+6. multi-threading in Java
+7. How to create a thread?
+8. Compare HashMap and HashTable
+9. Spring framework
+10. Spring MVC
+11. Spring Security
+12. Hibernate ORM
+13. Get and load method in Hibernate
+14. Cache in Hibernate
+15. Pagination (Use jQuery plug-in)
+16. Scopes in JSP page: page, request, application, session
+17. Factory design pattern
+18. Web services, RESTful and SOAP
+19. JMS
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Aaron Gao
+Type: Phone
+Date: 09/08/2014
+
+1. Talk about string
+2. How to make an immutable class
+3. Modifiers: public private ??
+4. Collection, which are sorted, Which are ordered, Which are thread safe
+5. How to sort a collection
+6. Comparable & comparator
+7. How to create a thread
+8. What are the phases of a thread
+9. Spring scopes
+10. Spring MVC workflow
+11. Hibernate 1-n & n-1 mapping
+12. Jquery selector & hover method
+13. Know JSF? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Aaron Gao
+Type: Phone (2nd round)
+Date: 09/08/2014
+
+1. latest project.
+2. did you use JSF
+3. Ajax, JSON, rate yourself, how about Spring, how about Hibernate?
+4. Explain Spring MVC?
+5. Spring Cache
+6. Different between Hibernate Cache and Spring Cache
+7. Integration of Spring and Hibernate
+8. Core interfaces of Spring/Hibernate???
+9. Hibernate xml file configuration. mapping annotation or XML configuration
+10. Different collection types in hibernate?
+11. Spring Security? authentication & access control
+12. Spring Security function. 
+13. Core Java. Collections/Exception Handling. ArrayList
+14. Check/Unchecked?  NullPointerException
+15. Ajax parameters, How to handle errors in AJAX call?
+16. Single Page Application?
+17. What design patterns do you use?
+18. JUnit frameworks? Did you use any.
+19. How to write JUnit for DAO classes? How to mock scenario of add a user?
+20. Different Layers of web application? Dao/service/controller/UI
+21. Domain Objection? Bean Layer?
+22. Practices to write a java class???
+23. logger? log4j. Sort on importance.
+24. documents 
+25. JSF?
+26. implementation of JSF?
+27. Struts 1 vs Struts 2
+28. Questions?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Michael Tong
+Type: Phone
+Date: 09/08/2014
+
+1. JSF - workflow different 1.0 vs 2.0?
+2. Hibernate
+3. JDBC vs Hibernate (advantage)
+4. Hibernate Cache
+5. Second Level Cache
+6. Spring 3.0
+7. features in Spring 3.0
+8. Depend Injection
+9. two ways to do injection
+10. <constrator-arg index = “…” … >
+11. change configuration in Hibernate? sql-dialect, show-sql …
+12. What’s in Hibernate.cfg.xml file?
+13. Off-shore experience. Agile methodology.
+14. advantage of web-services? Configuration?
+15. Other framework you use?
+16. Workflow for Spring MVC
+17. jQuery experiences?
+18. When do you use AJAX?
+19. Compare to ArrayList in Java? Collections.disjoint()? (Not Sure)
+20. Different phases in Thread?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Rick Wang
+Type: Phone
+Date: 09/08/2014
+
+1. How many years experience on JSF
+2. Access Modifier: public, private, protected, default. explain
+3. comoparable vs comparator
+4. How to sort a collection?
+5. Name methods in Object
+6. explain finalized()? what issue may happen if use finalize
+7. euqals() hashcode()
+8. What is Synchronized in Java?
+9. Callable vs. Runnable, How Future works?
+10. two ways to implement thread?
+11. explain Synchronization?
+12. suspend method in thead, why deprecated?
+13. How to suspend a thread? sleep() vs. wait() How notify() wakes up a thread? BY specific order or randomly?
+14. expalin Spring AOP
+15. How Advices work in Spring AOP?
+16. Hibernate in your project
+17. hibernate cache
+18. can we disable Hibernate cache? why?
+19. association in Hibernate?
+20. Hibernate id generator
+21. SOAP webservice?
+22. SOAP vs Rest
+23. What UI technology have you used?
+24. How to use AngularJS?
+25. How to use jQuery? JQuery selector?  
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Jay Zhao
+Type: Phone
+Date: 09/08/2014
+
+1. Do you have JSF experience?
+2. java collections framework
+3. map interface
+4. set interface
+5. how to sort a collection? collections.sort()
+6. 9 methods in Object
+7. equals and hashCode method
+8. hashMap class
+9. if insert a existing key value pair into a hashMap, what will happen?
+10. the status of a thread
+11. how to create a thread
+12. difference of callable and runnable
+13. public vs private vs protected
+14. do you know synchronization?
+15. what is static synchronization?
+16. applicationContext vs BeanFactory
+17. do you know spring aop?
+18. what are the advices of spring aop?
+19. Hibernate
+20. association in hibernate
+21. automatic dirty check
+22. is sessionfactory thread safe?
+23. hibernate cache
+24. how to configure 2nd level cache?
+25. hibernte generator, different type of generator
+26. how hibernate get data form database?
+27. spring mvc
+28. json
+29. restful vs soap
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Rick Wang
+Type: Phone (2nd round)
+Date: 09/10/2014
+
+1. Introduction
+2. UI components you used in the previous projects
+3. Rate yourself in JSON, Spring & Hibernate
+4. Spring Security
+5. Spring MVC workflow
+6. Spring IoC. Benefits of Spring IoC
+7. Five scopes in Spring IoC
+8. ApplicationContext <== Spring core interfaces
+9. Collection types of Hibernate
+10. How to integrate Spring with Hibernate
+11. hibernatetemplate, how to use, core methods
+12. How to handle Exception/Error in Java
+13. Hibernate Exception examples
+14. Web Services. RESTful
+15. TDD (Test Driven Development). Benefits of TDD.
+16. JUnit, Mock Running
+17. Cache in Hibernate
+18. Cascade in Hibernate
+19. AJAX
+20. Design Pattern. What have you used?
+21. Best practices to write Java class?
+22. Agile Methodology
+23. Any Questions?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Michael Tong
+Type: Phone
+Date: 09/10/2014
+
+1. rate yourself on UI, Spring, Hibernate
+2. What you used in Spring?
+3. Your responsibility, explain Spring MVC?
+    what challenge you have met when you use MVC? 
+4. UI components? 
+5. IOC? Dependency Injection? Benefits?
+6. Scope of bean?
+7. explain Singleton?
+8. Hibernate mapping, interface?
+9. Hibernate collection? when to use?
+10. Hibernate "Core steps"
+11. TDD
+12. Scenario(TDD) when you think you can use TDD? 
+13. JUnit rate yourself
+14. other skills you have?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS
+Candidate: Aaron Gao
+Type: F2F (final round)
+Date: 09/10/2014
+
+First interviewer:
+1. Self Intro
+2. Different between && and &?
+3. How to use ApplicationContext object to get bean? getBean(?some id?)
+4. How many different types of ApplicationContext? Where to put the xml file name?
+5. Why use Singleton pattern?
+6. How to check key exist or not in Map?
+7. Ioc getbean twice and update one
+8. "a"+"b"+"c" , how many object
+9. Try catch finally, return in ?try?
+10. Static block in stack or heap?
+11. Stack / heap 
+12. Composition / aggregation
+13. Static constructor, ok?
+14. No constructor, ok?
+15. Deep / shallow copy
+16. Interface extend multiple interface, ok?
+17. Mechanism of hashmap
+18. Simple sql
+Second interviewer:
+1. Java Collections: List<Integer>, what if I still want String object can be stored in this list? 
+2. Synchronized level in Java
+3. How to prevent memory leak? Any error or exception you know about memory leak?
+4. Ioc properties file
+5. JDBC integrate with spring, using JDBC template or extends JDBCDaoSupport
+Third interviewer:
+1. 9 methods in object
+2. about 10 codingques: different way to print map
+3. How to check Plalindrome string?
+4. Given a Map<String, Date>, sort by date
+5. A list, remove all of "abc"
+6. Other easy questions

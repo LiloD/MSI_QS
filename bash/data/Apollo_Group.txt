@@ -1,0 +1,182 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Apollo Group
+Candidate: Mark Zhang	
+Type: Phone
+Date: 07/19/2013
+
+1. Briefly tell me about yourself and your last project
+2. Rating your knowledge of core java, Spring, Hibernate, HTML, jQuery
+3. Tell me about the polymorphism in java. 
+4. What is the deadlock in java.
+5. What is the synchronized block in java? How to use it?
+6. Static synchronized method vs. synchronized method
+7. Static block in java
+8. When the JVM load classes? When the JVM reload classes?
+9. PreparedStatement vs. CalleableStatement vs. normal statement. When to use PreparedStatement or CalleableStatement?
+10. Tell me about the hibernate caching.
+11. Tell me about the Spring transaction propagation.
+12. SOAP-based web-services vs. REST web-services
+13. Spring dependency injection.
+14. Free marker
+15. Why I have to hire you?
+16. Do you have any questions?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Apollo Group
+Candidate: Mark Zhang	
+Type: Skype
+Date: 07/22/2013
+
+1. What is the result of compiling and running this program?
+      class Mammal{
+         void eat(Mammal m){
+         System.out.println("Mammal eats food");
+         }
+      }
+      class Cattle extends Mammal{
+         void eat(Cattle c){
+         System.out.println("Cattle eats hay");
+         }
+      }
+
+      class Horse extends Cattle{
+          void eat(Horse h){
+          System.out.println("Horse eats hay");
+          }
+      }
+      public class Test{
+        public static void main(String[] args){
+          Mammal h = new Horse();
+          Cattle c = new Horse();
+          c.eat(h);
+        }
+      }
+A. prints "Mammal eats food"
+B. prints "Cattle eats hay"
+C. prints "Horse eats hay"
+D. Class cast Exception at runtime.
+
+
+2. Almost the same code as in the previous question.
+   The only difference is the methods are static now.
+   What will it print now?
+
+   class Base{
+      static  int value = 0;
+        Base(){
+        addValue();
+        }
+    static void addValue(){
+        value += 10;
+        }
+       int getValue(){
+         return value;
+       }
+     }
+    class Derived extends Base{
+      Derived(){
+       addValue();
+      }
+    static void addValue(){
+     value +=  20;
+      }
+    }
+    public class Test {
+      public static void main(String[] args){
+          Base b = new Derived();
+          System.out.println(b.getValue());
+      }
+    }
+
+A. 10
+B. 20
+C. 30
+D. 40
+
+
+3. What will this program print out ?
+      class Base{
+        int value = 0;
+        Base(){
+        addValue();
+        }
+        void addValue(){
+        value += 10;
+        }
+       int getValue(){
+         return value;
+       }
+     }
+    class Derived extends Base{
+      Derived(){
+       addValue();
+      }
+     void addValue(){
+     value +=  20;
+      }
+    }
+    public class Test {
+      public static void main(String[] args){
+          Base b = new Derived();
+          System.out.println(b.getValue());
+      }
+    }
+
+A. 10
+B. 20
+C. 30
+D. 40
+
+4. Difference of these two approach
+Map m = new HashMap()
+Hashmap h = new HashMap()
+
+-----------------------------------------------------------------------------------------------------------
+Client: Apollo Group
+Candidate: Zack Chen	
+Type: Skype
+Date: 08/01/2013
+
+1. Write a function in java to convert a String. 
+   eg “aaabbccddaaddcc” to “a5b2c4d4”.
+2. Final List list = new ArrayList([1,2,3,4,5]);
+	a. list.add(1);
+	b. list = null;
+	c. list.remove(1);
+   which of above (a,b,c) are correct
+3. Tell me about Java access. What is the difference between default and protected
+ 
+-----------------------------------------------------------------------------------------------------------
+Client: Apollo Group
+Candidate: Zack Chen	
+Type: Skype
+Date: 08/02/2013
+
+1. Difference between soap and rest web service.
+2. How to use Json library to fetch data in web service.
+3. How to make below class thread safe:
+   public class counter{
+   	int i;
+       	public int getter(){
+            return I;
+       	}
+      	public void setter(int i){
+            this.i = i;
+        }
+   }
+4. Write me a recursion method (factorial, Fibonacci sequence, exponential).
+5. What methods in Map.
+6. What interfaces have you used in Java.util package.
+7. Where is concurrenthashmap located? ( in what package) 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Apollo Group
+Candidate: Bill Han	
+Type: Phone
+Date: 01/20/2015
+
+1. what is class
+2. what is interface 
+3. what is polymorphism
+4. how to do jdbc
+5. specific detail about jdbc

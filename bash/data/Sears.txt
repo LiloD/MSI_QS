@@ -1,0 +1,13 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Sears
+Candidate: Michael Wang
+Type: Phone
+Date: 07/18/2014
+
+1. recent project
+2. string & string buffer& string builder
+3. multi-threading joint&yield
+4. spring annotation @Qualifier
+5. soap vs rest
+6. angular js binding & how the controller connect the html and angular js
+7. bootstrap responsive design

@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Insight, Plano, TX
+Candidate: Bill Gui
+Type: Phone
+Date: 01/25/2011
+
+1. how do u deal with out of memory error?
+2. can u override a static method?
+3. what does transit/final mean?
+4. can u get a null pointer from a primitive type?
+5. how do u use hashcode() method?
+6. how do u deal with type illegal exception?
+7. explain synchronous and multi-threading
+8. difference between hashmap and hashtable
+9, UI component life cycle
+10. explain flex bubbling
+11. explain cairngorm mvc, what do u use to invoke the method on the server side?
+12. difference between abstract class and interface? Which one do u prefer?

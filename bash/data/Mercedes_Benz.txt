@@ -1,0 +1,77 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Mercedes Benz
+Candidate: Andrew Lu
+Type: F2F
+Date: 11/05/2011
+
+1. Polymorphism in Java, write down the code.
+2. What are advisors, advice and pointcut? 
+3. Where did you use Spring AOP and give me some examples?
+4. Spring Security questions
+5. JPA questions
+6. HibernateDaoSupport questions
+7. what is MVC, draw the diagram
+8. JPA integrate with Spring
+9. SVN related questions, checkout command and commit command.
+10. How many teams are there in your team.
+11. How do you resolve conflicts in SVN.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mercedes Benz
+Candidate: May Yuan
+Type: Phone
+Date: 05/12/2014
+
+1. Introduce latest project. 
+2. Where to configure DBCP?
+3. Where to configure Spring servlet?
+4. DBCP all used up, how to improve performance?
+5. Design patterns in Spring? MVC workflow.
+6. Spring DI. How did you use it?
+7. Why use Spring?
+8. Give an example to show how you use SQL in your project? What’s the SQL? User login.
+9. What features of BootStrap did you use?
+10. How did BootStrap do responsive web design?
+11. How did you do front end validation? Regular expression.
+12. Given 2 tables, user(id, email, pwd, type), type(code, describe), different 
+user with different type code will login to different account. How to select it? 
+Join two tables…
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mercedes Benz
+Candidate: May Yuan
+Type: Phone
+Date: 05/14/2014
+
+1. What is web.xml used for?
+2. How did you give your code to deployment team?
+3. What did you use JIRA for?
+4. If the database connection is used up, and other users are still waiting for 
+   that, what should we do? What if database is down?
+5. How did Hibernate connect to database? JNDI
+6. In login page, if we need to change the style of a button, what will you do?
+7. jQuery selector
+8. Header and footer of a page not change, only change the body, how to do that? 
+   They use tile.
+9. Validate phone number, username, password format. How to do that? 
+   Regular expression. 
+10. JSTL, parse XML.
+11. Did you use any jQuery plugin ?
+12. Can you write stored procedure? Why we use store procedure?
+13. How did you implement search function in your project?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mercedes Benz
+Candidate: Bill Han
+Type: F2F
+Date: 10/03/2014
+
+1. Writer can write article, publisher can write article and publish, Admin can do many function beside write article and publish. How to solve this scenario and what kind of pattern will you use and why? 
+2. When you design one web application what is the process(from data base to front end)?
+3. How to configure Dao in your project?
+4. In spring MVC, how do you use controller?
+5. Rest and soap difference and how to secure the Rest and soap?
+6. In Spring security, how to configure and why you use listener?
+7. Explain SVN and Git and the difference?
+8. Difference between the Agile and waterfall?
+9. What kind of CI tools did you use? 

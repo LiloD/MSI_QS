@@ -1,0 +1,40 @@
+-----------------------------------------------------------------------------------------------------------
+Client: DoITT NYC - DoHMH
+Candidate: Catherine Gao
+Type: F2F
+Date: 12/16/2013
+
+1. introduce yourself
+2. introduce your project
+3. javamail
+4. how many data in your database
+5. how do you know javascript
+6. css how to use
+7. change backgound color in css
+8. primrary key and unique key
+9. do you use pdf in java
+
+-----------------------------------------------------------------------------------------------------------
+Client: DoITT NYC - DoHMH
+Candidate: Harry Xue
+Type: Phone
+Date: 07/15/2014
+
+1. Spring component,annotation
+2. Webservices
+3. Bootstrap
+4. CSS preprocessor
+5. Message Queue
+6. Singleton (how to make sure singleton is thread-safe)
+
+-----------------------------------------------------------------------------------------------------------
+Client: DoITT NYC - DoHMH
+Candidate: Harry Xue
+Type: F2F
+Date: 07/16/2014
+
+1. How do you implement a framework for chess playing in two different Browser?
+2. Can two browser communicate directly?
+3. How to create rest web service without or with annotations?
+4. jquery selectors?
+5. Spring AOP, DI

@@ -1,0 +1,35 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Scholastics Education, Boston, MA
+Candidate: Raphael Huang
+Type: F2F
+Date: 09/14/2011
+
+1. What is MVC, why use MVC?
+2. What’s the flex event life cycle? How to write custom event? What method you need to override for a custom event?
+3. What’s flex component life cycle? Explain in details.
+4. What’s event propagation and explain.
+5. What is IoC? Why use IoC. Can IoC reduce the coupling?
+6. What is BlazeDS and how you use it?
+7. Explain the workflow of Cairngorm MVC?
+8. Do you have experience in Agile environment, tell the details.
+9. What’s your experience in Hibernate?
+10. Why not your last project use IoC in your front end? Why only use Cairngorm MVC not Parsley IoC in the front end?
+11. What’s the drawback and advantage of MVC?
+12. How to do overload in ActionScript?
+13. How to pick up a random String from 3 Strings?
+14. What you use to do test in Front End? Do you know what is automation?
+15. Do you have experience in Flash animation?
+16. Tell me about your experience in PL/SQL. Do you know what is join? The most complicated PL/SQL you have ever written?
+17. What is servlet in J2EE?
+
+Non-technical questions:
+1. How you interactive with designer team and QA team?
+2. Do you have experience in interaction with designer team?
+3. Why here? Why you left last project?
+4. What’s the biggest challenge in last project?
+5. What’s the biggest problem you solve and make you very happy in your past?
+6. How do you score your flex skill out of 10?
+7. Introduce your last project?
+
+
+

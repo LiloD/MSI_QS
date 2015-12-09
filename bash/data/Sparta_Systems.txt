@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Sparta Systems 
+Candidate: Blake Li
+Type: Phone
+Date: 04/24/2015
+
+1. what's your experience in hibernate?
+2. what is a abstract class?
+3. differences between equals and ==
+4. advantages and disadvantages of hibernate?
+5. how to define an entity?
+6. how to define one to many relationship?
+7. what's the differences between update, save and merge?
+8. states of hibernate objects?
+9. what is hibernate transaction?

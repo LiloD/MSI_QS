@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: GSI Commerce
+Candidate: Riemann Dorval
+Type: Phone
+Date: 04/25/2011
+
+1. Tell me about yourself and experience as a UI Designer
+2. How have you used Javascript and CSS in your project for front end design
+3. What are you more comfortable with, front end or back end
+4. What is your future goal
+5. Tell me about your latest projects and your role
+

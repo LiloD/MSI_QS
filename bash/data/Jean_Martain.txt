@@ -1,0 +1,32 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Jean Martain
+Candidate: Carson Wang
+Type: Phone
+Date: 10/13/2011
+
+1. What is Event bubbling?
+2. How to change the color of cell(Datagrad)?
+3. How to Generate PDF file in Flex?
+4. What is the different between asvancedatagrid and datagrid?
+5. Cairngorm MVC?
+6. How swf call Javascript?
+7. how javascript call swf function?
+8. what is Dynamic call and sealed class
+9. how to write singleton in flex?
+10. what is AMF channel?
+11. what is the different between flex 3 and flex 4?
+12. what is viewstake?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Jean Martain
+Candidate: Carson Wang
+Type: F2F
+Date: 10/14/2011
+
+1. talk about project, very detail
+2. what componet do you use in your project?
+3. how to configure blazeds?
+4. can you write down the configure file of blazeds?
+5. what is the different between event and functions?
+6. What is command pattrn?
+7. What different between value object and javabean?

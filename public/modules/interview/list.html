@@ -1,0 +1,61 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title">Interviews</h1>
+        <div class="btn-group pull-right">
+            <span class="btn btn-default" role="button" ng-click="interview.filter.form.open = !interview.filter.form.open">Filter By</span>
+            <span class="btn btn-default" role="button" ng-click="interview.filter.status.open = !interview.filter.status.open">Query Status</span>
+        </div>
+        <hr>
+    </div>
+    <div class="panel-collapse collapse" uib-collapse="!interview.filter.form.open">
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>By Client</label>
+                    <input ng-model="interview.iClient" ng-model-options="{debounce: 500}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>By Candidate</label>
+                    <input ng-model="interview.iCandidate" ng-model-options="{debounce: 500}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>By Type</label>
+                    <input ng-model="interview.iType" ng-model-options="{debounce: 500}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>By Date</label>
+                    <input ng-model="interview.iDate" ng-model-options="{debounce: 500}" class="form-control">
+                </div>
+                <!-- <button class="btn btn-primary">Search</button> -->
+            </form>
+        </div>
+    </div>
+    <div class="panel-collapse collapse" uib-collapse="!interview.filter.status.open">
+        <div class="panel-body">
+            <span>Filter By</span>
+            <pre>{{interview.getParams() | json}}</pre>
+            <span>Filter Result</span>
+            <pre>{{"query count: " + interview.iCount}}</pre>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <tr>
+            <th>Client</th>
+            <th>Candidate</th>
+            <th>Type</th>
+            <th>Date</th>
+        </tr>
+        <tr ng-repeat="it in interview.it">
+            <td>{{it.Client}}</td>
+            <td>{{it.Candidate}}</td>
+            <td>{{it.Type}}</td>
+            <td>{{it.Date | date:'MM/dd/yyyy'}}</td>
+        </tr>
+    </table>
+    <hr>
+    <div class="panel-footer">
+        <uib-pagination max-size=10 total-items="interview.iCount" items-per-page="interview.iSize" ng-model="interview.iPage" ng-change="interview.loadInterviews()" boundary-links="true"></uib-pagination>
+    </div>
+    <pre>{{interview.showInterviewDetail}}</pre>
+</div>
+</div>

@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Xerox
+Candidate: Gregory Gao
+Type: Phone
+Date: 02/28/2013
+
+1. Introduce myself
+2. What's differences between Spring and Hibernate.......I just explained both.
+3. Differences between Model and View
+4. Differences Interface and Class
+5. Any Core java multi-threading exp
+6. Why Hibernate?
+7. Difference between SQL server in Unix and Windows
+8. What Java develop environment tool I been using?
+9. Explain SDLC, and each step
+10. What design pattern I been used? Explain Singleton
+11. Differences between Integration testing and System testing
+12. How to write a testing plan

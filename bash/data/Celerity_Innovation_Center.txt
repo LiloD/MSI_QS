@@ -1,0 +1,29 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Celerity Innovation Center, Pittsburg, PA
+Candidate: Frank Ren
+Type: Phone
+Date: 01/26/2011
+
+Flex questions:
+1. What is AMF for?
+2. How to map flex class to java class?
+3. What does Bindable mean? How to apply it? What is the mechanism of Bindable?
+
+Java questions:
+1. Tell me the difference between List and Set?
+2. Can you insert any object into a Set?
+3. How could Set judge duplicate objects? What does hashCode method do?
+4. How many ways How to start a thread? How to stop a thread?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Celerity Innovation Center, Pittsburg, PA
+Candidate: Frank Ren
+Type: Phone hire
+Date: 01/26/2011
+
+1. What is singleton? How to create a singleton object in Java and Flex? Can I put static methods/fields in the 
+   singleton object? Give me an example.
+2. Tell me how you use static in Java? What is static block? Give me an example. Why you use static block?
+3. What is the difference between Statement and PreparedStatement? How to pass parameters when you use statement? 
+   When you want to use statement rather than prepareStatement?
+4. What is the difference between forward and redirect? When you use redirect? Give me an example.

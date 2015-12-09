@@ -1,0 +1,17 @@
+-----------------------------------------------------------------------------------------------------------
+Client: PG&E, San Francisco, CA
+Candidate: Wesley Wei
+Type: Phone
+Date: 05/09/2011
+
+1. talk about validator
+2. how to use piechart and columnchart
+3. what svn do you use
+4. how many persons in your team
+5. talk about cairngorm
+6. how to use webservice
+7. how to print the datagrid
+8. difference between flex3 and flex 4
+9. tabnavigator
+10. how to use tree control
+

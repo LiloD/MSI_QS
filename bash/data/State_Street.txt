@@ -1,0 +1,52 @@
+-----------------------------------------------------------------------------------------------------------
+Client: State Street
+Candidate: Blake Li
+Type: Phone
+Date: 04/14/2015
+
+1. Describe what your responsibility is in current project?
+2. What is Hibernate ORM? Advantage and disadvantage?
+3. What is Spring IOC? How do you use it in project?
+4. Why we use singleton in Spring IOC? Any other options?
+5. What is MVC? Describe the workflow of MVC?
+6. What is Json? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: State Street
+Candidate: Blake Li
+Type: Phone
+Date: 04/24/2015
+
+1. what's your contribution in your last project?
+2. what kind of build tool did you use in your project?
+3. how do you use maven? advantage of maven?
+4. have you worked on continuous integration system?jenkins bamboo?
+5. differences between JPA and hibernate?
+6. Hibernate object status?
+7. session and session factory?
+8. what is Spring ioc?
+9. how to manage transactions in hibernate and spring?
+10.different transactions types in spring transactions?
+11.what is spring caching?
+12.how to improve the performance of a query?
+13.how index works in a table?
+
+-----------------------------------------------------------------------------------------------------------
+Client: State Street
+Candidate: Bruce Li
+Type: Phone
+Date: 04/30/2015
+
+1. how to implement hibernate batch transaction?
+2. what is the difference between Rest and SOAP?
+3. what does SMTP do?
+4. What is the framework you used?
+5. How Spring MVC work?
+6. In spring how to define a bean as singleton?
+7. What is the difference between hibernate and JDBC?
+8. How do we do to implement one-to-many relationship?
+9. How to define a singleton in java?
+10. Json and XML
+11. Junit test?
+12. How do we pass data to DB?
+13. In spring, how to do transactions?

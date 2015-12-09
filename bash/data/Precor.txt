@@ -1,0 +1,20 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Precor
+Candidate: Andy Li	
+Type: Phone
+Date: 03/18/2015
+
+WebService:
+1. Why choose jersey restful webservice(not spring)? 
+2. What's the meaning of Representational in Rest?
+3. How did you use web service in your project?
+4. SOAP vs REST?
+ 
+Spring:
+1. What's is Dependency Injection?
+2. If you didn't use DI, what should you use?
+DB:
+1. How did you do performance tuning? 
+AngularJS:
+1. Name two features you like most in angularj
+2. AngularJS vs JQuery

@@ -1,0 +1,122 @@
+-----------------------------------------------------------------------------------------------------------
+Client: HCL America
+Candidate: Bill Gui
+Type: Phone
+Date: 11/28/2012
+
+1. current project, your role
+2. how do u decide which one to choose from parsely and cairogorm? why?
+3. any experience with data modeling?
+4. how do you connect flex with java? which way is best?
+5. LCDS and blazeDS difference
+6. experience with java and sap and how to integrated them with spring
+7. any AIR knowledge or experience
+8. Hugins experience, any deloy knowledge or experience
+9. what is ur work focus? front-end or back-end?
+10. any questions for them? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: HCL America / MAPFERE
+Candidate: Alex Chen
+Type: Phone
+Date: 2/19/2014
+
+1.introduce yourself
+2.introduce your last project
+3.spring module your use
+4.what is spring IOC
+5.where you use spring AOP, why?
+6.agile team size, my role
+7.spring cache, hibernate cache
+8.spring mvc workflow
+9.different java classes
+10.what is singleton
+11.what is immutable, besides string, benefits
+12.design patterns you use, why we use design pattern
+13.serilizable, what it use for
+14.abstract class vs interface
+
+-----------------------------------------------------------------------------------------------------------
+Client: HCL America / AT&T
+Candidate: Edward Lin
+Type: Phone
+Date: 3/13/2014
+
+1. Talk about my recent project
+2. What is your major responsibility? front-end or back-end
+3. Rate yourself about front-end technologies
+4. Which jQuery version did you use
+5. Different data bind in jQuery
+6. Give a scenario you use AJAX call, add an event listener
+7. Which JavaScript tool you use to debug
+8. How to replace the html content
+9. How to find city(div1) which is not in the country(div2) in two divs using jQuery
+10. How to call AJAX in jQuery
+11. Difference between jQuery and jQueryP
+12. How to make noConflick in jQuery
+13. difference between onload() and document.ready()
+14. how to prevent an event temporary?
+15. What do you use HTML5?
+16. jQuery find(), child()
+17. Objects in JavaScript
+18. How to add an element dynamically? difference between append, prepend
+19. $(this) and this
+20. How to dynamically define a div? $("<div/>")
+21. how to add background color in div
+
+-----------------------------------------------------------------------------------------------------------
+Client: HCL America / AT&T
+Candidate: Raymen Yuan
+Type: Phone
+Date: 3/17/2014
+
+1. event bubbling, how to implement
+2. delegate()
+3. OOP in JavaScript
+4. scope in JavaScript
+5. session Storage, session Storage
+6. how to optimize performance in JavaScript, HTML, CSS
+7. jstl tag, benefit
+8. exception handling in JAVA
+9. lifecycle jsp
+
+-----------------------------------------------------------------------------------------------------------
+Client: HCL America / AT&T
+Candidate: Eric Li
+Type: Phone
+Date: 4/18/2014
+
+0.Tell me about youself.
+1.How to put a header and a footer in HTML?
+2.Have you used HTML4, HTML5? What's the difference between them?
+  You said you used video, did you customize it? How?
+3.What CSS3 new features did you use?
+  Tell me more about box-model. how do you use border-image?
+4.jQuery: .bind() VS .on() VS .live()
+5.Can you write code without using any UI to implement a image popup function?(After I answered "yes", he immediatedly moved to next question.
+6. Have you used Bootstrap?
+7. Have you used Javascript? What design patterns did you use? Ans: Lazy-loading, facade, module pattern.etc
+8. Can you use Photoshop to modify pictures?
+
+-----------------------------------------------------------------------------------------------------------
+Client: HCL America / UBS
+Candidate: Michael Wang
+Type: Phone
+Date: 01/15/2015
+
+1. describe your background
+2. benefit of spring framework
+3. spring ioc
+4. Message queue
+5. stop procedure, the problem you face
+6. tibco!  
+7. spring transaction
+8. override & overload
+9. SQL server
+10. find last file modified in last 10 day, replace sth. in the file
+11. compare different of different schema
+12. migrate from version to other version
+    http://docs.oracle.com/cd/B19306_01/server.102/b14200/queries004.htm
+    migrate tomcat 6.x ->7.x
+13. different between JDK and JRE
+14. how to prevent deadlock

@@ -1,0 +1,30 @@
+-----------------------------------------------------------------------------------------------------------
+Client: CompuGain, VA
+Candidate: Tony Lang
+Type: Phone
+Date: 09/04/2012
+
+1. How did you use Spring in your projects? IoC? AOP?
+2. What is OOP? Discuss in detail.
+3. How did you use polymorphism in your work? Give a detailed example.
+4. What Web services did you use? On which side (back or front)? Describe them.
+5. What’s the difference between a HashMap and a Hashtable?
+6. Did you use Struts2? How to use Struts(1 or 2)?
+7. How did you use dependency injection? What’s the benefit?
+8. How did you use Hibernate?
+
+-----------------------------------------------------------------------------------------------------------
+Client: CompuGain, VA
+Candidate: Bruce Wei
+Type: Phone
+Date: 09/05/2012
+
+1. What is OOP?
+2. What is Treeset?	
+3. Introduce structs 1 and 2
+4. Introduce spring.
+5. Difference between hashmap and hashtable
+6. How to use polymorphism?
+7. Difference between index and prime key.
+8. Spring Ioc and AOP
+

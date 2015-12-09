@@ -1,0 +1,9 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Monsato
+Candidate: Scarlett Zhao
+Type: Webex
+Date: 04/01/2015
+
+1. Tell me about last project, did you use WebService like Restful/Soap?
+2. for string str1 and str2, str2 is a substring of str1, how many str2 in str1? (like str1=“casabas” str2=“as”), also create a Junit case to test.
+2. Given Collection<Employee>, return a Collection sort by lastName of Employee.

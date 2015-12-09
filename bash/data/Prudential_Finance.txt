@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Prudential Finance
+Candidate: Penny Li
+Type: Phone
+Date: 09/29/2014
+
+1. background?java script frame work
+2. mobile.
+3. java script UI
+4. which part did you involve and which part is your more profecient?
+5. off-shore job?
+6. reduce the time for your website?
+7. error handle in javascript.
+8. tools you use to debug javascipt?
+9. create the html page
+10. What kind of front end pages you have created in your recent pages.
+
+

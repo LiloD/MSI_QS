@@ -1,0 +1,34 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Transcend
+Candidate: Ray Shi
+Type: Phone
+Date: 10/31/2014
+
+1.Hashmap and cocurrenthashmap
+2.volatile
+3.lock
+4.reentrance lock
+5.spring cache
+6.hibernate mapping
+7.restful webservice(how do you use that)
+8.behavior question: do you have family?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Transcend
+Candidate: Ray Shi
+Type: F2F
+Date: 11/04/2014
+
+1.abstract class and interface
+2.autoboxing.
+3.how to create thread, which method is better
+4.what will happen if in thread throw a exception
+5.final and finally
+6.override and overload
+7.threadpool
+8.hashmap data structure
+9.String/StringBuffer/StringBuilder
+10.generic can class have generic
+11.spring transaction propagation in multithreading
+12.soap messaging in multithreading 
+13.java singleton & spring singleton. 

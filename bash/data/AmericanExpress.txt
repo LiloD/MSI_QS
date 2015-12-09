@@ -1,0 +1,165 @@
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Andrew Lu
+Type: Phone
+Date: 11/20/2011
+
+First Interviewer
+1. How do you deploy jersey on the website?
+2. How do you design your own restful API?
+3. @Path class level and @Path method level questions?
+4. invoke the jersey restful from Ajax and Client side?
+5. describe you experience in restful webservice?
+6. How do you convert complex jason objects to pojos?
+7. Jaxb realted questions?
+8. exception handling in restful?
+ 
+Second Interviewer
+1. factory design pattern questions
+2. singleton questions
+3. details of HashMap
+4. finalize() and finally
+5. Exception handling
+6. memory leak related to finalize();
+7. 1 2 ? 3 4 5 6 ? 7 8,  ? can be replaced by 1 or 0, output all the combinations.
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Colin Xiong
+Type: Phone
+Date: 06/24/2015
+
+1. explain features in oop
+2. explain polymorphism
+3. explain the structure of hashmap
+4. component in spring
+5. how to config spring security
+6. how to config hibernate
+7. how to use soap and rest
+8. how to test rest service
+9. how to expose a soap api to the other developer
+10. explain memory leak.
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Freddie Yang
+Type: Phone
+Date: 07/13/2015
+
+1. In which situation we should use concurrentHashMap
+2. In multiplethreading, updating, how to make a count thread safe
+3. How to make child class sirielizable?
+4. How many ways to creat an object?
+5. In Spring, who gives a particular object?
+6. when to use named query, when to use criteria in hibernate?
+7. For RESTful service, how to make it stateful?
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: May Yuan
+Type: F2F
+Date: 07/21/2015
+
+1. introduce yourself and last project.
+2. spring MVC, why use it.
+3. what's spring IOC, AOP
+4. spring transaction management.
+5. spring singleton
+6. other details about spring
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Jake Zhao
+Type: phone
+Date: 07/13/2015
+
+1. Talk about your current project
+2. What is anonymous class? example?
+3. Given a Customer Class having following fields: name, id, address, phone. Now you have 10 this kind objects. What Java collection you should use to hold them? (Set)
+4. Why to use @Profiler in Spring
+5. Post vs. Put in Rest
+6. Why use @Qualifer in Spring
+7. How many ways to do bean injection (setter and constructor)
+8. How to use Rest in Spring
+9. How to use SOAP in Spring
+10. Explain ESB on your resume
+PS: 
+For Q3, I asked do you need them to be ordered or allow duplication? He said none of them. So I said ArrayList. Then he asked what is the different between new ArrayList with List and ArrayList? LOL 
+I said no difference except that List is interface, ArrayList is a class. Then he asked if he wanted to eliminate duplication what collection to use. I said Set, and override hashCode() and equals() method. Then he ask can contains() in ArrayList can determine if two objects are same in ArrayList. I said for String, answer is Yes, but for Customer, I'm not sure, but I guess it's no. Weird Java interview question ever heard... 
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Jake Zhao
+Type: F2F
+Date: 07/21/2015
+
+1. Self Intro 
+2. What do you use in Spring MVC?
+3. Do you know advice, pointcut (Spring AOP)
+4. What is AOP? What is difference between AOP and IoC?
+5. What web service do you use? SOAP, RestEasy or Jersey Rest?
+6. What difference between RestEasy vs. Jersey Rest?
+7. How do you use Hibernate and Spring together?
+8. Talk about your front-end experience.
+9. AngularJS usage and benefit?
+10. Most of time, I was trying to share my developing methodologies, trouble-shoot skills with interviewers, and introduce technologies I used in Barclays. Also I was trying to show I have some experience on leading a few developers learning new technologies. 
+Very Important Note: 
+1. Interview will be combined with tech and scenario questions, so try impress the vendor and client with your personality, such as easy-going, good talking, fast learner etc.
+2. Interviewer will hold a check list and ask every questions on it one by one. So don't try to make up things for anything you are not familiar with, like JPA, DB2 or NodeJS. Amplify those fields you have extensive knowledge and avoid those fields you are not familiar with by showing that you know similar tech.
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Freddie Yang
+Type: Phone
+Date: 07/28/2015
+
+1. previous project 
+2. UI design technology used
+3. database Oracle 10g, Hibernate ORM
+4. Nosql, MongoDB
+5. frequently used design pattern.
+6. agile methodology
+7. meeting in a sprint
+8. daily standup meeting
+9. MVC pattern
+10. Anngular MVS pattern, MVVM
+11. are they internet public application you worked in? Are they high volumn traffic?
+12. Last project, what stage of your project is?
+13. what tool used for the trouble shooting when system goes slow
+14. GZip, are you familiar with it
+15. JSP model, Spring or Struts
+16. in JSP how to deliver the data, how to convert the JSON format to the browser format for frontend
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Colin Xiong
+Type: Phone
+Date: 06/24/2015
+
+1. explain features in oop
+2. explain polymorphism
+3. explain the structure of hashmap
+4. component in spring
+5. how to config spring security
+6. how to config hibernate
+7. how to use soap and rest
+8. how to test rest service
+9. how to expose a soap api to the other developer
+10. explain memory leak.
+
+-----------------------------------------------------------------------------------------------------------
+Client: American Express
+Candidate: Colin Xiong
+Type: F2F
+Date: 06/26/2015
+
+1. difference between interface and abstract class
+2. difference between string and stringbuffer.
+3. transient and volatile keyword
+4. explain immutable class
+5. difference between sleep and wait
+6. write a class to implement rnnable
+7. write a singleton class
+8. how to test java code
+9. explain soap service
+10. explain clustered service

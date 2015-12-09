@@ -1,0 +1,34 @@
+-----------------------------------------------------------------------------------------------------------
+Client: UPS
+Candidate: Charles Zhang
+Type: F2F
+Date: 06/04/2013
+
+1. What’s the Web Service Process?
+2. How can you deploy your web service?
+3. How many Java collection you know, list them and how’s their usage?
+4. How to concatenate two strings?
+5. How to use Java method to split different fields?
+6. How to do show and hide content in Jquery?
+7. What’s difference between get and post?
+8. How to parse JSON in javascript?
+9. What’s difference between JSON and XML, what’s the advantage of JSON?
+10. How to iterate back end data by either JQUERY or Javascript?
+11. What’s AJAX, how to do AJAX at the front end?
+
+-----------------------------------------------------------------------------------------------------------
+Client: UPS
+Candidate: Frank Chen
+Type: F2F
+Date: 02/10/2014
+
+1. basic concept of servlet?
+2. json?
+3. how to make ajax call in your project?
+4. some common jquery selectors?
+5. what kind of webservice did you use? How do you consume it?
+6. what is the difference between post and get?
+7. Core java collections?
+8. any design experience?
+9. how to do javascript testing?
+10. ask me some questions based on my latest project?

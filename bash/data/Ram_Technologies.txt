@@ -1,0 +1,13 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Ram Technologies
+Candidate: Lily Xiao
+Type: F2F
+Date: 05/19/2015
+
+1. How do you use reflection in your project? Do you know other ways to use it?
+2. multiple-threading
+3. sql query
+4. Do you know EJB?
+5. When will you choose arraylist or linkedlist?
+6. explain the recent project, all the items one by one you listed in the resume.
+Can not remember some of the questions.

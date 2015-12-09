@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: GetInsured, CA
+Candidate: Jeff Hsieh
+Type: Phone
+Date: 07/30/2014
+
+1. Tell me about your current project.
+2. What is EDI-X12? Have you used in your project?
+3. Which kind of java data structure you have used?
+4. Explain stack and heap?
+5. What are the differences between JSP and servlet?
+6. Have you used Maven?

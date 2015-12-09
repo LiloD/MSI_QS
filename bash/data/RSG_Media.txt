@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------
+Client: RSG Media, NYC
+Candidate: Sarah Wang
+Type: F2F
+Date: 02/08/2010
+
+1. What is your expertise in Flex?
+2. What your experience in java? Have you used Spring, hibernate, ibitas?
+3. Which module of Spring you have worked a lot? I answered IOC, so ask me write a basic IOC injection 
+   from service to dao.
+4. For hibernate, how do you do transaction management?
+5. Give me a scenario there are several components like text fields and chart, datagrid, suppose client 
+   type something in text fields, what we want is to show data in chart,datagrid and other corresponding 
+   components. To do this, what kind of design pattern we can use?
+6. Ask me write a singleton in actionscript?
+7. What is the biggest problem you have meet when using flex?
+8. Have you worked on Cache in Flex? 
+9. How to configure Blazeds?

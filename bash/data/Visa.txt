@@ -1,0 +1,30 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Visa, CA
+Candidate: Harry Xue
+Type: Phone
+Date: 08/01/2014
+
+1. implement lock
+2. void race condition
+3. describe some multithreading using in your project
+4. when to use a queue
+5. hibernate one to many mapping
+
+-----------------------------------------------------------------------------------------------------------
+Client: Visa, CA
+Candidate: Harry Xue
+Type: Phone
+Date: 08/11/2014
+
+1. one programming question
+   A={a,b,c,d,e}
+   B={c,e,a}
+   The order elements in A indicates their priority, a is the lowest, e is the highest.
+   For input B, we should return the element in order e,c,a 
+   How would you implement it?
+2. If your memory overflows, what can cause this?
+3. decorator pattern? 
+4. decorator pattern vs proxy pattern?
+5. employee with different role, different bonus, how do you design the class?
+6. Why rest is more light weighted?
+7. how do you implement web service light framework without current Rest,SOAP framework? 

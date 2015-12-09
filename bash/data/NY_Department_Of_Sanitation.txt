@@ -1,0 +1,37 @@
+-----------------------------------------------------------------------------------------------------------
+Client: NY Department of Sanitation
+Candidate: Amanda Xiao
+Type: Phone
+Date: 09/30/2014
+
+1. Explain your last project?
+2.what kind of method mvc? or controller?
+3.verson of spring?
+4.regular controller to the rest controller?
+5.how to do controller output?
+6.hibernate ? direct to spring layer?
+7.config spring security?
+8.command pattern// execute()
+9.retrice the realtime code (details quotes)
+10.sdlc?
+
+-----------------------------------------------------------------------------------------------------------
+Client: NY Department of Sanitation
+Candidate: Amanda Xiao
+Type: F2F
+Date: 10/03/2014
+
+1.Dan introduce the whole project ,how they work as a group
+2.How Singleton pattern work in multi-threading?
+3.How Angular Js two way binding works?
+4.How to acquire real time data from front end?
+5.In multi users system, how to complete a system that main dashboard's change can be seen by all users?
+6.Use spring controller or rest controller?
+7.Controller annotation
+8.How does AngularJs communicate with database?
+9.Spring security config , details.
+10.A new technology which I have not used, for updating website content without invoking any function or operation from front end.
+11.What database you user?
+12. Have you ever used MongoDB?
+13.How Agile team work?
+14.If you have different idea about the task?

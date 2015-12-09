@@ -1,0 +1,65 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Weight Watchers, NYC
+Candidate: Emily Wei
+Type: Phone
+Date: 01/18/2011
+
+1. Cairngorm flow?  
+2. If I don’t want use data binding, how could I display the data in the view? 
+3. How to show the welcome information to a new user without any log? (You need to identify a new user)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Weight Watchers, NYC
+Candidate: Ryan Chen
+Type: Phone
+Date: 07/31/2014
+
+1. Why you use AngularJS? what benefits made you use it.
+2. How did you use AngularJS in your project
+3. Data binding types, how do you implement it in your project, how does it works.
+4. give me an example how angularJS works in front-end
+5. create angularJS model, controller.
+6. you mintioned ng-repeat, how do you use it?
+7. if I want to use ng-repeat show the value which only the letter start by 'A', what I should do?
+8. what is detetive
+9. Do you know MVC? what design pattern AngularJS follow?
+10. what is scope in angular JS?
+11. how to implment ajax call in AngularJS
+12. if I want to async the ajax in AngularJS, what I should do? (he said new verison angularJS can do that now, I told him the angularJS version I used in my project did not support it).
+13. what's the $http return type
+14. beside $http, what $ function you have used in your project? (I told him I used $location)
+15. How do you implement filter in angularJS?
+16. what is promise
+17. implements sort function in angularJS.
+18. angularJS form features, did you use it? how did you use it in your project. 
+19. angularJS form validation.
+20. when you are free for F2F in person.
+21. If we give you offer, how soon you can come to work.
+22. Do you have another questions?
+there are some questions I did not remember.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Weight Watchers, NYC
+Candidate: Ryan Chen
+Type: F2F
+Date: 08/05/2014
+
+1. Describe your last project, which part you used AngularJS.
+2. for AngularJS synchornized ajax call, how to implement it? (use promise)
+3. Did you use directive in your project? How did you use it?
+4. How to customize AngularJS directive by yourself.
+5. Do you use css? explain how it works in your project.
+6. Single sign on, did you use it? benefit?
+7. RESTful web service, secured and unsecured, which one you use and why?
+8. JSON type, did you use it? why use it?
+9. AngularJS injection, do you know it? Did you use it?
+10. what is $scope in AngularJS?
+11. $scope hierarchy, what's the top of the hierarchy? (I told him it's module)
+12. AngularJS controller concepts.
+13. ng-repeat and filter
+14. cross browser issue.
+15. data binding types and implementation
+16. Do you know MVC? what's angularJS based on?(MVVM)
+17. availability
+18. do you have any questions?
+there are some questions I did not remember any more.

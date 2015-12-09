@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Teach For America
+Candidate: Cherie Xiang
+Type: F2F
+Date: 04/01/2014
+
+1. OOP design parking lot
+2. Bootstrap some senario questions
+3. OOP design call service center
+3. write Pallingdrom(use two different ways and 2 different language)
+4. others are all senario questions. about CSS and HTML4
+5. talk about backbone, in details. 

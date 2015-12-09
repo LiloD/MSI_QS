@@ -1,0 +1,544 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Cherry Xu
+Type: Phone
+Date: 01/28/2011
+
+1. Event propogation.
+2. Component life cycle
+3. Type casting, and  tell me the difference.
+4. What is local connection?
+5. In httpservice, what the difference between post and get.
+6. Dynamic class
+7. what the difference between array and arraycollection?
+8. what the event name when you override bindable?
+9. Methods in customize component.
+10. Lazy loading for ViewStack: creationpolicy
+11. Convert arraycollection to array
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Frank Ren
+Type: Phone
+Date: 01/28/2011
+
+1. Tell me why you think you are a perfect candidate for this position, please focus on your finance experience. 
+   In the six years, what is the most difficult challenge you have been involved in? How did you solve it? Tell me the whole process.
+2. Do you have any difficulty when you working on hibernate? Tell me what is it? How did you solve it? 
+3. What did you write in the hibernateUtil class? How do you use it?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Sarah Wang
+Type: Phone
+Date: 02/08/2011
+
+1. Suppose I want to create a button and when click it popup a widow with text “HelloWorld”, how to do it in Actionsrcipt
+2. How to create custom component, and give example what write in commitPropties() what write in updateDisplayList()?
+3. How to configure Blazeds?
+4. Java collection, name some list collection. Diff between arraylist and linkedlist? Give me a scenario to use which one?
+5. Suppose have person class with name,age and phone# fields, how to sort it according to any fields u want? What collection use? 
+6. Spring bean scope? Difference between singleton and prototype? Suppose in bean we set scope singleton and in class we set constructor private, how can we get the class fields? 
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Frank Ren
+Type: Phone
+Date: 02/08/2011
+
+1. What is IoC, AOP?
+2. Tell me your experience in Database manipulation, and your experience with SQL and PL/SQL?
+3. Map vs. Set in Java?
+4. Array vs. ArrayCollection in ActionScript?
+5. Tell me the workflow of cairngorm MVC?
+6. Tell me the ways to do data binding in Flex?
+7. Tell me the ways to do styling in Flex?
+8. Tell me how to do component customization?
+9. Tell me what are the methods that you need to handle if you want to create customized component?
+10. Tell me the right sequence that these methods should be called?
+11. Tell me the difference between list and repeater?
+12. Suppose we have employee profiles and we have firstName, lastName and employee picture, how to display these data in the list? Detailed steps are required.
+13. Suppose that we have 10 buttons and we need five of them triangle, how could we do that without changing the properties of button, CSS, or customizing button?
+14. Tell me your experience on WebService and how did you write the service? What kinds of webServices did you write?
+15. Do you have experience on Rest Service?
+16. What is the difference between doGet and doPost in servlet?
+17. How did you use Map in your previous Java project?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Emily, Wei
+Type: Phone
+Date: 03/16/2011
+
+1. Hibernate Caching
+2. Which part to do the data calculation?
+3. What are the disadvantage and advantage by using flex?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Kenneth, Yang
+Type: Phone
+Date: 03/25/2011
+
+1. Describe the most difficult part of your recent project.
+2. A scenario question about how to select data from Hibernate and send it to flex. How to reduce the redundant data and keep the data in front end and back end consistent.
+3. Describe MVC and cairngorm MVC.
+4. How do you think of cairngorm MVC? 
+5. Do you know some other way of organizing flex?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Wesley Wei
+Type: Phone
+Date: 05/02/2011
+
+1. write a java singleton
+2. whate difference between if put the synchronzied in method and put the synchronized inside a method
+3. what is immutable ,for example a employee class with name and salary field,write a immutable class
+4. difference between string name='a' and string name=new String('a'),which is better
+5. what is final, without a final keyword, how to prevent a class being extends
+6. if there is a set and using for..loop and iterator to retrieve which one is better, if remove one data what will happen
+7. flex singleton
+8. give a example Application->vBox->button(label='submit'),talk about the life cycle
+9. what is difference between preinitialization and initialization
+10. give a example label component value of it bind with datagrid dataprovide,how to bind,  
+11. if set the lable visit=off,how to remove the bind
+12. cross script, if 2 swf file, one is written with as3 another is written with as2,how to communicated each other
+13. if a swf file catched in your browser, how to update it
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Sean Chen
+Type: Phone
+Date: 06/23/2011
+
+1. Your recent project?
+2. What have done with flex?
+3. Constrained based layout
+4. HBox vs Canvas
+5. How to set a bunch of buttons in the bottom right in Canvas? I said set the x and y properties in the component. Then he asked what if the component is resized?
+6. How to do skinning?
+7. How to do styling?
+8. How set a styling property in a component 
+9. Array vs ArrayCollection
+10. ItemRenderer. What interfaces do you use? How do you pass data from data provider to item renderer?
+11. If there are 1000 records, and only 100 rows on the data grid, how many item renderers are created? I said 100, once you scroll down, it would initialize a new item renderer. Then he asked what happened to the previous item renderers, are they still there?
+12. Which component has the property creation policy? How does it affect the performance?
+13. When would you use protected access control?
+14. What methods would you override when developing customizing components? When do they run? At the beginning of the initialization? Why would you call invalidateProperties instead of calling commitProperties directly? After component is created, when would call it again?
+15. Differences between debug player and release player?
+16. Why do you use try catch? What is finally block? What would flash player does if you don’t write try catch? What are differences in this situation between debug player and release player?
+17. How do you think about Cairngorm?
+18. Have you used other frameworks? I mentioned Parsley and Swiz. What are advantages?
+19. How do you configure BlazeDS? What channels do you use? Why do you use polling for remote objects?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Clement Liu
+Type: Phone
+Date: 07/19/2011
+
+1. Two way binding unlimited loop
+2. difference between changeWatch and [Bindable]
+3. ItemRenderer, how to specify the input item fields to itemRenderer
+4. How to add up and down arrow in datagrid cell
+5. Reverse a string in flex
+6. find out unique item 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Clement Liu
+Type: F2F
+Date: 07/26/2011
+
+1. Custom component add up and down arrow.
+2. Some design patterns
+3. Custom line chart
+4. Multithread
+5. Develop some function on a machine
+6. Algrithms
+7. AS Singleton
+8. Binding changeWatcher
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Clement Liu
+Type: Phone
+Date: 08/05/2011
+
+1. ItemEditor advance for itemRenderer
+2. Moduler vs RSL
+3. Spring hibernate integration
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Clement Liu
+Type: Phone
+Date: 08/09/2011
+
+1. config message stream and long pooling channel and some API
+2. Java generic
+3. immutable class
+4. Java multithread
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Terry Li
+Type: Phone
+Date: 08/15/2011
+
+1. what's difference between Flex 3 and 4?
+2. what's databinding? I answered 3 ways to do databinding. then he asked how databinding works in flex?
+3. what's itemrenderer? how did you use it? what's inline itemrenderer and custom itemrenderer, difference?
+4. what's module? what's differnece between module and RSL?
+5. what's testing framework did you use?
+6. what's BlazeDS?
+7. how to config blazeDS?
+8. how to integrate BlazeDS and Spring?
+9. how to config Spring with JDBC?
+10. how to use remote object? config?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Hosen Huang
+Type: Phone
+Date: 09/01/2011
+
+1. LineChart, want to hide some of the lines. 
+2. ItemRenderer 
+3. Cairngorm work flow, singleton  
+4. How to improve performance in Flex 
+5. DataBinding
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Gregory Gao
+Type: Phone
+Date: 02/08/2012
+
+1. What version of Flex I been using? 
+2. What's the differences between flex 3 and 4/4.5? 
+3. UI component life cycle. 
+4. Any memory leak in flex? 
+5. If flex works synchronized or asynchronies?
+6. What framework I been using? 
+7. Why do I use Cairngorm? Any benefit? 
+8. InvalidProperty()
+9.  Explain the bubbling in Flex. 
+10. What is the weak reference in Flex? 
+11. Differences between AS and other OOP languages. 
+12. What will display after running the following Java code: 
+	int[] x = {1,2,3};
+	System.out.println(x.getClass());
+13. Benefit of using Spring
+14. Any IOC, or AOP experiences? 
+15. Explain the garbage collection mechanism in Java. 
+16, If there has a connection between Java and Database, which should I use to close this connection? "finalize" or "finally"? 
+17, Are you good at multi-threading in Java? 
+18. What is the new package in Java 1.5 which are created for multi-threading? 
+19. Do you know any design patterns except Singleton? Explain them and where are you use it? 
+20. How to implements a Hashmap without use the Hashmap defined by Java API? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Vincent Wang
+Type: F2F
+Date: 03/22/2012
+
+1. how to select
+2. how to use java instead of SQL to get the same result
+3. binary search
+4. new datastructure for binary tree  to optimize searching node
+5. outer join, inner join, full join
+6. optimize function to find the same element in two array
+7. static syn and normal syn method
+8. finally block return what if try block has return something
+9. tranverse map
+10. large volumn using LCDS
+11. arrayCollection and array in Flex
+12. how to debug flex and java
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Jake Zhao
+Type: Phone
+Date: 07/19/2012
+
+1. How Cairngorm MVC works?
+2. What is flex event lifecycle? How to stop bubbling feature?
+3. Suppose we have an array. We want show the data in that array in two different DataGrid components but 
+   they has to be in different sorting order. How to do that?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Rachel Qi
+Type: Phone
+Date: 09/07/2012
+
+1. cairngornMVC 
+2. disadvantage of FrontController
+3. UI component
+4. algorism reverse a list
+5. event propergation
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Rocky Wang
+Type: Phone
+Date: 03/02/2013
+
+1. HashMap, HashTable
+2. Company-Employee relation, what kind of collection /structure you will use for date store? (TreeSet)
+3. If mention the School-Student Relation, What you should use?(Generics)
+4. back-end use ArrayCollection, What you will use for front-end?(Array-Collection)
+5. Person(Fname,Lname) - Front-end use Advanced-DataGrid, how to display FN,LN?(DataGrid)
+    display Fullname(LabelFunction) I said use ItemRenderer.
+6. base on 5 use itemrederer, if we have 10K data, how to display? ItemRenderer will be reuse?
+7. BlazeDS &LCDS(Back-end Integer -> null), Front-end(NaN)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Chris Wang
+Type: Phone
+Date: 04/18/2013
+
+1. There's array {'a','b','a'}, how to remove the duplicated elements in actionscript?
+2. How to reverse a string in actionscript?
+3. ItemRenderer Related Question
+    There is a object - employee in back-end, it includes 3 fields (fname, lname, years of work),
+    there is a datagrid in flex, draw a circle outside the number of working years when the number of years match some condition(eg. years>=10). Implement it!
+4. There're 3 components (TextInput A, TextInput B, CheckBox). B is bounded with A when the checkbox is checked, otherwise B is independent. Implement it!
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Gregory Gao
+Type: Phone
+Date: 07/15/2013
+
+1. Advanced datagrid vs datagrid
+2. Emmutable class
+3. Design patterns
+4. Item Renderer
+5. Provide data to item renderer
+6. Remote object
+7. Cairngorm MVC structure
+8. Parsley structure
+9. What are the benefit of each module in Cairngorm MVC
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Gregory Gao
+Type: F2F
+Date: 07/23/2013
+
+1. talk about yourself
+2. which part you want to work with? client-side or server-side
+3. talk about your current project
+4. talk about your previous Flex project
+5. advantage of using framework in Flex
+6. Flex Binding.
+7. array vs ArrayCollection
+8. error track in flex, in onError how to handle all errors in high level
+9. if user open a report file developed by Flex, how could the system know how long it takes.(I said Timer API) then he said if I open it longer. how to handle? then he said use Idle API.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Clare Shen
+Type: Phone
+Date: 02/04/2014
+
+1. Difference between abstraction class and interface. Which one you prefer to use.
+2. How to prevent others to new an object.
+3. Difference between stringbuilder and stringbuffer.
+4. Thread questions.
+5. Difference between hashmap and hashtable. How to make hashmap thread safe.
+6. How to improve the performance of query.
+7. hibernate cache.
+8. how to implement inheritance in spring.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Alex Chen
+Type: Phone
+Date: 02/28/2014
+
+1. Tell me about your project?
+2. How you use SOAP? Where to define SOAP handler?
+3. Explain Struts MVC?
+4. Give two table, select certain things(Left outer join)
+5. if a stored procedure runs slow, how to solve?
+6. collection, hashset, hashmap, hashcode, equals
+7. how to solve deadlock
+8. tech support questions.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Steve Liu
+Type: Phone
+Date: 04/09/2014
+
+1. Write the configuration of how you connect database using hibernate
+2. In the javascript environment, write codes that when the user click a button, a form would display on the webpage which will be able for the user to submit.
+3. Write java code to reverse a linked list.(need to consider different situations: for example the list is null )
+4. Write a POJO class in java
+5. Given an employee table which has name, id, salary as columns, select the one who earn the highest salary and select the one who earn the second highest salary.
+6. How to build your own exception? Could you extend nullpointerexception to build your own exception? Will runtime exception go through the catch block and will the finally block executed?
+7. How is HashTable implemented? Which method should be implemented for both key and value when we want to store object in it?
+8. Given an employee table which has name, id, manager id, salary. Show the employee¡¯s name and his/her manager.
+9. Do you think you are more like a front-end guy or a back-end guy?
+10. What is the biggest challange(you like the most) in you last project?
+11. Do you think that moving more logics to the front-end is good?
+13. What is your plan in the next five years? In which aspect does Morgan-stanley interested you?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Andy Chan
+Type: Phone
+Date: 06/17/2014
+
+1.introduction
+2.background
+3.how to use ajax
+4.ioc aop
+5.oop concept
+6.abstract with final keywords?
+7.give a case you use final keywords.
+8.cluster index ,non-cluster index.
+9.generics <? extends/super Object> 
+10.hashtable vs hasmap
+11. vs concurrent hashmap structure.
+12. unix check process
+13. dead lock
+14 trascation.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Charles Huang
+Type: Phone
+Date: 07/10/2014
+
+1. SpringMVC vs. StrutsMVC
+2. Collections
+3. ArrayList, remove duplicates
+4. Performance between Collections.synchronizedMap(map) and ConcurrentHashMap
+5. AJAX
+6. What is $ in JQuery
+7. CSS selector(id, class)
+8. Querys(Database)
+9. Index, does index lower the performance(answer is yes if there are many indexes on one table)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Ryan Chen
+Type: Phone
+Date: 07/14/2014
+
+1. a lot of Database questions, design, development
+2. Hibernate mapping
+3. Hibernate lazy loading
+4. Hibernate transaction
+5. Spring transaction
+6. HashMap
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Charles Huang
+Type: F2F
+Date: 07/17/2014
+
+1. How to find out whether the index is applied on the query.
+2. How to apply transaction management
+3. How to build one-to-many model in database
+4. How to build many-to-many model in database
+5. Find duplicates in a one-column database
+6. Difference between unique key and primary key
+7. What is the default scope in Spring?
+8. How to make Spring beans not singleton?
+9. How to apply transaction processing in java programming.
+10. Write a method to calculate factorial
+11. What is inner join and outer join
+12. What is the difference between Collections.synchronizedMap and ConcurrentMap
+13. What kind of collection would you use if we just want to run contains() method.
+14. How to write a singleton
+15. How to make singleton thread-safe and lazy-loaded.
+16. How to make a rest webservice not exposed to all users
+17. What is threadlocal and threadpool?
+18. What characteristic do you think are most important to a developer?
+19. Why do you think you are a good matching for this position?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Tracy Yang
+Type: Phone
+Date: 01/20/2015
+
+1. What you did in your project
+2. How you used Hibernate in your project
+3. Collections framework, if you have customer id and customer information, what collection type you will use to save the customer
+4. If customer id has duplicates, what collection you will choose
+5. For hashmap, if you insert twice with the same id but different information, what will happen
+6. How to minimize dead lock
+7. How to check the performance of stored procedure and how to improve the performance
+8. SQL query, customer(cid, cname), purchases(cid(fk),amount), list all the customers with their total amount
+9. Have you worked on MQ
+10. Have you worked on support
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Cassie Cheng
+Type: Phone
+Date: 05/07/2015
+
+1. Introduce yourself, you project
+2. what's your role in the scrum methodology
+3. what's the diference between Agile and waterfall
+4. Spring cache5
+5. AOP
+6. JavaScript Cache
+7. large image
+8. multiple webservices......complete
+9. How to prevent files download multiple times
+10. Database design
+11. Benefit of  transaction
+12. features of angularJs
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Jake Zhao
+Type: Phone
+Date: 06/24/2015
+
+1. stream data from back-end to web page, how to do that? (Web Socket)
+2. Java garbage collection memory model
+3. explain volatile and static
+4. contract between equals() and hashcode()
+
+-----------------------------------------------------------------------------------------------------------
+Client: Morgan Stanley, NYC
+Candidate: Vincent Li
+Type: Phone
+Date: 08/03/2015
+
+1.self intro
+2.JQuery, select an element
+3.$, what is JQuery variable, why it¡¯s an object not a function
+4.implement a new function, add a new function
+5.HTML, implement a web page,
+6.event propo
+7. media query
+8. cross domain ajax
+9.div, image, use a click on the image
+10.features of HTML5
+11.localstorage, when you use it and cookie
+12.limitation of data in cookie and LS
+13.JSON, other data types
+14.when to choose JSON
+15.using JS to solve the CB issue
+16.DB, difference between inner join and outer
+17.table emp,4 columns,id,name,salary,manager emp id, return all the emps who make more salary than the manager
+18.emp table,1 column, name, find duplicate
+19.3 thread, t a, t b, t c,
+20.what if a.s,b.s,c.s,then call a.j,b.j,c.j
+21.list of integers, remove duplicate

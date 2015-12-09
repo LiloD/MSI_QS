@@ -1,0 +1,79 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Symphony Teleca
+Candidate: Harry Xue
+Type: Phone
+Date: 12/19/2013
+
+1. how and why do you use prototype?
+2. find the second element after one element.
+3. how do you call Ajax in Javascript?
+4. how do you select dynamically generated element?
+5. how do you use bootstrap? what is the model of bootstrap?
+6. What is transition and transformation in CSS3?
+7. What are new features in HTML5?
+8. Top down and bottom up framework, which do you prefer?
+9. What is the difference between HTML5 local storage and CSS3 ? storage?
+10. What is pseudo function in jQuery?
+11. What is box model in CSS3? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Symphony Teleca
+Candidate: Michael Wang
+Type: Phone
+Date: 01/15/2015
+
+1. product development, how you involved in your project
+2. modify string value?
+3. array obejct
+4. spring ioc
+5. how to save object through servlet  api
+6. requirement of data store
+7. http session
+
+-----------------------------------------------------------------------------------------------------------
+Client: Symphony Teleca
+Candidate: Jack Fan
+Type: Phone
+Date: 01/15/2015
+
+1. global variable 
+2. can  controller in version 1.3.3 using global function?
+3. default format of date? small medium large
+4. ng-bing bind multiple property, command together?  true
+5. how to call parent constructor? $super $parent
+6. how to to configure route provider? supply or config?   config
+7. the route is key of one page application? True
+8. Who start AngularJS? Google it
+
+-----------------------------------------------------------------------------------------------------------
+Client: Symphony Teleca
+Candidate: Michael Wang
+Type: Phone
+Date: 01/23/2015
+
+1. struct 2, how it work
+2. hashset
+3. diff list vs set
+4. how to handle exception, types
+5. angularjs
+6. hibernate main feature vs jdbc
+7. hql vs sql
+8. native sql
+9. lazy-loading and eager
+10. hibernate cache
+11. JUNIT
+12. spring SCOPE
+13. depency injection
+14. setter injection and constructor injection
+15.AOP
+16. singleton
+17. thread, runnable
+18. jQuery advantages
+19. get and post
+20. restful advantages
+21. restful anotatioln
+22. angularjs scope
+23. communication between different controller scope in angularjs
+24. factory in angularjs
+table angularjs
+isolation scope of anualrjs

@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: QuinStreet
+Candidate: May Yuan
+Type: Phone
+Date: 06/19/2015
+
+1. what is the value of null==undefined
+2. is javascript pass by value or reference?
+3. Use strict directive
+4. JavaScript Lint
+5. Explain "this" keyword.
+6. Js inherit 
+7. What is the difference between null and undefined
+8. Falsy values in js

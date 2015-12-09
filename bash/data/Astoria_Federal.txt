@@ -1,0 +1,165 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Scott Yang
+Type: Phone
+Date: 07/31/2012
+
+1. What is the difference between session bean and entity bean?
+2. How to make a bean persistence?
+3. What is thread safe and how to do it?
+4. What is static in Java?
+5. What is garbage collection?
+6. Did you call garbage collection on your own?
+7. What are the difference between post and get?
+8. What is sql injection in JavaScript?
+9. What are the typical configurations in Hibernate?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Eric Wu
+Type: Phone
+Date: 10/10/2012
+
+1. What is the difference between session bean and entity bean?
+2. What is the 2 level session
+3. What is thread safe and how to do it?
+4. What is static in Java?
+5. What are the difference between post and get?
+6. What is sql injection in JavaScript?
+7. What is different between hashtable and hashmap.
+8. What is the right join and left join, give example about it.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Liam Guo
+Type: Phone
+Date: 10/12/2012
+
+1. What's your daily work
+2. Difference between session bean and entity bean
+3. What is multi threading
+4. What's thread safe and how to do it
+5. What's the difference between post and get
+6. What is sql injection
+7. What are the typical configurations in Hibernate?
+8. What you do in role control, how
+9. Explanation on design patterns you have mentioned in your resume
+10. Configuration of server
+11. Experience in project design
+12. How many percent of time you used for design
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Liam Guo
+Type: F2F
+Date: 10/17/2012
+
+1. Abstract class and interface difference
+2. Hashmap and hashtable difference
+3. SynchronizedMap
+4. Static fields
+5. How to gc a static field
+6. Jsp MVC
+7. Jsp embed another jsp
+8. For tomcat, where you can get the log4j logging file
+9. Spring hibernate integration
+10. Datasource of spring framework
+11. reflection
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Jay Gong
+Type: F2F
+Date: 12/13/2012
+
+1. Tell us yourself.
+2. What did you do in previous project?
+3. Explain your role in development?
+4. Tell us your Hibernate ORM and oracle experience?
+5. Do you have any experience on conversion application?
+6. Explain how do you use Hibernate? 
+7. What is static keyword in Java?
+8. What tag inside web.xml?
+9. Explain the mulit-threading and its feature.
+10. Do you have Maven experience?
+11. Your experience with IDE Eclipse.
+12. What design pattern do you use (Singleton, factory)?
+13. Explain factory pattern.
+14. Explain Singleton pattern.
+13. Do you have any experience on improving performance of an application?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Rachel Qi
+Type: Phone
+Date: 12/14/2012
+
+1. Tell us yourself.
+2. What did you do in previous project?
+3. Explain your role in development? EXPERIENCE
+4. what's in Hibernate file?
+5. What is static keyword in Java?
+6. Explain the mulit-threading and its feature
+7. What design pattern do you use except singleton? and explain,
+8. data base view?
+9. linux command? grep? chmod? daemon?
+10. difference between http vs https?
+11. SQL INJECTION?
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Rachel Qi
+Type: F2F
+Date: 12/20/2012
+
+1. experience 
+2. different users have to access different parts of fields in one table, how to solve the problem?
+3. code view 
+4. reflection
+5. static key word, how to define
+6. in jquery, Difference between bind() vs live() 
+7. in jquery, how to access attribute
+8. what’s in web.xml
+9. different layers between DB to frontend
+10. synchnized map
+11. difference between hashtable and hashmap
+12. how to configure log4j in tomcat
+13. how to debug on server
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Stanley Li
+Type: Phone
+Date: 03/25/2013
+
+1. Diff between abstract and interface.
+2. Java: diff between == and equals
+3. What is finally block and in which case finally block don’t get called.
+4. How to prevent cross-site scripting and sql injection.
+5. Diff between post and get.
+6. Diff between static and non-static.
+7. Does static get garbage collected?
+8. What is Materialized view in oracle.
+9. What design patter you used in your projects.
+10. Diff between HTTP and HTTPS? 
+11. What’s the port number for HTTPS? (Answer: 443)
+12. What is your first step if you get 500 errors when you start up server.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Astoria Federal
+Candidate: Stanley Li
+Type: F2F
+Date: 03/27/2013
+
+1. experience in previous two project, in details
+2. CVS how to solve confliction 
+3. Different users have to access different parts of fields in one table, how to solve the problem?
+4. If a request in backend need very long time to process, what would you do
+5. Explain MVC
+6. Code review: List traversal, reflection
+7. Reflection explain
+8. Javascript, id selector
+9. Hibernate mapping file explain
+

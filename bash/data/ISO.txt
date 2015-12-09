@@ -1,0 +1,45 @@
+-----------------------------------------------------------------------------------------------------------
+Client: ISO, Jersey city, NJ
+Candidate: Rachael Qi
+Type: Phone
+Date: 09/04/2011
+
+1. Difference between set and linklist
+2, difference between string, string buffer, string builder
+3, primitive type
+4, add in the middle of the list
+5, benefit of dependency injection
+6, final, finalize, finally  	
+7, final hashmap	
+
+-----------------------------------------------------------------------------------------------------------
+Client: ISO, Jersey city, NJ
+Candidate: Rachael Qi
+Type: F2F
+Date: 09/06/2011
+
+1. object orientation design card play game 
+2. stuts2
+3. hibernate lazy loading
+4. program check there are same characters in string
+5. arcGIS
+
+-----------------------------------------------------------------------------------------------------------
+Client: ISO, Jersey city, NJ
+Candidate: Jackie Zhu
+Type: F2F
+Date: 11/03/2014
+
+1. How do you implement decorator pattern in your project?
+2. Write Unit Test to test the performance of the code
+3. In an array, find the first two numbers that sum up to 10
+4. In a string, find the first two adjacent characters that are the same. 
+
+-----------------------------------------------------------------------------------------------------------
+Client: ISO, Jersey city, NJ
+Candidate: Bill Han
+Type: F2F
+Date: 11/03/2014
+
+1. How to sort in one collection
+2. How to select the first two adjacent Duplicate char.

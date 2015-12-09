@@ -1,0 +1,214 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Photon, Chicago, IL
+Candidate: Charles Lai
+Type: Phone
+Date: 06/21/2012
+
+1. how do you use multi-threading
+2. Tell abouy your previous project. What challenge you meet in your previous project 
+3. How do you do AOP in Spring
+4. Transaction management in Spring
+5. How do you do testing 
+6. How to call store procedure 
+7. Flex LabelFunction
+8. How to test HTML
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon, Chicago, IL
+Candidate: Stephen Liu
+Type: Phone
+Date: 12/2/2013
+
+1. CSS3 feature
+2. HTML5 new attributes and features
+3. CSS audio and video tag, how it work?
+4. backbone.js, why you use it
+5. resize the screen depending on the device.
+6. HTML5 file operation, how it work in offline situation
+7. HTML web worker, how it work
+8. HTML web storage: localStorage and sessionStorage.
+9. HTML5 semantic tag
+10. HTML5 app cache
+11. AJAX data, datatype workflow
+12. closuer, example
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon, Chicago, IL
+Candidate: Colin Xiong
+Type: Phone
+Date: 12/20/2013
+
+1. about the project
+2. closure
+3. inheritance(prototype)
+4. jquery one
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Lucas Niu
+Type: Phone
+Date: 01/13/2014
+
+1. tell me about your current project.
+2. explain override, what kinds of method can't be override?
+3. what is stack? how did you implement it?
+4. what is queue? how did you implement it?
+5. what design pattern you used? give example.
+6. how to implement hashmap?
+7. how did you create restful web service?
+8. how to integrade spring with hibernate?
+9. Is hibernate session thread-safe?
+10. how to write singleton?
+11. how to create only one singleton object in your eclipse?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Lucas Niu
+Type: Phone
+Date: 01/16/2014
+
+1. tell me about your current project.
+2. what is immutable? what is the benefit of using immutable?
+3. string and stringbuffer? advantages and disadvantages?
+4. different between arraylist and vector. 
+5. how to make arraylist threadsafe? performance between this one and vector.
+6. how did you use spring security?
+7. serilizable and externalizable.
+8. what field can't be serilized?
+9. when using spring mvc, how to convert java object into json object?
+10. how to create only one singleton object in your eclipse?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Steve Liu
+Type: Phone
+Date: 01/31/2014
+
+1.Talk about yourself
+2.Explain Polymorphism. Compile time, overload and override
+3.Explain servletContext and servletConfig
+4.Difference between ArrayList,LinkedList and Vector
+5.Explain Interface and Abstract
+6.What is a marker interface,give examples
+7.Explain Serializable,Can a static method be serialized and deserialized,why?
+8.Tell me the JSP implicit objects
+9.Explain GenericServlet and HttpServlet
+10.Explain MVC and spring MVC
+11.Difference between HashMap,HashTable and ConcurrentHashMap.
+12.Spring IOC
+13. aRRAY lIST vs Vector
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Veronica Tian
+Type: Phone
+Date: 02/12/2014
+
+1. give the introduction about yout latest project?
+2. What methodology you have used in your latest project?
+3. Tell me the benefit of agile ?
+4. have you used spring, which project have you used spring?
+5. are you aware of spring annotation? how do you used the annotation? do you know the difference between autowire and intercepter annotation?
+6. how do you do lock in hibernate ?
+7. between Hibernate templete and spring dao templete , which one is better ?which one is more lightweight?
+8. do you aware WSDL ? how do you used it in your project?
+9. do you know JSP ? about the init() method, when do you call init() method and what parameter you use in init() method?
+10. do you aware of XML , do you know different parsers in XML?
+11. do you aware of JSP tags? besides the default tags, how to do the customized tag ?
+12. In maven, if you want to add the jar file, which tag will you use?
+13. In tomcat server, how to change the format of xml file?
+14. Between Rest web service and SOAP web service, which one is more secure?
+15. when using spring mvc, how to convert java object into json object?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Alex Chen
+Type: Phone
+Date: 02/14/2014
+
+1.Talk about yourself.
+2.Talk about your project.
+3.What methodology you use? Benefit of agile?Disadvantages?
+4.Spring annotation, autowire, intercepter.
+5.Spring integration.
+6.2--3 question about config tomcat server.
+7.In maven, how to add jar files
+8.difference between soap and rest
+9.how to use rest in spring
+10.how to convert java object into json
+11.xml parser, which you use, why , benefits?
+12.database, functions, stored procedures, retun value
+13.jsp with initial parameter
+14.jsp with customize tags
+15.how to solve memory leaks
+16.how to manage code styles
+17.spring hibernate dao support
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Veronica Tian
+Type: Phone
+Date: 02/14/2014
+
+1. tell me something about your current project?
+2. what web service have you used before?
+3. Could you tell me the difference between Rest and Soap?
+4. if you want to use rest to do the web service , which framework will you choose?
+5. how to change the context block in xml ?
+6. Tell me the tool you have used in your previous project ?
+7. how did you use maven in your previous project ?
+8. if your web service worked very slow , how to check the problem and improve the performance?
+9. Do you aware of TDD environment?
+10. agile benefit
+11. SVN
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Ray Shi
+Type: Phone
+Date: 02/19/2014
+
+1.Spring IOC DI
+2.Why use hibernate instead of JDBC?
+3.Design Pattern
+4.Singleton, what's its disadvantage?
+5.Web Service
+6.Do you use Struts before?
+7.have you use maven before?
+8.Unit test
+9.how write test case?
+10.agile
+11.how many people in your team
+12.SDLC
+13.scrum
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: Ray Shi
+Type: Phone
+Date: 02/20/2014
+
+1. Introuduce yourself
+2. Agile
+3. Scrum
+4. Code review
+5. have you use WebService before?
+6. which version of web service you use?
+7. how do you use restful web service?
+8. jira
+9. how to check your web service?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Photon
+Candidate: John Dong
+Type: Phone
+Date: 07/30/2014
+
+1. Tell me about your current project.
+2. Have you implemented JS in the current project?
+3. Have you used third party JS library? JQuery?
+4. Have you designed CSS for different resolution devices?
+5. Have you used Web Service? Is that a provider or consumer?
+6. How to monitor server memory usage?
+7. Have you used JUnit?  How to test a class which needs injection bean?
+8. Have you used any java debugging tool?

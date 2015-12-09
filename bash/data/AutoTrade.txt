@@ -1,0 +1,17 @@
+-----------------------------------------------------------------------------------------------------------
+Client: AutoTrade
+Candidate: Wesley Wei
+Type: F2F
+Date: 03/14/2013
+
+1. talk about you recent project
+2. what kind of middleware do you use, talk about the data logic
+3. what did you do in your project
+4. how did you do using continuous intergration tool and version control tool
+5. what is session facad design patten
+6. what difference between cluster index and noncluster index
+7. how do you do the sql tuning
+8. what kind of orm mapping framework
+9. how to do the system integration
+10. how do you write the unix script, give some example.
+11. compare the soap and json in the system integration 

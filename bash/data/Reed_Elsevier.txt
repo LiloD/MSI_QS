@@ -1,0 +1,96 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Reed Elsevier
+Candidate: Kyle Feng
+Type: F2F
+Date: 08/11/2014
+
+Three rounds, two interviewers in each first two rounds, ask 
+questions about everything on the resume. 
+The third round is written test. There are about 16 questions on 
+sheets. All of them are really tricky front-end questions about 
+
+HTML, CSS, and JavaScipt. 
+1. what color is that?
+<style>
+   .c {color: yellow}
+   div {color: red !important}
+   #a {color: blue}
+   .b {color: green}
+</style>
+<body>
+   <div id="a" class="b"><p class="c">abc</p></div>
+</body>
+2. Give a scenario of CSS, point out at least 2 IE7 not support.
+3. HTML
+4. What is the output
+<script>
+   function a(x) {
+      var count = 2;
+      count++;
+      return function b(y) {
+	return x + y + count;
+      }
+   }
+   var first = a(5)
+   alert(first(7));
+   var second = a(4)
+   alert(second(9));
+</script>
+5. What is the output?
+<script>
+   var x = 0;
+   function a() {
+      x = 1;
+      alert(x);
+   }
+   function b() {
+      var x = 2
+      alert(x);
+   }
+   function c() {}
+   a();
+   b();
+   c();
+</script>
+6. What is the output?
+<script>
+   var person = {
+      alert(x);
+      'name' : 'peter',
+      age : 21,
+      'age' : 42,
+      'who' : 'name',
+      'children' : [ {
+  	'name' : 'chris',
+	'age' : '16'
+      },
+      {
+	'name' : 'meg',
+	'age' : '18'
+      } ],
+      'msg' : function(message) {
+	return 'Hello, ' + this.name + ". " + message;
+      }
+   }
+   alert(person.age);
+   alert(person[age]);
+   alert(person.who);
+   alert(person.children[1].name);
+   alert(person.children[2].age);
+   alert(person.msg);
+</script>
+7. Differences between == and ===?
+8. Differences between promise and callback?
+9. Compare the performance of a, b, and c and explain why
+<script>
+   var a = 1;
+   (function test() {
+      var b = 2;
+      (function test2() {
+	var c = 3;
+	alert(a);
+	alert(b);
+	alert(c);
+      })();
+   })();
+</script>

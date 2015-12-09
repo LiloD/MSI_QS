@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Aspect
+Candidate: Moe Wu
+Type: Phone
+Date: 05/27/2015
+
+1. What if the query is slow?
+2. Disadvantage of inheritanace and how to replace it.
+3. What junit looks like
+4. Inheritance in hibernate
+5. Code review 
+6. Directive in angular
+7. Garbage collection
+8. Learn new technology

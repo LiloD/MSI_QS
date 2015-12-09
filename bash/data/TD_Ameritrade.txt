@@ -1,0 +1,112 @@
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Peter Wang
+Type: Phone
+Date: 10/24/2012
+
+1. HashMap vs HashTable
+2. Give an example of customized UI component
+3. What is the usage of ActionMapping
+4. How does data push work?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Peter Wang
+Type: Phone
+Date: 10/26/2012
+
+1. what have you done?
+2. event propagation
+3. differencet abstract class and interface
+4. features of object oriented
+5. hibernate advantage 
+6. agile
+7. flex: ui components life cycle
+8. situational questions: item renderer
+9. what is the call for options in the financial project?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Peter Wang
+Type: F2F
+Date: 11/13/2012
+
+1. What is class loader? What does class loader use in Tomcat?
+2. What is polymorphism?
+3. What is wsdl and how does it use?
+4. select id, count(*) from table1 group by id 
+   union (select id,count(*) from table2 group by id)
+5. The process of BlazeDS
+6. What is itemrenderer and how does it use?
+7. The usage of cairngorm MVC
+8. Talk about how to use header checkbox.
+9. When to use abstract class or interface?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Bill Gui
+Type: Phone
+Date: 03/22/2012
+
+1. your project
+2. what do you use for aynchronouse call to back-end?
+3. what do you want to avoid when using javascript?
+4. do you use any of framework for JS?
+5. what do you like about java and dont like about java?
+6. have you worked on any project that store only in the front-end, and doing logic on front-end
+7. have you worked on any project like JavaMail?
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Charles Zhang
+Type: Phone
+Date: 05/22/2013
+
+1. Jquery add attribute
+2. How to do Ajax synchronize
+3. Node.js compile engine and working environment
+4. What’s backbone.js? how to use backbone JS? Why to use backbone js?
+5. What’s different between HTML 5 and 4?
+6. What’ s response design and How to do response design by CSS?
+7. Do you know CSS framework? Like x,x,x.
+8. Do you know single page application? 
+9. Use javascript to call ajax by which API?
+10. Does HTML5 <nav> tag supported in IE? If not, how to let it support in IE?
+11. What’s literal annotation? And how to do that in Javascript?
+12. How to create a class in javascript?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Ryan Jing
+Type: Phone
+Date: 01/28/2014
+
+1. JVM
+2. Memory allocation in JVM.
+3. GC
+4. classloader
+5. Sorting algorithms.
+6. GoF
+7. Junit testing adding new functions.
+8. Race condition, how to solve.
+9. Thread pool.
+10. Join(), yield()
+11. hashcode.
+
+-----------------------------------------------------------------------------------------------------------
+Client: TD_Ameritrade
+Candidate: Ryan Jing
+Type: Phone
+Date: 02/03/2014
+
+1. Architecture question. Desgin a parking garage. 
+2. Make single linked list by using immutable node.
+3. Debugging a thread pool.
+4. How to tracking GC.
+5. Proxy design pattern.
+6. Design you own web application system by using:
+(1) Limited resource.(As a startup company);
+(2) Unlimited budgets.
+7. Agile team. SDLC model.
+8.One mistabke you have made.

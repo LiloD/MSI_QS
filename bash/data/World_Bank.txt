@@ -1,0 +1,52 @@
+-----------------------------------------------------------------------------------------------------------
+Client: World Bank, DC
+Candidate: Gregory Gao
+Type: Phone
+Date: 01/31/2012
+
+1. What are the differences between Array and ArrayCollection in Action Script? 
+2. What method(API) should be used to avoid duplicate adding for a ArrayCollection? 
+   Ans: ArrayCollection.contains(). 
+3. What are the differences between "State" and "ViewStack" in flex? 
+4. What is custo domain, in web service? (The key word was not familiar, so doesn't know if 
+   the pronunciation and spelling is correct or not).
+5. What is Runtime Shared Library in Flex? Why do we use it? 
+6. Talk about the cairngormMVC. 
+7. If there has some information in the front view, how does it go through this Cairngorm structure? 
+8. What is the business delegator doing in CairngormMVC? 
+9. What's the different between abstract class and interface in Java? 
+10. What does "outer join" means in Database? 
+11. What does "union" means in Database? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: World Bank, DC
+Candidate: Rocky Wang
+Type: Phone
+Date: 03/29/2013
+
+1. Background and experience
+2. How many people work on your latest project
+3. experience of LCDS/BlazeDS
+4. WorkFlow in Cairngorm MVC? How do they work?
+5. How to communicate between Java and Flex?
+6. 10 records, 2 of them changes in datagrid, how Java know that?
+7. Union and outer join (sql question)?
+8. Did you involve in architecture work in your latest project?
+9. Two Array, each has 3 records and duplicate elements. how to merge into one array without duplicate element and sorted.
+10. difference between html and flex.
+
+-----------------------------------------------------------------------------------------------------------
+Client: World Bank, DC
+Candidate: Chris Wang
+Type: Phone
+Date: 03/29/2013
+
+1. Talk about your background and experience
+2. How many people work on your latest project
+3. Talk about your experience on LCDS/BlazeDS
+4. What components in Cairngorm MVC? How do they work?
+5. How to communicate between Java and Flex?
+6. There are ten records, 3 of them changes in datagrid, how Java know that?
+7. What's the differences between union and outer join (sql question)?
+8. Do you know parsley?
+9. Did you involve in architecture work in your latest project?

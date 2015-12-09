@@ -1,0 +1,107 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Blue Cross Blue Shield
+Candidate: Wesley Wei
+Type: Phone
+Date: 03/11/2013
+
+1. java api collection
+2. singleton
+3. xpath
+4. observation design patten
+5. wsdl file,how did you use in  you project
+6. rest ws,how did  you use
+7. hotkey for debug in eclipse
+8. what ide do you familiar 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Blue Cross Blue Shield
+Candidate: Stanley Li
+Type: Phone
+Date: 03/20/2013
+
+CSS:
+1. What does dot sign do in css?
+2. What does # sign do in css?
+3. How to select element in css?
+JavaScript:
+1. What’s the difference between == and ===? Give an example
+2. What is the difference between html(), text() and val()?
+3. How to do delay in Javascript?
+4. What is inside AJAX call?
+5. How to define post or get in AJAX call?
+6. What is event propagation in JavaScript?
+7. How to stop event propagation?
+Struts:
+1. What is inside struts-config.xml?
+2. How to define an action class?
+3. What is inside actionservlet?
+4. What’s the difference between normal servlet and actionservlet?
+5. What’s the difference between struct1 and struct2?
+6. How to do action mapping?
+Spring
+1. How to define singleton?
+2. What else can you define in scope?
+3. How to integrate Spring and Struts?
+Hibernate:
+1. Have you seen StaleObjectStateException before? Why it happens?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Blue Cross Blue Shield
+Candidate: Rocky Wang
+Type: Phone
+Date: 08/23/2013
+
+1. Introduce yourself
+2. talk about polymorphic
+3. abstract class vs interface and go deep into the abstract keyword like class variable and method,  
+4. final keyword
+5. synchronized key word
+6. generics
+7. array and arraylist
+8. webservice design question 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Blue Cross Blue Shield
+Candidate: Rocky Wang
+Type: Phone
+Date: 08/28/2013
+
+1. describe the web service you designed for your previous project
+2. what is the different between SOAP and RESTful Web Service(for data type)
+3. how the SOAP web service consume the XML data, the exactly API(XMLParse)
+4. what is Java Generics? what is the advantage of generics
+
+-----------------------------------------------------------------------------------------------------------
+Client: Blue Cross Blue Shield
+Candidate: Charlie Li
+Type: Phone
+Date: 01/18/2015
+
+1. trigger
+2. having vs where
+3. clob vs blob
+4. table(firstname, lastname)----->firstname repeat most
+5. what collections have you used
+6. find list duplicate string
+7. serialization
+8. serialization used in what case
+9. final finalize finally
+10. autoboxing
+11. how to connect database
+
+-----------------------------------------------------------------------------------------------------------
+Client: FEPOC / Blue Cross Blue Shield
+Candidate: Oscar Ni
+Type: F2F
+Date: 05/22/2015
+
+1. Restful Service
+2. Struct work flow and config
+3. jQuery: what version, 
+4. JSON validation
+5. Front-end back-end communication.
+behaviour questions:
+1. How to be a good programmer.
+algorithm:
+1. sort a char list containing ‘A’-‘Z’
+What if including digits?

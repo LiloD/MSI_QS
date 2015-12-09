@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Ventraq
+Candidate: Scott Yang
+Type: Skype
+Date: 07/30/2012
+
+1. What is the difference between object and object proxy.
+2. If you create an itemrenderer, using mxml or action script, which do you prefer?
+3. How do you use actionscript to call java method?
+4. How do you use actionscript to call javascript method?
+5. Does actionscript have abstract class?
+6. How do you implement a component using customize event?
+7. How to deal with memory leakage in java application?
+8. Swing component.
+9. What is weak reference in flex?
+10. How to determine a memory limit for a java application?
+11. How to create java multithread?
+12. What is a top level class?
+13. What are the benefits using application server?
+14. In database, what is cascade=”delete”?
+15. What is the command to display contents in a folder in Linux?
+16. What is the command to display processes in Linux?
+

@@ -1,0 +1,136 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Citco
+Candidate: Aaron Luan	
+Type: Phone
+Date: 05/02/2013
+
+1. Tell me about yourself
+2. backend or frontend?
+3. How to do the selection in jQuery?
+4. What if there are conflict about "$"?
+5. jQuery UI? (auto-completion, validation)
+6. Difference between Struts1 and 2
+7. multiple submission in Struts
+8. In servlet what is the difference between doGet and doPost?
+9. How to use the get and post? When should use get/post?
+10. Talk about AJAX. How to use?
+11. Talk about Spring. 2.5 and 3. What is the annotation/jarfile? Example of annotation? What is the difference? Spring controller how to determine is view or message body?
+12. Transfer to JSON automatically.
+13. Bean configuration in XML file. DispatchServlet.xml
+14. What type of the spring injectons? 
+15. what about the wiring?
+16. How to configure hibernate, hibernate.cfg.xml.what is the parameters?
+17. How to injection beans, setdatasource.
+18. How to integration hibernate with spring.
+19. Hibernate util and session factory(Singleton in the util file). How to start a session? How to do the transaction? Batch processing in Hibernate.
+20. What design pattern you have used, when? why?
+21. What problem you have faced in last project? how to solve that?
+22. Performance issue in your last project? How to solve that?
+23. Multithread issue, how to used it in your project?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Citco
+Candidate: Aaron Luan	
+Type: Phone
+Date: 05/08/2013
+
+1. externalizable vs serializable
+2. your responsibility about your project ,  say something about its architect
+3. wait( int ) usage
+4. application monitoring tools, talk about stat
+5. suppose you are filling a form, then you left for a long time, and form is finished in half way, question is, if session now detect that you have left and then closed, how system could save the information
+6. if i have a java standalone application, and it is crashed or closed manually then how do you restart it without monitoring it.
+7. some portlet question
+8. manually load application context, when do you use that.  
+9. jpa vs hibernate
+
+-----------------------------------------------------------------------------------------------------------
+Client: Citco
+Candidate: Mike Ouyang
+Type: Phone
+Date: 06/07/2013
+
+1. Talk about your last project? What is your responsibility?
+2. Do you have the experience on the database? which one?
+3. In Oracle, what is the index? How to implement that?
+4. How to eliminate the duplicate element in the database? 
+5. How to find the duplicate element in the database?
+6. What kind of application server you have used in your previous projects?
+7. What is IOC? What is the advantages of that?
+8. How to define a application that will run 24/7 and run immediately after the server start (in Tomcat)?
+9. Talk about the biggest challenge in your previous experience.
+10. If you get a task that has three days time limit and you found you can not finish it on the last day, what will you do?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Citco
+Candidate: Mark Zhang
+Type: Phone
+Date: 07/24/2013
+
+1. Tell me about yourself and your last project, tell me about your first project.
+2. Percentage of back end and the front end, what kind of front-end technologies you use?
+3. Generics
+4. SpringMVC
+5. What is MVC
+6. Sychronized key word, how to make codes synchronized
+7. Hibernate, how to save data, how to retrieve data
+8. Functions in database VS. stored procedure
+9. Ajax, what is the SpingMVC controller, how to configure
+10. What’s the return value of the controller, how to handle data receive from SpringMVC
+11. Collection framework, difference of Set and List, how Set remove duplicate, how does the hasdCode() method work?
+12. jQplot
+13. JUnit, describe “Set up before”.
+14. Have you ever use Teardown?
+15. What is singleton, how to implement it?
+16. Do you have any questions to ask?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Citco
+Candidate: Charles Fu
+Type: F2F
+Date: 02/11/2014
+
+1 Introduce yourself
+2 Talk about how you use ExtJS in your project?
+3 Explain hibernate table inheritance?
+4 How hibernate implement lock on table?
+5 Which one do you prefer, ExtJS or JQuery?
+6 Talk about multi-thread in core java?
+7 How to keep thread-safe in JDBC?
+8 How you implement pagination in ExtJS?
+9 How you deal with big data loading in front-end page?
+10 Given a scenario, how you prevent double submit in web page?
+11 Talk about design pattern you use in your project?
+12 Explain Spring IOC .
+13 Explain Spring AOP and how you use that in your project?
+14 Talk about your last project.
+15 How you implement many-to-many in Hibernate?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Citco
+Candidate: Paul Liu
+Type: Phone
+Date: 06/05/2015
+
+1. Last Project
+2. How long have been worked with Angular
+3. How to declare scope
+4. Have you written directives
+5. When Angular will trigger $digest
+6. Have you used ui-router
+7. css, position
+8. Have you used icons, image or custom font.
+9. Have you used css animation.
+10. In javascript, how to print out the length
+11. regex.
+12. Parse json in java => gson
+13. JUnit, mock and stub
+14. Expection & Error have the same parent class?
+15. Example of group by
+16. two threads come to DB and what to update, we should lock the first one.
+17. Limit the result set from 10000 to first 1000                    
+18. Example of group by
+19. two threads come to DB and what to update, we should lock the first one.
+20. Limit the result set from 10000 to first 1000.
+21. Eclipse plugin you used. Ant
+22. Can you use JBOSS to change one application at a time.

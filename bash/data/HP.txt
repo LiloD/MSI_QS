@@ -1,0 +1,77 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Mahindra Satyam/HP
+Candidate: Bill Gui
+Type: Phone
+Date: 01/07/2013
+
+1. what does "code quality" mean to you?
+2. do u do flex unit? do u think ur company has done enough flex unit test?
+3. how do u ensure that VO is consistent with Java beans?
+4. what programming procedure do ur company follow?(MVC)
+5. what is procedure of the ur app?
+6. do u write requirement document?
+7. how do you pull string locally?
+8. what mock up does ur document use?
+9. how do u like flex compared to html&js?
+10. have u ever work with document team?
+11. what is blazeDS?
+12. do ur QA write the string display to the user or the developer?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Mahindra Satyam/HP
+Candidate: Bill Gui
+Type: Phone
+Date: 01/10/2013
+
+1. given a mockup to program in Flex to show it
+2. left hand navigator with tree structure, how to search for a particular tree
+3. what is structure in cairngorm, explain it in details
+4. how to click left-hand and show information on the right hand
+5. tell me about ur responsibility in  ur team
+
+-----------------------------------------------------------------------------------------------------------
+Client: HP / USPS
+Candidate: Lucas Hu
+Type: Phone
+Date: 05/22/2013
+
+1. StringBuilder vs StringBuffer
+2. What is serialization
+3. HasTable vs HashMap
+4. What is spring bean wire
+5. How to start a jQuery program
+6. Do you know responsive design
+7. Do you know Hibernate
+8. left join vs inner join
+
+-----------------------------------------------------------------------------------------------------------
+Client: HP / USPS
+Candidate: Jake Zhao
+Type: Phone
+Date: 05/21/2013
+
+1. JavaScript how to submit a user input?
+2. JavaScript how to hide an element?
+3. How to remember to user login session in both back-end and front-end?
+4. Java Abstract Class vs. Interface?
+5. How to push data from front-end to back-end?
+
+-----------------------------------------------------------------------------------------------------------
+Client: HP 
+Candidate: Paul Liu
+Type: Phone
+Date: 05/22/2013
+
+1. Last project
+2. What modules of Spring you used.
+3. Throw vs Throws
+4. What is Transient variable
+5. What is serialization in Java
+6. Have you implemented any J2EE design pattern
+7. String vs StringBuffer vs StringBuilder
+8. Spring Bean scopes
+9. What is bean wiring
+10. What is the staring point of execution jQuery
+11. Can we have multiple document.ready()
+12. What kind of CDN you used
+13. inner join vs left outer join

@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Motorola
+Candidate: Jill Zou
+Type: Phone
+Date: 03/12/2014
+
+1. self introduction
+2. recent project
+3. Chrome extension
+4. HTML
+5. CSS
+6. Android

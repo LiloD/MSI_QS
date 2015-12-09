@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------------------
+Client: SCI Group
+Candidate: Gregory Gao
+Type: F2F
+Date: 01/17/2013
+
+1. Introduce your self
+2. What technologies have you been using?
+3. Where is the strongest part of your technologies?  
+4. What is the best position for you?
+5. Tell me about the SDLC and what's your experience for each phase you have ever enrolled? 
+6. Migration experience
+7. Database experience
+8. J2EE experience
+9. Core Java experience
+10. What environment have you been using? Introduce each one base on your experience. Like each of the following: IDE, Testing Tools, Databases, Operating Systems, Framework Tools, Programming Languages, Servers, Version Control Tools. 
+11. Developing team, developing methodology, and developing cycle.
+12. Experience of Java, Flex, Spring, Struts, Hibernate, Database and other technologies. 
+13. Master and Bachelor degrees. 

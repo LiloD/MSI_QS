@@ -1,0 +1,32 @@
+-----------------------------------------------------------------------------------------------------------
+Client: CGI
+Candidate: Jeff Hsieh
+Type: Phone
+Date: 09/09/2013
+
+1. How did you use search in Hibernate?
+2. How to enhance the performance of Hibernate?
+3. What is cascade and inverse?
+4. How to do it without cascade?
+5. Did you use native SQL, HQL or Store procedure?
+6. Difference between HQL and SQL.
+7. How to use getNameQuery
+8. What is the transaction?
+9. What kind of feature did you use in Spring?
+
+-----------------------------------------------------------------------------------------------------------
+Client: CGI
+Candidate: Samuel Tian
+Type: Phone
+Date: 09/23/2013
+
+1. any experience with JSF?
+2. The differences between spring setter injection and constructor injection?
+3. what is interface injection?
+4. Why do we use constructor injection? what problems will happen when using constuctor injection?
+5. cache in hibernate?
+6. what is spring transaction and what is spring tansaction management?
+7. how did you use spring integrated with hibernate in your last project.
+8. spring mvc workflow?
+9. why do we use second level cache. and what happens when different jvm trying to use data in second level cache?
+10. what is spring prototype?

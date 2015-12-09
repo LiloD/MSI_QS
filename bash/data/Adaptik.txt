@@ -1,0 +1,13 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Adaptic
+Candidate: Steven Liu
+Type: Phone
+Date: 11/21/2013
+
+1. what is javascript namespace, what is for
+2. two functions have the same name in javacript
+3. what is CSS important mean
+4. how to find out a variable is declared or not
+5. Ajax to sychronize
+6. how did you use jquery, any plugin use?
+7. override in javascript

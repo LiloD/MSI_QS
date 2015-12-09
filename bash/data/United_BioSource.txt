@@ -1,0 +1,32 @@
+-----------------------------------------------------------------------------------------------------------
+Client: United BioSource Corporation
+Candidate: Jack Zhang
+Type: Phone
+Date: 11/28/2012
+
+1. what’s the difference between String, StringBuffer, and StringBuilder. Which one would you use for multi-threading environment.
+2. What’s ClassCastException? Give me an example. Will it happen when you cast Abstract Class to Concrete Class.
+3. finally block
+4. Struts MVC. Who is the controller, who is the model. Which layer is model in. 
+5. What is ActionMap? Instead of JSP? (tile)
+6. Any framework used in javascript?
+7. HTTP multi requests from the same user. Your experience. 
+8. Give me example of many to many mapping in relational table
+9. what’s the difference between char and varchar.
+
+-----------------------------------------------------------------------------------------------------------
+Client: United BioSource Corporation
+Candidate: Jay Gong
+Type: Phone
+Date: 12/04/2012
+
+1. what the difference between String, StringBuffer, and StringBuilder. Which one would you use for multi-threading environment.
+2. What ClassCastException? Give me an example. Will it happen when you cast Abstract Class to Concrete Class.
+3. finally block
+4. Struts MVC. Who is the controller, who is the model. Which layer is model in. 
+5. What is ActionMaping?
+6. HTTP multi requests from the same user. Your experience. 
+7. Give me example of many to many mapping in relational table
+8. what the difference between char and varchar.
+9. what the difference between delete and truncate.
+

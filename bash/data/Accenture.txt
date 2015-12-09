@@ -1,0 +1,81 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture
+Candidate: Peter Wang
+Type: Phone
+Date: 11/14/2012
+
+1. What’s new features in Java 5
+2. What’s wildcard in Generics?
+3. What’s enum type and how does it use?
+4. If add multiple duplicate elements in one Set, what’s the size of set?
+5. How to sort a list of string, and how to revert?
+6. What’s the difference b/w include and import in JSP?
+7. What’s the main component in Struts?
+8. What are the types of ActionForm
+
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture
+Candidate: Bill Gui
+Type: Phone
+Date: 02/05/2013
+
+1. target and current target
+2. give a speicific scenario to say which one is target and which one is current target
+3. datagrid how to make one column color change according to the data?
+4. scenario questions about flex component
+5. changewatcher
+6. how to know that which call made to the back-end if there are many
+7. how many itemrenderer created if have 10 visible rows
+8. how to point to a text label from a popup window
+9. HM how to put objects in
+10. JVM data structure
+11. transaction management
+12. synchronized key word 
+ 
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture
+Candidate: Anna Li
+Type: Phone
+Date: 02/13/2013
+
+1. Introduce yourself.
+2. What Collections have u ever used.
+3. What is the difference between Set and List.
+4. What is Serializable, and when do you use it.
+5. What is Singleton, when do you use it.
+6. What is OOP.
+7. What is Servlet
+8. Have you ever used Cairngorm?
+9. How many server instance are there in web application? How it handle different client calls.
+10. What is Flex Binding.
+11. What is Flex event livecycle.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture
+Candidate: Frank Nan
+Type: Phone
+Date: 11/11/2014
+
+1.abstract class vs interface
+2.hashmap 
+3.hashset
+4.equals
+5.spring IoC 
+6.singleton 
+7.prototype
+8.redirect vs forward
+9.ajax
+10.Spring MVC
+
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture / USPS
+Candidate: Paul Liu
+Type: Phone
+Date: 05/26/2015
+
+1. what is open symphony?
+2. how many years experience  with Struts2 ?
+3. pick one project Explain how you use structs2 in this project?
+4. Struts MVC in your project.
+5. workflow of Struts2?
+6. advantages struts 2 over spring mvc?

@@ -1,0 +1,29 @@
+-----------------------------------------------------------------------------------------------------------
+Client: CapitalOne
+Candidate: Dylan Fang
+Type: Phone
+Date: 05/19/2014
+
+1. Angular.js Experience
+2. Use what tool to Binding data
+3. Ajax call interact with RESTful webservice
+4. JQuery resize() purpose
+5. Remove vs detach vs empty
+6. onload vs ducument.ready()
+7. CSS set all button to Green
+8. Ajax error handle
+
+-----------------------------------------------------------------------------------------------------------
+Client: CapitalOne
+Candidate: Kevin Ma
+Type: Phone
+Date: 05/23/2014
+
+1. Introduce myself
+2. About front-end technologies which you used in your previous projects.
+3. jQuery exception handling
+4. Why are you used Bootstrap? 
+I took concrete examples for explaining why I used Bootstrap instead of using JS.
+5. Do you know notejs?  
+6. AJAX call 
+7. Would you like to do front-end job?

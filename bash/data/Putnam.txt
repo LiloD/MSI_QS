@@ -1,0 +1,24 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Putnam
+Candidate: Steve Liu	
+Type: Phone
+Date: 03/10/2014
+
+1. What are the scopes in Javascript?
+2. what is closure?
+3. Some of Backbone basic questions.
+4. How to hide an element using css?
+5. What's the priority rule for css?
+6. What's the difference between list and set?
+7. What's the difference between Treemap and HashMap? What's their performance using get()?
+8. What's the difference between hashmap and currenthashmap?
+9. What is the time cost using binary search? And what should be done in order to use binary search in an array?
+10. When we use get() in threadlocal? What is the level of the object in get()?
+11. How to keep thread-safe in hibernate?(versional locking?operational locking?)
+12. How to do a tree search to find the total number of nodes on the left side?
+13. What's the difference between required and required-new?
+14. What is isolation?
+15. Does jersey have its own datatype files(converting objects)?(yes?)
+16. When request to a servlet several times, how many servlet objects will be created?(singleton?)
+
+

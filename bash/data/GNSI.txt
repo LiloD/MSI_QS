@@ -1,0 +1,27 @@
+-----------------------------------------------------------------------------------------------------------
+Client: GNSI
+Candidate: Patrick Kong
+Type: Phone
+Date: 04/24/2015
+
+1. How did you use Hibernate? Did you use Hibernate with Spring?
+2. How to configure Hibernate with Spring Framework?
+3. Runtime Polymorphism vs Compile time Polymorphism
+4. In SQL, what are the different types of Join?
+
+-----------------------------------------------------------------------------------------------------------
+Client: GNSI
+Candidate: Patrick Kong
+Type: F2F
+Date: 04/30/2015
+
+1. Hibernate cascade, what do they mean?
+2. When to use Generics in your project?
+3. Different types of Trigger.
+4. Difference between inner and outer join.
+5. Hibernate cache, how to configure.
+6. How to config Hibernate with Spring.
+7. Design Patterns in Spring and Hibernate.
+8. How do you handle deadline in your past project?
+9. What was the most chanlleging part in your last project?
+ 

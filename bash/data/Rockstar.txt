@@ -1,0 +1,11 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Rockstar/Take2 Interactive Games
+Candidate: Timo Huang
+Type: Phone
+Date: 01/05/2015
+
+1. what is event bubbling in flex?
+2. what is channel in flex?
+3. how to call flex from Java?
+4. what is event class in flex?
+5. what are the familiarities between flex and Java?

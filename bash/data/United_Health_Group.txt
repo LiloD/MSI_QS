@@ -1,0 +1,54 @@
+-----------------------------------------------------------------------------------------------------------
+Client: United Health Group
+Candidate: JakeZhao
+Type: Phone
+Date: 08/20/2014
+
+1. A Spring method injection scenario question
+2. ArrayList vs. LinkedList
+3. Executor vs. Commit in Java Multithreading
+4. How tune up oracle database performance
+5. HashCode in Java
+6. Do you use Groovy?
+7. Do you use EJB and JMS?
+8. What webservices do you use?
+
+-----------------------------------------------------------------------------------------------------------
+Client: United Health Group
+Candidate: Stephen Liu
+Type: Phone
+Date: 10/07/2014
+
+1. hashMap and hashtable
+2. write a Singleton, how to change to not-singleton
+3. write Spring MVC structure
+4. how you use Spring AOP in your project
+5. scenario if user checked a website is work in the morning but cannot work 
+   in the afternoon, how you debug
+6. Spring autowire
+7. Spring component scan
+8. give you a long SQL query, how to performance tuning
+9. how did you use SOAP service in your project.
+10.scenario if user requested one ID only login in one computer, if he already login, cannot         login in another computer.
+11.web portal related
+12.portal MVC
+13.Unparsed Character Data in xml
+14.Javascript \ escape character
+15.which part you think Jquery is better than javascript
+
+-----------------------------------------------------------------------------------------------------------
+Client: United Health Group
+Candidate: Bill Han
+Type: F2F
+Date: 10/14/2014
+
+1. what?s the location of your last project and what the building near by it?
+2. What kind of exception can you see when you try to load an file? What the exception when the element is more than the collection size?
+3. Write singleton code. Other question base on it.
+4. How to set a been as an ArrayList?
+5. What the difference between other mvc and spring mvc 
+6. Scenario(about controller) Show you one URL and how to the corresponding controller by the url
+7. Using web server and how to accept only xml format 
+8. How to design one online people calculator 
+9. How to do spring security 
+10. Scenario how to use only two customer names log in our system by using spring security.  

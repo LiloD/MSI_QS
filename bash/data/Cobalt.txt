@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: COBALT
+Candidate: Charles Zhang
+Type: Phone
+Date: 04/24/2013
+
+1. Question about the first project, Talk about the project how to transfer data, what’s the work flow?
+2. How to connect another company’s interface and get these data persist in your database?
+3. What’s your project architecture? Could you design an architecture for certain scenario?
+4. What’s the work flow for you data to be presented on the front page?
+5. How you do hibernate persist, why hibernate could increase performance?
+6. Write a code.
+7. Write a query for employee table and  department table to query out some specific result.
+

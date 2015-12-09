@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Canon
+Candidate: Ethan Zhang
+Type: Phone
+Date: 09/19/2013
+
+1. Tell me the experience of TDD, give me an example.
+2. Tell me the tools you used to test on multiple function
+3. What is your experience of using singleton, give me a example
+4. In singleton, what do you need to be careful of in constructor
+5. What is the pit falls in using singleton
+6. If singleton call another function, what should you be careful of
+7. What is the different between soap and rest
+8. How do you use json in your project

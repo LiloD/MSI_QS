@@ -1,0 +1,16 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Yum Brand
+Candidate: Kevin Ma
+Type: Skype
+Date: 06/18/2014
+
+1. introduce self
+2. how to do test-case, jUnit sonar;
+3. Spring features.
+4. Spring security scenario, how to do Validatioin and authorities.
+5. Spring Cache, improve performance scenarios.
+6. invoke ajax call scenarios, include web services, method invoke, path lookup.
+7. Hibernate cache scenarios in you project.
+8. Hibernate performance in your project.
+9. Hibernate + spring. 
+10. hibernate configure files.

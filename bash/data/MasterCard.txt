@@ -1,0 +1,48 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Master Card
+Candidate: Jake Zhao
+Type: Phone
+Date: 06/30/2015
+
+1. What you are working on?
+2. Is a project of product? What does it do (more business part) ?
+3. Why you need to update SOAP schema?
+4. Are there and drawbacks of SOAP?
+5. SOAP offer more secure protocol (WS-Security offers more protection than HTTPS would, and SOAPoffers a richer API than REST.)
+6. What is the key using for encryption in JSONP. 
+7. If application has performance issue, how to debug, what to do, how to find out?
+8. How to debug Memory issues?
+9. Any drawback of Ehcache?
+10. What is your system payload?
+11. What parameters need to test application payload? How to test it?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Master Card
+Candidate: Jake Zhao
+Type: Phone (2nd round)
+Date: 06/30/2015
+
+1. Briefly introduce yourself.
+2. Why did you use Spring? Why not pure J2EE?
+3. A multiple Servlets question? (I said we use dispatcherServlet in MVC)
+4, what is Front Controller pattern?
+5. Inheritance in Spring, IoC? (use parent attribute, it inherit the property of its parent)
+6. what is Spring AOP? How to use it?
+7. What kind of security do you use? I said Spring Security and addition question is: How Spring Security handle user login/logout (Spring security has logout section, we can privode a customized logoutsuccesshandler where we write our database logic in it)
+8. Do you use Spring boot?
+9. given a map has A = 3, B = 6, C = 12. what happens if Insert B = 15. (Update existing one)
+10. == vs. equals()? (==: memory address, equals: by default the same as ==, but we can override)
+11. Can we access non-static variable in a static method.
+12. what is transient
+13. explain (Thread Pool) Executor framework.
+14. how to solve double-submission problem? (It can be done in either frontend or backend. For backend, we can query the database first before insertion)
+15. Design Pattern comes from what concepts? (Actually he wanted to ask the concept of OOP)
+16. what is Factory pattern? Usages?
+17. what is JAX-RS? 
+18. what protocol can be used in REST? and Data Type? ( http. it can be in any format, we commonly use JSON)
+19. what to have in hibernate.xml? (Told him we use annotation for mapping instead of xml file)
+20. in Hibhernate, How to prevent concurrent update?
+21. how  hibernate use stored procedure?
+22. what is JDBC preparedstatement
+23. what Maven does?
+24. If there is an issue in production, how can you fix it?

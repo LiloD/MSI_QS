@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: CaseNet
+Candidate: Eric Lu
+Type: Phone
+Date: 03/31/2015
+
+1. Hibernate sort
+2. One-to-Many Cascade
+3. Why do you use Map interface
+4. Introduce any APIs, interfaces, annotations in Spring frameword
+5. Spring security
+6. Some pratical Scenario about hibernate

@@ -1,0 +1,74 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Wipro
+Candidate: Jill Zou
+Type: Phone
+Date: 04/10/2014
+
+1.JDK version
+2.Collection/ more insertion less select use which collection and why
+3.arraylist VS listlinked
+4.hashmap how to insert object an object to a hashmap using hashcode
+5.hashkey same different value what happened
+6.Java I/O new features
+7.database
+8.Spring MVC
+9.HTML validation
+10.JQuery usage and where
+11.ajax system
+12async: true and goto another page what the browser will do
+13.web service
+14.parameter type in REST getParamaterValue()
+15.hibernate second level cache
+16.stateless object session
+17.hibernate prevent lazy load
+
+-----------------------------------------------------------------------------------------------------------
+Client: Wipro
+Candidate: Andy Chan
+Type: Phone
+Date: 06/18/2014
+
+1.intro
+2.abstract class vs interface
+3.can abstract class have no abstract method?
+4.why override hashcode equals
+5.one hashmap have 1000 record and one have thousand record compare the perfoemence.
+6.design pattern singleton facade  where you use it.
+7.JDBC vs Hibernate
+8.resume based question
+9.arraylist vs linkedlist
+
+-----------------------------------------------------------------------------------------------------------
+Client: Wipro / Direct TV
+Candidate: Oscar Ni
+Type: Phone
+Date: 03/05/2015
+
+1. Sort an arralylist different order
+2. transient, synchronized
+3. spring mvc
+4. controllers
+5. how to implement model,view
+6. data access
+7. hibernate config
+8. layz-loading
+9. cache
+10. service
+11. share data with different pages
+12. spring security
+
+-----------------------------------------------------------------------------------------------------------
+Client: Wipro 
+Candidate: Freddie Yang
+Type: Phone
+Date: 07/21/2015
+
+1. Introduce yourself and recent project
+2. soap vs rest  
+3. abstract vs interface 
+4. a very big string, return the word in the string with its frequency.(using HashMap)
+5. for jdbc when do you use class.forName method(       Class.forName(DRIVER);  // load JDBC drivers)
+6. Comparator vs Comparable
+7. How to create thread
+8. If a server goes down for some reasons, what will happen to the user.
+9. Use what data structure to store a telephone directory.

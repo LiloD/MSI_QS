@@ -1,0 +1,1892 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Gabriel Jin
+Type: Phone
+Date: 08/31/2009
+
+Flex Part:
+1. What is the difference between ViewStack and States?
+   How do you switch among them? using bars
+   How to connect ViewStack with bars?
+   Should answer very detail
+2. If I have a datagrid and load two elements from an array collection with two fields. If I want to change the 
+   stuff in the field and I just changed the Array collection side, even it is [Bindable], does the value of the 
+   attribute change? How can I change that? You have to design a event inside a function, and handle this event to change the value.
+3. Event Flow, three phases, be able to explain very clearly.
+4. Drawback of Cairngorm MVC
+5. Item renderer and Repeater
+6. Run time shared library
+7. Swfloader and Moduleloader
+8. ChangeWatcher usage
+9. Blazed DS integration, explain the flow
+
+Java Part:
+1. Arraylist and Linkedlist
+   Explain from the Data Structure side why it is easier for a linkedlist to remove an element.
+2. Hashmap, hashcode and equals
+3. override Clone method
+4. AutoBoxing
+5. Set Collection, unique
+6. String vs StringBuffer
+7. XML DOM and SAX
+8. multithreading, no concurrent package
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Gabriel Jin
+Type: F2F
+Date: 09/04/2009
+
+1. FLex Security,how to deploy on tomcat, crossdomain.xml
+2. Lots of questions on RSL and Modules
+3. Very deep in Custom Components, what you built in your project and then explain.
+4. Ask what is the generated size, with and without RSLs and Run time Modules.
+5. Dashboard: Charts and Forms together, how to manipulate them?
+6. Wrote java code, quick sort, collections, Generic, deadlock, wrote a theadlocal with cachedThreadPool in concurrent package.
+7. wrote actionscript code, for each loop in associative array, event handler, pagination, states, accordian, override UIComponent, five methods.
+8. Very deep in BlazeDS, end point, AMF Chanel, what is the advantage of using Amf chanel, is it a must?
+9. when he was writing code, you need to give the output in very short time, if you are not sure, he will ask you this point very deep because he found you are not strong enough at this point.
+10. Datagrid, advancedDatagrid
+11. Bindable, runtime bindable
+12. ArrayCollection, XMLList, Model
+13. SWFLoader and ModuleLoader
+14. How to minimize the output file size
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Tim Zhou
+Type: F2F
+Date: 10/16/2009
+
+1. Write outputs.
+   (1) System.out.print(“abc”== new String(“abc”));
+   (2) System.out.print(new String(“abc”).equals(“abc”));
+2. Read the code and find output	
+   Class MyException extends Exception{
+       Foo() { Bar();}
+       Bar() throws MyException {
+           Throw new MyException();
+       }
+   }
+3. EJB multiple choices: What is NOT the advantage of using sessionFacade?
+   A. Reduce network traffic
+   B. Hide complexity to client
+   C. Expose transaction management to client
+   D. (I forgot)
+4. Which of the following does not have interface on client side
+   A. Stateless Bean
+   B. Stateful Bean
+   C. CMT Entity Bean
+   D. BMT Entity Bean
+   E. MQ Bean
+
+Programming
+1. Write a function to determine if a string is symmetric
+2. For integer 0 to 20
+   (1) Print “Buzz” if the number is a multiple of 3
+   (2) Print “Fizz” if the number is a multiple of 5
+   (3) Print “BuzzFizz” if it’s a multiple of 15
+   (4) Else print the number itself 
+3. Given a hashmap with key/value pairs like:
+   	Key	Value
+   	A 	1
+   	B 	5
+   	C 	4
+   	D 	3
+   Write a function to print out the key value pairs ordered by value:
+	A,	1
+	D,	3
+	C,	4
+	B,	5
+4. Given a table called Trade
+	ID	Type	Amount
+	1	Buy	100
+	1	Buy	500
+	2	Buy	400
+	2	Sell	200
+	1	Sell	300
+   Write a sql to generate a temp table to get final amount for each id as follows
+	ID	Position
+	1	300
+	2	200
+
+Technical Interview 
+1. Write some sql queries (subqueries, having, group by)
+2. Can a hibnerate mapping file map to two tables?
+3. Explain filters
+4. In a filter, if you want to change the parameter values before it redirects to the upcoming servlet, what would you do? (HttpRequestWrapper)
+5. Which data structure would you use if you want to represent different routes in the maze puzzle problem(Tree)
+6. Lifecycle of Struts
+7. Explain normalization
+8. Nested transaction
+   BeginTx
+     BeginTx
+	BeginTx
+	   Rollback
+	Commit
+     Commit
+   Commit 
+   If the inner transaction fails, would the outside transactions also roll back?
+9. Given a table with duplicated keys, how would you eliminate the duplicates with “delete”?
+   (in Sybase there’s a setrow keyword to specify the number of rows that you want to delete for a certain key)
+
+Manager #1
+1. Explain how would you implement a web container
+2. Explain how would you implement multi-threading handling in a web application
+
+Manager #2
+1. Also asked me to write a lot of sqls, and also triggers and stored procs
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Andy Li
+Type: F2F
+Date: 11/24/2009
+
+Written test: See Tim’s notes.
+Plus
+Write a function to find the index of the element in the binary search tree giving the following signature:
+    public int search (String [] array, String target)
+And given the following rules:
+(a) the array is already sorted ;
+(b) if there is no match, return -1;
+(c) no exception handling is needed ;
+(d) the comparison is case insensitive.
+   
+Technical interview:
+1. Tell me about your project.
+2. What is the advantage of using hibernate?
+3. Do you still use sql in your project, if so, what is the advantage?
+4. Write a java method for finding the primes from 1 to 100 and optimize it.
+5. Write a singleton class.
+6. Write some sql statement.
+7. How do you handle multi-threading in your project?
+8. What is the difference between list and set?
+9. How do you pass information across web pages?
+10. Tell me the struts life cycle.
+11. What is your experience regarding db design?
+12. What tool do you use to build your system? 
+    (Many of the technique questions above are asked more than once)
+
+Behavior questions
+1. Give me 3 reasons why I should hire you?
+2. Tell me what is your weakness?   
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Stanley, Yang
+Type: F2F
+Date: 12/08/2009
+
+1. Describe how you handle MVC in Flex.
+2. Give an example of MVC, and explain livecycle of Struts
+3. Given (Stu_id, Stu_name, Course_id, Course_name, Professor_Name), design tables
+4. How to calculate the student who have more than 30 courses in above question
+5. Read the following code
+      if (state == ‘NY’) rate = 3.09
+      else if (state == ‘NJ’) rate = 8.03
+      else rate = 0;
+   Find all problems about it.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Manas Dutta
+Type: Phone
+Date: 01/12/2010
+
+1. Asked what is  SET in java.util. Then told me to implement the basic functionality of SET using arry or arraylist.
+2. Define class Person with a field name such that the objects of the class can be stored in a set.
+3. Asked what is a regular expression. Given a HashMap with name and phone no as <key,value> pair how can I find all the phone numbers for persons with name starting as MA* etc.
+   For example if there are 5 persons with first two letters of their name as MA, Then how can u find all the numbers
+   For those persons.Also some time-complexity etc.
+4. Describe the implementation of Put and Get method for HashMap. He wants which data structure is best suitable 
+   for such implementation(HashTable, array or ArrayList), the algorithm and what is the underlying implementation for these methods.
+5. Can HashMAp contain duplicate key, what about duplicate element. Best way to search duplicate eelements
+6. Also he asked some efficient search algorithm if the data is in memory. Mostly Collection questions
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Donald Yu
+Type: Phone
+Date: 01/29/2010
+
+1. Asked detailed about the current project. Especially core java part.
+2. Asked core java questions, hash, static, final, inheritence, currentpackage, multithreading, design pattern, performance caching tuning.
+3. How to do thread safe in different ways
+4. How to do multithread testing and enhance multi reading performance in project.
+5. Write code to find common element as follows.
+       public Collection intersection (Collection a, Collection b)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Donald Yu
+Type: F2F
+Date: 02/03/2010
+
+1. Focus on lifecycle about the project, test driven, unit-testing, QA, UAT, release testing,,
+2. Focus on different data-structure
+3. Asked detail of in current project, what data structure I use, How to do caching, how to enhance performance.
+4. Asked phone-book, first name, last name, number, how to store based on last name find number, write code.
+5. How to process duplicate last name, how to based on number find people. How to search quickly, how to do hash bucket search.
+6. How to do hash function distribution.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Donald Yu
+Type: Phone
+Date: 02/26/2010
+
+1. Collections frame work, what interface do you know? Hashcode, equals, list, set, self define, override contains method, how to find duplicate element of list, back story
+2. Big O notation, complexity
+3. Person, with first name, last, hash code, equals override implementation
+4. ArrayList, one is 1 million elements, another is 2 million elements, to find the biggest elements, how’s the complexity?
+5. Some algorithm about searching, and sorting
+6. Public, private, default, private, override rules 
+7. Innnerclass, static, non static
+8. Int, integer
+9. Inheritence, composition
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Jersey City, NJ
+Candidate: Donald Yu
+Type: F2F
+Date: 03/17/2010
+
+1. Describe your recent project.
+2. What was the most challenging in your most recent project on the server side?
+3. Why did you use BlazeDS?
+4. Describe deadlock?
+5. What are the ways to prevent deadlock?
+6. How does HashMap works?
+7. What is TreeMap?
+8. Where would you use HashMap and where TreeMap?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Jersey City, NJ
+Candidate: Joanna Bian
+Type: Phone
+Date: 04/05/2010
+
+Java part:
+1. Difference between hash code and equals
+2. Read the following code
+      A a = new A ();
+      B b = new B();
+   Can A and B have the same hash code?
+   How about if put them into the hash map? what will happen if they have same hash code?
+3. Read the following code 
+      Class A{
+	 public String str = "a";
+      }
+      Class B extends A{
+         public String str = "b";
+      }
+      A a = new A();
+      A b = new B();
+      System.out.println(a.str + b.str)
+   What’s the result?
+4. Difference between checked exception and unchecked exception? how to write a checked exception?
+
+J2EE PART
+1. How to do transaction management? If I do a transaction, not transaction inside, what will happen? What is the function of doing so?
+2. A web application. Backend table has Account, security, and contract ID, acct and security are primary key.
+   You want to get a feed file has 2 fields: account and security. the table is huge and the feed file is not very small.
+   How can you get this feed file in a efficient way?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Jersey City, NJ
+Candidate: Calvin Cao
+Type: F2F
+Date: 04/22/2010
+
+written test
+Part 1: 20 True/ False Questions.
+1. Garbage collection is a vendor implemented.
+2. Static method can include this variable.
+Part 2: 15 design/ diagram questions (multi/single)
+Part 3: 15 core java questions (multi/single)
+
+Technical questions
+First person
+1. Introduce the first project
+2. How do you handle if one component’s change needs to be reflected to other components. Focus on  design, component coupling/decoupling
+3. If one trader made a transaction, what mechanism will be use to notify other traders
+
+Second person
+1. Asked Spring Hibernate JSP core java
+2. What is Ioc, what is the advantages,
+3. Difference between forward and redirect
+4. In hibernate what template do you use, what is the difference? how do you use?
+5. What is the differnce between get and load?
+6. Why do you use hibernate instead of JDBC?
+7. If you create a bean object in one page, how does it infect other pages?
+8. Abstract class/interface, when to use interface, give some cases why do you use interface instead of abstract class.
+9. Final/finalized/finally,  in finally, what if there is no catch block, 
+10. When u run system.gc(), does it promise that the object will be recycled?
+11. Singleton, How do you guarantee that two thread only create one object? 
+    Even if you use synchronized keywords, is that guarantee?
+
+Third person
+1. Clustered/nonclustered index
+2. If a sql statement runs fine today, but tommorrow it is slow, how do you check? Just datebase, don’t need to worry about network connection
+3. What the difference between stored procedure and sqls?
+
+Fourth person: Pure flex 5 years 
+1. There is a label on the button, what is difference if you click on the button or click on the label, the whole process of the capturing and bubbling, 
+   there are two choice to handle the event, one is in capture phase one is in bubbling phase, how do you decide when to handle the event?  
+2. Pie chart, when you move the mouse on the pie chart , there will be a label telling you something, how do I  modify that content of the label
+3. Item redener, what is it, how do you use, what components support it
+4. Suppose, there will be an array or arraycollection, there are two properties like one is name and one is phone number, how do you display them in a single column in the dategrid.
+5. If  there are only four lines records can be displayed in a dategrid. But there are 100 records,  how many itemrederer do you need.
+6. What is the difference between
+   (a) Alert.show("bag"); 
+       ro.foo(); // suppose run 5 seconds
+   (b) ro.foo(); // suppose run 5 seconds
+       Alert.show("bag");
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Roshan Patel
+Type: Phone
+Date: 05/26/2010
+
+1. Describe your recent project.
+2. Describe Cairngorm?
+3. How to organize your model code in Cairngorm when you have many views and many model properties?
+4. How to implement synchronous communication in Cairngorm?
+5. What is bubbling in Flex?
+6. Describe Flex component lifecycle?
+7. What is hash map in ActionScript?
+8. Describe your recent project.
+9. What was the most challenging in your most recent project on the server side?
+10. Why did you use BlazeDS?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Stanley Yang
+Type: F2F
+Date: 06/10/2010
+
+1. To identify the symmetric reversible string using a function
+2. To find out an efficient function to calculate Fibonacci Series.
+3. What is the two ways of using thread. Why you prefer one of them?
+4. Giving you a Swap(Integer a, Integer b), how to swap values outside its scope?
+5. What is the difference between reference of object and reference of local method?
+6. If you have a function A->R, B->R, (A-B)->R,  how to realize B->A?
+7. How to find out if a linkedlist is cycle?
+8. How to find out if an array from 1-100 miss a number?
+9. Giving you 2 threads of the same object, can they access the same synchronized method at the same time? Why?
+10. How to output input parameters in Shell script?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Poonam Patel
+Type: F2F
+Date: 06/10/2010
+
+First round
+1. Write a program to find a given string is  palindrome or not?
+2. What is the two ways of using thread. Why you prefer one of them? 
+3. Giving you a Swap(Integer a, Integer b), how to swap values outside its scope? 
+4. If you have a function A->R, B->R, (A-B)->R,  how to realize B->A? 
+5. How to find out if a linkedlist is cycle? 
+6. How to  find out if an array from 1-100 miss a number? 
+7. Giving you 2 threads of the same object, can they access the same synchronized method at the same time? Why? 
+8. Given  String and string buffer  related code ? What is the output ?
+
+Second Round
+1. Technical face to face  
+2. Explanation about the first 2 projects and the technologies used ? like JSP ,AJAX ?
+3. How  do you make a column unique and not null without giving the primary key?
+4. Differenc between statement, prepare statement and callable statement?
+5. What are the version control tools you have use in your project?
+6. Most of the questions were realted to backend?
+
+Third Round
+1. A code related to string and String buffer and have to answer the output?
+2. Asked about last 2 project in details ?
+3. JDBC code to connect to database?
+4. How to you configure spring with hibernate?
+5. What is a servlet used in spring?
+6. What are different controllers used in spring?
+7. What are forms used in Spring?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Jersey City, NJ
+Candidate: Poonam Patel
+Type: F2F
+Date: 06/18/2010
+
+First Person
+1. Tell me about your recent project?
+2. What is data binding ? Explain how do you do that?
+3. Event Handler? Event Propoagation? Scenario based quesion on Event Propagation? How do you stop an event propogation?
+4. Item renderer?
+5. Did you create a custom component? How do you create custom component?
+6. If you have a text box and if you enter anything How do you find the entered word?
+7. Did you use RemoteObject, WebService and HttpService? Explain that?
+8. Question on collections: you have collections with values: AABBBCCAAA how do you find the value which occurs many times? 
+   Explain the Algorithm how do you go?
+
+Second Person
+1. Scenario based question for Exaple you hv a data grid and how do you insert check box in data grid ?
+2. You have a check box  and how do you write a code for when a user clicks on check box it will be checked and when it clicks again it will be unchecked?
+3. There are list of checkbox in a datagrid how do you count the number of check box are checked?
+4. Scenario based questions on events ans Array collections?
+5. If you get a problem in Webservices how do you handle it ?
+
+Third Person
+1. Tell me about your recent project? 
+2. How all components you have used in flex? did you use custom component ?
+3. Explain the lifecycle of components?
+4. You have use cairngorm MVC can you explain how it works? What are the disadvantages of Cairngorm? Have you work on Pure MVC?
+5. How do you write a singleton in model package in action script? If you dont write a private constructor how it works?
+6. What did you use in your project blazeDS AMF channel of LCDS? How do you configure taht? What is  there is services-config file what is there is remoting-config?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Calvin Cao
+Type: Phone
+Date: 08/05/2010
+
+1. Multiple threading
+2. Collections class
+3. Garbage Collection
+4. Two projects related questions
+5. Interface & abstract class
+6. Internationalized feature in java
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Calvin Cao
+Type: F2F
+Date: 08/11/2010
+
+First person
+1. Write code to implement f(n) = f(n-1)+f(n-2) in a most effient way
+2. C++ question about constructor and deconstructor, exceptions
+3. Read the following
+      A->R
+      B->R
+      A-R -> A
+   How to get B->A
+
+Second person:
+1. Find out the relative speed of person and train.
+   One person is walking in a tunnel, at the position of 1/4 length of tunnel
+   He found a train is coming, he does not know the speed of the train and how
+   far is train, if he wants to survive, he can go backward(1/4 L) or forward(3/4 L)
+2. One person enters into a room which has 100 bulbs, first time all the bulbs are off
+   second time he turns on number,2,4,6,8,......third time he flips the bulbs for 3,6,9....
+   and so on, question: when the 100 time he walk into that room, which lights is still on?
+
+Third person:
+1. There is an array with positive or negetive integers in it, write code to find out 
+   if it has any three numbers whose sum is 0, most fast way!
+2. Garbage collection in java.
+3. Project related questions.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Jersey City, NJ
+Candidate: William Xie
+Type: Phone
+Date: 08/30/2010
+
+1. What is your biggest issue in your last project?
+2. Why you leave that company and want to work  at Goldman.
+3. How to you implements HashTable, time complexity of hashTable, binary tree and also linklist and go deeper on hashtable around 3 questions.
+4. i++ and ++i efficiency.
+5. How about thread? What is mutable and semifor?
+6. What is the different between notify() and notifyAll?
+7. If  two people one drink half , and the other drink half of the left, keep going, finally , each of them drink how much.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: William Xie
+Type: F2F
+Date: 09/07/2010
+
+1. Fabinaci sequence 
+2. A->R, B->R, (A-R)->A , please find out B->A
+3. How to find out how many duplicate string in a collection.
+4. How to sort a collection.
+5. What is the difference in the program of 4.
+6. 100 bulb , close , open question. 
+7. Find the nearest way of two point
+8. About the project.
+9. How to find out the linkedlist has cycle, how to find the start point of this cycle.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: William Xie
+Type: Phone
+Date: 10/01/2010
+
+1. How about your last project?
+2. What is your main roll in java side?
+3. How to compare two object?
+4. Why use hashCode instead of equals?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Gregory Gao
+Type: Phone
+Date: 07/11/2013
+
+1. How to make a dead lock? Why deadlock happens?
+2. How to solve a deadlock? 
+3. Explain the design pattern you have used before.
+4. Explain factory and where did you use it
+5. Tuning a SQL command
+6. What kind of testing have you been using
+7. Data structure: explain Hash
+8. Explain Garbage Collection
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Gregory Gao
+Type: F2F
+Date: 07/16/2013
+
+1. Explain the differences between Struts 1 and 2.
+2. Explain the differences between Struts 2 and Spring
+3. Explain the data flow of Struts 1, 2, Spring 2
+4. Differences of Hibernate 2 and 3
+5. Explain the web-services, how to produce and test it
+6. JSP questions
+7. Leading experience
+8. Design patterns
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Mark Zhang
+Type: F2F
+Date: 07/25/2013
+
+1. Tell me about the collection framework.
+2. Tell me about the multi-threading in java.
+3. Suppose you have a lot files, each file has its ID. Now you have a record file to record the read and return process. 
+   The record file has two rows, named in and out. “In” mean the number of files have been read, “out” means the number 
+   of files have been returner. Consider codes below:
+	class Processor{
+		counter c;
+		inProcess(){
+			setIn(c.getIn()+1)
+			persist();
+		}
+
+		outProcess(){
+			setout(c.getOut()+1);
+			persist();
+		}
+
+		persist(){
+			truncate(0);	//clear the record file
+			flush(file);  	//write back to the record file
+		}
+	}
+
+	class counter{
+		int in, out;
+		//setter and getter below
+	}
+
+   The processor is working in the multi thread environment, how do you think of the code, is there any problem? How to solve it?
+
+4. Let say there are two ways to apply the loan, called A, B. Different type of loan has different process.
+   Consider codes below:
+	Loan processLoan(Object o){
+		if(o is from web-services){	//It doesn’t matter where o comes from, it just define volume = o.getVolume();	//different type of loan
+			duration = o.getDuration();
+		}
+		else if(o is from htp){
+			volume = o.getVolume() + 1;
+			duration = o.getDuration() + 1;
+		}else{
+			“I don’t know”; 
+		}	
+	}
+   Now, I want to make a standard process for both A and B, how to do it?
+5. Tell me about the first project. What function does the application have? What is loan process of this loan system? (My first project is a loan system, his questions are all based on my first project) What information are needed when apply loans? 
+6. In unit test, if the tested class has an independence class, how to test it? When testing with some codes that may need to connect to database, how to test them if you are not allowed to access to database?
+7. Suppose you have two List, find out the common object in these two lists. Show me the algorithm and tell me how to test it using unit test.
+8. Briefly tell me about yourself, and your strongest technology.
+9. If you find the database works slowly, how do you solve it?
+10. What is jQuery? What is jqplot? How to do Ajax? What tool you used to debug javascript/jquery
+11. How do you think of Big Data?
+12. How to implement the web services
+13. When to use web services?
+14. What is the advantage or disadvantage of web services?
+15. What is the difference between web services and Java RMI?
+16. Where would you hope to be in five years? How to achieve this goal?
+17. Give me an example that you have a different idea which is better than other, and convince your teammates to use your idea.
+18. Tell me about the coolest thing you have ever done in your experience.
+19. Do you have any questions?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Jeff Hsieh
+Type: Phone
+Date: 09/06/2013
+
+1. My responsibility in my last project.
+2. What kind of technologies did I use in my projects?
+3. When to use REST or SOAP web service?
+4. What is proxy? Give me an example.
+5. What is ConcurrentHashMap?
+6. What is hashCode and equals?
+7. What is association and composition?
+8. What is index in database?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Samuel Tian
+Type: Phone
+Date: 09/27/2013
+
+1. Tell me about yourself?
+2. What is the biggest chanllenge you have faced?
+3. What is inheritance? why do we need inheritance? where do you use it?
+4. what is the differences between interfaces and abstract class?
+5. what is the parameters of execute method in struts1 action?
+6. what does the actionmapping and actionforward do?
+7. write a query to select duplicate rows from a table?
+8. what is cookie? how to set a cookie?
+9. how to hide elements with js?
+10. how to change background color of some rows in a table with js?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Jerry Niu
+Type: Phone
+Date: 11/05/2013
+
+1. Talk about the scope in javascript.
+2. Talk about the closure in javascript.
+3. How to do inheritence in javascript.
+4. what does new do in javascript, different between using new/not using new.
+5. what are call(), apply(), bind() in javascript?
+6. Explain serialization.
+7. deadlock(what cause deadlock and how to prevent deadlock)
+8. Static field
+9. final class
+10. reflection
+All of the questions went into very details.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Colin Xiong
+Type: Phone
+Date: 11/08/2013
+
+1. call back to refresh the page
+2. html5 Custom Data Attributes 
+3. database rollback
+4. difference between hibernate and jdbc (optimize the query)
+5. how to map model to view in bootstrap
+6. how to handle event in bootstrap
+7. javascript scope
+8. javascript namespace
+9. javascript closure (memory leak and cpu performance)
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Colin Xiong
+Type: Phone
+Date: 11/14/2013
+
+1. which platform do you use for developing program
+2. which unix operating system do you use
+3. which command do you use to find if an application launch the system(ubuntu)
+4. design a playing card program
+5. write a simple query to join two tables and use group by clause.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Ray Shi
+Type: Phone
+Date: 11/15/2013
+
+1.JavaScript Strength
+2.JavaScript library
+3.how to use multithreading in JavaScript.how to create thread in JavaScript
+4.Ajax and json
+5.Compare to old technology, ajax advantage
+6.Java Strength
+7.Deadlock, how to create deadlock, avoid deadlock
+8.collections class
+9.CocurrentHashMap
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Jonathan Zhang
+Type: Phone
+Date: 11/15/2013
+
+1. If you click the submit button in the web page but there is no response, what should you do?
+2. Difference between overload and override.
+3. Can the method in parent class be public, and the overriding method in child class be private?
+4. Can a class have multiple main method?
+5. Customer table has cid, while order table has oid and cid. Write a query to find the customer who has more than 5 orders.
+6. Given a input string e.g. "abcd", find if the given string e.g. "bcda" is the rotation of the input string.
+7. For two tables which has 2 million records, how to increase performance?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Ryan Jing
+Type: Phone
+Date: 01/15/2014
+
+1. Introduction of yourself, recent project.
+2. DB tunning.
+3. DB store procedure.
+4. Java GC.
+5. Java hashSet.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Charles Fu
+Type: Phone
+Date: 01/27/2014
+
+1 introduce yourself
+2 equals() and ==
+3 Talk about Map and set
+4 Say something about generics
+5 Interface vs abstract class
+6 What is deadlock, how to prevent deadlock?
+7 Index in database
+8 How to create thread pool?
+9 What is future?
+10 inner join vs outer join
+11 How to improve a slow query?
+12 What tool you use to check a query's performance?
+13 index scan vs table scan?
+14 How to make thread-safe program?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Delia Wang
+Type: Phone
+Date: 07/15/2014
+
+1. are you familiar with investment research?
+2. why you are interested in this job?
+------------------front end---------------------------------
+3. Linux, HTML5, JavaScript, Back-End
+4. Which IDE(eclipse,.....) are you use for front end development
+5. JavaScript framework
+6. AngularJS with Jquery
+7. use AngularJS web-page website? like New York Time
+8. Test Front-End -> JQuery: Qunit, AngularJS: ?
+9. What kind of changes you want to do with JavaScript 
+-------------------Server Side-------------------------------------------
+10. Spring : what do you know about spring
+11. Which one do you prefer: XML config, Anotation 
+12. How do you do JUnit testing for hibernate mapping
+13. RestFul Server, which part of spring handles restful web services.
+14. In which scenario you use Get & Post & Put.
+15. do you like Jboss? why
+16. Question?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Shawn Cao
+Type: F2F
+Date: 07/16/2014
+
+Total 4 people interview. half hour each.
+1st person: Architect
+
+1. create a method to take two set as args, return a new set to include all entries from set 1 but not set 2.
+2. refactor previous method into a filter
+3. (what build-in exception u want to use to let other developer know how to use this filter)
+4. make the filter
+   generic. => implements interface
+
+2nd person: Tech lead in Tech Expertise team
+1. describe the tech set for last project.
+2. what containers used
+3. multiple server load balancing
+
+3rd person: TechLead
+1. write an algorithum to get possible combinations of using two kind of bricks to make a wall. (need to express thinking)
+1.1 Exhaustion... why initial thought
+1.2 how to ensure correctness
+1.3 boundaries conditions to improve efficiency
+2. How do you like agile
+
+4th person: my future direct manager
+1. describe your project again
+2. why you think you fit
+3. some detailes for previous project (feel like just asking communication skills)
+4. (tech) how do you design a document structure to answer: like a DOM tree structure)
+
+5th person: direct tech lead (make-up phone interview)
+1. describe your project
+2. intro of your application, how it works, interact with other application, frameworks used
+3. AJAX definition, how to use
+4. three ways to by-pass same origin contract
+5. Adaptor pattern(defination, when to use)
+6. volatile key word (notifier, small-scale)
+7. CSS selectors with different rows. (use jQuery as alternatives)
+8. "Content management system" concepts... struggles on if I have similar experience before...
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Michael Tong
+Type: Phone
+Date: 09/16/2014
+
+1.question for her.
+2.introduce yourself.
+3.rating your java
+4.angular js
+5.exception handling. difference. of them.
+6.who check the check exception? example.
+7.finally, what will be in the finally block
+8.try block reading one file how to make sure your file is closed?
+9.difference between throw and throws?
+10.generic
+11.emp object,collection hashtable, add into the hashtable, error?Why ?
+12.differece between hashtable & hashset? value in hashset? how to know it duplicate?
+13.forget the hashcode what will happen?
+14.What is deadlock , how to solve this problem? how to avoid the deadlock?
+15.thread a , thread b,  b need lock 2, a need lock 1
+16.ehcache? how to use it in your application.
+17.angularjs, two way binding? how to use it?
+18.communicate with from server?
+19.improve the performance when the update on database is late
+20. UI test, have a form want to update, save take a long time, doing other thing ,show the user message?
+21. question for her? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Michael Tong
+Type: F2F
+Date: 09/19/2014
+
+Interviewer #1 (Mr. Lawrence Zeng):
+1. Introduction
+2. Questions about the last project
+    Try to explain to manager about your project without using any technologies.
+    POJO class of your last project which you may be familiar with.
+3. Algorithm
+    Write a method in Java to implement checking Palindrome Strings. (I checked null pointer, empty string, forgot about empty spaces)
+4. Exception Handling
+    Checked vs Unchecked
+    How to create your own RuntimeException?
+ 
+Interviewer #2:
+1. Introduction
+2. Questions about the last project
+    How to handle cross-browser issues. (I told him we checked the version of browser, if not supported, let the user upgrade the browser. 
+    He said there should be a matrix tracking statistics of users' browser.)
+    Your responsibility of last project.
+3. Algorithm
+    Get an element which is not duplicated in an array. For example, [3, 4, 5, 3, 4] ==> 5. (I used Hashtable<key, count>, but maybe not the best solution)
+ 
+Interviewer #3:
+1. Introduction
+2. Questions about the last project.
+    How many people in your team? What's your responsibility.
+    Hardest problem in the last project?
+    Have you talked to the users or just the team manager?
+    Try to draw an architecture diagram of your last project. (I explained to him MVC pattern)
+3. Algorithm
+    Also something about Palindrome String. (I gave a solution, he said using recursion may be better)
+4. Factory Design Pattern, difference from new ClassName()?
+5. Does Java support multiple inheritance? Why?
+6. Inheritance vs Composition
+ 
+Interviewer #4:
+1. Dead lock & solution
+2. HashMap vs Binary Search Tree
+    In which scenario, HashMap has O(n) instead of O(1) so that BST's O(logN) is the better choice?
+    (I told him if not comparing the key but the values, HashMap has O(n). He said another thing is if you want to check key > 5, BST is better.)
+3. Singleton
+    This question he mentioned a tricky way to do singleton in C++. static Singleton instance = new Singleton();
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Amanda Xiao
+Type: Phone
+Date: 09/29/2014
+
+1. Self-introduction,talk about your latest project.
+2. How much do you know jQuey/AngularJS
+3. jQuery how to do Ajax call
+4. restful web services: different methods used in the restful web service?
+5. Core Java Questions: Immutable Class, how to create one?
+6. equals() & hashCode(), how to user, details
+7. testing?
+8. Spring Dependency Injection
+9. Content Management?
+10. servlet? Optimization?
+11. Front-end technologies you are using?
+12. Single Page Application?
+13. Any questions?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, New York
+Candidate: Bill Han
+Type: F2F
+Date: 10/08/2014
+
+Interview onw:
+1. What is the difference between abstract and interface give an example in your project
+2. Algorithm: How to print the middle element in one linked-list?
+3. Scenario question: there is subway system, we have many stations and how to define this situation in database and how do you decide the key? What the element should be in your table and what kind of database module should you use? 
+Interviewer two:
+1. Which one do you prefer to be, the leader or developer and why? What leader should do?
+2. If we have many kinds of database How to use java to link those databases 
+3. How to do cache in java without framework?
+4. Definition of Dependence injection and what the core of it? 
+5. Scenario question: we have class A which using some method from B and C how to achieve it?
+6.  In a stock trading system how to get the information at a specific time?
+Interviewer three:
+1. Normalization 
+2. Index
+3. Tuning, hint
+4. Where and having
+5. Unix shell script
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Salt Lake City
+Candidate: Jackie Zhu
+Type: Phone
+Date: 12/09/2014
+
+1. Object class and Its method.
+2. .Equals()  and .hashcode()
+3. Design Questions:  Design a music player
+4. Data structure and algorithm:  Calculate the number of second level connections on your linkedin account.  What if your second-level connections share same connections with you, how to reduce duplications.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs, Salt Lake City
+Candidate: Jackie Zhu
+Type: Phone
+Date: 12/11/2014
+
+1. The difficulties you face when implementing Hibernate.  What is fetch feature? What is projections?
+2. Compare with Spring and Struts2, which one is better.
+3. How you configure servers. Take tomcat for example.
+4. Compare soap with restful
+5. How do you do unit test to database?
+6. How do you do unit test in web apps?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Jonathan Zhang
+Type: Phone
+Date: 01/20/2015
+
+1. What is WCMS?
+2. Does OSGI support Spring?
+3. Questions about approaches to deal with RabbitMQ in my project.
+4. What is the benefit of using Collections and Generics?
+5. When do you not use Generics?
+6. How to implement a queue in Java?
+7. What is a BlockingQueue?
+8. What are fail-safe and fail-fast?
+9. Employees with id and name, how to implement that so they can be put in a Set or Map?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Charlie Li
+Type: Phone
+Date: 02/03/2015
+
+1. tell me about yourself
+2. hashmap internal implementation
+3. what is in hashcode
+4. what will return from a hashcode
+5. exception handling
+6. what is finally
+7. what services do you use
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Scarlett Zhao
+Type: Phone
+Date: 05/15/2015
+
+1. What kind of project you are working on, and what techs you used.
+2. What is the lastest version of Java you worked on
+3. Can a protected method of parent class be overriden
+4. Explain Final keyword, Finally
+5. If method throws a Runtime exception, do we need to handle it using try catch
+6. Why do we use Thread. When do we use.
+7. What advantages of multithreading.
+8. Have you used volatile keyword
+9. Have you used transient keyword
+10. When you use TreeMap
+11. Linkedlist vs ArrayList
+12. equals() vs hashCode()
+13. If Java throws an OutOfMemory error, how do we investigate the problem.
+14. Have you ever used JConsole
+15. GMXBeans
+16. Comparator vs Compareable
+17. How does Java determine where to load classes from jars of different version.
+18. Resource bundle
+19. XXX
+20. Different between inner join and left outer join
+21. cluster index vs non-cluster index
+22. Two Tables
+dep (deptno (pk), name)
+student (sid (pk), deptno (fk),  name)
+find the dept with no student
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Jake Zhao
+Type: Phone
+Date: 05/18/2015
+
+1. Introduce your last project
+2. Why are you looking for a change
+3. Any performance tuning you have done in your last project.
+4. What Design Pattern you have used.
+5. When do you use singleton pattern.
+6. Can you give me an implementation of Singleton
+7. XXX (accent too heavy didn't get it...)
+8. A table has a lot of duplicates => delete duplicates
+note: cannot copy the table
+9. What?s are different types of indices (cluster, non-cluster)
+
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Iris Chen
+Type: Phone
+Date: 05/20/2015
+
+1. StringBuilder vs StringBuffer
+2. Garbage Collection
+3. Time complexity of binary search
+4. Time complexity of quicksort
+5. How to improve quicksort
+6. Have used shell script (bash, zash…)
+7. Can explain how you make singleton pattern
+8. Explain the REST
+9. SOAP vs. REST
+10. ShellScript and C++, Are you okay with?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Jake Zhao
+Type: F2F
+Date: 05/20/2015
+
+Written Test
+1. SQL  
+2. How determine if a String value is a numeric (can't use isNumber())
+3. Java 1.5 introduced enum, what is the common use of enum?
+4. SQL query, same 
+5. final, finally, finalize
+6. given "hello world", "llo" , "o", "x", write a function to make this output
+function("hello word", "llo") -> "he word", function("hello word", "o") -> "hell wrld", function("hello word", "x") -> "hello world",
+7. Finbonaci number
+8. linked list Design
+9. Design ATM (design pattern)
+10. 1002 numbers have 2 redundant number, find those 2 numbers in term of optiminized time complexity and space complexity
+11. given multiple java expression like '"abc".subString("bc") == "abc".subString("bc"), exam the concepts of String pool, ==, equals(), intern()
+12. Given a piece of code to new an object, ask if thread-safe
+Gaurav Hind
+1. Given a binary tree and an array, traverse print all elements in the binary tree that is not in the given array.
+2. HashMap (every single knowledge points of HashMap)
+Interviewer 2
+1. write Singleton
+2. design a database
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Lily Xiao
+Type: F2F
+Date: 05/20/2015
+
+1. explain the framework of your last project.
+2. all the details of the last projects and how did you solve the difficulties problems.
+3. give you an interface PriorityQueue, there is two method, add() and print(). Please implements it such that the add() method can add element to the PriorityQueue and the print() method can prints out the elements based on the priority. If two elements have the same priority, then print out the earlier element first. 
+4. database query questions
+5. design pattern questions
+7. clustered index and non-clustered index, what is the advantages and disadvantages of them?
+8. many to many relationship of tables.
+9. scenario questions, how to design the tables.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Veronica Tian
+Type: Phone
+Date: 05/20/2015
+
+1. Introduction
+2. Insert into a set
+3. REST vs. SOAP
+4. How to implement SOAP security, how to do that in REST
+5. Is Singleton Class Level or JVM level ? How to make singleton to application level
+6. How to run your code under different environment
+7. Maven:remove duplicate dependencies
+8. try-catch-finally
+9. try-with-resources
+10. JavaMail,how to send a javamail with an attachment ?
+11. Select the 6th high salary SQL
+12. Can we use select to run a trigger
+13. Will SP return value No
+14. @after and @afterclass in JUnit
+
+-----------------------------------------------------------------------------------------------------------
+Client: Infosys / Goldman & Sachs
+Candidate: Timo Huang
+Type: Phone
+Date: 05/20/2015
+
+1. talked about previous projects
+2. he noticed Flex in my resume, he asked Flex vs html
+3. shortcomings in Java...
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Scarlett Zhao
+Type: F2F
+Date: 05/20/2015
+
+1.How to reverse rows and column in a table? …
+2.How do you know if the value of a given string is int or not?(can not use isNumeric)?
+3.given two string baseStr=“abcabcacbbbbd” removeStr=“abc”, remove all the removeStr from baseStr
+4.two SQL query, left join and NVL()
+5.give an example when do you use singleton? 
+6.code for enum. if we want to give the value(in enum) an index,how you implement enum in database? how to implement in Java?
+7.how to implement a TreeSet in java?
+8. write an algorithm to implement Fibonacci.
+9. Multi-threading. give an example and two ways to declare Synchronize. how to avoid thread issues in multi-threadning.
+10. give table employee(did,ename,dept_id,salary), dept(dept_id,dname), two sql query using inner join and left join. the last one is list the name of the dept which sum(sal) is 2nd highest.
+11. how to read the .properties file in java? (use ResourceBundle)write code and explain limitation of using ResourceBundle.
+12. final, finally and finalize
+13. try-catch-resource example.
+14. we have 1002 numbers and 2 numbers are redundant, design two algorithms to find these 2 numbers with memory performance and time performance.
+15. implement a linkedlist.
+16. design a ATM machine.
+17. what should we know about you?
+
+-----------------------------------------------------------------------------------------------------------
+Client: NTT / Goldman & Sachs
+Candidate: Paul Liu
+Type: Phone
+Date: 06/01/2015
+
+1. Introduce recent projects
+2. HashMap work with customize class. If the class doesnt override hashCode.
+3. What is a dead lock.
+4. How many bean scopes in Spring
+5. Explain Spring AOP
+6. REST vs SOAP
+7. Disadvantages of Hibernate
+8. SAX VS DOM parser
+9. Design Patterns. How to create an early loading singleton.
+10. Store Procedure. What is left outer join
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Cassie Cheng
+Type: Phone
+Date: 06/02/2015
+
+1. Tell me about yourself
+2. Why you are thinking for a change
+3. How to store a list of data => the insertion should be fast / read should be fast
+4. Design Pattern you use
+5. Why / How to use singleton
+6. Is the implementation of singleton above thread-safe
+7. give a implementation of singleton is thread-safe without synchronized block
+8. what is index in database.
+9. duplicate rows in table. (3 million with 2 million duplicates). How to get rid of duplicates.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Lucas Hu
+Type: Phone
+Date: 06/02/2015
+
+1. Current project.  What UI Techs are used?
+2. web service, why use RESTful?
+3. AngularJS vs JQuery, why use them together?
+4. When do you use ajax?  Project.
+5. How browser know where to perform partical rendering AJAX data?
+6. Cannot remember
+7. outer join in database
+8. store millions of data in a list, what kind of linkedlist you prefer
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Timo Huang
+Type: Phone
+Date: 06/02/2015
+
+1. Project
+2. what's new in Java 1.7/1.8
+3. BlockingQueue
+4. Spring annotation. @Autowire. How to enable annotation
+5. Differences in different interfaces in Java collection framework
+6. WeakHashMap
+7. interface vs abstract class
+8. JSON.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Timo Huang
+Type: F2F
+Date: 06/10/2015
+
+1. find the longest substring that contains repeated characters.
+2. write a recursive algorithm to calculate the sum of digits in an integer.
+3. sql. a) inner join; b) find dept_id that have 3 or more employees.
+4. in order traverse of a binary search tree without recursion.
+5. Linked list. a) Merge two linked list; b) reverse the linked list.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Kevin Zheng
+Type: Phone
+Date: 06/10/2015
+
+1. Dependency Injection.
+2. AngularJS dependency injection
+3. Hibernate. How to use it. Pros and Cons.
+4. JavaScript. Closure.
+5. JUnit testing. Challeges
+6. log4j: avoid logging too much. 
+7. Inner join vs outer join
+ 
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Cassie Cheng
+Type: Phone
+Date: 06/12/2015
+
+1. last project
+2. Spring MVC
+3. Don't use database. There is a file called employee and has name, id, phone number in it. How to find phone number 
+   start with 212...'s information.
+4. Generic
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Kevin Zheng
+Type: Phone
+Date: 06/16/2015
+
+1. tell me about yourself
+2. Have you worked in the team
+3. How do you work with other people?
+4. Why Hibernate is useful
+5. When would you not to use Hibernate
+6. Have u written stored procedure before?
+7. What is the advantage of stored procedure.
+8. How to optimize a database query
+9. How to use Java to show a deadlock. And how to solve it.
+10. How Java manage heap memory.
+11. Generations in memory.
+12. How hashmap work.
+13. What is the worst thing that can be happened in hashmap
+14. What kind of test experience do you have.
+15. What is mockrunner?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Moe Wu
+Type: Phone
+Date: 06/11/2015
+
+1. Project worked on
+2. What techs are used while worked in frontend
+3. How java talk to database
+4. How java talk to frontend
+5. What is Restful web service
+6. Can Restful work on other protocols except HTTP
+7. Why would you choose SOAP over Restful
+8. Examples of datastructures in Java
+9. LinkedList vs Array
+10. Set vs List
+11. How Set in Java check for duplicates
+12. Test cases for stack of integers
+13. What is Volatile keyword
+14. What is Prototype design pattern
+15. What is Builder design pattern. What components are in Builder pattern
+16. Generics in Java. Is complie time type safe or runtime.
+17. Is array mutable in Java? Is array fix size?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Paul Liu
+Type: F2F
+Date: 06/29/2015
+
+1. talk about yourself?
+2. talk about your last project, what is your role?
+3. draw work flow about your last project?
+4. what cache you use in your last project, how does it works?
+5. sort person's last name ? sort person's last name and first name? 
+6. how to design many to many relationship?
+7. query find max cout emp id
+8. what happened if  after call clone() method, modify Integer or String variable   
+9. How does Column Store index improve performance
+10. If multiple row have same index how to inprove performace?
+11. if in table have index, and A, B, C three column, can  you only select A, B from table?
+12. support have 200 records, first 100 records sort by first name, last 100 records sort by last name?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Nick Diao
+Type: Phone
+Date: 07/01/2015
+
+1.your experience, your projects
+2.what is the oop?
+3.comparator vs comparable
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Freddie Yang
+Type: Phone
+Date: 07/01/2015
+
+1. Spring workflow.
+2. What kind of collections do you use?
+3. Difference among HasMap, TreeMap, LinkedHashMap.
+4. How to initialize ArrayList?
+5. How to config Tomcat?
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Adam Zhang
+Type: Phone
+Date: 07/01/2015
+
+Core Java:
+1. how to do insertion work very fast, what list should use? - linkedlist
+2. Comparable, for Map insert 2 objects with same attribute
+3. define your own exception - extend Exception
+4. own exception is check exception or uncheck exception - check exception
+5. synchronize keyword
+6. one is synchronized one is not, use same object, access the same attributes at same time?
+Spring:
+1. Spring features
+2. purpose of AOP 
+3. join point
+4. purpose of point cut 
+5. how do you usually use Spring transactions propagation
+6. how to rollback in transaction  
+DB:
+1. how many types of index
+2. non-cluster/cluster index
+3. improve the performance of sp
+4. how to improve performance if you originally use multiple join
+Linux:
+1. basic command line 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Jake Zhao
+Type: Phone
+Date: 07/09/2015
+
+1. Random Number from 1 to 10,000. Find out the frequency of each number and which number are missing.
+2. Find prime number from 1 to n.
+3. Find common rows in two table
+5. Make mirror image of binary tree
+4. Find minimum path from a binary tree's top node to root node
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: May Yuan
+Type: Phone
+Date: 07/20/2015
+
+1. introduce yourself and recent project
+2. query is slow, how to investigate the query to improve the performance? 
+3. what are types of indices? and which type will you use?    
+4. in java, what is the static keyword? 
+5. what is synchronized?
+6. what kind of testing in your project? integration testing?
+7. input string "aaabbcc",write code, output should be "3a2b2c"
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Adam Zhang
+Type: Phone
+Date: 07/22/2015
+
+1. Self-introduction
+2. What kind of work are interested in?
+3. Talk more about finance exp.
+4. How do you find learning new techs?
+5. Deadlock situation, give an example in Java to show deadlock, how to avoid deadlock in your example?
+6. Heap memory management?
+7. hashMap work flow, is lookup time always O(1)?
+8.  Database exp, stored procedure? Advantage of stored procedure?
+9. Slow sql query, how do to improve the performance?
+10. Testing framework? - JUnit, Qunit, Mockito
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: May Yuan
+Type: F2F
+Date: 07/22/2015
+
+1. given some code with exceptions, write the output
+2. find the longest substring that contains repeated characters.
+3. write a recursive algorithm to calculate the sum of digits in an integer. you can use mod(%), divid(/). example: 126%10 --> 6, 126/10 --> 12. 
+4. sql. a) inner join; b) find dept_id that have 3 or more employees.
+5. in order traverse of a binary search tree without recursion.
+6. Linked list. a) Merge two linked list; b) reverse the linked list.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Parker Liu
+Type: Phone
+Date: 07/23/2015
+
+1. Write a function to return whether a number is the power of 2   (2,4,8,16....)
+2. Difference between concurrentHashMap and synchronizedHashMap
+3. If two or more users want to modify same data in database, how to handle it.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Nina Wang
+Type: Phone
+Date: 07/20/2015
+
+1. object a, b they have the same hashcode, when we use hashcode to find a, will we get b at the same time and why?
+2. given a class who has field firstname lastname and salary.
+   can you sort the objects of the class by the lastname?
+   can we sort part of these object by firstname and the rest by the first name in one comparator.
+3. if we have an index on column a,b,c, where the behavior same when we only have column a,b and column b,c
+4. we have a player table and a sport table. many players can play one sport and one player can play multiple sports. what should we do?
+5. Given 2 tables employee(id, name, deptno) dept(deptno, deptname)
+   we want the dept who has the maximum employees. if you use an inner query how to improve the performance.
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Nina Wang
+Type: Phone
+Date: 07/16/2015
+
+1.hashmap; the implementation of hashcode and equals function in the Object class. 
+  The time complexity of looking up in hashmap?(not O(1) but constant time because of rehashing)
+...cannot remember...
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Rick Bao
+Type: Phone
+Date: 07/22/2015
+
+1. Introduce your project
+2. Advantage/disadvantage of Spring MVC
+3. List vs set
+4. Procedure of inserting an element to Hashmap
+5. Notify, NotifyAll, wait
+6. executor framework
+7. sql:dep(dep_no,emp_id), count employee number in each dept, list with dep_no.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Adam Zhang
+Type: F2F
+Date: 07/24/2015
+
+Written Exam: 
+1. Find the longest substring that contains repeated characters. "cbaaaccdddde" -> "dddd"
+2. Write a recursive algorithm to calculate the sum of digits in an integer.
+3. sql. a) inner join; b) find dept_id that have 3 or more employees.
+4. in order traverse of a binary search tree without recursion.
+5. Linked list. a) Merge two linked list; b) reverse the linked list.
+6. Output?
+	public static int test() {
+             try {                          
+                    int x = 10/0;
+             }
+             catch (Exception e) {
+                    System.out.println("in catch"); // 1
+                    return -1;  // 3
+             }
+             finally {
+                    System.out.println("in finally"); // 2
+             }
+             return 0;
+       }
+	Output: 
+	in catch
+ 	in finally
+ 	-1
+Other Questions:
+1. Student (age, name), have a List<Student>, sort by age first, if same age then sort by name.
+2. check whether a given number is prime number?
+3. factorial
+4. TreeSet vs. HashSet
+5. TreeMap vs. HashMap
+6. Serializable
+7. Callable
+8. Generation (heap memory)
+9. Command of set heap size
+10. XXX – I don’t know
+11. Hibernate cache, what if someone update the database directly by SQL.
+Behavior Questions: 
+1. Talk about your project and your role.
+2. Challenges in your recent project. How did you overcome them?
+3. Some other project-based questions.
+4. Something about unit testing.
+5. What problem might happen if 5 people work together?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Joseph Huang
+Type: Phone
+Date: 07/24/2015
+
+1. self-intro
+2. HTML 5 new feature and compare to Flex 
+3. final keyword
+4. static keyword and static scenario
+5. List vs Set
+6. Heap structure
+7. Binary Search Tree
+8. Normalization and Denormalization cons, pros
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Rick Bao
+Type: F2F
+Date: 07/27/2015
+
+1. How to reverse rows and column in a table? pivot
+2. using sql to check if a given string is int or not using sql?
+3. given "hello world", "llo" , "o", "x", write a function to make this output
+function("hello word", "llo") -> "he word", function("hello word", "o") -> "hell wrld", function("hello word", "x") -> "hello world",
+4. String pool concepts, like “ab”+”c”==”a”+”bc”,
+5. If u have enum in database, how to write a java class to operate?
+6. Different type of Index, when to use?
+7. write an algorithm to implement Fibonacci.
+8. given a class, discuss thread safe issue.
+9. a) find the employee name start with ‘M’ with some conditions
+   b) find dept_id that have 3 or more employees.           
+10. final, finally and finalize
+11. we have 1002 numbers and 2 numbers are redundant, design two algorithms to find these 2 numbers with memory performance and time performance.
+12. Linked list. a) Merge two linked list; b) reverse the linked list.
+13. Design a ATM machine.
+14. given a list of people 15,”xyz”; 25,”abc”; 15, “def”; print the result like
+15-xyz, def
+25-abc
+15. Rest web service related questions.
+16. write a Unix script to list all the files which size is greater than 1MB.
+17. BlockingQueue
+18. StringBuilder vs StringBuffer
+
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture / Goldman & Sachs
+Candidate: Rick Bao
+Type: Phone
+Date: 07/31/2015
+
+1. Do u have any experience design database schema?
+2. How do you deal with slow query?
+3. Adv/disadvantage of Normalization/Demoralization.
+4. Adv/disadvantage of Spring IoC?
+5. What do u write in finally block?
+6. If a Java module is slow in QA environment, the server/connections are just fine, how do u resolve this problem?
+7. What problem should be noticed in Multithreading programming?
+8. Generally, why do u use web service?
+9. The adv/disadvantage of Rest web service.
+10. Your client is in Hong Kong and your server is in New York. The problem is that ur client has a low connection to ur web application. How do u resolve the problem?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Nick Diao
+Type: Phone
+Date: 08/03/2015
+
+1. Introduce yourself
+2. version of java
+3. singleton
+4. reverse a string
+5. how to implement an immutable class?
+6. how do you make sure the msg not lost in database if database failed. Used nested propagation.
+7. framework for unit test
+8. sonar
+9. sql questions how to find the department that its employee larger than 5.
+10. assume you have 2000 companies and their stocks. how do you store them by using which collections?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Kyle Wan
+Type: Phone
+Date: 08/03/2015
+
+1. Introduce your project
+2. how we find what java version we used
+3. suppose java provide some sort of codes, how we find the jars?
+4. arraylist and linkedlist
+5. hashmap hashtable concurrenthashmap
+6. why it is important to implement hashcode and equals?
+7. serializable interface why? binary stream
+8. have you used expression in java?
+9. how multithreading do make it faster to tranfer data into database?
+10. In which case, we should use string
+11. http protocol  socket API? you give the url and port number, there will be a socket thread waiting on the server side. Once there is a request coming in, the socket will be invoked and go to the methods you write in pro
+12. callable statement and prepared statement
+   What is the difference between PreparedStatement and CallableStatement?
+   Both of them can run sp, CallableStatement can run any sp (with input and output), but PreparedStatement do not have registerOutParameter(), so it can only run sp with input.
+13. database table two table employee table 4 column department table 2 column?
+    what query are you going to run to get the result set?
+14. oracle 10g what database you used?
+15. hint to a query?
+16. clustered and non-clustered index?
+17. depart(id,name) emp(id,name,dept_id,commission)
+18. max number of employee in a department.
+select count(emp_id) from emp, dept HAVING count(emp_id) =( select max(count(emp_id) from emp group by dept_id);
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Freddie Yang
+Type: Phone
+Date: 08/03/2015
+
+1. Last project
+2. Different implementation of List
+3. Specific types of LinkedList, when to use it
+4. How to create a thread.
+5. When use new Thread.
+6. Database performance improvement.
+7. How you implements the execution plan.
+8. All kinds of outer join.
+
+-----------------------------------------------------------------------------------------------------------
+Client: Accenture / Goldman & Sachs
+Candidate: Rick Bao
+Type: Phone
+Date: 08/05/2015
+
+1. Role and responsibility in your team.
+2. Scenario questions about your project.
+3. When do you use web service?
+4. What are the differences between soap & rest? When do you choose them? 
+5. Why do you use rest in your project instead of soap?
+6. What difficulties have you met in your project?
+7. If your system is slow, how do you locate the problem and do performance tuning?
+8. If your system got heavy load with requests, how do you improve?
+9. Give 2 lists, find the common elements.
+10. Give a BST, use a list to construct another BST.
+11. Basic string question.
+12. Multi-threading in your project.
+13. Threadlocal & Synchronization.
+14. Given a requirement that the system can manipulate different databases. Design your DAO classes.
+15. Spring IoC?
+16. Spring AOP?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Samuel Tian
+Type: Phone
+Date: 08/10/2015
+
+1. tell me about your self and your last project
+2. static, final, transient, volitale keyword
+3. if a member variable is static, when it is initialized
+4. if a mamber variable is transinet, after the deserialization, what is the value of it
+5. what's the difference between the volitale and snychronized
+6. what collections classes does java have?
+7. differences between ArrayList, LinkedList, LinkedHashSet and HashSet. examples
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Nick Diao
+Type: Phone
+Date: 08/14/2015
+
+1. public private default protected    
+2. inheritance and polymorphism    
+3. Spring IOC  why not use new keyword?  Testable
+4. How to do for the hibernate only retrieve piece of columns from table but not the whole table 
+   Use criteria, projections
+
+-----------------------------------------------------------------------------------------------------------
+Client: Goldman & Sachs
+Candidate: Daniel Le
+Type: Phone
+Date: 08/20/2015
+
+1. Self introduction
+2. What is Restful Web Service?
+3. Which http method did I use in my last project?
+4. Describe the service
+5. How to create API for RESTful Web Service?
+6. What class extends for service class?
+7. What does Spring allows you to do?
+8. What is Dependency Injection?
+9. Describe how to use JUnit Test
+10. What are my biggest strength in my coding skill?
+11. Do I have any experience with JMS?
+12. List some business logic that I did in my last project
+13. List some stored procedures that I used in my last project
+14. Give the concept of exception handling.
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Rick Bao
+Type: F2F
+Date: 08/27/2015
+
+1. Design Restful URI to manipulate the monitors in the Goldman building.
+2. If for some reason the operation code which in charge of sending closing request falls into a dead loop(so it will close all the monitors in the building), how do you design your resource code to avoid the hazard.
+3. What's the difference between filter and interceptor in Jersey.
+4. Where did you use filter and interceptor?
+5. Write code to remove elements in a list.
+6. Polymorphism questions.
+7. You have 10 jars, each jar has many beans inside. Each bean in 9 jars is weighted 1g,and the bean in 1 jar is weighted 1.1g. A scale is given. Design an algorithm to find out the optimized compare times and minimum scale range to find out the 1.1g bean jar. Assume there are enough beans in each jar. 
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Andy Song
+Type: F2F
+Date: 08/27/2015
+
+1. how restful application communicate with front end;
+2. what is maven, list about several maven command;
+3. how to use Mongo DB to find the certain data;
+4. what is the disadvantage of the relational database, how the no-sql database better than the
+  relational database;
+5. what is the advantage and disadvantage of Hibernate, compare to JDBC;
+6. what is the advantage of Spring;
+7. what is OOP's advantage
+8. The differences between overload and override;
+9. what is Angular Js different from other Js frameworks;
+10. write the code that find the certain sub String from the a String.
+11. use Iterator to go through the collections
+12. what is the difference for Iterator fail-fast and fail-save; 
+13. how to deploy the web application and EJB;
+14. what happens if go through the cursor while another user update the table
+
+-----------------------------------------------------------------------------------------------------------
+Client: TCS / Goldman & Sachs
+Candidate: Ian Wang
+Type: F2F
+Date: 08/27/2015
+
+1. Design pattern: Oberver, Visitor, Singleton, MVC, Double-dispatch. Give a example.
+2. In what requirement should we use wait() and notify();
+3. What is rest? REST vs SOAP
+4. Input array [0,2,2,1,-5], output array [1,-5,0,2,2]. Write the function. (easy strangely)
+5. There are 10 card in a stack(not the java data structure, just normal stack), draw first card put it on the desk, second card put it at the bottom of the stack, third card put it on the desk, fourth card put it at the bottom of the stack...... what the order in the stack if we want to get a straight for the card on the desk.
+6. write JDBC. What if we want to use parameter on query?(prepareStatment or CallableStatement) 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Oscar Su
+Type: Phone
+Date: 09/10/2015
+
+1. your experience about your project
+2. what type project you are working on now
+3. talk about your last project
+4. tell me, we have a class, employee. 1 field(employ_id int) with getter and setter. What information will be stored in heap and what will be stored in the stack.
+5. What if I change the type to be an integer field
+   instance, you have a int as a field, new an object. where is field gonna be stored. Inside the object.
+6. Static class, what is static class? What can be static in java.
+7. If you have nested static class(employee class-outter, nested employee reference class)
+8. We have member variable, String description(nested). Outter you have another description string (outter).
+9. can you tell me can static method be overriden, How about overloaded
+10. Do you know why it cannot be overriden?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Oscar Su
+Type: Phone
+Date: 09/11/2015
+
+1. what you do in your role?
+2. what is your major? dev or support
+3. what you are working with? back end or front-end
+4. angular js?jquery?core java?in
+5. String a = “abc”, b = “abc”;
+6. what is the reason why string maintain in string pool?
+7. Why string is immutable
+8. Car object, Integer string , how you detect the field is not modified
+9. Can I put objective key in hashmap
+10. car as a hashmap key, get(), how does the hashmap compare the key to get the data out?
+11. how you override the hashcode and equals
+12. how you sort the collections descending vin number
+13. two interfaces for compare
+14. arrays of string, distinct string in this
+15. same key with diff value, replace!!
+16. singleton pattern
+17. do you have any experience in sql stored procedures
+18. table, title name
+19. 5 paralell div elements, class=mydiv, background color to be yellow
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Bruce Liu
+Type: Phone
+Date: 09/10/2015
+
+1. Tell me about your past project?
+2. What are the design patterns in J2EE?
+3. What  are the design patterns in Java?
+4. What Collection api you used before?
+5. What is buidler pattern.
+6. What is the advan and disadvantage of Stored Procedure?
+7. What is clusterd and non clustered index and what are the advan and disadvantage of them?
+8. How to connect two linkedList?
+9. What is HashMap? What are the two methods? If insert millions of records to HashMap, What will happen?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Oliver Su
+Type: F2F
+Date: 09/15/2015
+
+First Interviewer
+1. AngularJs
+2. According to my recent project, design ER diagram to transfer funds between two account, view history, online payment.
+3. what's web service I used.
+4. spring transaction propagation
+5. Core Java
+6. how to remove duplicate from two list.
+7. how to remove duplicate from a list.
+8. hashmap
+9. hashmap vs TreeMap
+10. Dependency injection
+11. Spring DAO
+12 @Autowire
+13. Singleton in Spring
+Second Interviewer
+1. Spring MVC
+2. Spring REST
+3. Spring DAO
+Third Interviewer
+1. Spring MVC
+2. Spring REST
+3. sql query, i. emp(id, name) if id is duplicate, how to find them. ii. same as previous, but show the name also
+4. hashmap, how's hashmap working, what's if i override equals to return true. how to solve this problem.
+5. write hql (two tables have relationship, one is emp, other is address), show these two table on the screen, one screen show all emp, the other show emp with address info.
+6. emp(id, name) address(id, street) emp has 3 records, address has 4 records, if select * from emp, address; how many records will be displayed?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Tech Mahindra / Goldman & Sachs
+Candidate: Chris Luo
+Type: Phone
+Date: 09/22/2015
+
+1.experience in ant or maven
+2.maven deploy project?
+3.which application did u use?
+4.web service
+5.main difference between soap and rest
+6.experience on php?
+7.rating your core java out of 10?
+8.implement a set? what data structure will you use?
+9.difference bean factory and application context
+10.how you deploy the tomcat server in spring configuration file
+11.sp return value?
+12.Can we apply cursor in select statement?

@@ -1,0 +1,11 @@
+-----------------------------------------------------------------------------------------------------------
+Client: TrustWave
+Candidate: Sameul Tian
+Type: Phone
+Date: 07/09/2015
+
+1. Tell me about your last project
+2. Tell me about your past experience
+3. Tell me about the technologies you are comfortable with
+4. What do you expect for moving forward
+5. any questions to me?

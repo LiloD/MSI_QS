@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Department of Human Service
+Candidate: Gregory Gao
+Type: Phone
+Date: 07/11/2013
+
+1. Tell me your experience in Java
+2. Tell me what you have done in SQL
+3. Tell me your experience in Web-Service
+
+
+ 

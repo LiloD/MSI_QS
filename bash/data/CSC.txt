@@ -1,0 +1,26 @@
+-----------------------------------------------------------------------------------------------------------
+Client: CSC, NJ
+Candidate: Jay Gong
+Type: Phone
+Date: 12/12/2012
+
+1. Tell us yourself.
+2. Do you have EJB experience?
+3. What is the difference between message-driven bean and session bean?
+4. Do you have ORM experience?
+5. How do you use ORM?
+6. Explain how do you use Hibernate? 
+7. Your experience with JUnit.
+8. After recieving the user's requirement. What is the work flow to implement it?
+9. Do you have experience on memory leaking.
+10. What your Methodology to develop a user case.
+11. Database experience.
+12. Inner join and outer join?
+13. What is the difference between Store procedure and Function in Oracle?
+14. How do you understand the transaction in Oracle?
+15. Do you have experience on Ant?
+16. Do you have XML experience?
+17. What design pattern do you use and explain.
+18. What is the advantage of Singleton?
+19. Do you have any experience on improving performance of an application?
+ 

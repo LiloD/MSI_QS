@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: NGA
+Candidate: Zack Chen
+Type: Phone
+Date: 07/22/2013
+
+1. Where are cookies located? Client-side or server-side. How to access cookies.
+2. How to use css to align elements side by side.
+3. Javascript prototype
+4. Scenario problems relating to web degisn.
+5. How to sort a map basing on values.
+6. What are inner join, outer join.
+
+ 

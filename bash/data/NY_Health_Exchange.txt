@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: New York Health Exchange, Albany, NY
+Candidate: Scott Yang
+Type: Skype
+Date: 08/02/2012
+
+1. What is static method?
+2. How to make a class that cannot be inherited?
+3. What is finally and finalize?
+4. Tell me details about System.out.println.
+5. What is struts actionform?
+6. There is a table contains 2 columns: EmpolyeeName and Salary. Write the sql query to show the max salary with the name.      
+7. What design pattern is called the factory of factory?                                  
+

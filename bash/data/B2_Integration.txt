@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------------------
+Client: B2 Integration
+Candidate: Bill Gui
+Type: Phone
+Date: 02/08/2013
+
+1. your project
+2. polymorphsm
+3. post vs get
+4. jquery developer version vs production version difference
+5. why use ajax? 
+6. how to evaluate the cost of junit vs value of junit
+7. what class u used to parse xml
+8. give me 5 type in db
+9. A lot questions in tl-sql
+10. stored procedure vs functions
+11. describe the deploy process
+12. how long is a varchar2
+

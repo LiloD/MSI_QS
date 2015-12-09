@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Nike
+Candidate: Robert Shi
+Type: Phone
+Date: 03/27/2014
+
+1. Abstract class vs interface... when use.list some inteface you used
+2. Map vs List. 
+3. Hashmap,hashtable,CurrentHashMap,Linkedhashmap
+3. Garbge collection. how to? 
+4. 3 ways to configh spring dependencies.
+4. Advantage of spring
+5. Spring IOC.
+6. Spring MVC. Where do you put business logic
+7. Javscirpt == vs ===.
+8. undefined vs null
+9. javascript clourse
+10. junit, qunit. why use unit testing?

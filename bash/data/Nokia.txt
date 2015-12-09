@@ -1,0 +1,26 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Nokia
+Candidate: Bruce Liu
+Type: Skype
+Date: 05/29/2015
+
+1. One million application connect to a server, how to deal with this?
+2. Scala
+3. functional language
+4. Abstract class, interface
+5. Multiple inheritance
+6. Closure 
+7. benefit and downside of reflection
+
+-----------------------------------------------------------------------------------------------------------
+Client: Nokia
+Candidate: Freddie Yang
+Type: Phone
+Date: 07/10/2015
+
+1. Is Java pure oop language?
+2. Scala, and difference with Java(scala is pure oop).
+3. Reflection in Java
+4. Static keyword(static class and static method, where to use static)
+5. Heap memory and Stack memory
+6. Singleton

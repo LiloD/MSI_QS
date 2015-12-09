@@ -1,0 +1,20 @@
+-----------------------------------------------------------------------------------------------------------
+Client: NYSE, NYC
+Candidate: Kevin Lai
+Type: Phone
+Date: 08/16/2011
+
+1. What you use to store data at the front end?
+2. How do you use streaming amf?
+
+-----------------------------------------------------------------------------------------------------------
+Client: NYSE, NYC
+Candidate: Terry Li
+Type: Phone
+Date: 08/16/2011
+
+1. Are you workin more in front end or back end?
+2. What component did you extend in your project?
+3. Did you do backend frontend integration? and I said yes, and explain how 
+4. Did you use photoshop?
+

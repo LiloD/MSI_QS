@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Thrive Metrics
+Candidate: Vincent Wang
+Type: Phone
+Date: 09/03/2013
+
+1. Can you introduce yourself?
+2. What is the size of your team?
+3. Do you know Django?
+4. Do you do front end?
+5. When are you available for F2F interview and when can you start to work?
+

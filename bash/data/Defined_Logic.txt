@@ -1,0 +1,48 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Defined Logic, Red Bank, NJ
+Candidate: Gregory Gao
+Type: Phone
+Date: 01/24/2011
+
+1. Tell me about your experience of working with Spring and Hibernate
+2. Explain the mechanism of Hibernate (ORM + JDBC core)
+3. Explain the Hibernate work flow, how to use Hibernate? (Table -> Bean -> Mapping -> Root Mapping -> Test)
+4. Any other way to create Hibernate config except xml config file? (Annotation) 
+5. How to run SQL in Hibernate? 
+6. Explain the MVC structure. 
+7. What design pattern have you used beside MVC? 
+8. Explain the Template pattern. 
+9. Explain n-tier architecture, and how does n-tier project works? 
+
+-----------------------------------------------------------------------------------------------------------
+Client: Defined Logic, Red Bank, NJ
+Candidate: Gregory Gao
+Type: Phone
+Date: 01/27/2011
+
+1. What's your top skill set? 
+2. What spring API I had been used?
+3. A jsp form allows the user to input name and birthday. There has a simple format controller 	to receive the info and 
+   send back to a Java file, is there may any error occur while in this process? (His tip: think about the Spring 
+   lifecycle, and the controller) Like the information get from the front is always string, and the back end need integer. 
+4. Same scenario as question 3, two functions in that Java file, 1st one is called handleRequest(), the other one is 
+   called generatePassword(). One local variable called UserInfo, is there any 	problem while the SimpleFormatController 
+   is sending some information back to the local variable UserInfo via function handleRequest()?   
+   What if there is only 1 function (no generatePassword()), is the problem will still remain? 
+5. Familiar with Maven? 
+6. In database, 2 tables, User and Role.  Each user may have many roles, each role may have many users also. They are 
+   many to many relationships. How to config them? Config Steps? What if we want to add a new property, like the date 
+   when this user get this role, how to modify? (Table, config file, java beans everything)
+7. What's mean of keyword "Transient"?
+8. Explain the Serializable class. 
+9. How to write Singleton in Java?  Explain each step. 
+10. Can we use clone() in a Singleton? Any issue may occur? Any different between the cloned one and the original one? 
+11. Can a class be protected? or private? why protected? why private? different? 
+12. One interface called vehicle, two classes car and bus extend from this interface. A method 	called drive(), it require a parameter 
+    like this:   
+        drive( vehicle v ); 
+    Two objects of each class: 
+	Car c = new Car();
+	Bus b = new Bus();
+    Can c or b be used as the parameter in function drive()? 
+    How to distinguish them in function drive()? 

@@ -1,0 +1,64 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Fedex
+Candidate: Rachel Qi
+Type: Phone
+Date: 12/16/2012
+
+1. difference between abstract class and interface 
+2. linked list and set feather
+3. hashmap 
+4. race condition and how to prevent
+5. deadlock and how to prevent
+6. design pattern
+7. php questions
+
+-----------------------------------------------------------------------------------------------------------
+Client: Fedex
+Candidate: Rachel Qi
+Type: Phone
+Date: 12/20/2012
+
+1. in photoshop, how to change image size?
+2. rate yourself in java/php
+3. design pattern
+4. factory pattern and singleton pattern
+5. have 10 users and can I use singleton pattern to connect to DB? Reason
+6. difference between abstract class and interface
+7. difference between left join and “-”
+8. if I have 100 users and DS speed is slow, what’s the possible reason? How to improve?
+
+-----------------------------------------------------------------------------------------------------------
+Client: Fedex
+Candidate: Chris Wang
+Type: Phone
+Date: 01/14/2013
+
+1. What IDE did you use?
+2. What's the difference between abstract class & interface?
+3. What's the difference between list & set?
+4. How does exception handler work?
+5. What design pattern did you use?
+6. How to create a Singleton class?
+7. What's the difference between override & overload method?
+8. In PHP, what's the difference between include & require?
+9. In PHP, can a string "21" compare with a integer 20 directly?
+10. How to find out the number of parameters passed into function?
+11. There are two tables in SQL
+    Employee: EmployeeID, Name, StateCode
+    State:    StateCode, StateName
+
+a) query stateCode and the number for each state
+b) query stateName and the number for each state
+
+-----------------------------------------------------------------------------------------------------------
+Client: Fedex
+Candidate: Chris Wang
+Type: Phone
+Date: 01/17/2013
+
+1. What are design patterns you used before? Details
+2. What's the difference between abstract class & interface?
+3. How does JDBC work?
+4. A specific sql query question
+5. How to sort 1 to 10?
+6. Talk about my last project.

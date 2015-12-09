@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Revenue Solution
+Candidate: Stanley Li
+Type: Phone
+Date: 03/19/2013
+
+1. What’s your current project?
+2. What is the approaches to design web application?
+3. What kind of tech is your favourite ones to design web application?
+4. How does the Spring MVC looks like in your project?
+5. What is style sheet? Why use it?
+6. JavaScript, difference between null and undefined.
+7. What is bottom up approach to design web service?
+8. How to consume web service?

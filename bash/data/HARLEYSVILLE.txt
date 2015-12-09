@@ -1,0 +1,25 @@
+-----------------------------------------------------------------------------------------------------------
+Client: HARLEYSVILLE Insurance
+Candidate: Gregory Gao
+Type: Phone
+Date: 01/15/2013
+
+1. Please introduce what you have done in your most recently project.
+2. Can you explain how did you integrate the flex and front jsp stuff with the spring in your most recently project? 
+   I am not interesting in the Flex part, just tell me about the interaction with spring.
+3. Explain the work flow of the spring part which you just said.
+4. Where did you use Hibernate in the project?
+5. Why Hibernate, instead of JDBC? 
+6. How to create and manage a Hibernate session and the transactions inside? 
+7. How to connect the Hibernate with the database?
+8. What's the steps or the pre-procedures to config before you start using the Hibernate?
+9. In one session, how to retrieve data which those data is defined within different .hbm.xml files?
+10. Have you ever use external web-services or publish some web-services to the web? SOAP experience? 
+11. Have you ever work with XML based transaction communication? How? 
+12. Have you met Hibernate caching problem before? Give me a example you met in your previous work. 
+13. How did you solved the caching problem? What would be the steps to solve the caching problem or 
+    other related problems? 
+14. When do you use google to help you solve the problem you meet during work? How do you rate yourself 
+    about your googling skill? 
+15. Differences between Abstract class and Interface
+16. Differences between Checked exception and Un-Checked exception.  

@@ -1,0 +1,10 @@
+-----------------------------------------------------------------------------------------------------------
+Client: Pearson Education, Boston, MA
+Candidate: David Zhang
+Type: Phone
+Date: 06/20/2012
+
+1. Ajax
+2. Web services
+3. TDD
+4. Junit, Flex Unit
