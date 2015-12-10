@@ -1,50 +1,48 @@
 <div class="panel panel-default">
-  <div class="panel-heading">
-    <h1 class="panel-title">Questions</h1>
-    <div class="btn-group pull-right">
-      <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open">Filter By</span>
-      <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open">Query Status</span>
-    </div>
-    <hr>
-  </div>
-  <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
-    <div class="panel-body">
-      <form class="form-inline">
-        <div class="form-group">
-          <label>By Company</label>
-          <input ng-model="question.qCompany" ng-model-options="{debounce: 500}" class="form-control">
+    <div class="panel-heading">
+        <div class="btn-group pull-right">
+            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open">Filter By</span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open">Query Status</span>
         </div>
-        <div class="form-group">
-          <label>By Question</label>
-          <input ng-model="question.qQuestion" ng-model-options="{debounce: 500}" class="form-control">
+        <hr>
+    </div>
+    <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>By Company</label>
+                    <input ng-model="question.qCompany" ng-model-options="{debounce: 500}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>By Question</label>
+                    <input ng-model="question.qQuestion" ng-model-options="{debounce: 500}" class="form-control">
+                </div>
+                <!-- <button class="btn btn-primary">Search</button> -->
+            </form>
         </div>
-        <!-- <button class="btn btn-primary">Search</button> -->
-      </form>
     </div>
-  </div>
-  <div class="panel-collapse collapse" uib-collapse="!question.filter.status.open">
-    <div class="panel-body">
-      <span>Filter By</span>
-      <pre>{{question.getParams() | json}}</pre>
-      <span>Filter Result</span>
-      <pre>{{"query count: " + question.qCount}}</pre>
+    <div class="panel-collapse collapse" uib-collapse="!question.filter.status.open">
+        <div class="panel-body">
+            <span>Filter By</span>
+            <pre>{{question.getParams() | json}}</pre>
+            <span>Filter Result</span>
+            <pre>{{"query count: " + question.qCount}}</pre>
+        </div>
     </div>
-  </div>
-  <table class="table table-striped">
-    <tr>
-      <th>Company</th>
-      <th>Question</th>
-      <th>Date</th>
-    </tr>
-    <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q.interview._id)">
-      <td>{{q.interview.Client}}</td>
-      <td>{{q.question}}</td>
-      <td>{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
-    </tr>
-  </table>
-  <hr>
-  <div class="panel-footer">
-    <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.loadQuestions()" boundary-links="true"></uib-pagination>
-  </div>
-  <pre>{{question.showInterviewDetail}}</pre>
+    <table class="table table-striped">
+        <tr>
+            <th>Company</th>
+            <th>Question</th>
+            <th>Date</th>
+        </tr>
+        <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q.interview._id)">
+            <td>{{q.interview.Client}}</td>
+            <td>{{q.question}}</td>
+            <td>{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
+        </tr>
+    </table>
+    <div class="panel-footer text-center">
+        <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.loadQuestions()" boundary-links="true"></uib-pagination>
+    </div>
+    <pre>{{question.showInterviewDetail}}</pre>
 </div>

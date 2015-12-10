@@ -93,7 +93,6 @@ router.get('/it', function(req, res, next) {
     if (!!req.query.iClient) filter['Client'] = new RegExp(req.query.iClient, 'i');
     if (!!req.query.iCandidate) filter['Candidate'] = new RegExp(req.query.iCandidate, 'i');
     if (!!req.query.iType) filter['Type'] = new RegExp(req.query.iType, 'i');
-    if (!!req.query.iDate) filter['Date'] = new RegExp(req.query.iDate, 'i');
 
     dbConf.con.then(function(db) {
         return Q.all([
