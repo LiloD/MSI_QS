@@ -15,6 +15,14 @@
                 return params
             }
 
+
+            $scope.info = {
+                q : '',
+                fetch : function(query){
+                    return ['nodejs', 'expressjs', 'passportjs', 'qjs'];
+                } 
+            }
+
             self.loadQuestions = function() {
                 $http.get('/api/qs', {
                     params: self.getParams()

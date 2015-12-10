@@ -37,18 +37,6 @@
         <button ng-click="question.newQuestions(nq.it, nq.questions)">Submit</button>
     </div>
     <div class="panel-body">
-        <h3>Inserted Results {{!question.nq ? 0 : question.nq.length}}</h3>
-        <table class="table">
-            <tr>
-                <th>Company</th>
-                <th>Question</th>
-                <th>Date</th>
-            </tr>
-            <tr ng-repeat="q in question.nq">
-                <th>{{q.interview.Client}}</th>
-                <th>{{q.question}}</th>
-                <th>{{q.interview.Date | date:'MM/dd/yyyy'}}</th>
-            </tr>
-        </table>
+        <hint info="info"></hint>
     </div>
 </div>

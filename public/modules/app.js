@@ -2,7 +2,7 @@
 
     'use strict'
 
-    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login'])
+    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'hint'])
         .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             // remove hash
             $locationProvider.html5Mode(true);
