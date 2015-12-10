@@ -55,7 +55,7 @@
                 $scope.questions.push(angular.copy(q));
                 $scope.reset();
 
-
+                //scroll down to edit
                 $timeout(function() {
                     console.log("scroll!!");
                     $location.hash('newQuestions');
@@ -71,6 +71,13 @@
             $scope.editQuestion = function(idx){
                 $scope.curQuestion = $scope.questions[idx];
                 $scope.removeQuestion(idx);
+
+                //scroll down to edit
+                $timeout(function() {
+                    console.log("scroll!!");
+                    $location.hash('newQuestions');
+                    $anchorScroll();
+                });
             }
 
             $scope.addTag = function(tag){

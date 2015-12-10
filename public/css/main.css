@@ -1,29 +1,36 @@
-.question-form{
-    padding: 5px 15px;
+.question-form {
+    padding: 15px 15px;
     /*background-color: #e7e7e7;*/
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 4px 4px #e5e9ef;
 }
 
+
 /*for tags */
 
-.tag-wrapper{
+.tag-wrapper {
     display: inline-block;
     background-color: #e5e9ef;
     padding: 5px 10px;
     margin: 5px;
 }
 
-.tag-value{
+.tag-value {
     cursor: pointer;
     text-decoration: none;
     margin-right: 5px;
 }
 
-.glyphicon, .glyphicon-remove{
+.glyphicon,
+.glyphicon-remove {
     top: 2px;
     cursor: pointer;
 }
 
+
 /*end for tags*/
+
+.clear {
+    clear: both;
+}
