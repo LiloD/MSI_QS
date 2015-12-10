@@ -28,16 +28,59 @@
                 </div>
             </div>
         </form>
-        <div class="form-group">
-            <label>Questions</label>
-            <div>
-                <textarea class="form-control" rows="10" ng-model="nq.questions"></textarea>
-                <i>separate by new line, leading with number and point like below</i>
+        <hr>
+
+        <!-- show added questions -->
+        <div class="panel panel-default" ng-repeat="q in questions track by $index">
+            <div class="panel-heading control-label">{{"Question #"+$index}}</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2"><label>Description: </label></div>
+                    <div class="col-md-10"><pre>{{q.description}}</pre></div>
+                </div>
+                <div class="row" ng-show="q.tags.length > 0">
+                    <div class="col-md-2"><label>Tags: </label></div>
+                    <div class="col-md-10">
+                        <div class="tag-wrapper" ng-repeat="tag in q.tags">
+                        <a class="tag-value">{{tag}}</a></span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- edit current question form -->
+        <div class="form-group question-form" id="newQuestions">
+            <label>Question: </label>
+            <div >
+                <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.description"></textarea>
+                <!-- <i>separate by new line, leading with number and point like below</i> -->
+                <span class="pull-right"><button ng-click="addQuestion(curQuestion)">add new question</button></span>
+            </div>
+            <label>Tags: </label>
+            <div >
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="tag-wrapper" ng-repeat="tag in curQuestion.tags">
+                        <a class="tag-value">{{tag}}</a><span class="glyphicon glyphicon-remove" ng-click="removeTag($index)"></span>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <hint info="tagInfo"></hint>
+                    </div>
+                    
+                    <button class="col-md-1" ng-click="addTag(tagInfo.q)">Add</button>
+                </div>
+
+
             </div>
         </div>
         <button ng-click="question.newQuestions(nq.it, nq.questions)">Submit</button>
     </div>
-    <div class="panel-body">
+    <!-- <div class="panel-body">
         <hint info="info"></hint>
-    </div>
+    </div> -->
 </div>

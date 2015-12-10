@@ -3,7 +3,7 @@
     'use strict'
 
     angular.module('main')
-        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $q) {
+        .controller('QuestionCtrl', function($scope, $http, $uibModal,$timeout, Interview, $q, $location, $anchorScroll) {
             var self = this;
             self.getParams = function() {
                 var params = {
@@ -25,6 +25,68 @@
                     return $http.get('/it', { params: {query: q} });
                 } 
             }
+
+            //add question------------------------------
+            $scope.questions = [];
+
+            $scope.tagInfo = {
+                q : '',
+                fetch : function(q, hints){
+                    if(!q){
+                        return [];
+                    }
+                    return ['nodejs', 'angularjs', 'expressjs'];
+                } 
+            }
+
+            $scope.curQuestion = {
+                description: "",
+                tags:[]
+            }
+
+            $scope.reset = function(){
+                $scope.curQuestion.description = '';
+                $scope.curQuestion.tags = [];
+                $scope.tagInfo.q = '';
+            }
+
+            $scope.addQuestion = function(q){
+                if(!q.description) return;
+                $scope.questions.push(angular.copy(q));
+                $scope.reset();
+
+
+                $timeout(function() {
+                    console.log("scroll!!");
+                    $location.hash('newQuestions');
+                    $anchorScroll();
+                });
+            }
+
+            $scope.removeQuestion = function(idx){
+                if(idx < 0 || idx >= $scope.questions.length) return;
+                $scope.questions.splice(idx, 1);
+            }
+
+            $scope.editQuestion = function(idx){
+                $scope.curQuestion = $scope.questions[idx];
+                $scope.removeQuestion(idx);
+            }
+
+            $scope.addTag = function(tag){
+                if(!tag) return;
+                if($scope.curQuestion.tags.indexOf(tag) < 0)
+                    $scope.curQuestion.tags.push(tag);   
+            }
+
+            $scope.removeTag = function(idx){
+                if(idx < 0 || idx >= $scope.curQuestion.tags.length) return;
+                $scope.curQuestion.tags.splice(idx, 1);
+            }
+            // end of add question------------------------------
+
+
+
 
             self.loadQuestions = function() {
                 $http.get('/api/qs', {
