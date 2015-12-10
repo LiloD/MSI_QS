@@ -3,7 +3,7 @@
     'use strict'
 
     angular.module('main')
-        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview) {
+        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $q) {
             var self = this;
             self.getParams = function() {
                 var params = {
@@ -18,8 +18,11 @@
 
             $scope.info = {
                 q : '',
-                fetch : function(query){
-                    return ['nodejs', 'expressjs', 'passportjs', 'qjs'];
+                fetch : function(q, hints){
+                    if(!q){
+                        return [];
+                    }
+                    return $http.get('/it', { params: {query: q} });
                 } 
             }
 

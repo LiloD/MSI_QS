@@ -7,7 +7,7 @@
                     info: '='
                 },
                 templateUrl: 'modules/hint/hint.html',
-                controller: ['$scope', '$http', function($scope, $http) {
+                controller: ['$scope', '$http', '$q', function($scope, $http, $q) {
                     $scope.list = [];
 
                     $scope.selected = -1;
@@ -55,7 +55,15 @@
                     }
 
                     $scope.search = function(query) {
-                        $scope.list = $scope.info.fetch(query);
+                        if(!query)
+                            return;
+
+                        $q.when($scope.info.fetch(query), function(value){
+                            if(!value) $scope.list = [];
+                            $scope.list = value.data || value;
+                        }, function(err){
+                            $scope.list = [];
+                        })                   
                     }
                 }]
             }
