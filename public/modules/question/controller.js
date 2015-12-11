@@ -44,16 +44,17 @@
                 tags:[]
             }
 
-            $scope.reset = function(){
-                $scope.curQuestion.description = '';
-                $scope.curQuestion.tags = [];
+            $scope.reset = function(q){
+                q.description = '';
+                q.tags = [];
                 $scope.tagInfo.q = '';
+                return;
             }
 
             $scope.addQuestion = function(q){
                 if(!q.description) return;
                 $scope.questions.push(angular.copy(q));
-                $scope.reset();
+                $scope.reset($scope.curQuestion);
 
                 //scroll down to edit
                 $timeout(function() {
@@ -69,30 +70,24 @@
             }
 
             $scope.editQuestion = function(idx){
-                $scope.curQuestion = $scope.questions[idx];
-                $scope.removeQuestion(idx);
-
-                //scroll down to edit
-                $timeout(function() {
-                    console.log("scroll!!");
-                    $location.hash('newQuestions');
-                    $anchorScroll();
-                });
+                // $scope.questions[idx].edit = !$scope.questions[idx].edit;
             }
 
-            $scope.addTag = function(tag){
+            $scope.addTag = function(tag, q){
                 if(!tag) return;
-                if($scope.curQuestion.tags.indexOf(tag) < 0)
-                    $scope.curQuestion.tags.push(tag);   
+            
+                if (q.tags.indexOf(tag) < 0)
+                    q.tags.push(tag);
+
+                return;
+                
             }
 
-            $scope.removeTag = function(idx){
-                if(idx < 0 || idx >= $scope.curQuestion.tags.length) return;
-                $scope.curQuestion.tags.splice(idx, 1);
+            $scope.removeTag = function(idx, q){
+                if(idx < 0 || idx >= q.tags.length) return;
+                q.tags.splice(idx, 1);
             }
             // end of add question------------------------------
-
-
 
 
             self.loadQuestions = function() {
