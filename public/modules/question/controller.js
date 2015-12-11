@@ -25,13 +25,12 @@
             //add question------------------------------
             $scope.questions = [];
 
-           
             $scope.fetchTags =function(q){
                 if(!q){
                     return [];
                 }
                 return ['nodejs', 'angularjs', 'expressjs'];
-            } 
+            }
 
             $scope.curQuestion = {
                 description: "",
@@ -41,7 +40,7 @@
             $scope.reset = function(q){
                 q.description = '';
                 q.tags = [];
-                $scope.tagInfo.q = '';
+                // tagInfo.q = '';
                 return;
             }
 
@@ -64,7 +63,6 @@
             }
 
             $scope.editQuestion = function(idx){
-                // $scope.questions[idx].edit = !$scope.questions[idx].edit;
             }
 
             $scope.addTag = function(tag, q){
@@ -72,9 +70,7 @@
             
                 if (q.tags.indexOf(tag) < 0)
                     q.tags.push(tag);
-
                 return;
-                
             }
 
             $scope.removeTag = function(idx, q){
@@ -82,6 +78,22 @@
                 q.tags.splice(idx, 1);
             }
             // end of add question------------------------------
+
+
+            $scope.submitQuestion = function(){
+                var it = {
+                    Client: $scope.clientInfo.q,
+                    Date: $scope.Date,
+                    Candidate: $scope.Candidate,
+                    Type: $scope.Type, 
+                }
+
+                console.log('it here', it);
+
+                $http.post('/it', {it :it, qs: $scope.questions}).success(function(data){
+                    console.log('submitQuestion', data);
+                })
+            }
 
 
             self.loadQuestions = function() {
@@ -107,9 +119,6 @@
                 self.showInterviewDetail = Interview.get({
                     id: iid
                 });
-                // $uibModal.open({
-                //     template: ""
-                // })
             }
 
             self.init = function() {

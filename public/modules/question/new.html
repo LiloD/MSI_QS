@@ -2,6 +2,7 @@
     <div class="panel-heading">
         <h3 class="panel-title">New Interview with Questions</h3>
     </div>
+
     <div class="panel-body">
         <form class="form">
             <div class="row">
@@ -12,28 +13,22 @@
                 <div class="form-group col-md-3">
                     <label class="control-label">Date:</label>
                     <p class="input-group">
-                        <input type="date" class="form-control" uib-datepicker-popup ng-model="nq.it.Date" is-open="nq.status.opened" ng-required="true" close-text="Close" />
+                        <input type="date" class="form-control" uib-datepicker-popup ng-model="Date" is-open="nq.status.opened" ng-required="true" close-text="Close" />
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-default" ng-click="nq.status.opened=true"><i class="glyphicon glyphicon-calendar"></i></button>
                         </span>
                 </div>
                 <div class="form-group col-md-3">
                     <label class="control-label">Candidate:</label>
-                    <input class="form-control" ng-model="nq.it.Candidate">
+                    <input class="form-control" ng-model="Candidate">
                 </div>
                 <div class="form-group col-md-3">
                     <label class="control-label">Type:</label>
-                    <input class="form-control" ng-model="nq.it.Type">
+                    <input class="form-control" ng-model="Type">
                 </div>
             </div>
         </form>
         <hr>
-        <!-- <div ng-if="bool" class="fade">
-            Fade me in out
-        </div>
-        <button ng-click="bool=true">Fade In!</button>
-        <button ng-click="bool=false">Fade Out!</button>
-         -->
         <!-- show added questions -->
         <div class="panel panel-default question-item" ng-repeat="q in questions track by $index">
             <div class="panel-heading control-label">
@@ -48,7 +43,6 @@
                     <div class="clear"></div>
                 </div>
             </div>
-
             <!-- if user click edit button -->
             <div class="panel-body" ng-if="q.edit">
                 <div class="form-group question-form" id="newQuestions">
@@ -76,7 +70,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- if user not click edit -->
             <div class="panel-body" ng-if="!q.edit">
                 <div class="row">
@@ -98,31 +91,38 @@
             </div>
         </div>
         <!-- edit current question form -->
-        <div class="form-group question-form" id="newQuestions">
-            <label>Question: </label>
-            <div>
-                <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.description"></textarea>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <label>New Question</label>
             </div>
-            <label>Tags: </label>
-            <div>
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="tag-wrapper" ng-repeat="tag in curQuestion.tags">
-                            <a class="tag-value">{{tag}}</a><span class="glyphicon glyphicon-remove" ng-click="removeTag($index, curQuestion)"></span>
+            <div class="panel-body">
+                <div class="form-group question-form" id="newQuestions">
+                    <label>Description: </label>
+                    <div>
+                        <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.description"></textarea>
+                    </div>
+                    <label>Tags: </label>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="tag-wrapper" ng-repeat="tag in curQuestion.tags">
+                                    <a class="tag-value">{{tag}}</a><span class="glyphicon glyphicon-remove" ng-click="removeTag($index, curQuestion)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <hint data="tagInfo" fetch="fetchTags"></hint>
+                            </div>
+                            <button type="button" class="btn btn-primary" ng-click="addTag(tagInfo.q, curQuestion)">Add Tag</button>
+                            <button type="button" style="margin-right:10px" class="btn btn-warning pull-right" ng-click="reset(curQuestion)">Reset</button>
+                            <button type="button" style="margin-right:10px" class="btn btn-success pull-right" ng-click="addQuestion(curQuestion)">Submit Question</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <hint data="tagInfo" fetch="fetchTags"></hint>
-                    </div>
-                    <button type="button" class="btn btn-primary" ng-click="addTag(tagInfo.q, curQuestion)">Add Tag</button>
-                    <button type="button" style="margin-right:10px" class="btn btn-warning pull-right" ng-click="reset(curQuestion)">Reset</button>
-                    <button type="button" style="margin-right:10px" class="btn btn-success pull-right" ng-click="addQuestion(curQuestion)">Submit Question</button>
-                </div>
             </div>
         </div>
-        <button ng-click="question.newQuestions(nq.it, nq.questions)">Submit</button>
+        <button class="btn btn-success" ng-click="submitQuestion()">Submit</button>
     </div>
     <!-- <div class="panel-body">
         <hint info="info"></hint>

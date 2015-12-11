@@ -17,6 +17,34 @@ router.get('/', function(req, res, next){
     });
 });
 
+router.post('/', function(req, res, next){
+    dbConf.con.then(function(db){
+        console.log(1);
+        return dbConf.saveToInterview(db, req.body.it).then(function(insertItRes){
+            console.log(2);
+            if(!insertItRes.result.ok) throw err;
+            return Q.all(req.body.qs.map(function(question){
+                console.log(3);
+                return dbConf.saveToQuestion(db, question).then(function(insertQsRes){
+                    console.log(4);
+                    if(!insertQsRes.result.ok) throw err;
+                    return Q.all(question.tags.map(function(tag){
+                        console.log(5, tag);
+                        return dbConf.saveToTag(db, {'tag': tag});
+                    }));
+                });
+            }));
+        }).then(function(status){
+            console.log('status', status);
+            res.json('insert success');
+            res.end();
+        });
+    }).catch(function(err){
+        console.log('err', err);
+        res.json("err");
+        res.end();
+    });
+})
 
 
 module.exports = router;
