@@ -15,29 +15,23 @@
                 return params
             }
 
-
-            $scope.info = {
-                q : '',
-                fetch : function(q, hints){
-                    if(!q){
-                        return [];
-                    }
-                    return $http.get('/it', { params: {query: q} });
-                } 
+            $scope.fetchClients = function(q){
+                if(!q){
+                    return [];
+                }
+                return $http.get('/it', { params: {query: q} });
             }
 
             //add question------------------------------
             $scope.questions = [];
 
-            $scope.tagInfo = {
-                q : '',
-                fetch : function(q, hints){
-                    if(!q){
-                        return [];
-                    }
-                    return ['nodejs', 'angularjs', 'expressjs'];
-                } 
-            }
+           
+            $scope.fetchTags =function(q){
+                if(!q){
+                    return [];
+                }
+                return ['nodejs', 'angularjs', 'expressjs'];
+            } 
 
             $scope.curQuestion = {
                 description: "",

@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="form-group col-md-3">
                     <label class="control-label">Client:</label>
-                    <!-- <input class="form-control" ng-model="nq.it.Client"> -->
-                    <hint info="info"></hint>
+                    <hint data="clientInfo" fetch="fetchClients"></hint>
                 </div>
                 <div class="form-group col-md-3">
                     <label class="control-label">Date:</label>
@@ -68,9 +67,9 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <hint info="tagInfo"></hint>
+                                <hint data="data" fetch="fetchTags"></hint>
                             </div>
-                            <button type="button" class="btn btn-primary" ng-click="addTag(tagInfo.q, q)">Add Tag</button>
+                            <button type="button" class="btn btn-primary" ng-click="addTag(data.q, q)">Add Tag</button>
                             <button type="button" style="margin-right:10px" class="btn btn-warning pull-right" ng-click="reset(q)">Reset</button>
                             <button type="button" style="margin-right:10px" class="btn btn-success pull-right" ng-click="q.edit=false">Update</button>
                         </div>
@@ -115,7 +114,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <hint info="tagInfo"></hint>
+                        <hint data="tagInfo" fetch="fetchTags"></hint>
                     </div>
                     <button type="button" class="btn btn-primary" ng-click="addTag(tagInfo.q, curQuestion)">Add Tag</button>
                     <button type="button" style="margin-right:10px" class="btn btn-warning pull-right" ng-click="reset(curQuestion)">Reset</button>
