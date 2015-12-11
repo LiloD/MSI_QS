@@ -4,16 +4,17 @@
             return {
                 restrict: 'E',
                 scope: {
-                    info: '='
+                    data: '=',
+                    fetch: '='
                 },
                 templateUrl: 'modules/hint/hint.html',
                 controller: ['$scope', '$http', '$q', function($scope, $http, $q) {
                     $scope.list = [];
-
+                    
                     $scope.selected = -1;
 
                     $scope.attach = function(idx) {
-                        $scope.info.q = $scope.list[idx];
+                        $scope.data.q = $scope.list[idx];
                     }
 
                     $scope.mouseover = function(idx) {
@@ -58,7 +59,7 @@
                         if(!query)
                             return;
 
-                        $q.when($scope.info.fetch(query), function(value){
+                        $q.when($scope.fetch(query), function(value){
                             if(!value) $scope.list = [];
                             $scope.list = value.data || value;
                         }, function(err){
