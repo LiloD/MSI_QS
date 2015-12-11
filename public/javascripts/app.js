@@ -2,7 +2,7 @@
 
     'use strict'
 
-    var app = angular.module('app', ['ui.bootstrap', 'ui.router', 'hint']);
+    var app = angular.module('app', ['ui.bootstrap', 'ui.router', 'hint', 'ngAnimate']);
 
     app.config(function($stateProvider, $urlRouterProvider) {
 

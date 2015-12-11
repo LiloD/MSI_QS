@@ -31,6 +31,38 @@
 
 /*end for tags*/
 
+
+/*for add question animation*/
+
+/*.question-item.ng-move,
+.question-item.ng-enter,
+.question-item.ng-leave {
+  transition:all linear 1s;
+
+}
+
+.question-item.ng-leave.ng-leave-active,
+.question-item.ng-move,
+.question-item.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.question-item.ng-leave,
+.question-item.ng-move.ng-move-active,
+.question-item.ng-enter.ng-enter-active {
+  opacity:1;
+  height:auto;
+}
+*/
+/*end for add question animation*/
+
+
+
+
 .clear {
     clear: both;
 }
+
+
+
