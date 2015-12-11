@@ -116,7 +116,7 @@ router.get('/it/:id', function(req, res, next) {
         return db.collection('interview').find({
             _id: new ObjectId(req.params.id)
         }).toArray()
-    }).then(res.json.bind(res)).catch(console.error)
+    }).then(function(its){res.json(its[0])}).catch(console.error)
 })
 
 module.exports = router;

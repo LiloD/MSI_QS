@@ -26,6 +26,18 @@
                 }).catch(console.error)
             }
 
+            self.showInterview = function(iid) {
+                Interview.get({
+                    id: iid
+                }, function(it) {
+                    $scope.sit = it;
+                    $uibModal.open({
+                        templateUrl: "modules/interview/interview.html",
+                        scope: $scope
+                    });
+                });
+            }
+
             self.init = function() {
                 self.iPage = 1
                 self.iSize = 10

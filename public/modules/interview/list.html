@@ -35,16 +35,16 @@
     </div>
     <table class="table table-striped">
         <tr>
-            <th>Client</th>
-            <th>Candidate</th>
-            <th>Type</th>
-            <th>Date</th>
+            <th class="col-md-4">Client</th>
+            <th class="col-md-4">Candidate</th>
+            <th class="col-md-3">Type</th>
+            <th class="col-md-1">Date</th>
         </tr>
-        <tr ng-repeat="it in interview.it">
-            <td>{{it.Client}}</td>
-            <td>{{it.Candidate}}</td>
-            <td>{{it.Type}}</td>
-            <td>{{it.Date | date:'MM/dd/yyyy'}}</td>
+        <tr ng-repeat="it in interview.it" ng-click="interview.showInterview(it._id)">
+            <td class="col-md-4">{{it.Client}}</td>
+            <td class="col-md-4">{{it.Candidate}}</td>
+            <td class="col-md-3">{{it.Type}}</td>
+            <td class="col-md-1">{{it.Date | date:'MM/dd/yyyy'}}</td>
         </tr>
     </table>
     <div class="panel-footer text-center">

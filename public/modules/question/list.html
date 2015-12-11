@@ -31,18 +31,17 @@
     </div>
     <table class="table table-striped">
         <tr>
-            <th>Company</th>
-            <th>Question</th>
-            <th>Date</th>
+            <th class="col-md-3">Company</th>
+            <th class="col-md-8">Question</th>
+            <th class="col-md-1">Date</th>
         </tr>
-        <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q.interview._id)">
-            <td>{{q.interview.Client}}</td>
-            <td>{{q.question}}</td>
-            <td>{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
+        <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q)">
+            <td class="col-md-3">{{q.interview.Client}}</td>
+            <td class="col-md-8">{{q.question}}</td>
+            <td class="col-md-1">{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
         </tr>
     </table>
     <div class="panel-footer text-center">
         <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.loadQuestions()" boundary-links="true"></uib-pagination>
     </div>
-    <pre>{{question.showInterviewDetail}}</pre>
 </div>

@@ -33,7 +33,7 @@
         })
         .factory('Interview', function($resource) {
             return $resource('/api/it/:id', {id: '@id'}, {
-                get: {method: 'GET', params:{id: '@id'}, isArray:true}
+                get: {method: 'GET', params:{id: '@id'}}
             })
         })
 })()

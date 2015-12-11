@@ -34,13 +34,12 @@
                 }).catch(console.error)
             }
 
-            self.showInterview = function(iid) {
-                self.showInterviewDetail = Interview.get({
-                    id: iid
+            self.showInterview = function(q) {
+                $scope.sq = q;
+                $uibModal.open({
+                    templateUrl: "modules/question/question.html",
+                    scope: $scope
                 });
-                // $uibModal.open({
-                //     template: ""
-                // })
             }
 
             self.init = function() {
@@ -54,7 +53,6 @@
                 })
                 self.loadQuestions()
             }
-
             self.init();
         })
 })()
