@@ -40,7 +40,6 @@
             $scope.reset = function(q){
                 q.description = '';
                 q.tags = [];
-                // tagInfo.q = '';
                 return;
             }
 
@@ -48,13 +47,6 @@
                 if(!q.description) return;
                 $scope.questions.push(angular.copy(q));
                 $scope.reset($scope.curQuestion);
-
-                //scroll down to edit
-                $timeout(function() {
-                    console.log("scroll!!");
-                    $location.hash('newQuestions');
-                    $anchorScroll();
-                });
             }
 
             $scope.removeQuestion = function(idx){
@@ -67,9 +59,11 @@
 
             $scope.addTag = function(tag, q){
                 if(!tag) return;
-            
+
+                console.log('tag in addTag', tag);
                 if (q.tags.indexOf(tag) < 0)
                     q.tags.push(tag);
+                tag = null;
                 return;
             }
 
@@ -82,7 +76,7 @@
 
             $scope.submitQuestion = function(){
                 var it = {
-                    Client: $scope.clientInfo.q,
+                    Client: $scope.client,
                     Date: $scope.Date,
                     Candidate: $scope.Candidate,
                     Type: $scope.Type, 

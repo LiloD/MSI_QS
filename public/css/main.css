@@ -34,10 +34,10 @@
 
 /*for add question animation*/
 
-/*.question-item.ng-move,
+.question-item.ng-move,
 .question-item.ng-enter,
 .question-item.ng-leave {
-  transition:all linear 1s;
+  transition:all linear 0.3s;
 
 }
 
@@ -45,16 +45,40 @@
 .question-item.ng-move,
 .question-item.ng-enter {
   opacity:0;
-  max-height:0;
+  position: relative;
+  left: -200px;
 }
 
 .question-item.ng-leave,
 .question-item.ng-move.ng-move-active,
 .question-item.ng-enter.ng-enter-active {
   opacity:1;
-  height:auto;
+  left: 0px;
 }
-*/
+
+
+.edit-panel.ng-move,
+.edit-panel.ng-enter,
+.edit-panel.ng-leave {
+  transition:all linear 0.3s;
+
+}
+
+.edit-panel.ng-leave.ng-leave-active,
+.edit-panel.ng-move,
+.edit-panel.ng-enter {
+  opacity:0;
+  position: relative;
+  left: -200px;
+}
+
+.edit-panel.ng-leave,
+.edit-panel.ng-move.ng-move-active,
+.edit-panel.ng-enter.ng-enter-active {
+  opacity:1;
+  left: 0px;
+}
+
 /*end for add question animation*/
 
 
