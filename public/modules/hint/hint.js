@@ -14,7 +14,7 @@
                     $scope.selected = -1;
 
                     $scope.attach = function(idx) {
-                        $scope.data.q = $scope.list[idx];
+                        $scope.data = $scope.list[idx];
                     }
 
                     $scope.mouseover = function(idx) {
@@ -28,7 +28,7 @@
                                 e.preventDefault();
 
                                 $scope.selected--;
-                                if($scope.selected < 0);
+                                if($scope.selected < 0)
                                     $scope.selected = $scope.list.length - 1;
 
                                 $scope.attach($scope.selected);
