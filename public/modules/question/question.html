@@ -1,8 +1,17 @@
-<ul>
-	<li>Client: {{sq.interview.Client}}</li>
-	<li>Candidate: {{sq.interview.Candidate}}</li>	
-	<li>Type: {{sq.interview.Type}}</li>
-	<li>Date: {{sq.interview.Date | date:'MM/dd/yyyy'}}</li>
-	<li>Question: {{sq.question}}</li>
-</ul>
-<hr>
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr class="active">
+                <th class="col-md-4">Client: {{sq.interview.Client}}</th>
+                <th class="col-md-3">Candidate: {{sq.interview.Candidate}}</th>
+                <th class="col-md-3">Type: {{sq.interview.Type}}</th>
+                <th class="col-md-2">Date: {{sq.interview.Date | date:'MM/dd/yyyy'}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="12">Question: {{sq.question}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
