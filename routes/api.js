@@ -7,19 +7,21 @@ var dbConf = require('../db')
 
 // interview, quest
 router.get('/qs', function(req, res, next) {
+    console.log(req.query);
     var page = req.query.page || 1;
     var pageSize = req.query.psize || 10;
 
     // default sort by date desc
     var psort = req.query.psort || 'interview.Date';
     var psorted = req.query.psort || -1;
-    var findOption = {
+    var findOption = req.query.psize == -1 ? {} : {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
     }
     var filter = {};
     if (!!req.query.qQuestion) filter.question = new RegExp(req.query.qQuestion, 'i');
     if (!!req.query.qCompany) filter['interview.Client'] = new RegExp(req.query.qCompany, 'i');
+    if (!!req.query.qInterview) filter['interview._id'] = ObjectId(req.query.qInterview);
     dbConf.con.then(function(db) {
         return Q.all([
             db.collection('question').find(filter).count(),
@@ -116,7 +118,10 @@ router.get('/it/:id', function(req, res, next) {
         return db.collection('interview').find({
             _id: new ObjectId(req.params.id)
         }).toArray()
-    }).then(function(its){res.json(its[0])}).catch(console.error)
+    }).then(function(its){
+        console.log(its)
+        res.json(its[0])
+    }).catch(console.error)
 })
 
 module.exports = router;

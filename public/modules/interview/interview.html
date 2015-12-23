@@ -4,4 +4,8 @@
 	<li>Type: {{sit.Type}}</li>
 	<li>Date: {{sit.Date | date:'MM/dd/yyyy'}}</li>
 </ul>
+<ul ng-repeat="q in sit.qs">
+<li>{{q.question}}</li>
+</ul>
 <hr>
+

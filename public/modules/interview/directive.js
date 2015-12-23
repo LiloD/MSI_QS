@@ -2,10 +2,11 @@
 
     'use strict'
 
-    angular.module('main')
+    angular.module('main', [])
         .directive('interviewShow', function() {
             return {
-                templateUrl: '/modules/interview/interview.html'
+                templateUrl: '/modules/interview/interview.html',
+                windowClass: 'app-modal-window'
             };
         })
 })();

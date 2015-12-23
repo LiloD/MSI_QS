@@ -31,9 +31,13 @@
                     id: iid
                 }, function(it) {
                     $scope.sit = it;
-                    $uibModal.open({
-                        templateUrl: "modules/interview/interview.html",
-                        scope: $scope
+                    $http.get('/api/qs', {params: {qInterview: iid, psize: -1}}).success(function(data){
+                        $scope.sit.qs = data.qs;
+                        $uibModal.open({
+                            templateUrl: "modules/interview/interview.html",
+                            size: "lg",
+                            scope: $scope
+                        });
                     });
                 });
             }
@@ -49,7 +53,6 @@
                 })
                 self.loadInterviews()
             }
-
             self.init();
         })
 })()

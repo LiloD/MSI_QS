@@ -38,6 +38,7 @@
                 $scope.sq = q;
                 $uibModal.open({
                     templateUrl: "modules/question/question.html",
+                    size: "lg",
                     scope: $scope
                 });
             }
