@@ -5,18 +5,76 @@ var Q = require('q');
 var dbConf = require('../db');
 var passport = require('passport');
 
-
+var getUserCollection = function() {
+    return dbConf.con.then(function(db) {
+        return db.collection('user');
+    })
+}
 
 router.get('/check', function(req, res, next) {
-    console.log('cookies', req.cookies);
-    console.log('users', req.user);
-    res.end();
+    !!req.user && res.json({
+        user: req.user.username
+    }) || res.json({});
 });
 
-/*
- * 
- */
-router.post('/new', function(req, res, next) {
+router.post('/edit', function(req, res, next) {
+    console.log('in edit user: ', req.user);
+    var curUser = req.user;
+    var editUser = req.body;
+
+    dbConf.con.then(function(db) {
+        db.collection('user').replaceOne({
+                '_id': new ObjectId(curUser._id)
+            }, editUser)
+            .then(function(replaceRes) {
+                console.log(replaceRes);
+                res.json({
+                    'msg': 'replaceOne'
+                });
+                res.end();
+            })
+    })
+});
+
+
+router.post('/login', passport.authenticate('local', {failureRedirect: '/login'}), function(req, res, next) {
+    console.log('in login user:', req.user);
+    var _id = req.user._id;
+
+    //update atime
+    getUserCollection().then(function(userCollection) {
+        userCollection.updateOne({
+                '_id': new ObjectId(_id)
+            }, {
+                $set: {
+                    'atime': Date.now()
+                }
+            })
+            .then(function(updateRes) {
+                //ignore the update result
+                res.json({
+                    user: req.user.username
+                });
+            });
+            //ignore the error
+    });
+});
+
+
+router.get('/logout', function(req, res, next){
+    if(!req.user){
+        //not exist
+        res.end();
+    }
+    
+    req.logout();
+    
+    res.json({
+        msg: 'logout successfully'
+    });
+});
+
+router.post('/sign', function(req, res, next) {
     //check username/password field here
 
     //get and construct user 
@@ -35,6 +93,7 @@ router.post('/new', function(req, res, next) {
                 username: user.username
             }).toArray()
             .then(function(findRes) {
+
                 if (!findRes || findRes.length > 0) {
                     return {
                         ok: 0,
@@ -59,7 +118,9 @@ router.post('/new', function(req, res, next) {
     }).then(function(newRes) {
 
         if (!newRes.ok) {
-            res.json(newRes.msg);
+            res.json({
+                'error msg': newRes.msg
+            });
             res.end();
             return;
         }
@@ -76,7 +137,7 @@ router.post('/new', function(req, res, next) {
                 if (err) {
                     return next(err);
                 }
-                
+
                 res.json({
                     ok: 1,
                     user: user
@@ -85,7 +146,11 @@ router.post('/new', function(req, res, next) {
             });
 
         })(req, res);
-    });
+
+    }).catch(function(err) {
+        next(err);
+        res.end();
+    })
 });
 
 

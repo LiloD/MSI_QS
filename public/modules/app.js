@@ -27,6 +27,10 @@
                     templateUrl: 'modules/interview/list.html',
                     controller: 'InterviewCtrl as interview'
                 })
+                .state('newUser', {
+                    url: '/user/new',
+                    templateUrl: 'modules/login/new.html'
+                })
 
             // add resource
 

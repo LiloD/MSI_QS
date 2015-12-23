@@ -14,7 +14,6 @@
                     $scope.login = function(usr, pwd) {
                         LoginService.login(usr, pwd);
                     }
-
                     $scope.sign = function(usr, pwd) {
                         LoginService.sign(usr, pwd);
                     }
@@ -27,7 +26,7 @@
                 controller: function($uibModal, $scope, $log, LoginService) {
                     $scope.$on(LoginService.EVENT_LOGIN, function(e, info) {
                         console.log('login finish', info)
-                        $scope.usr = info.usr;
+                        $scope.user = info.user;
                     })
 
                     $scope.open = function() {
@@ -38,12 +37,12 @@
                         });
 
                         $scope.$on(LoginService.EVENT_LOGIN, function(e, info) {
-                            !!info.usr && modalInstance.close();
+                            !!info.user && modalInstance.close();
                         })
                     }
 
                     $scope.logout = function() {
-                        $scope.usr = undefined;
+                        $scope.user = undefined;
                         LoginService.logout()
                     }
 

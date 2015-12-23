@@ -13,7 +13,6 @@ var normalStrategy = new LocalStrategy({
             if(findRes.length == 1 && findRes[0].password == password){
                 return done(null, findRes[0]);
             }
-
             return done(null, false);
         }).catch(function(err){
             return done(err);
@@ -29,7 +28,6 @@ var serializeUser = function(user, done) {
 var deserializeUser = function(user, done){
     done(null, user);
 };
-
 
 module.exports = {
     normalStrategy: normalStrategy,

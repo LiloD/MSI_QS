@@ -2,11 +2,13 @@
 
     'use strict'
 
+    //login service
+
     angular.module('login', ['ui.bootstrap', 'ngMessages'])
         .factory('LoginService', function($http, $rootScope) {
             var EVENT_LOGIN = 'login success';
             var EVENT_LOGOUT = 'logout success';
-            var baseUrl = '/passport'
+            var baseUrl = '/users'
             return {
                 logout: function() {
                     console.log('log out')
@@ -17,14 +19,17 @@
                 },
                 check: function() {
                     return $http.get(baseUrl + '/check').success(function(info) {
-                        if (info && info.usr) $rootScope.$broadcast(EVENT_LOGIN, info)
+                        console.log('info in check', info);
+                        if (info && info.user) $rootScope.$broadcast(EVENT_LOGIN, info)
                     })
                 },
                 login: function(usr, pwd) {
+                    console.log('here!');
                     $http.post(baseUrl + '/login', {
                         username: usr,
                         password: pwd
                     }).success(function(info) {
+                        console.log('user in login', info);
                         $rootScope.$broadcast(EVENT_LOGIN, info)
                     });
                 },
