@@ -12,13 +12,16 @@ var getUserCollection = function() {
 }
 
 router.get('/checkusername', function(req, res, next){
-    console.log(req.query);
+    console.log('in check name', req.query);
     getUserCollection().then(function(userCollection){
         userCollection.find(req.query).toArray().then(function(data){
+            console.log('find data', data);
             if(!data || data.length == 0){
-                res.json({ok: 1});
-            }else{
+                console.log('0');
                 res.json({ok: 0});
+            }else{
+                console.log('1');
+                res.json({ok: 1});
             }
             res.end();
         });

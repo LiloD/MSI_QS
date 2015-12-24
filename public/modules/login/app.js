@@ -44,8 +44,9 @@
                     })
                 },
                 checkUsername: function(username){
+                    console.log('in service checkUsername', username);
                     return $http.get(baseUrl+'/checkusername', {
-                        username: username
+                        params: {"username" : username}
                     }).success(function(data){
                         if(data.ok){
                             return true;

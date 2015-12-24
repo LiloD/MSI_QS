@@ -29,7 +29,8 @@
                 })
                 .state('newUser', {
                     url: '/user/new',
-                    templateUrl: 'modules/login/new.html'
+                    templateUrl: 'modules/login/new.html',
+                    controller: 'SignCtl'
                 })
 
             // add resource
