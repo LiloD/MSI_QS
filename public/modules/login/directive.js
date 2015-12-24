@@ -11,12 +11,26 @@
                         console.log('login finish', info)
                         $scope.msg = info.msg;
                     })
+                    
                     $scope.login = function(usr, pwd) {
                         LoginService.login(usr, pwd);
                     }
-                    $scope.sign = function(usr, pwd) {
-                        LoginService.sign(usr, pwd);
-                    }
+                    
+                    // $scope.sign = function(usr, pwd) {
+                    //     LoginService.sign(usr, pwd);
+                    // }
+
+                    // $scope.checkUsername = function(username){
+                    //     console.log('checkUsername', username);
+                    //     LoginService.checkUsername(username).then(function(exist){
+                    //         console.log('username exist', exist);
+                    //         if(exist){
+                    //             $scope.usernameExist = true;
+                    //         }else{
+                    //             $scope.usernameExist = false;
+                    //         }
+                    //     })
+                    // }
                 }
             };
         })

@@ -11,6 +11,20 @@ var getUserCollection = function() {
     })
 }
 
+router.get('/checkusername', function(req, res, next){
+    console.log(req.query);
+    getUserCollection().then(function(userCollection){
+        userCollection.find(req.query).toArray().then(function(data){
+            if(!data || data.length == 0){
+                res.json({ok: 1});
+            }else{
+                res.json({ok: 0});
+            }
+            res.end();
+        });
+    })
+})
+
 router.get('/check', function(req, res, next) {
     !!req.user && res.json({
         user: req.user.username

@@ -43,6 +43,16 @@
                         })
                     })
                 },
+                checkUsername: function(username){
+                    return $http.get(baseUrl+'/checkusername', {
+                        username: username
+                    }).success(function(data){
+                        if(data.ok){
+                            return true;
+                        }
+                        return false;
+                    });
+                },
                 EVENT_LOGIN: EVENT_LOGIN
             };
         })
