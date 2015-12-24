@@ -1,11 +1,11 @@
 <div class="panel panel-default">
     <div class="panel-heading col-md-12">
         <div class="btn-group pull-right">
-            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open">Filter By</span>
-            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open">Query Status</span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open"><strong>Filter By</strong></span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open"><strong>Query Status</strong></span>
         </div>
     </div>
-    <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
+    <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open" aira-expanded="false">
         <div class="panel-body col-md-12">
             <form class="form-inline">
                 <div class="form-group">
@@ -16,7 +16,6 @@
                     <label>By Question</label>
                     <input ng-model="question.qQuestion" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
-                <!-- <button class="btn btn-primary">Search</button> -->
             </form>
         </div>
     </div>
@@ -31,9 +30,15 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr class="active">
-                <th class="col-md-3"><button class="btn btn-default" ng-click="question.sortBy('interview.Client')">Client <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button></th>
-                <th class="col-md-8"><button class="btn btn-default" ng-click="question.sortBy('question')">Question <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button></th>
-                <th class="col-md-1"><button class="btn btn-default" ng-click="question.sortBy('interview.Date')">Date <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button></th>
+                <th class="col-md-3">
+                    <button class="btn btn-default" ng-click="question.sortBy('interview.Client')"><strong>Client </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-8">
+                    <button class="btn btn-default" ng-click="question.sortBy('question')"><strong>Question </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-1">
+                    <button class="btn btn-default" ng-click="question.sortBy('interview.Date')"><strong>Date </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
             </tr>
         </thead>
         <tbody>

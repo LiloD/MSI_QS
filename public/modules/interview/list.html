@@ -1,8 +1,8 @@
 <div class="panel panel-default">
     <div class="panel-heading col-md-12">
         <div class="btn-group pull-right">
-            <span class="btn btn-default" role="button" ng-click="interview.filter.form.open = !interview.filter.form.open">Filter By</span>
-            <span class="btn btn-default" role="button" ng-click="interview.filter.status.open = !interview.filter.status.open">Query Status</span>
+            <span class="btn btn-default" role="button" ng-click="interview.filter.form.open = !interview.filter.form.open"><strong>Filter By</strong></span>
+            <span class="btn btn-default" role="button" ng-click="interview.filter.status.open = !interview.filter.status.open"><strong>Query Status</strong></span>
         </div>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!interview.filter.form.open">
@@ -20,7 +20,6 @@
                     <label>By Type</label>
                     <input ng-model="interview.iType" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
-                <!-- <button class="btn btn-primary">Search</button> -->
             </form>
         </div>
     </div>
@@ -36,16 +35,16 @@
         <thead>
             <tr class="active">
                 <th class="col-md-3">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Client')">Client <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="interview.sortBy('Client')"><strong>Client </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
                 <th class="col-md-4">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Candidate')">Candidate <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="interview.sortBy('Candidate')"><strong>Candidate </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
                 <th class="col-md-4">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Type')">Type <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="interview.sortBy('Type')"><strong>Type </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
                 <th class="col-md-1">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Date')">Date <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="interview.sortBy('Date')"><strong>Date </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
             </tr>
         </thead>
