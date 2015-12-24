@@ -22,7 +22,9 @@
         };
 
         $scope.sign = function(username, password, email){
-               
+            LoginService.sign(username, password, email).then(function(data){
+                console.log('sign data', data);
+            }) 
         };
 
         $scope.reset = function(){

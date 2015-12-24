@@ -33,14 +33,13 @@
                         $rootScope.$broadcast(EVENT_LOGIN, info)
                     });
                 },
-                sign: function(usr, pwd) {
-                    $http.post(baseUrl + '/sign', {
+                sign: function(usr, pwd, email) {
+                    return $http.post(baseUrl + '/sign', {
                         username: usr,
-                        password: pwd
-                    }).success(function() {
-                        $rootScope.$broadcast(EVENT_LOGIN, {
-                            usr: usr
-                        })
+                        password: pwd,
+                        email: email
+                    }).success(function(data) {
+                        return data;
                     })
                 },
                 checkUsername: function(username){
