@@ -1,13 +1,12 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading col-md-12">
         <div class="btn-group pull-right">
             <span class="btn btn-default" role="button" ng-click="interview.filter.form.open = !interview.filter.form.open">Filter By</span>
             <span class="btn btn-default" role="button" ng-click="interview.filter.status.open = !interview.filter.status.open">Query Status</span>
         </div>
-        <hr>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!interview.filter.form.open">
-        <div class="panel-body">
+        <div class="panel-body col-md-12">
             <form class="form-inline">
                 <div class="form-group">
                     <label>By Client</label>
@@ -26,7 +25,7 @@
         </div>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!interview.filter.status.open">
-        <div class="panel-body">
+        <div class="panel-body col-md-12">
             <span>Filter By</span>
             <pre>{{interview.getParams() | json}}</pre>
             <span>Filter Result</span>
@@ -36,10 +35,18 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr class="active">
-                <th class="col-md-4">Client</th>
-                <th class="col-md-4">Candidate</th>
-                <th class="col-md-3">Type</th>
-                <th class="col-md-1">Date</th>
+                <th class="col-md-3">
+                    <button class="btn btn-default" ng-click="interview.sortBy('Client')">Client <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-4">
+                    <button class="btn btn-default" ng-click="interview.sortBy('Candidate')">Candidate <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-4">
+                    <button class="btn btn-default" ng-click="interview.sortBy('Type')">Type <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-1">
+                    <button class="btn btn-default" ng-click="interview.sortBy('Date')">Date <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
             </tr>
         </thead>
         <tbody>

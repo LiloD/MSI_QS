@@ -9,10 +9,12 @@
                 var params = {
                     page: self.iPage,
                     psize: self.iSize,
+                    psorta: self.psorta
                 }
                 if (!!self.iClient) params.iClient = self.iClient
                 if (!!self.iCandidate) params.iCandidate = self.iCandidate
                 if (!!self.iType) params.iType = self.iType
+                if (!!self.pSort) params.psort = self.pSort;
                 return params
             }
 
@@ -25,6 +27,8 @@
                     self.iCount = data.count;
                 }).catch(console.error)
             }
+
+            self.psorta = 1;
 
             self.showInterview = function(iid) {
                 Interview.get({
@@ -40,6 +44,12 @@
                         });
                     });
                 });
+            }
+
+            self.sortBy = function(pSort) {
+                self.psorta *= -1;
+                self.pSort = pSort;
+                self.loadInterviews();
             }
 
             self.init = function() {

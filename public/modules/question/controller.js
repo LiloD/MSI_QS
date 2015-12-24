@@ -9,9 +9,11 @@
                 var params = {
                     page: self.qPage,
                     psize: self.qSize,
+                    psorta: self.psorta
                 }
                 if (!!self.qQuestion) params.qQuestion = self.qQuestion
                 if (!!self.qCompany) params.qCompany = self.qCompany
+                if (!!self.pSort) params.psort = self.pSort;
                 return params
             }
 
@@ -34,6 +36,7 @@
                 }).catch(console.error)
             }
 
+            self.psorta = 1;
             self.showInterview = function(q) {
                 $scope.sq = q;
                 $uibModal.open({
@@ -41,6 +44,12 @@
                     size: "lg",
                     scope: $scope
                 });
+            }
+
+            self.sortBy = function(pSort) {
+                self.psorta *= -1;
+                self.pSort = pSort;
+                self.loadQuestions();
             }
 
             self.init = function() {

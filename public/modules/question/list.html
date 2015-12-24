@@ -1,13 +1,12 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading col-md-12">
         <div class="btn-group pull-right">
             <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open">Filter By</span>
             <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open">Query Status</span>
         </div>
-        <hr>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
-        <div class="panel-body">
+        <div class="panel-body col-md-12">
             <form class="form-inline">
                 <div class="form-group">
                     <label>By Company</label>
@@ -22,7 +21,7 @@
         </div>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!question.filter.status.open">
-        <div class="panel-body">
+        <div class="panel-body col-md-12">
             <span>Filter By</span>
             <pre>{{question.getParams() | json}}</pre>
             <span>Filter Result</span>
@@ -32,9 +31,9 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr class="active">
-                <th class="col-md-3">Company</th>
-                <th class="col-md-8">Question</th>
-                <th class="col-md-1">Date</th>
+                <th class="col-md-3"><button class="btn btn-default" ng-click="question.sortBy('interview.Client')">Client <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button></th>
+                <th class="col-md-8"><button class="btn btn-default" ng-click="question.sortBy('question')">Question <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button></th>
+                <th class="col-md-1"><button class="btn btn-default" ng-click="question.sortBy('interview.Date')">Date <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button></th>
             </tr>
         </thead>
         <tbody>
