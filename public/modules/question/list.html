@@ -1,11 +1,12 @@
 <div class="panel panel-default">
     <div class="panel-heading col-md-12">
         <div class="btn-group pull-right">
-            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open"><strong>Filter By</strong></span>
-            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open"><strong>Query Status</strong></span>
+            <span class="btn btn-default" href="#collapse1" data-toggle="collapse" aria-expanded="false"  aria-controls="collapse1" role="button"><strong>Filter By</strong></span>
+            <span class="btn btn-default" href="#collapse2" data-toggle="collapse" aria-expanded="false"
+            aria-controls="collapse2" role="button"><strong>Query Status</strong></span>
         </div>
     </div>
-    <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open" aira-expanded="false">
+    <div class="panel-collapse collapse" id="collapse1">
         <div class="panel-body col-md-12">
             <form class="form-inline">
                 <div class="form-group">
@@ -19,7 +20,7 @@
             </form>
         </div>
     </div>
-    <div class="panel-collapse collapse" uib-collapse="!question.filter.status.open">
+    <div class="panel-collapse collapse" id="collapse2">
         <div class="panel-body col-md-12">
             <span>Filter By</span>
             <pre>{{question.getParams() | json}}</pre>
