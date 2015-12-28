@@ -16,6 +16,10 @@
                     <label>By Question</label>
                     <input ng-model="question.qQuestion" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
+                <div calss="form-group">
+                    <label>Page size</label>
+                    <select ng-options="option.qSize for option in data.availableOptions track by option.id" ng-model="data.selectedOption"></select>
+                </div>
             </form>
         </div>
     </div>
@@ -24,7 +28,8 @@
             <span>Filter By</span>
             <pre>{{question.getParams() | json}}</pre>
             <span>Filter Result</span>
-            <pre>{{"query count: " + question.qCount}}</pre>
+            <pre>{{"total questions: " + question.qCount}}</pre>
+            <pre>{{"total pages: " + question.qpageNumber}}</pre>
         </div>
     </div>
     <table class="table table-striped table-hover">
@@ -52,4 +57,5 @@
     <div class="panel-footer text-center">
         <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.loadQuestions()" boundary-links="true"></uib-pagination>
     </div>
+
 </div>

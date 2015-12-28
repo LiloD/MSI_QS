@@ -25,6 +25,7 @@
                     console.log(data);
                     self.it = data.it;
                     self.iCount = data.count;
+                    self.ipageNumber = Math.ceil(data.count/self.getParams().psize)
                 }).catch(console.error)
             }
 
@@ -52,9 +53,27 @@
                 self.loadInterviews();
             }
 
+            $scope.data = {
+                availableOptions: 
+                    [{id: '1',iSize: '5'}, 
+                    {id: '2',iSize: '10'}, 
+                    {id: '3',iSize: '15'},
+                    {id: '4',iSize: '20'}],
+                selectedOption: {
+                    id: '2',
+                    iSize: '10'
+                } 
+            };
+
             self.init = function() {
                 self.iPage = 1
-                self.iSize = 10
+                self.iSize = self.iSize = $scope.data.selectedOption.iSize;
+
+                $scope.$watch('data.selectedOption.iSize', function(newv, oldv){
+                    if (newv == oldv) return;
+                    self.iSize = newv;
+                    self.loadInterviews()
+                })
                 $scope.$watchGroup(['interview.iClient', 'interview.iCandidate', 'interview.iType'], function(n, o) {
                     console.log('watch', n, o)
                     if (n == o) return;
