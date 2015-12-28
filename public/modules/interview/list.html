@@ -1,12 +1,12 @@
 <div class="panel panel-default">
-    <div class="panel-heading col-md-12">
+    <div class="panel-heading container-fluid">
         <div class="btn-group pull-right">
-            <span class="btn btn-default" role="button" ng-click="interview.filter.form.open = !interview.filter.form.open"><strong>Filter By</strong></span>
-            <span class="btn btn-default" role="button" ng-click="interview.filter.status.open = !interview.filter.status.open"><strong>Query Status</strong></span>
+            <span class="btn btn-default" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter"><strong>Filter By</strong></span>
+            <span class="btn btn-default" role="button" data-toggle="collapse" href="#collapseStatus" aria-expanded="false" aria-controls="collapseStatus"><strong>Query Status</strong></span>
         </div>
     </div>
-    <div class="panel-collapse collapse" uib-collapse="!interview.filter.form.open">
-        <div class="panel-body col-md-12">
+    <div class="panel-collapse collapse" id="collapseFilter">
+        <div class="panel-body container-fluid">
             <form class="form-inline">
                 <div class="form-group">
                     <label>By Client</label>
@@ -23,8 +23,8 @@
             </form>
         </div>
     </div>
-    <div class="panel-collapse collapse" uib-collapse="!interview.filter.status.open">
-        <div class="panel-body col-md-12">
+    <div class="panel-collapse collapse" id="collapseStatus">
+        <div class="panel-body container-fluid">
             <span>Filter By</span>
             <pre>{{interview.getParams() | json}}</pre>
             <span>Filter Result</span>
