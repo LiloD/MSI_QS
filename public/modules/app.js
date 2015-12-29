@@ -2,7 +2,7 @@
 
     'use strict'
 
-    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login'])
+    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'interview', 'ngAnimate'])
         .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             // remove hash
             $locationProvider.html5Mode(true);
@@ -24,16 +24,22 @@
                 })
                 .state('interview', {
                     url: '/interview',
-                    templateUrl: 'modules/interview/list.html',
-                    controller: 'InterviewCtrl as interview'
+                    template: '<interview-panel></interview-panel>',
                 })
 
             // add resource
 
         })
         .factory('Interview', function($resource) {
-            return $resource('/api/it/:id', {id: '@id'}, {
-                get: {method: 'GET', params:{id: '@id'}}
+            return $resource('/api/it/:id', {
+                id: '@id'
+            }, {
+                get: {
+                    method: 'GET',
+                    params: {
+                        id: '@id'
+                    }
+                }
             })
         })
 })()

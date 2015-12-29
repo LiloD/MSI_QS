@@ -1,11 +1,11 @@
 <div class="panel panel-default">
     <div class="panel-heading container-fluid">
         <div class="btn-group pull-right">
-            <span class="btn btn-default" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter"><strong>Filter By</strong></span>
-            <span class="btn btn-default" role="button" data-toggle="collapse" href="#collapseStatus" aria-expanded="false" aria-controls="collapseStatus"><strong>Query Status</strong></span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open"><strong>Filter By</strong></span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open"><strong>Query Status</strong></span>
         </div>
     </div>
-    <div class="panel-collapse collapse" id="collapseFilter">
+    <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
         <div class="panel-body container-fluid">
             <form class="form-inline">
                 <div class="form-group">
@@ -19,7 +19,7 @@
             </form>
         </div>
     </div>
-    <div class="panel-collapse collapse" id="collapseStatus">
+    <div class="panel-collapse collapse" uib-collapse="!question.filter.status.open">
         <div class="panel-body container-fluid">
             <span>Filter By</span>
             <pre>{{question.getParams() | json}}</pre>
@@ -42,7 +42,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q)">
+            <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q)" uib-popover={{q.interview.Candidate}} popover-trigger="mouseenter">
                 <td class="col-md-3">{{q.interview.Client}}</td>
                 <td class="col-md-8">{{q.question}}</td>
                 <td class="col-md-1">{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
