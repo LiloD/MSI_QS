@@ -157,7 +157,7 @@ router.post('/sign', function(req, res, next) {
 
                 res.json({
                     ok: 1,
-                    user: user
+                    user: req.user.username
                 });
                 res.end();
             });

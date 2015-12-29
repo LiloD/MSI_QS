@@ -14,7 +14,7 @@
                     console.log('log out')
                     $http.get(baseUrl + '/logout').success(function(info) {
                         console.log('log out', info)
-                        $rootScope.$broadcast(EVENT_LOGOUT, info)
+                        $rootScope.$broadcast(EVENT_LOGOUT, info);
                     })
                 },
                 check: function() {
@@ -38,8 +38,8 @@
                         username: usr,
                         password: pwd,
                         email: email
-                    }).success(function(data) {
-                        return data;
+                    }).success(function(info) {
+                        $rootScope.$broadcast(EVENT_LOGIN, info);
                     })
                 },
                 checkUsername: function(username){

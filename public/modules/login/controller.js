@@ -1,8 +1,10 @@
 (function(){
     angular.module('main')
-        .controller('SignCtl', ['$scope', 'LoginService',function($scope, LoginService){
+        .controller('SignCtl', ['$scope', 'LoginService', '$state',function($scope, LoginService, $state){
         
         $scope.userExist = false;
+
+        $scope.errorMessage = "hello?";
 
         //check if username exist
         $scope.checkUsername = function(username){
@@ -22,10 +24,13 @@
         };
 
         $scope.sign = function(username, password, email){
-            LoginService.sign(username, password, email).then(function(data){
-                console.log('sign data', data);
-            }) 
+            LoginService.sign(username, password, email);
+            $state.go('question');
         };
+
+        $scope.changeState = function(){
+            $state.go('question');
+        }
 
         $scope.reset = function(){
             $scope.loginUser = null;

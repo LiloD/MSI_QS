@@ -74,10 +74,10 @@
 
                     $scope.logout = function() {
                         $scope.user = undefined;
-                        LoginService.logout()
+                        LoginService.logout();
                     }
 
-                    LoginService.check()
+                    LoginService.check();
                 },
                 link: function(scope) {
                     scope.$on('$destroy', function() {
