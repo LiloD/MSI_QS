@@ -3,8 +3,9 @@
     'use strict'
 
     angular.module('main')
-        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview) {
+        .controller('QuestionCtrl', function($scope, $http, $uibModal, $state, Interview) {
             var self = this;
+            // self.co = [];
             self.getParams = function() {
                 var params = {
                     page: self.qPage,
@@ -34,13 +35,20 @@
                 }).catch(console.error)
             }
 
+            // self.newComments = function(comment, id){
+            //     $http.post('/api/cm',{
+            //         comments: comment,
+            //         _id: id
+            //     }).success(function(status){
+            //         if(status.ok) self.co.push(comment).push(_id);
+
+            //         // self.co = data
+            //     }).catch(console.error)
+            // }
+            
             self.showInterview = function(q) {
-                $scope.sq = q;
-                $uibModal.open({
-                    templateUrl: "modules/question/question.html",
-                    size: "lg",
-                    scope: $scope
-                });
+                $state.transitionTo('comments', {qid: q._id});
+                console.log('q:', q); 
             }
 
             self.init = function() {

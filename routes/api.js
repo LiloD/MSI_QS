@@ -70,14 +70,28 @@ router.post('/qs', function(req, res, next) {
     }).catch(console.error)
 })
 
-// router.get('/qs1', function(req, res, next) {
-//     MongoClient.connect('mongodb://localhost:27017/qs').then(function(db) {
-//         return db.collection('question').find().limit(20).toArray();
-//     }).then(function(data){
-//         console.log("data length", data.length)
-//         return res.json(data)
-//     });
-// })
+router.post('/cm',function(req, res, next){
+    if (!req.body.comments) {
+        res.json({
+            msg: 'need comments',
+            body: req.body
+        })
+        return
+    }
+
+    var co = {
+        comment: req.body.comments,
+        qid:req.body._id
+    }
+    console.log('insert comments', co)
+
+    dbConf.con.then(function(db) {
+        return db.collection('comments').insertOne(co).then(function(iResult) {
+            console.log(arguments)
+            res.json(co)
+        })
+    }).catch(console.error)
+})
 
 router.get('/it', function(req, res, next) {
 
@@ -122,6 +136,18 @@ router.get('/it/:id', function(req, res, next) {
         console.log(its)
         res.json(its[0])
     }).catch(console.error)
+})
+
+router.get('/qt/:id', function(req, res, next) {
+    console.log('qt in')
+    dbConf.con.then(function(db) {
+        console.log('db in')
+        return db.collection('question').find({
+            _id: new ObjectId(req.params.id)
+        }).toArray()
+    }).then(function(qs){
+        res.json(qs[0])
+    }).catch(console.err)
 })
 
 module.exports = router;

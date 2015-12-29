@@ -27,7 +27,11 @@
                     templateUrl: 'modules/interview/list.html',
                     controller: 'InterviewCtrl as interview'
                 })
-
+                .state('comments', {
+                    url: '/comments/:qid',
+                    templateUrl: 'modules/question/comments.html',
+                    controller: 'CommentsCtrl as comments'
+                })
             // add resource
 
         })
