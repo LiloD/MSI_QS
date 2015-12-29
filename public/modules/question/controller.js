@@ -9,9 +9,11 @@
                 var params = {
                     page: self.qPage,
                     psize: self.qSize,
+                    psorta: self.psorta
                 }
                 if (!!self.qQuestion) params.qQuestion = self.qQuestion
                 if (!!self.qCompany) params.qCompany = self.qCompany
+                if (!!self.pSort) params.psort = self.pSort;
                 return params
             }
 
@@ -34,13 +36,20 @@
                 }).catch(console.error)
             }
 
-            self.showInterview = function(iid) {
-                self.showInterviewDetail = Interview.get({
-                    id: iid
+            self.psorta = 1;
+            self.showInterview = function(q) {
+                $scope.sq = q;
+                $uibModal.open({
+                    templateUrl: "modules/question/question.html",
+                    size: "lg",
+                    scope: $scope
                 });
-                // $uibModal.open({
-                //     template: ""
-                // })
+            }
+
+            self.sortBy = function(pSort) {
+                self.psorta *= -1;
+                self.pSort = pSort;
+                self.loadQuestions();
             }
 
             self.init = function() {
@@ -54,7 +63,6 @@
                 })
                 self.loadQuestions()
             }
-
             self.init();
         })
 })()

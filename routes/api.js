@@ -7,25 +7,26 @@ var dbConf = require('../db')
 
 // interview, quest
 router.get('/qs', function(req, res, next) {
+    console.log(req.query);
     var page = req.query.page || 1;
     var pageSize = req.query.psize || 10;
 
     // default sort by date desc
-    var psort = req.query.psort || 'interview.Date';
-    var psorted = req.query.psort || -1;
-    var findOption = {
+    var sortBy = {};
+    sortBy[req.query.psort || 'interview.Client'] = req.query.psorta && parseInt(req.query.psorta);
+
+    var findOption = req.query.psize == -1 ? {} : {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
     }
     var filter = {};
     if (!!req.query.qQuestion) filter.question = new RegExp(req.query.qQuestion, 'i');
     if (!!req.query.qCompany) filter['interview.Client'] = new RegExp(req.query.qCompany, 'i');
+    if (!!req.query.qInterview) filter['interview._id'] = ObjectId(req.query.qInterview);
     dbConf.con.then(function(db) {
         return Q.all([
             db.collection('question').find(filter).count(),
-            db.collection('question').find(filter, findOption).sort({
-                psort: psorted
-            }).toArray()
+            db.collection('question').find(filter, findOption).sort(sortBy).toArray()
         ]).spread(function(count, qs) {
             res.json({
                 count: count,
@@ -83,8 +84,8 @@ router.get('/it', function(req, res, next) {
     var pageSize = req.query.psize || 10;
 
     // default sort by date desc
-    var psort = req.query.psort || 'interview.Date';
-    var psorted = req.query.psort || -1;
+    var sortBy ={};
+    sortBy[req.query.psort || 'Client'] = req.query.psorta && parseInt(req.query.psorta) || -1;
     var findOption = {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
@@ -93,14 +94,11 @@ router.get('/it', function(req, res, next) {
     if (!!req.query.iClient) filter['Client'] = new RegExp(req.query.iClient, 'i');
     if (!!req.query.iCandidate) filter['Candidate'] = new RegExp(req.query.iCandidate, 'i');
     if (!!req.query.iType) filter['Type'] = new RegExp(req.query.iType, 'i');
-    if (!!req.query.iDate) filter['Date'] = new RegExp(req.query.iDate, 'i');
 
     dbConf.con.then(function(db) {
         return Q.all([
             db.collection('interview').find(filter).count(),
-            db.collection('interview').find(filter, findOption).sort({
-                psort: psorted
-            }).toArray()
+            db.collection('interview').find(filter, findOption).sort(sortBy).toArray()
         ]).spread(function(count, it) {
             res.json({
                 count: count,
@@ -117,7 +115,10 @@ router.get('/it/:id', function(req, res, next) {
         return db.collection('interview').find({
             _id: new ObjectId(req.params.id)
         }).toArray()
-    }).then(res.json.bind(res)).catch(console.error)
+    }).then(function(its){
+        console.log(its)
+        res.json(its[0])
+    }).catch(console.error)
 })
 
 module.exports = router;
