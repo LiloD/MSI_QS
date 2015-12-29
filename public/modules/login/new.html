@@ -7,7 +7,7 @@
 
             <!-- for user name -->
             <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
-                <label class="col-sm-2 control-label">Username</label>
+                <label class="col-sm-2 control-label">Username*</label>
                 <div class="col-sm-6">
                     <input class="form-control" name="username" ng-model="loginUser" ng-model-options="{ debounce: 500 }" ng-change="checkUsername(loginUser)" required="">
                 </div>
@@ -18,7 +18,7 @@
 
             <!-- for user password -->
             <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
-                <label class="col-sm-2 control-label">Password</label>
+                <label class="col-sm-2 control-label">Password*</label>
                 <div class="col-sm-6">
                     <input type="password" name="password" class="form-control" ng-model="loginPwd" ng-model-options="{ debounce: 500 }" required="" ng-maxlength="16" ng-minlength="4">
                 </div>
@@ -28,9 +28,23 @@
                 <span ng-show="!userForm.password.$pristine && !userForm.password.$invalid" class="glyphicon glyphicon-ok help-block"></span>
             </div>
 
+
+            <!-- for confirm password -->
+
+            <div class="form-group" ng-class="{ 'has-error' : userForm.confirmPwd.$invalid && !userForm.confirmPwd.$pristine }">
+                <label class="col-sm-2 control-label">Confirm Password*</label>
+                <div class="col-sm-6">
+                    <input type="password" name="confirmPwd" class="form-control" ng-model="confirmPwd" ng-model-options="{ debounce: 500 }" pw-check required="" compare-to="loginPwd">
+                </div>
+                <p class="help-block" ng-show="userForm.confirmPwd.$error.required && !userForm.confirmPwd.$pristine">This field is required</p>
+                <p class="help-block" ng-show="!userForm.confirmPwd.$error.required && userForm.confirmPwd.$invalid">Password not match</p>
+                <span ng-show="!userForm.confirmPwd.$pristine && !userForm.confirmPwd.$invalid" class="glyphicon glyphicon-ok help-block"></span>
+            </div>
+
+
             <!-- for user email -->
             <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
-                <label class="col-sm-2 control-label">Email</label>
+                <label class="col-sm-2 control-label">Email*</label>
                 <div class="col-sm-6">
                     <input type="email" name="email" class="form-control" ng-model="loginEmail" ng-model-options="{ debounce: 500 }" required="">
                 </div>

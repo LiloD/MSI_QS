@@ -31,12 +31,15 @@
             $scope.loginUser = null;
             $scope.loginEmail = null;
             $scope.loginPwd = null;
+            $scope.confirmPwd = null;
             $scope.userForm.username.$invalid = false;
             $scope.userForm.password.$invalid = false;
             $scope.userForm.email.$invalid = false;
+            $scope.userForm.confirmPwd.$invalid = false;
             $scope.userForm.username.$pristine = true;
             $scope.userForm.password.$pristine = true;
             $scope.userForm.email.$pristine = true;
+            $scope.userForm.confirmPwd.$pristine = true;
         }
 
     }]);

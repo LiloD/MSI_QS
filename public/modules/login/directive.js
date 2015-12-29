@@ -3,6 +3,23 @@
     'use strict'
 
     angular.module('login')
+        .directive('pwCheck', function(){
+            return {
+                require: '^ngModel',
+                scope: {
+                    otherVal: '=compareTo'
+                },
+                link: function(scope, element, attr, ngModelCtrl){
+                    //regiester a new validator
+                    ngModelCtrl.$validators.compareTo = function(modelVal){
+                        return modelVal == scope.otherVal;
+                    }
+                    scope.$watch('otherVal', function(newVal){
+                        ngModelCtrl.$validate(newVal);
+                    })
+                }
+            }
+        })
         .directive('loginForm', function(LoginService) {
             return {
                 templateUrl: '/modules/login/form.html',
