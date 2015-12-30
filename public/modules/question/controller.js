@@ -5,6 +5,7 @@
     angular.module('main')
         .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
             var self = this;
+            // self.co = [];
             self.getParams = function() {
                 var params = {
                     page: self.qPage,
@@ -111,10 +112,25 @@
                 }).catch(console.error)
             }
 
-            self.psorta = 1;
+            // self.newComments = function(comment, id){
+            //     $http.post('/api/cm',{
+            //         comments: comment,
+            //         _id: id
+            //     }).success(function(status){
+            //         if(status.ok) self.co.push(comment).push(_id);
+
+            //         // self.co = data
+            //     }).catch(console.error)
+            // }
+            
             self.showInterview = function(q) {
+                $state.transitionTo('comments', {qid: q._id});
+                console.log('q:', q); 
+            	
+		self.psorta = 1;
+            	self.showInterview = function(q) {
                 $scope.sq = q;
-               $state.get('questionDetail').data.q = q;
+               	$state.get('questionDetail').data.q = q;
                 $state.go('questionDetail');
             }
             //--------------------

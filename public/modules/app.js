@@ -39,7 +39,12 @@
                         q: null
                     }
                 })
-
+                .state('comments', {
+                    url: '/comments/:qid',
+                    templateUrl: 'modules/comments/comments.html',
+                    controller: 'CommentsCtrl as comments'
+                })
+                
             // add resource
 
         })
