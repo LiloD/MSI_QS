@@ -3,12 +3,15 @@
         <label>Question Detail</label>
     </div >
     <div class="panel-body">
+        <!-- for question description -->
         <div class="row">
             <div class="col-md-2">
                 <label>Description: </label>
             </div>
             <div class="col-md-10"><pre>{{q.description}}</pre></div>
         </div>
+
+        <!-- for tags -->
         <div class="row" ng-show="q.tags.length > 0">
             <div class="col-md-2">
                 <label>Tags: </label>
@@ -18,6 +21,11 @@
                     <a class="tag-value">{{tag}}</a></span>
                 </div>
             </div>
+        </div>
+
+        <!-- for comments -->
+        <div>
+
         </div>
     </div>
 </div>

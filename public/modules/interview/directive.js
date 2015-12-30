@@ -74,4 +74,9 @@
                 }
             };
         })
+        .directive('interviewDetail', function(){
+            return {
+
+            }
+        })
 })();
