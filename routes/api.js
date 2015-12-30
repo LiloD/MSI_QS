@@ -12,8 +12,9 @@ router.get('/qs', function(req, res, next) {
     var pageSize = req.query.psize || 10;
 
     // default sort by date desc
-    var psort = req.query.psort || 'interview.Date';
-    var psorted = req.query.psort || -1;
+    var sortBy = {};
+    sortBy[req.query.psort || 'interview.Client'] = req.query.psorta && parseInt(req.query.psorta);
+
     var findOption = req.query.psize == -1 ? {} : {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
@@ -25,9 +26,7 @@ router.get('/qs', function(req, res, next) {
     dbConf.con.then(function(db) {
         return Q.all([
             db.collection('question').find(filter).count(),
-            db.collection('question').find(filter, findOption).sort({
-                psort: psorted
-            }).toArray()
+            db.collection('question').find(filter, findOption).sort(sortBy).toArray()
         ]).spread(function(count, qs) {
             res.json({
                 count: count,
@@ -99,8 +98,8 @@ router.get('/it', function(req, res, next) {
     var pageSize = req.query.psize || 10;
 
     // default sort by date desc
-    var psort = req.query.psort || 'interview.Date';
-    var psorted = req.query.psort || -1;
+    var sortBy ={};
+    sortBy[req.query.psort || 'Client'] = req.query.psorta && parseInt(req.query.psorta) || -1;
     var findOption = {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
@@ -113,9 +112,7 @@ router.get('/it', function(req, res, next) {
     dbConf.con.then(function(db) {
         return Q.all([
             db.collection('interview').find(filter).count(),
-            db.collection('interview').find(filter, findOption).sort({
-                psort: psorted
-            }).toArray()
+            db.collection('interview').find(filter, findOption).sort(sortBy).toArray()
         ]).spread(function(count, it) {
             res.json({
                 count: count,

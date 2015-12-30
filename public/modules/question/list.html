@@ -1,13 +1,12 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading container-fluid">
         <div class="btn-group pull-right">
-            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open">Filter By</span>
-            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open">Query Status</span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open"><strong>Filter By</strong></span>
+            <span class="btn btn-default" role="button" ng-click="question.filter.status.open = !question.filter.status.open"><strong>Query Status</strong></span>
         </div>
-        <hr>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
-        <div class="panel-body">
+        <div class="panel-body container-fluid">
             <form class="form-inline">
                 <div class="form-group">
                     <label>By Company</label>
@@ -17,12 +16,11 @@
                     <label>By Question</label>
                     <input ng-model="question.qQuestion" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
-                <!-- <button class="btn btn-primary">Search</button> -->
             </form>
         </div>
     </div>
     <div class="panel-collapse collapse" uib-collapse="!question.filter.status.open">
-        <div class="panel-body">
+        <div class="panel-body container-fluid">
             <span>Filter By</span>
             <pre>{{question.getParams() | json}}</pre>
             <span>Filter Result</span>
@@ -32,13 +30,19 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr class="active">
-                <th class="col-md-3">Company</th>
-                <th class="col-md-8">Question</th>
-                <th class="col-md-1">Date</th>
+                <th class="col-md-3">
+                    <button class="btn btn-default" ng-click="question.sortBy('interview.Client')"><strong>Client </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-8">
+                    <button class="btn btn-default" ng-click="question.sortBy('question')"><strong>Question </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
+                <th class="col-md-1">
+                    <button class="btn btn-default" ng-click="question.sortBy('interview.Date')"><strong>Date </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                </th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q)">
+            <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q)" uib-popover={{q.interview.Candidate}} popover-trigger="mouseenter">
                 <td class="col-md-3">{{q.interview.Client}}</td>
                 <td class="col-md-8">{{q.question}}</td>
                 <td class="col-md-1">{{q.interview.Date | date:'MM/dd/yyyy'}}</td>

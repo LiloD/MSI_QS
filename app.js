@@ -15,6 +15,7 @@ var MongoStore = require('connect-mongo')(session);
 
 var mongoose = require('mongoose');
 var passport = require('passport');
+var auth = require('./auth');
 var LocalStrategy = require('passport-local').Strategy;
 
 var app = express();
@@ -30,6 +31,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -47,8 +49,9 @@ app.use(passport.session());
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api', api);
+app.use('/it', require('./routes/interview'));
 app.use('/login', require('./routes/login'));
-app.use('/passport', require('./routes/passport'))
+app.use('/passport', require('./routes/passport'));
 
 // handle all request witch can't be found
 app.all('/*', function(req, res) {
@@ -56,13 +59,17 @@ app.all('/*', function(req, res) {
 });
 
 // passport config
-var Account = require('./models/account');
-passport.use(new LocalStrategy(Account.authenticate()));
-passport.serializeUser(Account.serializeUser());
-passport.deserializeUser(Account.deserializeUser());
+
+// var Account = require('./models/account');
+// passport.use(new LocalStrategy(Account.authenticate()));
+// passport.serializeUser(Account.serializeUser());
+// passport.deserializeUser(Account.deserializeUser());
+passport.use(auth.normalStrategy);
+passport.serializeUser(auth.serializeUser);
+passport.deserializeUser(auth.deserializeUser);
 
 // mongoose
-mongoose.connect('mongodb://localhost/qs');
+// mongoose.connect('mongodb://localhost/qs');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -2,7 +2,7 @@
 
     'use strict'
 
-    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login'])
+    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'interview', 'hint', 'ngAnimate'])
         .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             // remove hash
             $locationProvider.html5Mode(true);
@@ -20,12 +20,24 @@
                 .state('new', {
                     url: '/new',
                     templateUrl: 'modules/question/new.html',
-                    controller: 'QuestionCtrl as question'
+                    controller: 'NewInterviewCtl'
                 })
                 .state('interview', {
                     url: '/interview',
-                    templateUrl: 'modules/interview/list.html',
-                    controller: 'InterviewCtrl as interview'
+                    template: '<interview-panel></interview-panel>',
+                })
+                .state('newUser', {
+                    url: '/user/new',
+                    templateUrl: 'modules/login/new.html',
+                    controller: 'SignCtl'
+                })
+                .state('questionDetail', {
+                    url: '/question/detail',
+                    templateUrl: 'modules/question/question.html',
+                    controller: 'QuestionDetailCtl',
+                    data: {
+                        q: null
+                    }
                 })
                 .state('comments', {
                     url: '/comments/:qid',
@@ -37,8 +49,15 @@
 
         })
         .factory('Interview', function($resource) {
-            return $resource('/api/it/:id', {id: '@id'}, {
-                get: {method: 'GET', params:{id: '@id'}}
+            return $resource('/api/it/:id', {
+                id: '@id'
+            }, {
+                get: {
+                    method: 'GET',
+                    params: {
+                        id: '@id'
+                    }
+                }
             })
         })
 })()
