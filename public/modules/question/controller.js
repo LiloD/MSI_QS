@@ -130,6 +130,7 @@
                	$state.get('questionDetail').data.q = q;
                 $state.go('questionDetail');
             }
+            self.psorta = 1;
             //--------------------
             
 
