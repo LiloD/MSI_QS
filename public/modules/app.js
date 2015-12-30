@@ -2,7 +2,11 @@
 
     'use strict'
 
+<<<<<<< HEAD
     angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'interview', 'ngAnimate'])
+=======
+    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'hint', 'ngAnimate'])
+>>>>>>> newInterview
         .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             // remove hash
             $locationProvider.html5Mode(true);

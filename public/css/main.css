@@ -1,0 +1,93 @@
+.question-form {
+    padding: 15px 15px;
+    /*background-color: #e7e7e7;*/
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 4px #e5e9ef;
+}
+
+
+/*for tags */
+
+.tag-wrapper {
+    display: inline-block;
+    background-color: #e5e9ef;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.tag-value {
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.glyphicon,
+.glyphicon-remove {
+    top: 2px;
+    cursor: pointer;
+}
+
+
+/*end for tags*/
+
+
+/*for add question animation*/
+
+.question-item.ng-move,
+.question-item.ng-enter,
+.question-item.ng-leave {
+  transition:all linear 0.3s;
+
+}
+
+.question-item.ng-leave.ng-leave-active,
+.question-item.ng-move,
+.question-item.ng-enter {
+  opacity:0;
+  position: relative;
+  left: -200px;
+}
+
+.question-item.ng-leave,
+.question-item.ng-move.ng-move-active,
+.question-item.ng-enter.ng-enter-active {
+  opacity:1;
+  left: 0px;
+}
+
+
+.edit-panel.ng-move,
+.edit-panel.ng-enter,
+.edit-panel.ng-leave {
+  transition:all linear 0.3s;
+
+}
+
+.edit-panel.ng-leave.ng-leave-active,
+.edit-panel.ng-move,
+.edit-panel.ng-enter {
+  opacity:0;
+  position: relative;
+  left: -200px;
+}
+
+.edit-panel.ng-leave,
+.edit-panel.ng-move.ng-move-active,
+.edit-panel.ng-enter.ng-enter-active {
+  opacity:1;
+  left: 0px;
+}
+
+/*end for add question animation*/
+
+
+
+
+
+.clear {
+    clear: both;
+}
+
+
+
