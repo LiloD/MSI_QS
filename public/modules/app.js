@@ -29,9 +29,10 @@
                 })
                 .state('comments', {
                     url: '/comments/:qid',
-                    templateUrl: 'modules/question/comments.html',
+                    templateUrl: 'modules/comments/comments.html',
                     controller: 'CommentsCtrl as comments'
                 })
+                
             // add resource
 
         })
