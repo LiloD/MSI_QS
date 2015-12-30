@@ -51,7 +51,7 @@ app.use('/users', users);
 app.use('/api', api);
 app.use('/it', require('./routes/interview'));
 app.use('/login', require('./routes/login'));
-app.use('/passport', require('./routes/passport'))
+app.use('/passport', require('./routes/passport'));
 
 // handle all request witch can't be found
 app.all('/*', function(req, res) {

@@ -1,3 +1,7 @@
+<div class="alert alert-success" role="alert">
+  <strong>Congratulation!</strong> You have inserted an Interview successfully! Click <a class="alert-link">HERE</a> to view the Interview List
+</div>
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">New Interview with Questions</h3>
@@ -46,9 +50,9 @@
             <!-- if user click edit button -->
             <div class="panel-body edit-panel" ng-if="q.edit">
                 <div class="form-group question-form" id="newQuestions">
-                    <label>Question: </label>
+                    <label>Description: </label>
                     <div>
-                        <textarea class="form-control" rows="6" col="8" ng-model="q.description"></textarea>
+                        <textarea class="form-control" rows="6" col="8" ng-model="q.question"></textarea>
                     </div>
                     <label>Tags: </label>
                     <div>
@@ -76,7 +80,8 @@
                     <div class="col-md-2">
                         <label>Description: </label>
                     </div>
-                    <div class="col-md-10"><pre>{{q.description}}</pre></div>
+
+                    <div class="col-md-10"><pre>{{q.question}}</pre></div>
                 </div>
                 <div class="row" ng-show="q.tags.length > 0">
                     <div class="col-md-2">
@@ -99,7 +104,8 @@
                 <div class="form-group question-form" id="newQuestions">
                     <label>Description: </label>
                     <div>
-                        <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.description"></textarea>
+
+                        <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.question"></textarea>
                     </div>
                     <label>Tags: </label>
                     <div>
@@ -119,7 +125,9 @@
                             <button type="button" style="margin-right:10px" class="btn btn-success pull-right" ng-click="addQuestion(curQuestion); tagInfo=null">Submit Question</button>
                         </div>
                     </div>
-                </div`            </div>
+
+                </div>            
+            </div>
         </div>
         <button class="btn btn-success" ng-click="submitQuestion()">Submit</button>
     </div>

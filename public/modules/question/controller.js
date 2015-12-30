@@ -3,7 +3,7 @@
     'use strict'
 
     angular.module('main')
-        .controller('QuestionCtrl', function($scope, $http, $uibModal,$timeout, Interview, $q, $location, $anchorScroll) {
+        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
             var self = this;
             self.getParams = function() {
                 var params = {
@@ -114,20 +114,16 @@
             self.psorta = 1;
             self.showInterview = function(q) {
                 $scope.sq = q;
-                $uibModal.open({
-                    templateUrl: "modules/question/question.html",
-                    size: "lg",
-                    scope: $scope
-                });
-<<<<<<< HEAD
+               $state.get('questionDetail').data.q = q;
+                $state.go('questionDetail');
             }
+            //--------------------
+            
 
             self.sortBy = function(pSort) {
                 self.psorta *= -1;
                 self.pSort = pSort;
                 self.loadQuestions();
-=======
->>>>>>> newInterview
             }
 
             self.init = function() {
@@ -143,4 +139,82 @@
             }
             self.init();
         })
+        .controller('QuestionDetailCtl', ['$scope', '$state', function($scope, $state){
+            console.log('data', $state.current.data);
+        }])
+        .controller('NewInterviewCtl', ['$scope', '$state', '$http', function($scope, $state, $http){
+
+            $scope.fetchClients = function(q){
+                if(!q){
+                    return [];
+                }
+                return $http.get('/it', { params: {query: q} });
+            }
+
+            //add question------------------------------
+            $scope.questions = [];
+
+            $scope.fetchTags =function(q){
+                if(!q){
+                    return [];
+                }
+                return ['nodejs', 'angularjs', 'expressjs'];
+            }
+
+            $scope.curQuestion = {
+                question: "",
+                tags:[]
+            }
+
+            $scope.reset = function(q){
+                q.question = '';
+                q.tags = [];
+                return;
+            }
+
+            $scope.addQuestion = function(q){
+                if(!q.question) return;
+                $scope.questions.push(angular.copy(q));
+                $scope.reset($scope.curQuestion);
+            }
+
+            $scope.removeQuestion = function(idx){
+                if(idx < 0 || idx >= $scope.questions.length) return;
+                $scope.questions.splice(idx, 1);
+            }
+
+            $scope.editQuestion = function(idx){
+            }
+
+            $scope.addTag = function(tag, q){
+                if(!tag) return;
+
+                console.log('tag in addTag', tag);
+                if (q.tags.indexOf(tag) < 0)
+                    q.tags.push(tag);
+                tag = null;
+                return;
+            }
+
+            $scope.removeTag = function(idx, q){
+                if(idx < 0 || idx >= q.tags.length) return;
+                q.tags.splice(idx, 1);
+            }
+            // end of add question------------------------------
+
+            $scope.submitQuestion = function(){
+                var it = {
+                    Client: $scope.client,
+                    Date: $scope.Date,
+                    Candidate: $scope.Candidate,
+                    Type: $scope.Type, 
+                }
+
+                console.log('it here', it);
+
+                $http.post('/it', {it :it, qs: $scope.questions}).success(function(data){
+                    console.log('submitQuestion', data);
+                })
+            }
+        }])
 })()

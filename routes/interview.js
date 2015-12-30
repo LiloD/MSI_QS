@@ -17,32 +17,41 @@ router.get('/', function(req, res, next){
     });
 });
 
+var saveToQuestion = function(db, question, it){
+    question.interview = it;
+    console.log('question incoming', question);
+    return db.collection('question').insertOne(question)
+        .then(function(insertQsRes){
+            var arr = question.tags.map(function(tag){
+                return db.collection('tag').insertOne({"tag": tag});
+            })
+
+            return Q.allSettled(arr).then(function(insertTagRes){
+                insertTagRes.forEach(function (result) {
+                    if (result.state !== "fulfilled") {
+                        var reason = result.reason;
+                        console.log('insert tag failed, reason:', reason);
+                    }
+                });
+            });
+        });
+}
+
 router.post('/', function(req, res, next){
     dbConf.con.then(function(db){
-        console.log(1);
-        return dbConf.saveToInterview(db, req.body.it).then(function(insertItRes){
-            console.log(2);
-            if(!insertItRes.result.ok) throw err;
-            return Q.all(req.body.qs.map(function(question){
-                console.log(3);
-                return dbConf.saveToQuestion(db, question).then(function(insertQsRes){
-                    console.log(4);
-                    if(!insertQsRes.result.ok) throw err;
-                    return Q.all(question.tags.map(function(tag){
-                        console.log(5, tag);
-                        return dbConf.saveToTag(db, {'tag': tag});
+            db.collection('interview').insertOne(req.body.it)
+                .then(function(insertItRes){
+                    return Q.all(req.body.qs.map(function(question){
+                        return saveToQuestion(db, question, insertItRes.ops[0]);
                     }));
-                });
-            }));
-        }).then(function(status){
-            console.log('status', status);
-            res.json('insert success');
-            res.end();
-        });
-    }).catch(function(err){
-        console.log('err', err);
-        res.json("err");
-        res.end();
+                }).then(function(){
+                    res.json({ok: 1});
+                    res.end();
+                }).catch(function(err){
+                    console.log('insert interview error, reason', err);
+                    res.json({ok: 0});
+                    res.end();
+                })
     });
 })
 

@@ -2,11 +2,7 @@
 
     'use strict'
 
-<<<<<<< HEAD
-    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'interview', 'ngAnimate'])
-=======
-    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'hint', 'ngAnimate'])
->>>>>>> newInterview
+    angular.module('main', ['ui.bootstrap', 'ui.router', 'ngResource', 'login', 'interview', 'hint', 'ngAnimate'])
         .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             // remove hash
             $locationProvider.html5Mode(true);
@@ -24,7 +20,7 @@
                 .state('new', {
                     url: '/new',
                     templateUrl: 'modules/question/new.html',
-                    controller: 'QuestionCtrl as question'
+                    controller: 'NewInterviewCtl'
                 })
                 .state('interview', {
                     url: '/interview',
@@ -34,6 +30,14 @@
                     url: '/user/new',
                     templateUrl: 'modules/login/new.html',
                     controller: 'SignCtl'
+                })
+                .state('questionDetail', {
+                    url: '/question/detail',
+                    templateUrl: 'modules/question/question.html',
+                    controller: 'QuestionDetailCtl',
+                    data: {
+                        q: null
+                    }
                 })
 
             // add resource
