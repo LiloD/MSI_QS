@@ -20,7 +20,7 @@
                 .state('new', {
                     url: '/new',
                     templateUrl: 'modules/question/new.html',
-                    controller: 'QuestionCtrl as question'
+                    controller: 'NewInterviewCtl'
                 })
                 .state('interview', {
                     url: '/interview',

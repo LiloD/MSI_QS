@@ -46,9 +46,9 @@
             <!-- if user click edit button -->
             <div class="panel-body edit-panel" ng-if="q.edit">
                 <div class="form-group question-form" id="newQuestions">
-                    <label>Question: </label>
+                    <label>Description: </label>
                     <div>
-                        <textarea class="form-control" rows="6" col="8" ng-model="q.description"></textarea>
+                        <textarea class="form-control" rows="6" col="8" ng-model="q.question"></textarea>
                     </div>
                     <label>Tags: </label>
                     <div>
@@ -76,7 +76,7 @@
                     <div class="col-md-2">
                         <label>Description: </label>
                     </div>
-                    <div class="col-md-10"><pre>{{q.description}}</pre></div>
+                    <div class="col-md-10"><pre>{{q.question}}</pre></div>
                 </div>
                 <div class="row" ng-show="q.tags.length > 0">
                     <div class="col-md-2">
@@ -99,7 +99,7 @@
                 <div class="form-group question-form" id="newQuestions">
                     <label>Description: </label>
                     <div>
-                        <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.description"></textarea>
+                        <textarea class="form-control" rows="6" col="8" ng-model="curQuestion.question"></textarea>
                     </div>
                     <label>Tags: </label>
                     <div>
