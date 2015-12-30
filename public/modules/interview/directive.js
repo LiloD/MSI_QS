@@ -59,9 +59,37 @@
                         $scope.loadInterviews();
                     }
 
+                    $scope.data = {
+                        availableOptions: [{
+                            id: '1',
+                            iSize: '5'
+                        }, {
+                            id: '2',
+                            iSize: '10'
+                        }, {
+                            id: '3',
+                            iSize: '15'
+                        }, {
+                            id: '4',
+                            iSize: '20'
+                        }],
+                        selectedOption: {
+                            id: '2',
+                            iSize: '10'
+                        }
+                    };
+
+
                     $scope.init = function() {
                         $scope.iPage = 1
-                        $scope.iSize = 10
+                        $scope.iSize = self.iSize = $scope.data.selectedOption.iSize;
+
+                        $scope.$watch('data.selectedOption.iSize', function(newv, oldv) {
+                            if (newv == oldv) return;
+                            $scope.iSize = newv;
+                            $scope.loadInterviews()
+                        })
+
                         $scope.$watchGroup(['interview.iClient', 'interview.iCandidate', 'interview.iType'], function(n, o) {
                             console.log('watch: ', n, o)
                             if (n == o) return;
@@ -74,7 +102,7 @@
                 }
             };
         })
-        .directive('interviewDetail', function(){
+        .directive('interviewDetail', function() {
             return {
 
             }
