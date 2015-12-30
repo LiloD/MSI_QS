@@ -4,7 +4,7 @@
 
     angular.module('main')
         .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
-            var self = this;
+	    var self = this;
             // self.co = [];
             self.getParams = function() {
                 var params = {
@@ -126,9 +126,6 @@
             self.showInterview = function(q) {
                 $state.transitionTo('comments', {qid: q._id});
                 console.log('q:', q); 
-            	
-		self.psorta = 1;
-            	self.showInterview = function(q) {
                 $scope.sq = q;
                	$state.get('questionDetail').data.q = q;
                 $state.go('questionDetail');
@@ -154,7 +151,9 @@
                 self.loadQuestions()
             }
             self.init();
-        })
+
+	
+	})
         .controller('QuestionDetailCtl', ['$scope', '$state', function($scope, $state){
             console.log('data', $state.current.data);
         }])
