@@ -10,15 +10,15 @@
             <form class="form-inline">
                 <div class="form-group">
                     <label>By Client</label>
-                    <input ng-model="interview.iClient" ng-model-options="{debounce: 500}" class="form-control">
+                    <input ng-model="iClient" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>By Candidate</label>
-                    <input ng-model="interview.iCandidate" ng-model-options="{debounce: 500}" class="form-control">
+                    <input ng-model="iCandidate" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>By Type</label>
-                    <input ng-model="interview.iType" ng-model-options="{debounce: 500}" class="form-control">
+                    <input ng-model="iType" ng-model-options="{debounce: 500}" class="form-control">
                 </div>
             </form>
         </div>
@@ -26,30 +26,30 @@
     <div class="panel-collapse collapse" uib-collapse="!interview.filter.status.open">
         <div class="panel-body container-fluid">
             <span>Filter By</span>
-            <pre>{{interview.getParams() | json}}</pre>
+            <pre>{{getParams() | json}}</pre>
             <span>Filter Result</span>
-            <pre>{{"query count: " + interview.iCount}}</pre>
+            <pre>{{"query count: " + iCount}}</pre>
         </div>
     </div>
     <table class="table table-striped table-hover">
         <thead>
             <tr class="active">
                 <th class="col-md-3">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Client')"><strong>Client </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="sortBy('Client')"><strong>Client </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
                 <th class="col-md-4">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Candidate')"><strong>Candidate </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="sortBy('Candidate')"><strong>Candidate </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
                 <th class="col-md-4">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Type')"><strong>Type </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="sortBy('Type')"><strong>Type </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
                 <th class="col-md-1">
-                    <button class="btn btn-default" ng-click="interview.sortBy('Date')"><strong>Date </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
+                    <button class="btn btn-default" ng-click="sortBy('Date')"><strong>Date </strong><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button>
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="it in interview.it" ng-click="interview.showInterview(it._id)">
+            <tr ng-repeat="it in it" ng-click="showInterview(it._id)">
                 <td class="col-md-4">{{it.Client}}</td>
                 <td class="col-md-4">{{it.Candidate}}</td>
                 <td class="col-md-3">{{it.Type}}</td>
@@ -58,7 +58,7 @@
         </tbody>
     </table>
     <div class="panel-footer text-center">
-        <uib-pagination max-size=10 total-items="interview.iCount" items-per-page="interview.iSize" ng-model="interview.iPage" ng-change="interview.loadInterviews()" boundary-links="true"></uib-pagination>
+        <uib-pagination max-size=10 total-items="iCount" items-per-page="iSize" ng-model="iPage" ng-change="loadInterviews()" boundary-links="true"></uib-pagination>
     </div>
 </div>
 </div>
