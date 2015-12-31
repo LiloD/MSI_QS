@@ -90,7 +90,7 @@
                             $scope.loadInterviews()
                         })
 
-                        $scope.$watchGroup(['interview.iClient', 'interview.iCandidate', 'interview.iType'], function(n, o) {
+                        $scope.$watchGroup(['iClient', 'iCandidate', 'iType'], function(n, o) {
                             console.log('watch: ', n, o)
                             if (n == o) return;
                             console.log(n, o)
