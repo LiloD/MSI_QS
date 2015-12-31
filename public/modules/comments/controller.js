@@ -10,8 +10,9 @@
                 $http.post('/api/cm',{
                     comments: comment,
                     _id: $stateParams.qid
-                }).success(function(status){
-                    if(status.ok) self.co.push(comment).push($stateParams.qid);
+                }).success(function(res){
+                    // if(status.ok) self.co.push(comment).push($stateParams.qid);
+                    console.log(res);
 
                     // self.co = data
                 }).catch(console.error)

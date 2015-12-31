@@ -33,7 +33,7 @@
                 })
                 .state('questionDetail', {
                     url: '/question/detail',
-                    templateUrl: 'modules/question/question.html',
+                    templateUrl: 'modules/question/detail.html',
                     controller: 'QuestionDetailCtl',
                     data: {
                         q: null

@@ -13,7 +13,7 @@ router.get('/qs', function(req, res, next) {
 
     // default sort by date desc
     var sortBy = {};
-    sortBy[req.query.psort || 'interview.Client'] = req.query.psorta && parseInt(req.query.psorta);
+    sortBy[req.query.psort || 'interview.Client'] = (req.query.psorta && parseInt(req.query.psorta)) || 1;
 
     var findOption = req.query.psize == -1 ? {} : {
         'skip': (page - 1) * pageSize,
@@ -70,26 +70,28 @@ router.post('/qs', function(req, res, next) {
 })
 
 router.post('/cm',function(req, res, next){
-    if (!req.body.comments) {
-        res.json({
-            msg: 'need comments',
-            body: req.body
-        })
-        return
-    }
-
+    console.log('in insert cm');
     var co = {
-        comment: req.body.comments,
+        comment: req.body.comment,
         qid:req.body._id
     }
-    console.log('insert comments', co)
+    console.log('insert comments', co);
 
     dbConf.con.then(function(db) {
-        return db.collection('comments').insertOne(co).then(function(iResult) {
-            console.log(arguments)
-            res.json(co)
+        db.collection('comment').insertOne(co).then(function(insertCoRes) {
+            console.log('insertCoRes', insertCoRes);
+            if(insertCoRes.result.ok){
+                res.json({ok: 1})
+            }else{
+                res.json({ok: 0})
+            }
+            res.end();
         })
-    }).catch(console.error)
+    }).catch(function(err){
+        res.json({ok:0});
+        console.log('insert comment fail, reason', err);
+        res.end();
+    })
 })
 
 router.get('/it', function(req, res, next) {

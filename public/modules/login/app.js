@@ -8,7 +8,8 @@
         .factory('LoginService', function($http, $rootScope) {
             var EVENT_LOGIN = 'login success';
             var EVENT_LOGOUT = 'logout success';
-            var baseUrl = '/users'
+            var baseUrl = '/users';
+            var user = null;
             return {
                 logout: function() {
                     console.log('log out')
@@ -20,6 +21,7 @@
                 check: function() {
                     return $http.get(baseUrl + '/check').success(function(info) {
                         console.log('info in check', info);
+                        user = info;
                         if (info && info.user) $rootScope.$broadcast(EVENT_LOGIN, info)
                     })
                 },
@@ -30,6 +32,7 @@
                         password: pwd
                     }).success(function(info) {
                         console.log('user in login', info);
+                        user = info;
                         $rootScope.$broadcast(EVENT_LOGIN, info)
                     });
                 },
@@ -39,6 +42,7 @@
                         password: pwd,
                         email: email
                     }).success(function(info) {
+                        user = info;
                         $rootScope.$broadcast(EVENT_LOGIN, info);
                     })
                 },
@@ -52,6 +56,9 @@
                         }
                         return false;
                     });
+                },
+                getUser: function(){
+                    return user;
                 },
                 EVENT_LOGIN: EVENT_LOGIN
             };
