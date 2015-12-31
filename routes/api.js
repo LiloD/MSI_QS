@@ -5,6 +5,19 @@ var Q = require('q');
 var _ = require('lodash');
 var dbConf = require('../db')
 
+
+router.get('/tag', function(req, res, next){
+    var filter = {};
+    if(!!req.query.query) filter.tag = new RegExp(req.query.query, 'i');
+    dbConf.con.then(function(db){
+        return db.collection('tag').distinct('tag',filter);
+    }).then(function(data){
+        console.log(data);
+        res.json(data);
+        res.end();
+    });
+});
+
 // interview, quest
 router.get('/qs', function(req, res, next) {
     console.log(req.query);

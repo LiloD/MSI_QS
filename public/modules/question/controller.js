@@ -31,7 +31,7 @@
                 if(!q){
                     return [];
                 }
-                return ['nodejs', 'angularjs', 'expressjs'];
+                return $http.get('/api/tag', { params: {query: q} });
             }
 
             $scope.curQuestion = {
@@ -201,11 +201,18 @@
             //add question------------------------------
             $scope.questions = [];
 
+            // $scope.fetchTags =function(q){
+            //     if(!q){
+            //         return [];
+            //     }
+            //     return ['nodejs', 'angularjs', 'expressjs'];
+            // }
+            
             $scope.fetchTags =function(q){
                 if(!q){
                     return [];
                 }
-                return ['nodejs', 'angularjs', 'expressjs'];
+                return $http.get('/api/tag', { params: {query: q} });
             }
 
             $scope.curQuestion = {
