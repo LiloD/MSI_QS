@@ -99,3 +99,16 @@
 .clear {
     clear: both;
 }
+
+
+/*for table head*/
+.head{
+  cursor: pointer;
+  background-color: #8BC5F7 !important;
+  font-size: 17px;
+  color: white;
+  height: 50px;
+  padding: 15px !important;
+  border: 1px solid white;
+}
+
