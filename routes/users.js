@@ -54,27 +54,73 @@ router.post('/edit', function(req, res, next) {
 });
 
 
-router.post('/login', passport.authenticate('local', {failureRedirect: '/login'}), function(req, res, next) {
-    console.log('in login user:', req.user);
-    var _id = req.user._id;
+// router.post('/login', passport.authenticate('local'), function(req, res, next) {
+//     console.log('in login user:', req.user);
+//     var _id = req.user._id;
 
-    //update atime
-    getUserCollection().then(function(userCollection) {
-        userCollection.updateOne({
-                '_id': new ObjectId(_id)
-            }, {
-                $set: {
-                    'atime': Date.now()
-                }
-            })
-            .then(function(updateRes) {
-                //ignore the update result
-                res.json({
-                    user: req.user.username
-                });
+//     //update atime
+//     getUserCollection().then(function(userCollection) {
+//         userCollection.updateOne({
+//                 '_id': new ObjectId(_id)
+//             }, {
+//                 $set: {
+//                     'atime': Date.now()
+//                 }
+//             })
+//             .then(function(updateRes) {
+//                 //ignore the update result
+//                 res.json({
+//                     user: req.user.username
+//                 });
+//             });
+//             //ignore the error
+//     });
+// });
+
+router.post('/login', function(req, res, next) {
+
+    //authenticate here
+    passport.authenticate('local', function(err, user, info) {
+        console.log('in login user:', user);
+        console.log('cookies', req.cookies);
+        if (err) {
+            next(err);
+            return;
+        }
+
+        if(!user){
+            res.json({ok:0, msg:'username or password is invalid'});
+            res.end();
+            return;
+        }
+
+        req.logIn(user, function(err) {
+            var _id = req.user._id;
+            if (err) {
+                return next(err);
+            }
+
+            //update atime
+            getUserCollection().then(function(userCollection) {
+                userCollection.updateOne({
+                        '_id': new ObjectId(_id)
+                    }, {
+                        $set: {
+                            'atime': Date.now()
+                        }
+                    })
+                    .then(function(updateRes) {
+                        //ignore the update result
+                        res.json({
+                            ok: 1,
+                            user: req.user.username
+                        });
+                        res.end();
+                    });
             });
-            //ignore the error
-    });
+        });
+
+    })(req, res);
 });
 
 

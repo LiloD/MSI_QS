@@ -69,11 +69,26 @@ router.post('/qs', function(req, res, next) {
     }).catch(console.error)
 })
 
+router.get('/cm', function(req, res, next){
+    console.log('in get cm');
+    var qid = req.params.qid;
+    console.log('qid', qid);
+    dbConf.con.then(function(db){
+        db.collection('comment').find({qid: new ObjectId(qid)}).toArray()
+            .then(function(data){
+                res.json(data);
+                res.end();
+            });
+    });
+});
+
+
 router.post('/cm',function(req, res, next){
     console.log('in insert cm');
     var co = {
         comment: req.body.comment,
-        qid:req.body._id
+        qid:req.body._id,
+        username: req.body.username
     }
     console.log('insert comments', co);
 

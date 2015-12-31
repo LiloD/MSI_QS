@@ -5,17 +5,17 @@
     <div class="panel-body">
         <!-- for question description -->
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-1">
                 <label>Description: </label>
             </div>
-            <div class="col-md-10"><pre>{{q.question}}</pre></div>
+            <div class="col-md-11"><pre>{{q.question}}</pre></div>
         </div>
         <!-- for tags -->
         <div class="row" ng-show="q.tags.length > 0">
-            <div class="col-md-2">
+            <div class="col-md-1">
                 <label>Tags: </label>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-11">
                 <div class="tag-wrapper" ng-repeat="tag in q.tags">
                     <a class="tag-value">{{tag}}</a></span>
                 </div>
@@ -25,6 +25,9 @@
         <hr>
         <div ng-show="comments.length == 0">
             <h4>No comment right now</h4>
+        </div>
+        <div ng-show="comments.length > 0">
+            <h4>Comments:</h4>
         </div>
         <div>
             <div class="comment comment-info" ng-repeat="comment in comments"> 

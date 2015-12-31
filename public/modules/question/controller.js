@@ -76,7 +76,6 @@
             }
             // end of add question------------------------------
 
-
             $scope.submitQuestion = function(){
                 var it = {
                     Client: $scope.client,
@@ -163,10 +162,11 @@
             $scope.newComment = function(comment, qid){
                 console.log("comment", comment);
                 console.log("qid", qid);
-                
+                console.log("username", LoginService.getUser() && LoginService.getUser().user);
                 $http.post('/api/cm',{
                     comment: comment,
-                    _id: qid
+                    _id: qid,
+                    username: LoginService.getUser() && LoginService.getUser().user
                 })
                 .success(function(res){
                     $scope.comments.push({
