@@ -38,6 +38,13 @@ router.get('/qs', function(req, res, next) {
     })
 });
 
+// router.get('/question/{:qid}', function(req, res, next){
+//     console.log('in /question/:qid')
+//     var qid = req.params.qid;
+//     console.log('qid');
+//     res.end('ok');
+// })
+
 // post questions with interview
 router.post('/qs', function(req, res, next) {
     if (!req.body.questions || !req.body.questions.length || !req.body.interview) {

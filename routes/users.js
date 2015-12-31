@@ -53,30 +53,6 @@ router.post('/edit', function(req, res, next) {
     })
 });
 
-
-// router.post('/login', passport.authenticate('local'), function(req, res, next) {
-//     console.log('in login user:', req.user);
-//     var _id = req.user._id;
-
-//     //update atime
-//     getUserCollection().then(function(userCollection) {
-//         userCollection.updateOne({
-//                 '_id': new ObjectId(_id)
-//             }, {
-//                 $set: {
-//                     'atime': Date.now()
-//                 }
-//             })
-//             .then(function(updateRes) {
-//                 //ignore the update result
-//                 res.json({
-//                     user: req.user.username
-//                 });
-//             });
-//             //ignore the error
-//     });
-// });
-
 router.post('/login', function(req, res, next) {
 
     //authenticate here

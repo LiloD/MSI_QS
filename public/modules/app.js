@@ -31,13 +31,18 @@
                     templateUrl: 'modules/login/new.html',
                     controller: 'SignCtl'
                 })
+                // .state('questionDetail', {
+                //     url: '/question/detail',
+                //     templateUrl: 'modules/question/detail.html',
+                //     controller: 'QuestionDetailCtl',
+                //     data: {
+                //         q: null
+                //     }
+                // })
                 .state('questionDetail', {
-                    url: '/question/detail',
+                    url: '/question/{qid}',
                     templateUrl: 'modules/question/detail.html',
-                    controller: 'QuestionDetailCtl',
-                    data: {
-                        q: null
-                    }
+                    controller: 'QuestionDetailCtl'
                 })
                 .state('comments', {
                     url: '/comments/:qid',

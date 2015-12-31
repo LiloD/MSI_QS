@@ -5,7 +5,6 @@
     angular.module('main')
         .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
 	    var self = this;
-            // self.co = [];
             self.getParams = function() {
                 var params = {
                     page: self.qPage,
@@ -110,24 +109,10 @@
                     self.nq = data
                 }).catch(console.error)
             }
-
-            // self.newComments = function(comment, id){
-            //     $http.post('/api/cm',{
-            //         comments: comment,
-            //         _id: id
-            //     }).success(function(status){
-            //         if(status.ok) self.co.push(comment).push(_id);
-
-            //         // self.co = data
-            //     }).catch(console.error)
-            // }
             
             self.showInterview = function(q) {
-                $state.transitionTo('comments', {qid: q._id});
                 console.log('q:', q);
-                $scope.sq = q;
-               	$state.get('questionDetail').data.q = q;
-                $state.go('questionDetail');
+                $state.go('questionDetail', {qid: q._id});
             }
             self.psorta = 1;
             //--------------------
@@ -152,12 +137,27 @@
             }
             self.init();
 	   })
-        .controller('QuestionDetailCtl', ['$scope', '$state', '$http', 'LoginService', function($scope, $state, $http, LoginService){
-            $scope.q = $state.current.data.q;
-
-            // console.log('!!!!!!', LoginService.getUser());
+        .controller('QuestionDetailCtl', ['$scope', '$state', '$http', 'LoginService', '$stateParams', function($scope, $state, $http, LoginService, $stateParams){
+            console.log('$stateParams', $stateParams);
+            if(!$stateParams.qid){
+                $state.go('question');
+                return;
+            }
 
             $scope.comments = [];
+
+            $scope.loadQuestion = function(qid){
+                console.log('in!');
+                $http.get('/qs/'+qid).success(function(data){
+                    console.log('data', data);
+                    if(data.ok){
+                        $scope.q = data.q;
+                        $scope.updateComments($scope.q._id);
+                    }else{
+                        console.log("can't get question with id", qid);
+                    }
+                })
+            }
 
             $scope.newComment = function(comment, qid){
                 console.log("comment", comment);
@@ -186,7 +186,8 @@
                 })
             }
 
-            $scope.updateComments($scope.q._id);
+            $scope.loadQuestion($stateParams.qid);
+
         }])
         .controller('NewInterviewCtl', ['$scope', '$state', '$http', function($scope, $state, $http){
 

@@ -47,6 +47,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', routes);
+app.use('/qs', require('./routes/question'));
 app.use('/users', users);
 app.use('/api', api);
 app.use('/it', require('./routes/interview'));
