@@ -136,7 +136,7 @@
                 self.loadQuestions()
             }
             self.init();
-	   })
+	    })
         .controller('QuestionDetailCtl', ['$scope', '$state', '$http', 'LoginService', '$stateParams', function($scope, $state, $http, LoginService, $stateParams){
             console.log('$stateParams', $stateParams);
             if(!$stateParams.qid){
@@ -257,10 +257,19 @@
                     Type: $scope.Type, 
                 }
 
-                console.log('it here', it);
-
                 $http.post('/it', {it :it, qs: $scope.questions}).success(function(data){
-                    console.log('submitQuestion', data);
+                    // console.log('submitQuestion', data);
+                    $scope.insertSuccess = true;
+                    //reset
+                    $scope.Candidate = null;
+                    $scope.Type = null;
+                    $scope.Date = null;
+                    $scope.client = null;
+                    $scope.questions = [];
+                    $scope.curQuestion = {
+                        question: "",
+                        tags:[]
+                    }
                 })
             }
         }])
