@@ -125,7 +125,7 @@
             
             self.showInterview = function(q) {
                 $state.transitionTo('comments', {qid: q._id});
-                console.log('q:', q); 
+                console.log('q:', q);
                 $scope.sq = q;
                	$state.get('questionDetail').data.q = q;
                 $state.go('questionDetail');
@@ -152,11 +152,29 @@
                 self.loadQuestions()
             }
             self.init();
+	   })
+        .controller('QuestionDetailCtl', ['$scope', '$state', '$http', 'LoginService', function($scope, $state, $http, LoginService){
+            $scope.q = $state.current.data.q;
 
-	
-	})
-        .controller('QuestionDetailCtl', ['$scope', '$state', function($scope, $state){
-            console.log('data', $state.current.data);
+            // console.log('!!!!!!', LoginService.getUser());
+
+            $scope.comments = [];
+
+            $scope.newComment = function(comment, qid){
+                console.log("comment", comment);
+                console.log("qid", qid);
+                
+                $http.post('/api/cm',{
+                    comment: comment,
+                    _id: qid
+                })
+                .success(function(res){
+                    $scope.comments.push({
+                        username: LoginService.getUser().user,
+                        comment: comment
+                    })  
+                });
+            }
         }])
         .controller('NewInterviewCtl', ['$scope', '$state', '$http', function($scope, $state, $http){
 

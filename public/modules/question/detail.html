@@ -8,9 +8,8 @@
             <div class="col-md-2">
                 <label>Description: </label>
             </div>
-            <div class="col-md-10"><pre>{{q.description}}</pre></div>
+            <div class="col-md-10"><pre>{{q.question}}</pre></div>
         </div>
-
         <!-- for tags -->
         <div class="row" ng-show="q.tags.length > 0">
             <div class="col-md-2">
@@ -22,10 +21,30 @@
                 </div>
             </div>
         </div>
-
         <!-- for comments -->
+        <hr>
+        <div ng-show="comments.length == 0">
+            <h4>No comment right now</h4>
+        </div>
         <div>
+            <div class="comment comment-info" ng-repeat="comment in comments"> 
+                <h5>{{comment.username}}</h5> 
+                <p>{{comment.comment}}</p>
+            </div>
+        </div>
+        <!-- add comment -->
+        <hr>
 
+        <div>
+            <form name="commentForm">
+                <div class="form-group">
+                  <label class="control-label" for="comment-area">Input with your comment</label>
+                  <textarea class="form-control" id="comment-area" ng-model="comment" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                  <button ng-disabled="commentForm.$invalid" type="submit" class="btn btn-primary" ng-click="newComment(comment, q._id)">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
