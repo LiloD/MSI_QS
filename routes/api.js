@@ -70,12 +70,14 @@ router.post('/qs', function(req, res, next) {
 })
 
 router.get('/cm', function(req, res, next){
-    console.log('in get cm');
-    var qid = req.params.qid;
+    // console.log('in get cm');
+    var qid = req.query.qid;
     console.log('qid', qid);
+    // console.log(req.query);
     dbConf.con.then(function(db){
-        db.collection('comment').find({qid: new ObjectId(qid)}).toArray()
+        db.collection('comment').find({qid: qid}).toArray()
             .then(function(data){
+                console.log(data);
                 res.json(data);
                 res.end();
             });

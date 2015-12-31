@@ -175,6 +175,18 @@
                     })  
                 });
             }
+
+            $scope.updateComments = function(qid){
+                console.log("update comments");
+                console.log("qid", qid);
+                $http.get('/api/cm', { params: {qid: qid} })
+                    .success(function(data){
+                        console.log('comments', data);
+                        $scope.comments = data
+                })
+            }
+
+            $scope.updateComments($scope.q._id);
         }])
         .controller('NewInterviewCtl', ['$scope', '$state', '$http', function($scope, $state, $http){
 
