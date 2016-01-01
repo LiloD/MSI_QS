@@ -49,7 +49,11 @@
         <tbody>
 
             <tr ng-repeat="q in question.qs">
-                <td class="col-md-2">{{q.interview.Client}}</td>
+                <td class="col-md-2">
+                    <div>
+                        <a class="question-client">{{q.interview.Client}}</a>
+                    </div>
+                </td>
                 <td class="col-md-9">
                     <div>
                         <span  uib-popover-template="questionInfoPopover.templateUrl" popover-trigger="mouseenter" popover-placement="bottom">
@@ -61,7 +65,7 @@
 
                     </div>
                 </td>
-                <td class="col-md-1">{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
+                <td class="col-md-1"><span class="question-date">{{q.interview.Date | date:'MM/dd/yyyy'}}</span></td>
             </tr>
         </tbody>
     </table>

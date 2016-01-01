@@ -128,7 +128,15 @@ table tr{
 }*/
 
 /*for question list*/
-.question-description {
+.question-description, .question-client, .question-date{
   font-size: 16px;
+}
+
+.question-date {
+  color: grey;
+}
+
+td{
+  vertical-align: middle !important;
 }
 
