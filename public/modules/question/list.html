@@ -1,3 +1,10 @@
+<script type="text/ng-template" id="questionPopover.html">
+    <div>
+        <p>Create by {{q.interview.Candidate}}</p>
+        <p>Click for more information</p>
+    </div>
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading container-fluid inline">
         <div class="pull-left">
@@ -40,12 +47,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="q in question.qs" 
-            uib-popover={{"Created&nbsp;"+q.interview.Candidate+"&nbsp;click&nbsp;for&nbsp;more&nbsp;information"}} popover-trigger="mouseenter">
+
+            <tr ng-repeat="q in question.qs">
                 <td class="col-md-2">{{q.interview.Client}}</td>
                 <td class="col-md-9">
                     <div>
-                        <span>
+                        <span  uib-popover-template="questionInfoPopover.templateUrl" popover-trigger="mouseenter" popover-placement="bottom">
                             <a class="question-description" ng-click="question.showInterview(q)">{{q.question | cutQuestion}}</a>
                         </span>
                         <span class="tag-wrapper" ng-repeat="tag in (q.tags | cutTags)">
@@ -53,13 +60,6 @@
                         </span>
 
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-md-9">
-                            <div class="tag-wrapper" ng-repeat="tag in q.tags">
-                                <a class="tag-value">{{tag}}</a></span>
-                            </div>
-                        </div>
-                    </div> -->
                 </td>
                 <td class="col-md-1">{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
             </tr>
@@ -69,3 +69,4 @@
         <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.loadQuestions()" boundary-links="true"></uib-pagination>
     </div>
 </div>
+

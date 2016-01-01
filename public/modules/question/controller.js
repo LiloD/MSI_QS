@@ -4,7 +4,13 @@
 
     angular.module('main')
         .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
-	       var self = this;
+	       $scope.questionInfoPopover = {
+            content: 'Hello, World!',
+            templateUrl: 'questionPopover.html',
+            title: 'Title'
+          };
+
+           var self = this;
             self.getParams = function() {
                 var params = {
                     page: self.qPage,
