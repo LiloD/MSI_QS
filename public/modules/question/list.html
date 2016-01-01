@@ -42,7 +42,7 @@
         <tbody>
             <tr ng-repeat="q in question.qs" ng-click="question.showInterview(q)" uib-popover={{q.interview.Candidate}} popover-trigger="mouseenter">
                 <td class="col-md-3">{{q.interview.Client}}</td>
-                <td class="col-md-8">{{q.question}}</td>
+                <td class="col-md-8">{{q.question | cutQuestion}}</td>
                 <td class="col-md-1">{{q.interview.Date | date:'MM/dd/yyyy'}}</td>
             </tr>
         </tbody>
