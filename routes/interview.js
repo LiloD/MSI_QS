@@ -39,6 +39,9 @@ var saveToQuestion = function(db, question, it){
 
 router.post('/', function(req, res, next){
     dbConf.con.then(function(db){
+            
+            req.body.it.Date = new Date(req.body.it.Date);
+
             db.collection('interview').insertOne(req.body.it)
                 .then(function(insertItRes){
                     return Q.all(req.body.qs.map(function(question){

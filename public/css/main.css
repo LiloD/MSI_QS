@@ -1,3 +1,7 @@
+* {
+  font-size: 14px;
+}
+
 .question-form {
     padding: 15px 15px;
     /*background-color: #e7e7e7;*/
@@ -100,9 +104,12 @@
     clear: both;
 }
 
+table tr{
+  cursor: pointer;
+}
 
 /*for table head*/
-.head{
+/*.head{
   cursor: pointer;
   background-color: #8BC5F7 !important;
   font-size: 17px;
@@ -112,3 +119,6 @@
   border: 1px solid white;
 }
 
+.head:hover{
+  background-color: #5899D2 !important;
+}*/

@@ -26,12 +26,13 @@ router.get('/qs', function(req, res, next) {
 
     // default sort by date desc
     var sortBy = {};
-    sortBy[req.query.psort || 'interview.Client'] = (req.query.psorta && parseInt(req.query.psorta)) || 1;
+    sortBy[req.query.psort || 'interview.Date'] = (req.query.psorta && parseInt(req.query.psorta)) || 1;
 
     var findOption = req.query.psize == -1 ? {} : {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
     }
+
     var filter = {};
     if (!!req.query.qQuestion) filter.question = new RegExp(req.query.qQuestion, 'i');
     if (!!req.query.qCompany) filter['interview.Client'] = new RegExp(req.query.qCompany, 'i');
@@ -138,7 +139,7 @@ router.get('/it', function(req, res, next) {
 
     // default sort by date desc
     var sortBy ={};
-    sortBy[req.query.psort || 'Client'] = req.query.psorta && parseInt(req.query.psorta) || -1;
+    sortBy[req.query.psort || 'Date'] = req.query.psorta && parseInt(req.query.psorta) || -1;
     var findOption = {
         'skip': (page - 1) * pageSize,
         'limit': pageSize

@@ -4,92 +4,18 @@
 
     angular.module('main')
         .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
-	    var self = this;
+	       var self = this;
             self.getParams = function() {
                 var params = {
                     page: self.qPage,
                     psize: self.qSize,
                     psorta: self.psorta
                 }
-                if (!!self.qQuestion) params.qQuestion = self.qQuestion
-                if (!!self.qCompany) params.qCompany = self.qCompany
+                if (!!self.qQuestion) params.qQuestion = self.qQuestion;
+                if (!!self.qCompany) params.qCompany = self.qCompany;
                 if (!!self.pSort) params.psort = self.pSort;
-                return params
+                return params;
             }
-
-            $scope.fetchClients = function(q){
-                if(!q){
-                    return [];
-                }
-                return $http.get('/it', { params: {query: q} });
-            }
-
-            //add question------------------------------
-            $scope.questions = [];
-
-            $scope.fetchTags =function(q){
-                if(!q){
-                    return [];
-                }
-                return $http.get('/api/tag', { params: {query: q} });
-            }
-
-            $scope.curQuestion = {
-                description: "",
-                tags:[]
-            }
-
-            $scope.reset = function(q){
-                q.description = '';
-                q.tags = [];
-                return;
-            }
-
-            $scope.addQuestion = function(q){
-                if(!q.description) return;
-                $scope.questions.push(angular.copy(q));
-                $scope.reset($scope.curQuestion);
-            }
-
-            $scope.removeQuestion = function(idx){
-                if(idx < 0 || idx >= $scope.questions.length) return;
-                $scope.questions.splice(idx, 1);
-            }
-
-            $scope.editQuestion = function(idx){
-            }
-
-            $scope.addTag = function(tag, q){
-                if(!tag) return;
-
-                console.log('tag in addTag', tag);
-                if (q.tags.indexOf(tag) < 0)
-                    q.tags.push(tag);
-                tag = null;
-                return;
-            }
-
-            $scope.removeTag = function(idx, q){
-                if(idx < 0 || idx >= q.tags.length) return;
-                q.tags.splice(idx, 1);
-            }
-            // end of add question------------------------------
-
-            $scope.submitQuestion = function(){
-                var it = {
-                    Client: $scope.client,
-                    Date: $scope.Date,
-                    Candidate: $scope.Candidate,
-                    Type: $scope.Type, 
-                }
-
-                console.log('it here', it);
-
-                $http.post('/it', {it :it, qs: $scope.questions}).success(function(data){
-                    console.log('submitQuestion', data);
-                })
-            }
-
 
             self.loadQuestions = function() {
                 $http.get('/api/qs', {
@@ -100,22 +26,12 @@
                     self.qCount = data.count;
                 }).catch(console.error)
             }
-
-            self.newQuestions = function(interview, questions) {
-                $http.post('/api/qs', {
-                    interview: interview,
-                    questions: questions.trim().split('\n')
-                }).success(function(data) {
-                    self.nq = data
-                }).catch(console.error)
-            }
             
             self.showInterview = function(q) {
                 console.log('q:', q);
                 $state.go('questionDetail', {qid: q._id});
             }
-            self.psorta = 1;
-            //--------------------
+            self.psorta = -1;
             
 
             self.sortBy = function(pSort) {
@@ -136,6 +52,7 @@
                 self.loadQuestions()
             }
             self.init();
+
 	    })
         .controller('QuestionDetailCtl', ['$scope', '$state', '$http', 'LoginService', '$stateParams', function($scope, $state, $http, LoginService, $stateParams){
             console.log('$stateParams', $stateParams);

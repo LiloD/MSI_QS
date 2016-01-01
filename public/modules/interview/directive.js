@@ -30,7 +30,7 @@
                         }).catch(console.error)
                     }
 
-                    $scope.psorta = 1;
+                    $scope.psorta = -1;
 
                     $scope.showInterview = function(iid) {
                         Interview.get({
