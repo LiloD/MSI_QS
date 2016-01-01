@@ -2,6 +2,10 @@
   font-size: 14px;
 }
 
+a {
+  cursor: pointer;
+}
+
 .question-form {
     padding: 15px 15px;
     /*background-color: #e7e7e7;*/
@@ -103,10 +107,10 @@
 .clear {
     clear: both;
 }
-
+/*
 table tr{
   cursor: pointer;
-}
+}*/
 
 /*for table head*/
 /*.head{
@@ -122,3 +126,9 @@ table tr{
 .head:hover{
   background-color: #5899D2 !important;
 }*/
+
+/*for question list*/
+.question-description {
+  font-size: 16px;
+}
+
