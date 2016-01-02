@@ -13,7 +13,7 @@
             // provide router
             $stateProvider
                 .state('question', {
-                    url: '/question?qQuestion&qCompany&pSort&qPage&qSize&psorta',
+                    url: '/question?qQuestion&qCompany&pSort&qPage&qSize&psorta&befored&afterd',
                     templateUrl: 'modules/question/list.html',
                     controller: 'QuestionCtrl as question',
                     cache: false

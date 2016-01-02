@@ -21,7 +21,15 @@
                         <label>By Question</label>
                         <input class="form-control" ng-model="searchQuestion" placeholder="By Question">
                     </div>
-                    <button type="submit" class="btn btn-primary" ng-click="question.advancedSearch(searchCompany, searchQuestion)">Search</button>
+                    <div class="form-group">
+                        <label>before</label>
+                        <input type="date" class="form-control" ng-model="befored" placeholder="before a specific date">
+                    </div>
+                    <div class="form-group">
+                        <label>after</label>
+                        <input type="date" class="form-control" ng-model="afterd" placeholder="after a specific date">
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-click="question.advancedSearch(searchCompany, searchQuestion, befored, afterd)">Search</button>
                 </form>
             </div>
         </div>

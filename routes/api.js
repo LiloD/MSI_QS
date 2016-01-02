@@ -37,6 +37,12 @@ router.get('/qs', function(req, res, next) {
     if (!!req.query.qQuestion) filter.question = new RegExp(req.query.qQuestion, 'i');
     if (!!req.query.qCompany) filter['interview.Client'] = new RegExp(req.query.qCompany, 'i');
     if (!!req.query.qInterview) filter['interview._id'] = ObjectId(req.query.qInterview);
+    console.log("befored", req.query.befored);
+    console.log("afterd", req.query.afterd);
+    filter['interview.Date'] = {};
+    if (!!req.query.befored) filter['interview.Date']['$lte'] = new Date(req.query.befored);
+    if (!!req.query.afterd) filter['interview.Date']['$gte'] = new Date(req.query.afterd);
+
     dbConf.con.then(function(db) {
         return Q.all([
             db.collection('question').find(filter).count(),

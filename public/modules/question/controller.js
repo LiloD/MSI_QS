@@ -25,10 +25,14 @@
                 });
             }
 
-            self.advancedSearch = function(company, question){
+            self.advancedSearch = function(company, question, befored, afterd){
                 console.log(company, question);
                 $stateParams.qCompany = company;
                 $stateParams.qQuestion = question;
+                $stateParams.befored = befored;
+                $stateParams.afterd = afterd;
+
+                console.log("stateParams",$stateParams)
 
                 $state.transitionTo($state.current, $stateParams, { 
                   reload: true, inherit: false, notify: true 
