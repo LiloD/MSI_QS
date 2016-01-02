@@ -3,14 +3,75 @@
     'use strict';
 
     angular.module('main')
-        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state) {
-	       $scope.questionInfoPopover = {
-            content: 'Hello, World!',
-            templateUrl: 'questionPopover.html',
-            title: 'Title'
-          };
+        .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state, $stateParams) {
+           $scope.questionInfoPopover = {
+                content: 'Hello, World!',
+                templateUrl: 'questionPopover.html',
+                title: 'Title'
+            };
 
-           var self = this;
+            // console.log('stateParams', $stateParams);
+
+            var self = this;
+
+            self.setCompany = function(company){
+                console.log(company);
+                $stateParams.qCompany = company;
+                
+                $state.transitionTo($state.current, $stateParams, { 
+                  reload: true, inherit: false, notify: true 
+                });
+            }
+
+            self.loadQuestions = function() {
+                $http.get('/api/qs', {
+                    params: $stateParams
+                }).success(function(data) {
+                    console.log(data);
+                    self.qs = data.qs;
+                    self.qCount = data.count;
+                }).catch(console.error)
+            }
+            
+            self.showInterview = function(q) {
+                $state.go('questionDetail', {qid: q._id});
+            }            
+
+            self.sortBy = function(pSort) {
+                $stateParams.psorta *= -1;
+                $stateParams.pSort = pSort;
+                $state.transitionTo($state.current, $stateParams, { 
+                  reload: true, inherit: false, notify: true 
+                });
+            }
+
+            self.init = function() {
+                $stateParams.qPage = $stateParams.qPage || 1;
+                $stateParams.qSize = $stateParams.qSize || 10;
+                $stateParams.psorta = $stateParams.psorta || 1;            
+                self.loadQuestions();
+            }
+            self.init();
+
+        })
+        .controller('QuestionCtrl1', function($scope, $http, $uibModal, Interview, $state, $stateParams) {
+	       $scope.questionInfoPopover = {
+                content: 'Hello, World!',
+                templateUrl: 'questionPopover.html',
+                title: 'Title'
+            };
+
+            console.log('stateParams', $stateParams);
+
+            var self = this;
+
+            self.setCompany = function(company){
+                // console.log(company);
+                // self.qCompany = company;
+                // console.log('setCompany', self.qCompany);
+                $state.go()
+            }
+
             self.getParams = function() {
                 var params = {
                     page: self.qPage,
@@ -47,8 +108,8 @@
             }
 
             self.init = function() {
-                self.qPage = 1
-                self.qSize = 10
+                self.qPage = 1;
+                self.qSize = 10;
                 $scope.$watchGroup(['question.qQuestion', 'question.qCompany'], function(n, o) {
                     console.log('watch', n, o)
                     if (n == o) return;

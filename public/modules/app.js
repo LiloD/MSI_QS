@@ -13,9 +13,10 @@
             // provide router
             $stateProvider
                 .state('question', {
-                    url: '/question',
+                    url: '/question?qQuestion&qCompany&pSort&qPage&qSize&psorta',
                     templateUrl: 'modules/question/list.html',
-                    controller: 'QuestionCtrl as question'
+                    controller: 'QuestionCtrl as question',
+                    cache: false
                 })
                 .state('new', {
                     url: '/new',
@@ -31,14 +32,6 @@
                     templateUrl: 'modules/login/new.html',
                     controller: 'SignCtl'
                 })
-                // .state('questionDetail', {
-                //     url: '/question/detail',
-                //     templateUrl: 'modules/question/detail.html',
-                //     controller: 'QuestionDetailCtl',
-                //     data: {
-                //         q: null
-                //     }
-                // })
                 .state('questionDetail', {
                     url: '/question/{qid}',
                     templateUrl: 'modules/question/detail.html',
