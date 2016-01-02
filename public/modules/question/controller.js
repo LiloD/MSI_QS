@@ -40,10 +40,11 @@
             }
 
             self.loadQuestions = function() {
+                console.log('stateParams', $stateParams);
                 $http.get('/api/qs', {
                     params: $stateParams
                 }).success(function(data) {
-                    console.log(data);
+                    console.log("loadQuestions", data);
                     self.qs = data.qs;
                     self.qCount = data.count;
                 }).catch(console.error)
