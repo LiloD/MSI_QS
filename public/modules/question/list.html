@@ -5,38 +5,64 @@
     </div>
 </script>
 
+<script type="text/ng-template" id="searchPopover.html">
+    
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <label>Advanced Search</label>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label>By Company</label>
+                        <input class="form-control" ng-model="searchCompany" placeholder="By Company">
+                    </div>
+                    <div class="form-group">
+                        <label>By Question</label>
+                        <input class="form-control" ng-model="searchQuestion" placeholder="By Question">
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-click="question.advancedSearch(searchCompany, searchQuestion)">Search</button>
+                </form>
+            </div>
+        </div>
+    
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading container-fluid inline">
         <div class="pull-left">
             <h5><strong>Total Questions: </strong><span class="label label-default">{{question.qCount}}</span></h5>
         </div>
+        <!-- <div class="pull-right">
+            <span class="btn btn-default glyphicon glyphicon-search" role="button" ng-click="question.filter.form.open = !question.filter.form.open"  ></span>
+        </div> -->
         <div class="pull-right">
-            <span class="btn btn-default" role="button" ng-click="question.filter.form.open = !question.filter.form.open"><strong>Filter By</strong></span>
+            <span class="btn btn-default glyphicon glyphicon-search" role="button" uib-popover-template="searchPopover.templateUrl" popover-trigger="click" popover-placement="bottom" ></span>
         </div>
     </div>
-    <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
-        <div class="panel-body container-fluid">
-            <form class="form-inline">
+    <!-- <div class="panel-collapse collapse" uib-collapse="!question.filter.form.open">
+        <div class="panel-heading">
+            <label>Advanced Search</label>
+        </div>
+        <div class="panel-body">
+            <form>
                 <div class="form-group">
                     <label>By Company</label>
-                    <input ng-model="question.qCompany" ng-model-options="{debounce: 500}" class="form-control">
+                    <input class="form-control" placeholder="By Company">
                 </div>
                 <div class="form-group">
                     <label>By Question</label>
-                    <input ng-model="question.qQuestion" ng-model-options="{debounce: 500}" class="form-control">
+                    <input class="form-control" placeholder="By Question">
                 </div>
-                <div class="form-group">
-                    <label>Page size</label>
-                    <select ng-options="option.qSize for option in data.availableOptions track by option.id" ng-model="data.selectedOption" class="form-control"></select>
-                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <table class="table table-striped">
         <thead>
             <tr class="active">
                 <th class="col-md-2 head" ng-click="question.sortBy('interview.Client')">
-                    <strong>Client</strong>
+                    <strong>Company</strong>
                 </th>
                 <th class="col-md-8 head" ng-click="question.sortBy('question')">
                     <strong>Question</strong>
@@ -47,7 +73,6 @@
             </tr>
         </thead>
         <tbody>
-
             <tr ng-repeat="q in question.qs">
                 <td class="col-md-2">
                     <div>
@@ -56,7 +81,7 @@
                 </td>
                 <td class="col-md-9">
                     <div>
-                        <span  uib-popover-template="questionInfoPopover.templateUrl" popover-trigger="mouseenter" popover-placement="bottom">
+                        <span uib-popover-template="questionInfoPopover.templateUrl" popover-trigger="mouseenter" popover-placement="bottom">
                             <a class="question-description" ng-click="question.showInterview(q)">{{q.question | cutQuestion}}</a>
                         </span>
                         <span class="tag-wrapper" ng-repeat="tag in (q.tags | cutTags)">

@@ -4,13 +4,15 @@
 
     angular.module('main')
         .controller('QuestionCtrl', function($scope, $http, $uibModal, Interview, $state, $stateParams) {
-           $scope.questionInfoPopover = {
+            $scope.questionInfoPopover = {
                 content: 'Hello, World!',
                 templateUrl: 'questionPopover.html',
                 title: 'Title'
             };
 
-            // console.log('stateParams', $stateParams);
+            $scope.searchPopover = {
+                templateUrl: 'searchPopover.html'
+            };
 
             var self = this;
 
@@ -18,6 +20,16 @@
                 console.log(company);
                 $stateParams.qCompany = company;
                 
+                $state.transitionTo($state.current, $stateParams, { 
+                  reload: true, inherit: false, notify: true 
+                });
+            }
+
+            self.advancedSearch = function(company, question){
+                console.log(company, question);
+                $stateParams.qCompany = company;
+                $stateParams.qQuestion = question;
+
                 $state.transitionTo($state.current, $stateParams, { 
                   reload: true, inherit: false, notify: true 
                 });
