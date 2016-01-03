@@ -26,7 +26,9 @@ router.get('/qs', function(req, res, next) {
 
     // default sort by date desc
     var sortBy = {};
-    sortBy[req.query.psort || 'interview.Date'] = (req.query.psorta && parseInt(req.query.psorta)) || 1;
+    sortBy[req.query.pSort || 'interview.Date'] = (req.query.psorta && parseInt(req.query.psorta)) || 1;
+
+    console.log('sortBy', sortBy);
 
     var findOption = req.query.psize == -1 ? {} : {
         'skip': (page - 1) * pageSize,

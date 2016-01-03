@@ -77,7 +77,7 @@
             self.init = function() {
                 $stateParams.qPage = $stateParams.qPage || 1;
                 $stateParams.qSize = $stateParams.qSize || 10;
-                $stateParams.psorta = $stateParams.psorta || 1;            
+                $stateParams.psorta = $stateParams.psorta || -1;            
                 self.loadQuestions();
             }
             self.init();
