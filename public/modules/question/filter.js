@@ -13,6 +13,11 @@
 		})
 		.filter('cutTags', function(){
 			return function(tags){
+
+				if(!tags){
+					return [];
+				}
+
 				//120 - 80 = 40
 				//20
 				var res = [];

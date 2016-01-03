@@ -16,14 +16,36 @@
 
             var self = this;
 
-            self.setCompany = function(company){
-                console.log(company);
-                $stateParams = {};
-                $stateParams.qCompany = company;
-                
-                $state.transitionTo($state.current, $stateParams, { 
+            var reloadCurrent = function(){    
+                $state.transitionTo($state.current, uriEncode($stateParams), { 
                   reload: true, inherit: false, notify: true 
                 });
+            }
+
+            self.setCompany = function(company){
+                
+                $stateParams = {};
+                $stateParams.qCompany = company;
+
+                // $state.transitionTo($state.current, $stateParams, { 
+                //   reload: true, inherit: false, notify: true 
+                // });
+                reloadCurrent();
+            }
+
+            var uriEncode = function(obj){
+                for(var property in obj){
+                    if(!!obj[property]) obj[property] = encodeURIComponent(obj[property]);
+                }
+
+                return obj;
+            }
+
+            var uriDecode = function(obj){
+                for(var property in obj){
+                    if(!!obj[property]) obj[property] = decodeURIComponent(obj[property]);
+                }
+                return obj;
             }
 
             self.setTag = function(tag){
@@ -33,9 +55,10 @@
 
                 console.log('in setTag stateParams', $stateParams);
 
-                $state.transitionTo($state.current, $stateParams, { 
-                  reload: true, inherit: false, notify: true 
-                });
+                // $state.transitionTo($state.current, $stateParams, { 
+                //   reload: true, inherit: false, notify: true 
+                // });
+                reloadCurrent();
             }
 
             self.setDate = function(date){
@@ -44,9 +67,10 @@
                 $stateParams.befored = date;
                 $stateParams.afterd = date;
 
-                $state.transitionTo($state.current, $stateParams, { 
-                  reload: true, inherit: false, notify: true 
-                });
+                // $state.transitionTo($state.current, $stateParams, { 
+                //   reload: true, inherit: false, notify: true 
+                // });
+                reloadCurrent();
             }
 
             self.advancedSearch = function(company, question, befored, afterd){
@@ -58,17 +82,19 @@
 
                 console.log("stateParams",$stateParams)
 
-                $state.transitionTo($state.current, $stateParams, { 
-                  reload: true, inherit: false, notify: true 
-                });
+                // $state.transitionTo($state.current, $stateParams, { 
+                //   reload: true, inherit: false, notify: true 
+                // });
+                reloadCurrent();
             }
 
             self.loadQuestions = function() {
                 $stateParams.page = self.qPage;
                 $stateParams.psize = self.qSize;
-                console.log('stateParams', $stateParams);
+                console.log('loadQuestion stateParams', $stateParams);
                 $http.get('/api/qs', {
-                    params: $stateParams
+                    // params: $stateParams
+                    params: uriDecode($stateParams)
                 }).success(function(data) {
                     console.log("loadQuestions", data);
                     self.qs = data.qs;
@@ -90,6 +116,7 @@
             }
 
             self.init = function() {
+                console.log('in init');
                 $stateParams.page = $stateParams.page || 1;
                 $stateParams.psize = $stateParams.psize || 10;
                 $stateParams.psorta = $stateParams.psorta || -1;   
