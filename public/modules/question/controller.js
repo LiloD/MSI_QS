@@ -18,8 +18,20 @@
 
             self.setCompany = function(company){
                 console.log(company);
+                $stateParams = {};
                 $stateParams.qCompany = company;
                 
+                $state.transitionTo($state.current, $stateParams, { 
+                  reload: true, inherit: false, notify: true 
+                });
+            }
+
+            self.setDate = function(date){
+                console.log('in setDate', date);
+                $stateParams = {};
+                $stateParams.befored = date;
+                $stateParams.afterd = date;
+
                 $state.transitionTo($state.current, $stateParams, { 
                   reload: true, inherit: false, notify: true 
                 });
