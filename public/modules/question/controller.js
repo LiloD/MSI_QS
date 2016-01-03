@@ -27,7 +27,15 @@
             }
 
             self.setTag = function(tag){
+                console.log('in setTag', tag);
+                $stateParams = {};
+                $stateParams.qTag = tag;
 
+                console.log('in setTag stateParams', $stateParams);
+
+                $state.transitionTo($state.current, $stateParams, { 
+                  reload: true, inherit: false, notify: true 
+                });
             }
 
             self.setDate = function(date){

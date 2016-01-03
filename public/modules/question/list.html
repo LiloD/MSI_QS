@@ -76,7 +76,7 @@
                             <a class="question-description" ng-click="question.showInterview(q)">{{q.question | cutQuestion}}</a>
                         </span>
                         <span class="tag-wrapper" ng-repeat="tag in (q.tags | cutTags)">
-                            <a class="tag-value">{{tag}}</a>
+                            <a class="tag-value" ng-click="question.setTag(tag)">{{tag}}</a>
                         </span>
                     </div>
                 </td>

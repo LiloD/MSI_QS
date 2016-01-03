@@ -36,11 +36,10 @@ router.get('/qs', function(req, res, next) {
     }
 
     var filter = {};
+    if (!!req.query.qTag) filter['tags'] = req.query.qTag;
     if (!!req.query.qQuestion) filter.question = new RegExp(req.query.qQuestion, 'i');
     if (!!req.query.qCompany) filter['interview.Client'] = new RegExp(req.query.qCompany, 'i');
     if (!!req.query.qInterview) filter['interview._id'] = ObjectId(req.query.qInterview);
-    console.log("befored", req.query.befored);
-    console.log("afterd", req.query.afterd);
 
     if (!!req.query.befored){
         if(!filter['interview.Date']) filter['interview.Date'] = {};
@@ -51,7 +50,6 @@ router.get('/qs', function(req, res, next) {
         if(!filter['interview.Date']) filter['interview.Date'] = {};
         if (!!req.query.afterd) filter['interview.Date']['$gte'] = new Date(req.query.afterd);
     }
-
 
     console.log('findOption', findOption);
     console.log('filter', filter);
