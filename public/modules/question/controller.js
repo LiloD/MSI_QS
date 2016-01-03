@@ -26,6 +26,10 @@
                 });
             }
 
+            self.setTag = function(tag){
+
+            }
+
             self.setDate = function(date){
                 console.log('in setDate', date);
                 $stateParams = {};
@@ -52,6 +56,8 @@
             }
 
             self.loadQuestions = function() {
+                $stateParams.page = self.qPage;
+                $stateParams.psize = self.qSize;
                 console.log('stateParams', $stateParams);
                 $http.get('/api/qs', {
                     params: $stateParams
@@ -59,6 +65,7 @@
                     console.log("loadQuestions", data);
                     self.qs = data.qs;
                     self.qCount = data.count;
+                    console.log('qCount', data.count);
                 }).catch(console.error)
             }
             
@@ -75,81 +82,16 @@
             }
 
             self.init = function() {
-                $stateParams.qPage = $stateParams.qPage || 1;
-                $stateParams.qSize = $stateParams.qSize || 10;
-                $stateParams.psorta = $stateParams.psorta || -1;            
+                $stateParams.page = $stateParams.page || 1;
+                $stateParams.psize = $stateParams.psize || 10;
+                $stateParams.psorta = $stateParams.psorta || -1;   
+                self.qSize = $stateParams.psize;
+                self.qPage = $stateParams.page;       
                 self.loadQuestions();
             }
             self.init();
 
         })
-        .controller('QuestionCtrl1', function($scope, $http, $uibModal, Interview, $state, $stateParams) {
-	       $scope.questionInfoPopover = {
-                content: 'Hello, World!',
-                templateUrl: 'questionPopover.html',
-                title: 'Title'
-            };
-
-            console.log('stateParams', $stateParams);
-
-            var self = this;
-
-            self.setCompany = function(company){
-                // console.log(company);
-                // self.qCompany = company;
-                // console.log('setCompany', self.qCompany);
-                $state.go()
-            }
-
-            self.getParams = function() {
-                var params = {
-                    page: self.qPage,
-                    psize: self.qSize,
-                    psorta: self.psorta
-                }
-                if (!!self.qQuestion) params.qQuestion = self.qQuestion;
-                if (!!self.qCompany) params.qCompany = self.qCompany;
-                if (!!self.pSort) params.psort = self.pSort;
-                return params;
-            }
-
-            self.loadQuestions = function() {
-                $http.get('/api/qs', {
-                    params: self.getParams()
-                }).success(function(data) {
-                    console.log(data);
-                    self.qs = data.qs;
-                    self.qCount = data.count;
-                }).catch(console.error)
-            }
-            
-            self.showInterview = function(q) {
-                console.log('q:', q);
-                $state.go('questionDetail', {qid: q._id});
-            }
-            self.psorta = -1;
-            
-
-            self.sortBy = function(pSort) {
-                self.psorta *= -1;
-                self.pSort = pSort;
-                self.loadQuestions();
-            }
-
-            self.init = function() {
-                self.qPage = 1;
-                self.qSize = 10;
-                $scope.$watchGroup(['question.qQuestion', 'question.qCompany'], function(n, o) {
-                    console.log('watch', n, o)
-                    if (n == o) return;
-                    console.log(n, o)
-                    self.loadQuestions()
-                })
-                self.loadQuestions()
-            }
-            self.init();
-
-	    })
         .controller('QuestionDetailCtl', ['$scope', '$state', '$http', 'LoginService', '$stateParams', function($scope, $state, $http, LoginService, $stateParams){
             console.log('$stateParams', $stateParams);
             if(!$stateParams.qid){
