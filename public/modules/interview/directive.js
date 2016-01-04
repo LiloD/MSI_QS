@@ -45,6 +45,10 @@
                         reloadCurrent();
                     }
 
+                    $scope.showQuestion = function(q){
+                        $state.go('questionDetail', {qid: q._id});
+                    }
+
                     $scope.loadInterviews = function() {
                         console.log('in loadInterviews stateParams', $stateParams);
                         $http.get('/api/it', {

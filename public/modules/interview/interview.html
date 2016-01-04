@@ -1,17 +1,16 @@
 <div class="panel panel-default">
-    <table class="table table-striped">
-        <thead>
-            <tr class="active">
-                <th class="col-md-4">Client: {{sit.Client}}</th>
-                <th class="col-md-3">Candidate: {{sit.Candidate}}</th>
-                <th class="col-md-3">Type: {{sit.Type}}</th>
-                <th class="col-md-2">Date: {{sit.Date | date:'MM/dd/yyyy'}}</th>
-            </tr>
-        </thead>
-        <tbody ng-repeat="q in sit.qs">
-            <tr>
-                <td colspan="12">{{$index + 1 + ". " + q.question}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="panel-heading">      
+        <tr class="active">
+            <th class="col-md-4">Client: {{sit.Client}}</th>
+            <th class="col-md-3">Candidate: {{sit.Candidate}}</th>
+            <th class="col-md-3">Type: {{sit.Type}}</th>
+            <th class="col-md-2">Date: {{sit.Date | date:'MM/dd/yyyy'}}</th>
+        </tr>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="q in sit.qs"><a ng-click="showQuestion(q)">{{$index + 1 + ". " + q.question}}</a></li>
+        </ul>
+    </div>
+
 </div>
