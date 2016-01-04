@@ -12,8 +12,6 @@
                         templateUrl: 'searchPopover.html'
                     };
 
-
-
                     var reloadCurrent = function(){    
                         $state.transitionTo($state.current, uriEncode($stateParams), { 
                           reload: true, inherit: false, notify: true 
@@ -82,6 +80,7 @@
                     $scope.sortBy = function(pSort) {
                         console.log('in sortBy', pSort);
                         console.log('in sortBy psorta', $stateParams.psorta);
+                        if(!$stateParams.psorta) $stateParams.psorta = -1;
                         $stateParams.psorta = parseInt($stateParams.psorta)*-1;
                         $stateParams.pSort = pSort;
                         console.log('in sortBy psorta', $stateParams.psorta);
