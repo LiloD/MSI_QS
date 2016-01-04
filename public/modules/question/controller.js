@@ -88,6 +88,8 @@
                 reloadCurrent();
             }
 
+
+
             self.loadQuestions = function() {
                 $stateParams.page = self.qPage;
                 $stateParams.psize = self.qSize;
@@ -105,7 +107,12 @@
             
             self.showInterview = function(q) {
                 $state.go('questionDetail', {qid: q._id});
-            }            
+            }        
+
+            self.setPage = function(){
+                $stateParams.page = self.qPage;
+                reloadCurrent();
+            }    
 
             self.sortBy = function(pSort) {
                 $stateParams.psorta *= -1;
@@ -121,7 +128,9 @@
                 $stateParams.psize = $stateParams.psize || 10;
                 $stateParams.psorta = $stateParams.psorta || -1;   
                 self.qSize = $stateParams.psize;
-                self.qPage = $stateParams.page;       
+                self.qPage = $stateParams.page;
+
+                console.log("in init", self.qPage);       
                 self.loadQuestions();
             }
             self.init();

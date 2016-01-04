@@ -85,8 +85,8 @@
             </tr>
         </tbody>
     </table>
-    <div class="panel-footer text-center">
-        <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.loadQuestions()" boundary-links="true"></uib-pagination>
+    <div class="panel-footer text-center" ng-if="question.qCount">
+        <uib-pagination max-size=10 total-items="question.qCount" items-per-page="question.qSize" ng-model="question.qPage" ng-change="question.setPage()" boundary-links="true"></uib-pagination>
 
     </div>
 </div>
