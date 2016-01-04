@@ -64,7 +64,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="it in it" ng-click="showInterview(it._id)">
+            <tr class="interview-list-item" ng-repeat="it in it" ng-click="showInterview(it._id)">
                 <td class="col-md-4"><a class="interview-header" ng-click="setCompany(it.Client)">{{it.Client}}</a></td>
                 <td class="col-md-4"><a class="interview-header" ng-click="setCandidate(it.Candidate)">{{it.Candidate}}</a></td>
                 <td class="col-md-3"><a class="interview-header" ng-click="setType(it.Type)">{{it.Type}}</a></td>
