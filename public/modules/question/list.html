@@ -49,17 +49,17 @@
     <table class="table table-striped">
         <thead>
             <tr class="active">
-                <th class="col-md-2" ng-click="question.sortBy('interview.Client')" >
+                <th class="col-md-2">
                     <strong class="head">Company</strong>
-                    <span class="glyphicon glyphicon-sort"></span>
+                    <button class="glyphicon glyphicon-sort" ng-click="question.sortBy('interview.Client')" ></button>
                 </th>
-                <th class="col-md-8" ng-click="question.sortBy('question')">
+                <th class="col-md-7" ng-click="question.sortBy('question')">
                     <strong class="head">Question</strong>
-                    <span class="glyphicon glyphicon-sort"></span>
+                    <button class="glyphicon glyphicon-sort" ng-click="question.sortBy('question')" ></button>
                 </th>
-                <th class="col-md-2" ng-click="question.sortBy('interview.Date')">
+                <th class="col-md-3" ng-click="question.sortBy('interview.Date')">
                     <strong class="head">Date</strong>
-                    <span class="glyphicon glyphicon-sort"></span>
+                    <button class="glyphicon glyphicon-sort" ng-click="question.sortBy('interview.Date')" ></button>
                 </th>
             </tr>
         </thead>
