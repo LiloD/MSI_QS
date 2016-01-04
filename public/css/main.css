@@ -174,7 +174,7 @@ td{
 .interview-list-item.ng-move,
 .interview-list-item.ng-enter,
 .interview-list-item.ng-leave {
-    transition:all linear 0.4s;
+    transition:all linear 0.3s;
     
 }
 
@@ -182,13 +182,13 @@ td{
 .interview-list-item.ng-move,
 .interview-list-item.ng-enter {
     opacity: 0;
-    /*left: -200px;*/
+    left: -200px;
 }
 
 .interview-list-item.ng-leave,
 .interview-list-item.ng-move.ng-move-active,
 .interview-list-item.ng-enter.ng-enter-active {
     opacity: 1;
-    /*left: 0px;*/
+    left: 0px;
 }
 

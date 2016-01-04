@@ -18,10 +18,17 @@ var saveToTag = function(db, tag){
     return db.collection('tag').insertOne(tag);
 }
 
+var dbCol = function(col){
+    return dbCon.then(function(db){
+        return db.collection(col)
+    })
+}
+
 module.exports = {
     saveToTag: saveToTag,
     saveToQuestion: saveToQuestion,
     saveToInterview: saveToInterview,
 	link: dbLink,
-	con: dbCon
+	con: dbCon,
+	collection: dbCol
 }

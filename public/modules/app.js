@@ -42,6 +42,10 @@
                     url: '/comments/:qid',
                     templateUrl: 'modules/comments/comments.html',
                     controller: 'CommentsCtrl as comments'
+                }).state('stat', {
+                    url: '/stat',
+                    templateUrl: '/modules/stat/main.html',
+                    controller: 'StatCtrl as stat'
                 })
                 
             // add resource
