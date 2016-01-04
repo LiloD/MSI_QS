@@ -128,7 +128,7 @@ table tr{
 }*/
 
 /*for question list*/
-.question-description, .question-client, .question-date{
+.question-description, .question-client, .question-date, .interview-header{
   font-size: 16px;
 }
 

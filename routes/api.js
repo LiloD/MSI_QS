@@ -157,7 +157,7 @@ router.get('/it', function(req, res, next) {
 
     // default sort by date desc
     var sortBy ={};
-    sortBy[req.query.psort || 'Date'] = req.query.psorta && parseInt(req.query.psorta) || -1;
+    sortBy[req.query.pSort || 'Date'] = req.query.psorta && parseInt(req.query.psorta) || -1;
     var findOption = {
         'skip': (page - 1) * pageSize,
         'limit': pageSize
@@ -166,6 +166,22 @@ router.get('/it', function(req, res, next) {
     if (!!req.query.iClient) filter['Client'] = new RegExp(req.query.iClient, 'i');
     if (!!req.query.iCandidate) filter['Candidate'] = new RegExp(req.query.iCandidate, 'i');
     if (!!req.query.iType) filter['Type'] = new RegExp(req.query.iType, 'i');
+
+
+    if (!!req.query.befored){
+        if(!filter['Date']) filter['Date'] = {};
+        if(!!req.query.befored) filter['Date']['$lte'] = new Date(req.query.befored);   
+    }
+
+    if(!!req.query.afterd){
+        if(!filter['Date']) filter['Date'] = {};
+        if (!!req.query.afterd) filter['Date']['$gte'] = new Date(req.query.afterd);
+    }
+
+
+    console.log('req.query in it', req.query);
+    console.log('filter in it', filter);
+    console.log('sortBy in it', sortBy);
 
     dbConf.con.then(function(db) {
         return Q.all([

@@ -27,9 +27,6 @@
                 $stateParams = {};
                 $stateParams.qCompany = company;
 
-                // $state.transitionTo($state.current, $stateParams, { 
-                //   reload: true, inherit: false, notify: true 
-                // });
                 reloadCurrent();
             }
 
@@ -55,9 +52,6 @@
 
                 console.log('in setTag stateParams', $stateParams);
 
-                // $state.transitionTo($state.current, $stateParams, { 
-                //   reload: true, inherit: false, notify: true 
-                // });
                 reloadCurrent();
             }
 
@@ -67,24 +61,17 @@
                 $stateParams.befored = date;
                 $stateParams.afterd = date;
 
-                // $state.transitionTo($state.current, $stateParams, { 
-                //   reload: true, inherit: false, notify: true 
-                // });
                 reloadCurrent();
             }
 
             self.advancedSearch = function(company, question, befored, afterd){
-                console.log(company, question);
+                $stateParams = {};
                 $stateParams.qCompany = company;
                 $stateParams.qQuestion = question;
                 $stateParams.befored = befored;
                 $stateParams.afterd = afterd;
 
                 console.log("stateParams",$stateParams)
-
-                // $state.transitionTo($state.current, $stateParams, { 
-                //   reload: true, inherit: false, notify: true 
-                // });
                 reloadCurrent();
             }
 
@@ -199,13 +186,6 @@
 
             //add question------------------------------
             $scope.questions = [];
-
-            // $scope.fetchTags =function(q){
-            //     if(!q){
-            //         return [];
-            //     }
-            //     return ['nodejs', 'angularjs', 'expressjs'];
-            // }
             
             $scope.fetchTags =function(q){
                 if(!q){

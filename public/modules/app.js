@@ -24,8 +24,9 @@
                     controller: 'NewInterviewCtl'
                 })
                 .state('interview', {
-                    url: '/interview',
+                    url: '/interview?iClient&iCandidate&iType&pSort&page&psize&psorta&befored&afterd',
                     template: '<interview-panel></interview-panel>',
+                    cache: false
                 })
                 .state('newUser', {
                     url: '/user/new',

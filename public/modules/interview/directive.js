@@ -6,31 +6,57 @@
         .directive('interviewPanel', function() {
             return {
                 templateUrl: '/modules/interview/list.html',
-                controller: function($scope, $http, $uibModal, Interview) {
-                    $scope.getParams = function() {
-                        var params = {
-                            page: $scope.iPage,
-                            psize: $scope.iSize,
-                            psorta: $scope.psorta
+                controller: function($scope, $http, $uibModal, Interview, $state, $stateParams) {
+                    
+                    $scope.searchPopover = {
+                        templateUrl: 'searchPopover.html'
+                    };
+
+
+
+                    var reloadCurrent = function(){    
+                        $state.transitionTo($state.current, uriEncode($stateParams), { 
+                          reload: true, inherit: false, notify: true 
+                        });
+                    }
+
+                    var uriEncode = function(obj){
+                        for(var property in obj){
+                            if(!!obj[property]) obj[property] = encodeURIComponent(obj[property]);
                         }
-                        if (!!$scope.iClient) params.iClient = $scope.iClient
-                        if (!!$scope.iCandidate) params.iCandidate = $scope.iCandidate
-                        if (!!$scope.iType) params.iType = $scope.iType
-                        if (!!$scope.pSort) params.psort = $scope.pSort;
-                        return params
+
+                        return obj;
+                    }
+
+                    var uriDecode = function(obj){
+                        for(var property in obj){
+                            if(!!obj[property]) obj[property] = decodeURIComponent(obj[property]);
+                        }
+                        return obj;
+                    }
+
+                    $scope.advancedSearch = function(company, candidate, type, befored, afterd){
+                        $stateParams = {};
+                        $stateParams.iClient = company;
+                        $stateParams.iCandidate = candidate;
+                        $stateParams.iType = type;
+                        $stateParams.befored = befored;
+                        $stateParams.afterd = afterd;
+
+                        console.log("advanced search stateParams",$stateParams)
+                        reloadCurrent();
                     }
 
                     $scope.loadInterviews = function() {
+                        console.log('in loadInterviews stateParams', $stateParams);
                         $http.get('/api/it', {
-                            params: $scope.getParams()
+                            params: uriDecode($stateParams)
                         }).success(function(data) {
                             console.log(data);
                             $scope.it = data.it;
                             $scope.iCount = data.count;
                         }).catch(console.error)
                     }
-
-                    $scope.psorta = -1;
 
                     $scope.showInterview = function(iid) {
                         Interview.get({
@@ -54,9 +80,13 @@
                     }
 
                     $scope.sortBy = function(pSort) {
-                        $scope.psorta *= -1;
-                        $scope.pSort = pSort;
-                        $scope.loadInterviews();
+                        console.log('in sortBy', pSort);
+                        console.log('in sortBy psorta', $stateParams.psorta);
+                        $stateParams.psorta = parseInt($stateParams.psorta)*-1;
+                        $stateParams.pSort = pSort;
+                        console.log('in sortBy psorta', $stateParams.psorta);
+                        console.log('in sortBy stateParams', $stateParams);
+                        reloadCurrent();
                     }
 
                     $scope.data = {
@@ -81,23 +111,18 @@
 
 
                     $scope.init = function() {
-                        $scope.iPage = 1
+                        console.log('loadInterviews init!');
+                        $scope.iPage = 1;
                         $scope.iSize = self.iSize = $scope.data.selectedOption.iSize;
 
-                        $scope.$watch('data.selectedOption.iSize', function(newv, oldv) {
-                            if (newv == oldv) return;
-                            $scope.iSize = newv;
-                            $scope.loadInterviews()
-                        })
+                        $stateParams.page = $stateParams.page || 1;
+                        $stateParams.psize = $stateParams.psize || 10;
+                        $stateParams.psorta = $stateParams.psorta || -1;
 
-                        $scope.$watchGroup(['iClient', 'iCandidate', 'iType'], function(n, o) {
-                            console.log('watch: ', n, o)
-                            if (n == o) return;
-                            console.log(n, o)
-                            $scope.loadInterviews()
-                        })
-                        $scope.loadInterviews()
+                        console.log('in init stateParams', $stateParams);
+                        $scope.loadInterviews();
                     }
+
                     $scope.init();
                 }
             };
