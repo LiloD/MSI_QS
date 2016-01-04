@@ -15,8 +15,8 @@
             <ul class="nav navbar-nav">
                 <li ui-sref-active="active"><a ui-sref="question({qQuestion:null,qCompany:null,pSort:null,qPage:null,qSize:null,psorta:null,befored:null,afterd:null,qTag:null})">Question</a></li>
                 <li ui-sref-active="active"><a ui-sref="interview({iCompany:null,iCandidate:null,iType:null,pSort:null,qPage:null,qSize:null,psorta:null,befored:null,afterd:null})">Interview</a></li>
-                <li ui-sref-active="active"><a ui-sref="new">New Interview</a></li>
-                <li ui-sref-active="active"><a ui-sref="stat">Statistics</a></li>
+                <li ui-sref-active="active" ng-show="!!user"><a ui-sref="new">New Interview</a></li>
+                <li ui-sref-active="active" ng-show="!!user"><a ui-sref="stat">Statistics</a></li>
             </ul>
             <div login-nav></div>
         </div>
